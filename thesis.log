@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  5 JUL 2018 18:37
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  5 JUL 2018 23:21
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -441,7 +441,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.458 seconds)
+luaotfload | main : initialization completed in 0.585 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex
 .sty
@@ -2206,18 +2206,11 @@ LaTeX Warning: Citation 'haenggi' on page 4 undefined on input line 89.
 
 LaTeX Warning: Citation 'husimi' on page 5 undefined on input line 143.
 
-! Undefined control sequence.
-\N ->\ERROR 
-            
-l.170     Dabei gilt $n \in \N
-                            _0.
-? 
-! Missing $ inserted.
-<inserted text> 
-$
-l.171 
-    
-? 
+
+Overfull \hbox (25.73943pt too wide) in paragraph at lines 172--172
+[] 
+ []
+
 ) (./content/03_ergebnisse.tex
 
 Package scrlayer-scrpage Warning: \headheight to low.
@@ -2299,11 +2292,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
 Here is how much of LuaTeX's memory you used:
  45264 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 8514 words of node memory still in use:
-   135 hlist, 26 vlist, 15 rule, 8 math, 672 glue, 46 kern, 2 sub_mlist, 122 gly
-ph, 202 attribute, 60 glue_spec, 202 attribute_list, 1 write, 7 pdf_action nodes
+ 8695 words of node memory still in use:
+   130 hlist, 20 vlist, 13 rule, 12 math, 676 glue, 38 kern, 2 sub_mlist, 174 gl
+yph, 194 attribute, 60 glue_spec, 194 attribute_list, 1 write, 7 pdf_action node
+s
+   avail lists: 1:4,2:704,3:233,4:82,5:224,6:1728,7:642,8:108,9:448,10:10,11:213
 
-   avail lists: 1:4,2:704,3:233,4:82,5:216,6:1667,7:642,8:98,9:437,10:10,11:213
  47527 multiletter control sequences out of 65536+600000
  99 fonts using 17841167 bytes
  60i,20n,81p,8817b,2482s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -2325,7 +2319,7 @@ cal/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home
 .otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmrom
 an10-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/pub
 lic/lm/lmsans10-bold.otf>
-Output written on thesis.pdf (16 pages, 103066 bytes).
+Output written on thesis.pdf (16 pages, 105199 bytes).
 
 PDF statistics: 303 PDF objects out of 1000 (max. 8388607)
  236 compressed objects within 3 object streams

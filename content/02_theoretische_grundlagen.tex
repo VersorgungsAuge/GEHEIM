@@ -19,7 +19,7 @@
     \label{floquet_theorem}
   \end{equation}
   haben.
-  Hierbei sind die $\Phi_n(x,t) = \Phi_n(x,t+T)$ $T$-periodische Funktionen, die sogenannten Floquet-Moden, und $\epsilon_n$ die zugeh"origen reellen Quasienergien, wobei diese Bezeichnungen gew"ahlt wurden aufgrund der Parallele zu den Bloch-Moden und Quasiimpulsen des Bloch-Thoerems \cite{haenggi}.
+  Hierbei sind die $\Phi_n(x,t) = \Phi_n(x,t+T)$ $T$-periodische Funktionen, die sogenannten Floquet-Moden, und $\epsilon_n$ die zugeh"origen reellen Quasienergien, wobei diese Bezeichnungen gew"ahlt wurden aufgrund der Parallele zu den Bloch-Moden und Quasiimpulsen des Bloch-Thoerems \cite{haenlagrangei}.
   Das Floquet-Theorem kann damit als "Bloch-Theorem in der Zeit" aufgefasst werden.
 
   Durch Einsetzen dieses Ansatzes f"ur die Wellenfunktionen (\ref{floquet_theorem}) in die Schr"odingergleichung (\ref{schroedinger}) erhalten wir
@@ -35,6 +35,7 @@
   %Es ergibt sich
   \begin{equation}
     \braket{\braket{\Phi_n(x,t)|\Phi_m(x,t)}} = \frac{1}{T} \int_0^T \int_{-\infty}^{\infty} \Phi_n^*(x,t)\Phi_m(x,t) \: \text{d}x\text{d}t = \delta_{n,m} \; .
+    \label{skalarprodukt_einzelner}
   \end{equation}
 
 
@@ -93,7 +94,7 @@
     \begin{equation}
       x \rightarrow y=x-\zeta(t) \; ,
     \end{equation}
-    wobei der Impulsoperator unver"andert bleibt.
+    wobei der Impuls(operator) unver"andert bleibt.
     %Der Impulsoperator bleibt dadurch unver"andert.
 
     Mit der neuen Zeitableitung der Wellenfunktion
@@ -114,21 +115,21 @@
     Durch Einsetzen in die Schr"odinger-Gleichung (\ref{schroedinger_einzeln_getrieben}) und Ausrechnen der Ableitungen erhalten wir
     \begin{align}
       \begin{split}
-        \text e^{\frac{\text i}{\hbar}m\dot \zeta y}(\text i \hbar \dot \Lambda - my \ddot{\zeta}\Lambda)  \quad \quad \quad \quad \quad \quad \quad \quad \quad\quad\quad\quad\quad \quad \quad \quad\quad\quad\quad\\
-         = \text e^{\frac{\text i}{\hbar}m\dot \zeta y} \left[\left(-m\dot \zeta^2 \Lambda + \text i \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda \right) + \left(\frac{1}{2}m\dot \zeta^2 \Lambda - \text{i} \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda - \frac{\hbar}{2m}\frac{\partial^2}{\partial y^2} \Lambda  \right) \right. \\
-        \left. + \frac{1}{2}m\omega_0^2(y+\zeta)^2  + (y+\zeta)S(t)  \right]
+        \text e^{\frac{\text i}{\hbar}m\dot \zeta y}(\text i \hbar \dot \Lambda(y,t) - my \ddot{\zeta}\Lambda(y,t))  \quad\quad \quad \quad \quad \quad \quad \quad \quad \quad\quad\quad\quad\quad \quad \quad \quad\quad\quad\quad\\
+         = \text e^{\frac{\text i}{\hbar}m\dot \zeta y} \left[\left(-m\dot \zeta^2 \Lambda(y,t) + \text i \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda(y,t) \right) + \left(\frac{1}{2}m\dot \zeta^2 \Lambda(y,t) - \text{i} \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda(y,t) - \frac{\hbar}{2m}\frac{\partial^2}{\partial y^2} \Lambda(y,t)  \right) \right. \\
+        \left. + \frac{1}{2}m\omega_0^2(y+\zeta)^2  + (y+\zeta)S(t)  \right] \; .
       \end{split}
     \end{align}
     \iffalse
     Durch Einsetzen in die Schr"odinger-Gleichung und Ausrechnen der Ableitungen erhalten wir f"ur die linke Seite von (\ref{schroedinger_einzeln_getrieben})
-    \text e^{\frac{\text i}{\hbar}m\dot \zeta y}(\text i \hbar \dot \Lambda - my \ddot{\zeta}\Lambda)
+    \text e^{\frac{\text i}{\hbar}m\dot \zeta y}(\text i \hbar \dot \Lambda(y,t) - my \ddot{\zeta}\Lambda(y,t))
     \begin{equation}
     \end{equation}
     und f"ur die rechte Seite
     \begin{align}
       \begin{split}
-      \text e^{\frac{\text i}{\hbar}m\dot \zeta y} \left[\left(-m\dot \zeta^2 \Lambda + \text i \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda \right) + \left(\frac{1}{2}m\dot \zeta^2 \Lambda - \text{i} \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda - \frac{\hbar}{2m}\frac{\partial^2}{\partial y^2} \Lambda  \right) \right. \\
-      \left. + \left(\frac{1}{2}m\omega_0^2y^2\Lambda + m\omega_0^2y\zeta\Lambda + \frac{1}{2}m\omega_0^2 \zeta^2\Lambda) \right) + \left(-yS(t)\Lambda - \zeta S(t)\Lambda \right) \right]
+      \text e^{\frac{\text i}{\hbar}m\dot \zeta y} \left[\left(-m\dot \zeta^2 \Lambda(y,t) + \text i \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda(y,t) \right) + \left(\frac{1}{2}m\dot \zeta^2 \Lambda(y,t) - \text{i} \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda(y,t) - \frac{\hbar}{2m}\frac{\partial^2}{\partial y^2} \Lambda(y,t)  \right) \right. \\
+      \left. + \left(\frac{1}{2}m\omega_0^2y^2\Lambda(y,t) + m\omega_0^2y\zeta\Lambda(y,t) + \frac{1}{2}m\omega_0^2 \zeta^2\Lambda(y,t)) \right) + \left(-yS(t)\Lambda(y,t) - \zeta S(t)\Lambda(y,t) \right) \right]
     \end{split}
     \end{align}
     \fi
@@ -164,10 +165,42 @@
       \text i \hbar \dot \chi(y,t) = \left[ \frac{-\hbar^2}{2m}\frac{\partial^2}{\partial y^2} + \frac{1}{2}m\omega_0^2y^2 \right]\chi(y,t) \; .
     \end{equation}
     Das bedeutet die $\chi_n(y,t)$ sind die Wellenfunktionen des ungetriebenen Oszillators und die Gesamtl"osung der Schro"dinger-Gleichung des getriebenen Oszillators ist damit gegeben durch
+    \begin{align}
+      \begin{split}
+      \Psi_n(x,t) &= \Psi_n(y=x-\zeta(t),t) \\
+      &= N_nH_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \text e^{\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2} \text e^{\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))-E_nt+\int_0^tL(\dot \zeta,\zeta,t')\:\text dt'\right)}\\
+      &n \in \mathbb{N}_0 \; .
+    \end{split}
+    \end{align}
+    Dabei sind $H_n$ die Hermit-Polynome, $E_n = \hbar \omega_0(n+1/2)$ die bekannten Eigenenergien des ungetriebenen Oszillators und
     \begin{equation}
-      \Psi_n(y,t) = \Psi_n(x-\zeta(t),t) =
+      N_n = \left(\frac{m\omega_0}{\pi \hbar}\right) \frac{1}{\sqrt{2^nn!}}
     \end{equation}
-    Dabei gilt $n \in \N_0.
+    dessen Normierungsfaktoren.
+    Die L"osungen des getriebenen Oszillators somit sind bez"uglich des Skalarproduktes (\ref{skalarprodukt_einzelner}) normiert.
+
+    Die L"osung entspricht damit einem ,um die klassiche L"osung $\zeta(t)$ verschobenen, ungetriebenen Oszillator, mit einer zus"atlichen zeit- und ortsabh'angigen komplexen Phase.
+    Die treibende Kraft $S(t)$ geht nur, "uber die Lagrange-Funktion, in die komplexe Phase mit ein.
+
+
+    \subsection{\texorpdfstring{Identifizierung der Quaienergien $\epsilon_n$ und Floquet-Moden $\Phi_n(x,t)$}{Identifizierung der Quaienergien \epsilon_n und Floquet-Moden \Phi_n(x,t)}}
+      Nach dem Floquet'schen-Theorem f"ur periodische Hamilton-Operatoren (\ref{floquet_theorem}) kann die L"osung des getriebenen Oszillators geschrieben werden als
+      \begin{equation}
+        \Psi_n(x,t) = \text e^{\frac{-\text u}{\hbar}\epsilon_nt}\Phi_n(x,t) \; ,
+      \end{equation}
+      mit $\Phi_n(x,t)=\Phi_n(x,t+T)$.
+      Nun k"onnen wir alle $T$-periodischen Terme als $\Phi_n(x,t)$ identifizieren, und alle Terme im Exponenten die linear in $t$ sind als $\frac{-\text i}{\hbar}\epsilon_n t$ \cite{haenggi}.
+
+      Alle Funktionen von $(x-\zeta(t))$ haben die Periode $T$ da $\zeta(T)$ als L"osung der klassichen Bewegungsgleichung mit $S(t)=S(t+T)$ die Periode $T$ hat.
+      Das Ergebnis des Integrals "uber die Lagrange Funktion kann nur $T$-periodisch oder linear in $t$ sein, so wie $E_n$, daher sind die Quasienergien gegeben durch
+      \begin{equation}
+        \epsilon_n = E_n - \frac{1}{T} \int_0^T L(\dot \zeta, \zeta, t) \: \text d t
+      \end{equation}
+      und die Floquet-Moden durch
+      \begin{equation}
+
+
+
 
 
 
