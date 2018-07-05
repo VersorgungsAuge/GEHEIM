@@ -1,0 +1,178 @@
+\chapter{Theoretische Grundlagen}
+
+
+\section{Floquet Theorie und Floquet'sches Theorem}
+  Die Floquet Theorie ist ein n"utzliches Werkzeug zur der L"osung von quantenmechanischen Systemen, welche durch einen zeitlich periodischen Hamilton-Operator
+  \begin{equation}
+    H(t) = H(t+T) \; ,
+  \end{equation}
+  mit der Periode $T$, beschrieben werden.
+
+  Das Floquet'sche Theorem besagt, dass bei einem solchen Hamoltionian, die L"osungen $\Psi_n(x,t)$ der Schr"odinger-Gleichung
+  \begin{equation}
+    \text{i}\hbar\frac{\partial}{\partial t}\Psi_n(x,t) = H(t)\Psi_n(x,t)
+    \label{schroedinger}
+  \end{equation}
+  in Ortsdarstellung die Form
+  \begin{equation}
+    \Psi_n(x,t) = \text{e}^{-\frac{i}{\hbar}\epsilon_nt}\Phi_n(x,t)
+    \label{floquet_theorem}
+  \end{equation}
+  haben.
+  Hierbei sind die $\Phi_n(x,t) = \Phi_n(x,t+T)$ $T$-periodische Funktionen, die sogenannten Floquet-Moden, und $\epsilon_n$ die zugeh"origen reellen Quasienergien, wobei diese Bezeichnungen gew"ahlt wurden aufgrund der Parallele zu den Bloch-Moden und Quasiimpulsen des Bloch-Thoerems \cite{haenggi}.
+  Das Floquet-Theorem kann damit als "Bloch-Theorem in der Zeit" aufgefasst werden.
+
+  Durch Einsetzen dieses Ansatzes f"ur die Wellenfunktionen (\ref{floquet_theorem}) in die Schr"odingergleichung (\ref{schroedinger}) erhalten wir
+  \begin{equation}
+    \epsilon_n \Phi_n(x,t) = (H(t)-\text{i}\hbar\frac{\partial}{\partial t})\Phi_n(x,t) = \cal{H}(t) \Phi_n(x,t) \; .
+    \label{eigenwertproblem}
+  \end{equation}
+  Die L"osung der Schr"odinger Gleichung konnte somit auf die L"osung eines Eigenwertproblems f"ur den neuen hermitischen Operator $\cal{H}(t)$ zur"uckgef"uhrt werden \cite{sherly}.
+
+  $\cal{H}(t)$ bzw. $H(t)$ ist hermitisch und operiert auf dem Hilbertraum $\cal{L}^2 \otimes \cal{T}$.
+  $\cal{L}^2$ ist der Raum der quadratintegrablen Funktionen und $\cal{T}$ der Raum der auf $[0,T]$ integrablen Funktionen, da die Operatoren $T$ periodisch sind \cite{haenggi}.
+  Nach dem Spekralsatz bilden die Eigenfunktionen $\Phi_n(x,t)$ von $\cal{H}(t)$ eine Orthogonalbasis von $\cal{L}^2 \otimes \cal{T}$, welche auf eine Orthonormalbasis normiert werden kann:
+  %Es ergibt sich
+  \begin{equation}
+    \braket{\braket{\Phi_n(x,t)|\Phi_m(x,t)}} = \frac{1}{T} \int_0^T \int_{-\infty}^{\infty} \Phi_n^*(x,t)\Phi_m(x,t) \: \text{d}x\text{d}t = \delta_{n,m} \; .
+  \end{equation}
+
+
+
+  \subsection{\texorpdfstring{Zeitlich gemittelter Erwartungswert der Energie $\bar{H}_n$}{Zeitlich gemittelter Erwartungswert der Energie bar{H}_n}}
+
+    Da $H(t)$ nicht zeitlich konstant ist, sind auch seine Observablen, die Energien des Systems, zeitabh"angig.
+    Ein direkter Vorteil der Floquet-Theorie liegt darin, dass die durchschnittliche Energie
+    \begin{equation}
+      \bar{H}_n  = \braket{\braket{\Psi_n(x,t)|H(t)|\Psi_m(x,t)}}
+      %\label{mittleres_H}
+    \end{equation}
+    des $n$-ten Zustandes $\Psi_n(x,t)$ leicht "uber die Quasienergien $\epsilon_n$ berechnen l"asst, ohne explizit Integrale zu l"osen.
+
+    Dazu ersetzen wir $H(t)$ mit Hilfe von (\ref{eigenwertproblem}), au"serdem unterscheiden sich die Floquet-Moden $\Phi_n(x,t)$ und die Wellenfunktionen $\Psi_n(x,t)$ nur durch eine komplexe Phase, daher sind deren Skalarprodukte identisch.
+    Weiterhin benutzen wir (\ref{eigenwertproblem}), dass die Floquet-Moden Eigenfunktionen von $\cal{H}(t)$ sind:
+    \begin{align}
+      \begin{split}
+      \bar{H}_n  &= \braket{\braket{\Phi_n(x,t)|\cal{H}(t)+\text{i}\hbar\frac{\partial}{\partial t}|\Phi_n(x,t)}} \\
+      &=\epsilon_n \braket{\braket{\Phi_n(x,t)|\Phi_n(x,t)}} + \braket{\braket{\Phi_n(x,t)|\text{i}\hbar\frac{\partial}{\partial t}|\Phi_n(x,t)}} \\
+      &= \epsilon_n + \braket{\braket{\Phi_n(x,t)|\text{i}\hbar\frac{\partial}{\partial t}|\Phi_n(x,t)}} \; .
+    \end{split}
+    \end{align}
+
+    N"ahere Betrachtung zeigt, dass
+    \begin{equation}
+      \text{i}\hbar\frac{\partial}{\partial t} = -\omega \frac{\partial \cal{H}(t)}{\partial \omega}
+    \end{equation}
+    gilt \cite{haenggi}.
+    Da f"ur $\epsilon_n$ und $\cal H(t)$ mit (\ref{eigenwertproblem}) eine Art station"are Schr"oginger-Gleichung vorliegt, kann das Hellman-Feynman Theorem angewendet werden \cite{hellmann online quelle}.
+    Dieses gibt eine Verbindung zwischen den Ableitungen der Eigenwerte und der Ableitung des Hamiltom-Operators.
+    In unserem Fall erhalten wir dadurch
+    \begin{equation}
+      \frac{\partial \epsilon_n}{\partial \omega} = \braket{\braket{\Phi_n(x,t)|\frac{\partial \cal H(t)}{\partial \omega}|\Phi_n(x,t)}}
+    \end{equation}
+    Damit folgt \cite{haenggi}:
+    \begin{equation}
+      \bar{H}_n = \epsilon_n - \omega\frac{\partial \epsilon_n}{\partial \omega} \; .
+      \label{mittleres_H}
+    \end{equation}
+
+  \newpage
+
+
+
+  \section{Allgemeine L"osung der Schr"odinger-Gleichung des getriebenen harmonischen Oszillators in der Quantenmechanik}
+    Der Hamilton-Operator eines harmonischen Oszillators der Masse $m$, welcher mit einer beliebigen aber periodischen "au"seren Kraft $S(t)=S(t+T)$ getrieben wird, hat die Form
+    \begin{equation}
+      H(t) = H(t+T) = \frac{p^2}{2m} + \frac{1}{2}m\omega_0^2x^2-S(t)x \; ,
+    \end{equation}
+    mit $\omega_0=\sqrt{k/m}$.
+    Dieses System kann exakt gel"ost werden, indem die Schr"odinger-Gleichung durch einen Variablenwechsel und zwei unit"are Transformationen auf die bekannte Form des ungetriebenen Oszillators reduziert wird \cite{haenggi}.
+
+    \textbf{1) Variablenwechsel}\\
+    F"ur den neuen Ortsoperator bzw. die Ortsvariable wird eine zeitabh"angige Verschiebung angesetzt:
+    \begin{equation}
+      x \rightarrow y=x-\zeta(t) \; ,
+    \end{equation}
+    wobei der Impulsoperator unver"andert bleibt.
+    %Der Impulsoperator bleibt dadurch unver"andert.
+
+    Mit der neuen Zeitableitung der Wellenfunktion
+    \begin{equation}
+      \text{i}\hbar \frac{\partial}{\partial t} \Psi(y(t),t) = \text{i}\hbar \dot{\Psi} -\dot{\zeta}\frac{\partial}{\partial y}\Psi(y(t),t)
+    \end{equation}
+    wird die Schr"odinger-Gleichung zu:
+    \begin{equation}
+      \text i \hbar \dot{\Psi}(y,t) = \left[\text i \hbar \dot{\zeta}\frac{\partial}{\partial y}-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial y^2}+\frac{1}{2}m\omega_0^2(y+\zeta)^2-(y+\zeta)S(t)\right]\Psi(y,t) \; .
+      \label{schroedinger_einzeln_getrieben}
+    \end{equation}
+
+    \textbf{2) Unit"are Trafe f"ur $\Psi(y,t)$}\\
+    Im Weiteren w"ahlen wir die unit"are Transformation
+    \begin{equation}
+      \Psi(y,t) = \text e^{\frac{\text i}{\hbar}m\dot \zeta y}\Lambda(y,t) \; .
+    \end{equation}
+    Durch Einsetzen in die Schr"odinger-Gleichung (\ref{schroedinger_einzeln_getrieben}) und Ausrechnen der Ableitungen erhalten wir
+    \begin{align}
+      \begin{split}
+        \text e^{\frac{\text i}{\hbar}m\dot \zeta y}(\text i \hbar \dot \Lambda - my \ddot{\zeta}\Lambda)  \quad \quad \quad \quad \quad \quad \quad \quad \quad\quad\quad\quad\quad \quad \quad \quad\quad\quad\quad\\
+         = \text e^{\frac{\text i}{\hbar}m\dot \zeta y} \left[\left(-m\dot \zeta^2 \Lambda + \text i \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda \right) + \left(\frac{1}{2}m\dot \zeta^2 \Lambda - \text{i} \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda - \frac{\hbar}{2m}\frac{\partial^2}{\partial y^2} \Lambda  \right) \right. \\
+        \left. + \frac{1}{2}m\omega_0^2(y+\zeta)^2  + (y+\zeta)S(t)  \right]
+      \end{split}
+    \end{align}
+    \iffalse
+    Durch Einsetzen in die Schr"odinger-Gleichung und Ausrechnen der Ableitungen erhalten wir f"ur die linke Seite von (\ref{schroedinger_einzeln_getrieben})
+    \text e^{\frac{\text i}{\hbar}m\dot \zeta y}(\text i \hbar \dot \Lambda - my \ddot{\zeta}\Lambda)
+    \begin{equation}
+    \end{equation}
+    und f"ur die rechte Seite
+    \begin{align}
+      \begin{split}
+      \text e^{\frac{\text i}{\hbar}m\dot \zeta y} \left[\left(-m\dot \zeta^2 \Lambda + \text i \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda \right) + \left(\frac{1}{2}m\dot \zeta^2 \Lambda - \text{i} \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda - \frac{\hbar}{2m}\frac{\partial^2}{\partial y^2} \Lambda  \right) \right. \\
+      \left. + \left(\frac{1}{2}m\omega_0^2y^2\Lambda + m\omega_0^2y\zeta\Lambda + \frac{1}{2}m\omega_0^2 \zeta^2\Lambda) \right) + \left(-yS(t)\Lambda - \zeta S(t)\Lambda \right) \right]
+    \end{split}
+    \end{align}
+    \fi
+
+    \newpage
+
+    Indem aud beiden Seiten durch die Exponentialfunktion geteilt wird, erhalten wir eine Differentialgleichung f"ur $\Lambda(y,t)$.
+    Au"serdem k"onnen durch geschicktes Umsortieren der Terme die Lagrange-Funktion $L(\zeta,\dot \zeta, t)$
+    \begin{equation}
+      L(\zeta,\dot \zeta, t) = \frac{1}{2}m\dot \zeta^2 - \frac{1}{2}m\omega_0^2\zeta^2 + S(t)\zeta
+    \end{equation}
+      sowie die Bewegungsgleichung des klassischen getriebenen harmonischen  Oszillators \cite{husimi}
+      \begin{equation}
+        m\ddot \zeta + m\omega_0^2\zeta - S(t) = 0
+      \end{equation}
+    f"ur die Verschiebung $\zeta(t)$ identifiziert werden.
+    Die Differentialgleichung f"ur $\Lambda(y,t)$ ist
+    \begin{equation}
+      \text i \hbar \dot \Lambda(y,t) = \left[ \frac{-\hbar^2}{2m}\frac{\partial^2}{\partial y^2} + \frac{1}{2}m\omega_0^2y^2 + (m\ddot \zeta + m\omega_0^2y\zeta - S(t))y - L(\zeta,\dot \zeta, t) \right]\Lambda(y,t) \; .
+      \label{dgl_lambda}
+    \end{equation}
+    Um die Gleichung zu vereinfachen, w"ahlen wir $\zeta(t)$ nun so, dass es gerade die klassische Bewegungsgleichung erf"ullt, der entsprechende Term in (\ref{dgl_lambda}) also verschwindet.
+
+    \textbf{3) Unit"are Trafe f"ur $\Lambda(y,t)$}\\
+    Zuletzt w"ahlen wir den Ansatz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  b

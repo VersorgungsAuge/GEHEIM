@@ -1,0 +1,20 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\select@language {english}
+\select@language {german}
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Struktur der Arbeit}{2}{chapter.2}
+\contentsline {chapter}{\numberline {3}Wichtige Hinweise zum Dokument}{3}{chapter.3}
+\contentsline {section}{\numberline {3.1}Erstellen des Ausgabedokuments mit Make}{4}{section.3.1}
+\contentsline {section}{\numberline {3.2}Erstellen des Ausgabedokuments mit Texmaker}{4}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Einrichten der nötigen Befehle}{4}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Aufräumen}{5}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}\LaTeX -Grundlagen}{6}{chapter.4}
+\contentsline {section}{\numberline {4.1}Zahlen und Einheiten}{6}{section.4.1}
+\contentsline {section}{\numberline {4.2}Das Literaturverzeichnis}{7}{section.4.2}
+\contentsline {chapter}{\numberline {5}Abbildungen und Tabellen}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}Abbildungen}{9}{section.5.1}
+\contentsline {section}{\numberline {5.2}Tabellen}{10}{section.5.2}
+\contentsline {chapter}{\numberline {A}Ein Anhangskapitel}{11}{appendix.A}
+\contentsline {chapter}{\nonumberline Literatur}{12}{chapter*.9}
