@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  5 JUL 2018 17:26
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  5 JUL 2018 18:37
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -441,7 +441,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.436 seconds)
+luaotfload | main : initialization completed in 0.458 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex
 .sty
@@ -2190,19 +2190,35 @@ LaTeX Warning: Citation 'hellmann online quelle' on page 3 undefined on input li
 ne 67.
 
 
-Overfull \hbox (11.53769pt too wide) in paragraph at lines 65--68
-\EU2/lmr/m/n/10.95 Gleichung vor-liegt, kann das Hellman-Feynman Theo-rem [[]] 
-
+Overfull \hbox (93.94678pt too wide) in paragraph at lines 65--70
+\EU2/lmr/m/n/10.95 Gleichung vor-liegt, kann das Hellman-Feynman Theo-rem an-ge
+-wen-det wer-den [[]].
  []
 
 
-LaTeX Warning: Citation 'haenggi' on page 3 undefined on input line 71.
+LaTeX Warning: Citation 'haenggi' on page 3 undefined on input line 73.
 
 [3]
 
-LaTeX Warning: Citation 'haenggi' on page 4 undefined on input line 87.
+LaTeX Warning: Citation 'haenggi' on page 4 undefined on input line 89.
 
-[4]) (./content/03_ergebnisse.tex
+[4]
+
+LaTeX Warning: Citation 'husimi' on page 5 undefined on input line 143.
+
+! Undefined control sequence.
+\N ->\ERROR 
+            
+l.170     Dabei gilt $n \in \N
+                            _0.
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.171 
+    
+? 
+) (./content/03_ergebnisse.tex
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 27.2pt needed,
@@ -2262,7 +2278,7 @@ Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: A490E7BAFD96A41788999DB69141D32A;8779.
+(rerunfilecheck)             Checksum: C1924BB8158D39A3B30847ACA8433D4B;8992.
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
 (rerunfilecheck)             Checksum: F29D2511DB6C410466D85B7AFCC5D98B;1044.
 
@@ -2281,15 +2297,15 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45260 strings out of 495118
+ 45264 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 8263 words of node memory still in use:
-   135 hlist, 26 vlist, 15 rule, 8 math, 643 glue, 46 kern, 2 sub_mlist, 122 gly
-ph, 190 attribute, 60 glue_spec, 190 attribute_list, 1 write, 7 pdf_action nodes
+ 8514 words of node memory still in use:
+   135 hlist, 26 vlist, 15 rule, 8 math, 672 glue, 46 kern, 2 sub_mlist, 122 gly
+ph, 202 attribute, 60 glue_spec, 202 attribute_list, 1 write, 7 pdf_action nodes
 
-   avail lists: 1:4,2:704,3:233,4:82,5:216,6:1529,7:642,8:98,9:437,10:10,11:213
- 47526 multiletter control sequences out of 65536+600000
- 99 fonts using 17841063 bytes
+   avail lists: 1:4,2:704,3:233,4:82,5:216,6:1667,7:642,8:98,9:437,10:10,11:213
+ 47527 multiletter control sequences out of 65536+600000
+ 99 fonts using 17841167 bytes
  60i,20n,81p,8817b,2482s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-i
 talic.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/
@@ -2309,10 +2325,10 @@ cal/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home
 .otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmrom
 an10-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/pub
 lic/lm/lmsans10-bold.otf>
-Output written on thesis.pdf (16 pages, 100058 bytes).
+Output written on thesis.pdf (16 pages, 103066 bytes).
 
-PDF statistics: 297 PDF objects out of 1000 (max. 8388607)
- 230 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 131072)
+PDF statistics: 303 PDF objects out of 1000 (max. 8388607)
+ 236 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 131072)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -151,9 +151,24 @@
       \label{dgl_lambda}
     \end{equation}
     Um die Gleichung zu vereinfachen, w"ahlen wir $\zeta(t)$ nun so, dass es gerade die klassische Bewegungsgleichung erf"ullt, der entsprechende Term in (\ref{dgl_lambda}) also verschwindet.
+    Nur noch die Lagrangge-Funktion unterscheidet diese Differential-Gleichung von der des ungetriebenen Oszillators.
 
     \textbf{3) Unit"are Trafe f"ur $\Lambda(y,t)$}\\
     Zuletzt w"ahlen wir den Ansatz
+    \begin{equation}
+      \Lambda(y,t) = \text e^{\frac{\text i}{\hbar}\int_0^tL \: \text d t'}\chi(y,t)
+    \end{equation}
+    f"ur $\Lambda(y,t)$, um die Lagrange-Funktion in (\ref{dgl_lambda}) zu elilminieren.
+    Dadurch wird die Differential-Gleichung f"ur $\Lambda(y,t)$ bzw. die urspr"ungliche Schr"odinger-Gleichung auf einen ungetriebenen Oszillator f"ur $\chi(y,t)$ reduziert:
+    \begin{equation}
+      \text i \hbar \dot \chi(y,t) = \left[ \frac{-\hbar^2}{2m}\frac{\partial^2}{\partial y^2} + \frac{1}{2}m\omega_0^2y^2 \right]\chi(y,t) \; .
+    \end{equation}
+    Das bedeutet die $\chi_n(y,t)$ sind die Wellenfunktionen des ungetriebenen Oszillators und die Gesamtl"osung der Schro"dinger-Gleichung des getriebenen Oszillators ist damit gegeben durch
+    \begin{equation}
+      \Psi_n(y,t) = \Psi_n(x-\zeta(t),t) =
+    \end{equation}
+    Dabei gilt $n \in \N_0.
+
 
 
 
