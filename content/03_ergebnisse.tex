@@ -1,1 +1,102 @@
 \chapter{Ergebnisse}
+
+
+\section{Quasienergien des einzelnen getriebenen Oszillators f"ur eine beliebige periodische Treibkraft $S(t)$}
+  Um die Quasienergien einer beliebigen periodisch treibenden Kraft auf elegante Weise zu bestimmen, ohne ein Wirkungsintegral berechnen zu m"ussen, setzen wir eine komplexe Furier-Reihe an:
+  \begin{equation}
+    S(t) = \sum_{j=-\infty}^\infty c_j \text e^{\text ij\omega t}, \; c_j = \frac{1}{T} \int_0^T S(t) \text e^{-ij\omega t} \: \text d t \; .
+  \end{equation}
+  Die $c_j$ haben die Einheit einer Kraft.
+
+  F"ur $\zeta(t)$ w"ahlen wir jetzt ebenfalls einen Reihenansatz:
+  \begin{equation}
+    \zeta(t) = \sum_{j=-\infty}^\infty d_j \text e^{\text ij\omega t} \; .
+  \end{equation}
+  Wir betrachten wieder nur die inhomogene klassische Bewegungsgleichung und bestimmen die $d_j$, indem wir einsetzen und einen Koeffizientenvergleich der $d_j$ und $c_j$ machen.
+  Es zeigt sich, dass
+  \begin{equation}
+    \zeta(t) = \sum_{j=-\infty}^\infty \frac{c_j}{m(-j^2\omega^2+\omega_0^2)} \text e^{ij\omega t}
+  \end{equation}
+  gilt, womit sich die Lagrange-Funktion (\ref{lagrange_zeta}) ergibt zu:
+  \begin{align}
+    \begin{split}
+      L &= \frac{1}{2}m\dot \zeta^2 - \frac{1}{2}m\omega_0^2\zeta^2 + S(t)\zeta \\
+       &=\sum_j \sum_l \left[ \frac{-\omega^2}{2m} \frac{jc_j}{-j^2\omega^2+\omega_0^2} \frac{lc_l}{-l^2\omega^2+\omega_0^2}
+       -\frac{\omega_0^2}{2m} \frac{c_j}{-j^2\omega^2+\omega_0^2} \frac{c_l}{-l^2\omega^2+\omega_0^2} \right. \\
+        &\left. \quad + \frac{1}{m} \frac{c_jc_l}{-j^2\omega^2+\omega_0^2} \text e^{\text i(j+l)\omega t} \right] \; , \; j,l \in \mathbb{Z} \; .
+     \end{split}
+   \end{align}
+  \iffalse
+  \begin{align}
+    \begin{split}
+      L &= \frac{1}{2}m\dot \zeta^2 - \frac{1}{2}m\omega_0^2\zeta^2 + S(t)\zeta \\
+       &=\frac{-\omega^2}{2m} \sum_j \sum_l \frac{jc_j}{-j^2\omega^2+\omega_0^2} \frac{lc_l}{-l^2\omega^2+\omega_0^2} \text e^{\text i(j+l)\omega t}\\
+       &\quad-\frac{\omega_0^2}{2m} \sum_j \sum_l \frac{c_j}{-j^2\omega^2+\omega_0^2} \frac{c_l}{-l^2\omega^2+\omega_0^2} \text e^{\text i(j+l)\omega t}\\
+       &\quad + \frac{1}{m} \sum_j \sum_l \frac{c_jc_l}{-j^2\omega^2+\omega_0^2} \text e^{\text i(j+l)\omega t}\; , \; j,l \in \mathbb{Z} \; .
+     \end{split}
+   \end{align}
+   \fi
+
+   Nun identifizieren wir alle Terme der Lagrange-Funktion, welche nach der Ausf"uhrung des Wirkungsintegrals linear in der Zeit $t$ sind, ohne dieses explizit zu berechnen.
+   Denn wir wissen, dass die Exponentialterme, welche sich beim Integrieren nach der Zeit reproduzieren, nicht linear in $t$ sein k"onnen.
+   Daher werden nur die konstanten Terme, welche entstehen wenn die Exponentialterme wegfallen, eine lineare Abh"angigkeit aufweisen.
+   Die Exponentialterme werden 1 wenn
+   \begin{equation}
+     j=-l
+   \end{equation}
+   ist.
+   Infolgedessen werden die Doppelsummen, die bei der Quadrierung entstanden, wieder zur Einzelsumme.
+   Wir fassen den linearen Teil des Wirkungsintegrals zusammen:
+   \begin{align}
+     \begin{split}
+       &\frac{1}{T} \int_0^T L \: \text d t \\
+       &= \sum_j \left[\frac{\omega^2}{2m} \frac{j^2c_jc_{-j}}{(-j^2\omega^2+\omega_0^2)^2}
+       - \frac{\omega_o^2}{2m} \frac{c_jc_{-j}}{(-j^2\omega^2+\omega_0^2)^2} \right.
+       \left. +\frac{1}{m} \frac{c_jc_{-j}}{-j^2\omega^2+\omega_0^2}
+       \right]\\
+       &= \sum_j \left[\frac{1}{2m} \frac{c_jc_{-j}(j^2\omega^2-\omega_0^2)}{(-j^2\omega^2+\omega_0^2)^2} + \frac{1}{m} \frac{c_jc_{-j}}{-j^2\omega^2+\omega_0^2} \right] \\
+       &= \sum_j \frac{c_jc_{-j}}{2m(-j^2\omega^2+\omega_0^2)} = \frac{c_0^2}{2m\omega_0^2} + \sum_{j=1}^\infty \frac{c_j^2}{m(-j^2\omega^2+\omega_0^2)}
+     \end{split}
+   \end{align}
+
+    und die Quasienergien $\epsilon_n$ sind hiernach:
+   \begin{align}
+     \begin{split}
+       \epsilon_n &= \hbar \omega_0(n+\frac{1}{2}) - \sum_j \frac{c_jc_{-j}}{2m(-j^2\omega^2+\omega_0^2)}
+     \end{split}
+   \end{align}
+   Interessanterweise kommt es in obiger Formel nicht nur bei $\omega = \omega_0$ zu einer Singularit"at, sondern bei allen $\omega = \omega_0 / j$.
+
+
+
+   \subsection{Beispiele f"ur S(t) dreieck rechteck delta}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   b

@@ -2142,7 +2142,7 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">haenggi</bcf:citekey>
+    <bcf:citekey order="1">haenlagrangei</bcf:citekey>
     <bcf:citekey order="2">sherly</bcf:citekey>
     <bcf:citekey order="3">haenggi</bcf:citekey>
     <bcf:citekey order="4">haenggi</bcf:citekey>
@@ -2150,6 +2150,9 @@
     <bcf:citekey order="6">haenggi</bcf:citekey>
     <bcf:citekey order="7">haenggi</bcf:citekey>
     <bcf:citekey order="8">husimi</bcf:citekey>
+    <bcf:citekey order="9">haenggi</bcf:citekey>
+    <bcf:citekey order="10">mads</bcf:citekey>
+    <bcf:citekey order="11">mads</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

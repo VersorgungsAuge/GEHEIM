@@ -92,9 +92,10 @@
     \textbf{1) Variablenwechsel}\\
     F"ur den neuen Ortsoperator bzw. die Ortsvariable wird eine zeitabh"angige Verschiebung angesetzt:
     \begin{equation}
-      x \rightarrow y=x-\zeta(t) \; ,
+      x \rightarrow y=x-\zeta(t) \; ;
     \end{equation}
-    wobei der Impuls(operator) unver"andert bleibt.
+    Wie zu erwarten ver"andert sich der Impuls(operatur) durch die Translation im Ort nicht, da $zeta(t)$ bei der Ortsableitung wegf"allt.
+    %wobei der Impuls(operator) unver"andert bleibt.
     %Der Impulsoperator bleibt dadurch unver"andert.
 
     Mit der neuen Zeitableitung der Wellenfunktion
@@ -140,10 +141,12 @@
     Au"serdem k"onnen durch geschicktes Umsortieren der Terme die Lagrange-Funktion $L(\zeta,\dot \zeta, t)$
     \begin{equation}
       L(\zeta,\dot \zeta, t) = \frac{1}{2}m\dot \zeta^2 - \frac{1}{2}m\omega_0^2\zeta^2 + S(t)\zeta
+      \label{lagrange_zeta}
     \end{equation}
       sowie die Bewegungsgleichung des klassischen getriebenen harmonischen  Oszillators \cite{husimi}
       \begin{equation}
         m\ddot \zeta + m\omega_0^2\zeta - S(t) = 0
+        \label{dgl_zeta}
       \end{equation}
     f"ur die Verschiebung $\zeta(t)$ identifiziert werden.
     Die Differentialgleichung f"ur $\Lambda(y,t)$ ist
@@ -168,7 +171,7 @@
     \begin{align}
       \begin{split}
       \Psi_n(x,t) &= \Psi_n(y=x-\zeta(t),t) \\
-      &= N_nH_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \text e^{\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2} \text e^{\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))-E_nt+\int_0^tL(\dot \zeta,\zeta,t')\:\text dt'\right)}\\
+      &= N_nH_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \text e^{\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2} \text e^{\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))-E_nt+\int_0^tL(\dot \zeta,\zeta,t')\:\text dt'\right)} \; , \\
       &n \in \mathbb{N}_0 \; .
     \end{split}
     \end{align}
@@ -180,10 +183,10 @@
     Die L"osungen des getriebenen Oszillators somit sind bez"uglich des Skalarproduktes (\ref{skalarprodukt_einzelner}) normiert.
 
     Die L"osung entspricht damit einem ,um die klassiche L"osung $\zeta(t)$ verschobenen, ungetriebenen Oszillator, mit einer zus"atlichen zeit- und ortsabh'angigen komplexen Phase.
-    Die treibende Kraft $S(t)$ geht nur, "uber die Lagrange-Funktion, in die komplexe Phase mit ein.
+    Die treibende Kraft $S(t)$ geht in die klassiche L"osung $\zeta(t)$ und direkt, "uber das Wirkungsintegral, in die komplexe Phase mit ein.
 
 
-    \subsection{\texorpdfstring{Identifizierung der Quaienergien $\epsilon_n$ und Floquet-Moden $\Phi_n(x,t)$}{Identifizierung der Quaienergien \epsilon_n und Floquet-Moden \Phi_n(x,t)}}
+    \subsection{\texorpdfstring{Identifizierung der Quasienergien $\epsilon_n$ und Floquet-Moden $\Phi_n(x,t)$}{Identifizierung der Quasienergien \epsilon_n und Floquet-Moden \Phi_n(x,t)}}
       Nach dem Floquet'schen-Theorem f"ur periodische Hamilton-Operatoren (\ref{floquet_theorem}) kann die L"osung des getriebenen Oszillators geschrieben werden als
       \begin{equation}
         \Psi_n(x,t) = \text e^{\frac{-\text u}{\hbar}\epsilon_nt}\Phi_n(x,t) \; ,
@@ -191,13 +194,38 @@
       mit $\Phi_n(x,t)=\Phi_n(x,t+T)$.
       Nun k"onnen wir alle $T$-periodischen Terme als $\Phi_n(x,t)$ identifizieren, und alle Terme im Exponenten die linear in $t$ sind als $\frac{-\text i}{\hbar}\epsilon_n t$ \cite{haenggi}.
 
-      Alle Funktionen von $(x-\zeta(t))$ haben die Periode $T$ da $\zeta(T)$ als L"osung der klassichen Bewegungsgleichung mit $S(t)=S(t+T)$ die Periode $T$ hat.
-      Das Ergebnis des Integrals "uber die Lagrange Funktion kann nur $T$-periodisch oder linear in $t$ sein, so wie $E_n$, daher sind die Quasienergien gegeben durch
+      Alle Funktionen von $(x-\zeta(t))$ haben die Periode $T$, da $\zeta(T)$ als L"osung der klassichen Bewegungsgleichung mit $S(t)=S(t+T)$ die Periode $T$ hat.
+      Das Ergebnis des Integrals "uber die Lagrange Funktion kann nur $T$-periodisch oder linear in $t$ sein, deshalb sind die Quasienergien gegeben durch die $E_n$ und den linearen Teil des Integrals:
       \begin{equation}
-        \epsilon_n = E_n - \frac{1}{T} \int_0^T L(\dot \zeta, \zeta, t) \: \text d t
+        \epsilon_n = E_n - \frac{1}{T} \int_0^T L(\dot \zeta, \zeta, t) \: \text d t \; .
       \end{equation}
-      und die Floquet-Moden durch
+      Die Floquet-Moden sind
+      \begin{align}
+        \begin{split}
+          &\Phi_n(x,t) \\
+          &= N_nH_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \text e^{\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2} \text e^{\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))+\int_0^tL(\dot \zeta,\zeta,t')\:\text d t-\frac{t}{T} \int_0^T L(\dot \zeta,\zeta,t)\:\text dt\: \right)} \; .
+        \end{split}
+      \end{align}
+
+
+    \subsection{Quasienergien f'ur eine monochromatische Treibkraft}
+      Hier wird ein Beispiel einer treibenden Kraft diskutiert;
       \begin{equation}
+        S(t) = S(t+T) = Asin(\omega t),
+      \end{equation}
+      wobei $T=2\pi / \omega$ ist.
+      Setzen wir die allgemeine homogene L"osung gleich null, wird die L"osung $\zeta(t)$ der klassischen Bewegungsgleichung (\ref{dgl_zeta}) zu \cite{mads}
+      \begin{equation}
+        \zeta(t) = \frac{A\sin(\omega t)}{m(\omega_0^2 - \omega^2)} \; .
+      \end{equation}
+      Das Berechnen des Wirkungsintegrals und anschlie"sendes Identifizieren des linearen Anteils liefert die Quasienergien f"ur die gegebene Kraft:
+      \begin{equation}
+        \epsilon_n  = \hbar \omega_0(n+\frac{1}{2}) - \frac{A}{4m(\omega_0^2-\omega^2)} \;.
+      \end{equation}
+      Wie zu erkennen streben die Quasienergien, und somit die mittlere Energie des Systems (\ref{mittleres_H}), gegen Unendlich, wenn sich die Treibfrequenz $\omega$ nahe der Eigenfrequentz $\omega_0 $ des Oszillators befindet.
+      Da wir einen getriebenen Oszillator ohne D"ampfung betrachten, war dieses Ergebnis zu erwarten \cite{mads}.
+
+
 
 
 
