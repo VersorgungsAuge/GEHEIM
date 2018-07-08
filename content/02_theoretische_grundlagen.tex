@@ -27,16 +27,19 @@
     \epsilon_n \Phi_n(x,t) = (H(t)-\text{i}\hbar\frac{\partial}{\partial t})\Phi_n(x,t) = \cal{H}(t) \Phi_n(x,t) \; .
     \label{eigenwertproblem}
   \end{equation}
-  Die L"osung der Schr"odinger Gleichung konnte somit auf die L"osung eines Eigenwertproblems f"ur den neuen hermitischen Operator $\cal{H}(t)$ zur"uckgef"uhrt werden \cite{sherly}.
+  Die L"osung der Schr"odinger Gleichung konnte somit auf die L"osung eines Eigenwertproblems f"ur den neuen Operator $\cal{H}(t)$ zur"uckgef"uhrt werden \cite{sherly}.
 
   $\cal{H}(t)$ bzw. $H(t)$ ist hermitisch und operiert auf dem Hilbertraum $\cal{L}^2 \otimes \cal{T}$.
   $\cal{L}^2$ ist der Raum der quadratintegrablen Funktionen und $\cal{T}$ der Raum der auf $[0,T]$ integrablen Funktionen, da die Operatoren $T$ periodisch sind \cite{haenggi}.
   Nach dem Spekralsatz bilden die Eigenfunktionen $\Phi_n(x,t)$ von $\cal{H}(t)$ eine Orthogonalbasis von $\cal{L}^2 \otimes \cal{T}$, welche auf eine Orthonormalbasis normiert werden kann:
   %Es ergibt sich
-  \begin{equation}
-    \braket{\braket{\Phi_n(x,t)|\Phi_m(x,t)}} = \frac{1}{T} \int_0^T \int_{-\infty}^{\infty} \Phi_n^*(x,t)\Phi_m(x,t) \: \text{d}x\text{d}t = \delta_{n,m} \; .
+  \begin{align}
+    \begin{split}
+    \braket{\braket{\Phi_n(x,t)|\Phi_m(x,t)}} &= \frac{1}{T} \int_0^T \braket{\Phi_n(x,t)|\Phi_n(x,t)} \text{d}t \\
+    &= \frac{1}{T} \int_0^T \int_{-\infty}^{\infty} \Phi_n^*(x,t)\Phi_m(x,t) \: \text{d}x\text{d}t = \delta_{n,m} \; .
     \label{skalarprodukt_einzelner}
-  \end{equation}
+    \end{split}
+  \end{align}
 
 
 
@@ -65,11 +68,11 @@
       \text{i}\hbar\frac{\partial}{\partial t} = -\omega \frac{\partial \cal{H}(t)}{\partial \omega}
     \end{equation}
     gilt \cite{haenggi}.
-    Da f"ur $\epsilon_n$ und $\cal H(t)$ mit (\ref{eigenwertproblem}) eine Art station"are Schr"oginger-Gleichung vorliegt, kann das Hellman-Feynman Theorem angewendet werden \cite{hellmann online quelle}.
-    Dieses gibt eine Verbindung zwischen den Ableitungen der Eigenwerte und der Ableitung des Hamiltom-Operators.
+    Da f"ur $\epsilon_n$ und $\cal H(t)$ mit (\ref{eigenwertproblem}) eine Eigenwertgleichung vorliegt, kann das Hellman-Feynman Theorem angewendet werden \cite{hellmann online quelle}.
+    Dieses gibt eine Verbindung zwischen den Ableitungen der Eigenwerte und der Ableitung des Hamiltom-Operators an.
     In unserem Fall erhalten wir dadurch
     \begin{equation}
-      \frac{\partial \epsilon_n}{\partial \omega} = \braket{\braket{\Phi_n(x,t)|\frac{\partial \cal H(t)}{\partial \omega}|\Phi_n(x,t)}}
+      \frac{\partial \epsilon_n}{\partial \omega} = \braket{\braket{\Phi_n(x,t)|\frac{\partial \cal H(t)}{\partial \omega}|\Phi_n(x,t)}} \; .
     \end{equation}
     Damit folgt \cite{haenggi}:
     \begin{equation}
@@ -82,6 +85,7 @@
 
 
   \section{Allgemeine L"osung der Schr"odinger-Gleichung des getriebenen harmonischen Oszillators in der Quantenmechanik}
+    \label{lsg_einzelner}
     Der Hamilton-Operator eines harmonischen Oszillators der Masse $m$, welcher mit einer beliebigen aber periodischen "au"seren Kraft $S(t)=S(t+T)$ getrieben wird, hat die Form
     \begin{equation}
       H(t) = H(t+T) = \frac{p^2}{2m} + \frac{1}{2}m\omega_0^2x^2-S(t)x \; ,
@@ -172,7 +176,7 @@
       \begin{split}
       \Psi_n(x,t) &= \Psi_n(y=x-\zeta(t),t) \\
       &= N_nH_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \text e^{\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2} \text e^{\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))-E_nt+\int_0^tL(\dot \zeta,\zeta,t')\:\text dt'\right)} \; , \\
-      &n \in \mathbb{N}_0 \; .
+      &\quad n \in \mathbb{N}_0 \; .
     \end{split}
     \end{align}
     Dabei sind $H_n$ die Hermit-Polynome, $E_n = \hbar \omega_0(n+1/2)$ die bekannten Eigenenergien des ungetriebenen Oszillators und
@@ -180,7 +184,7 @@
       N_n = \left(\frac{m\omega_0}{\pi \hbar}\right) \frac{1}{\sqrt{2^nn!}}
     \end{equation}
     dessen Normierungsfaktoren.
-    Die L"osungen des getriebenen Oszillators somit sind bez"uglich des Skalarproduktes (\ref{skalarprodukt_einzelner}) normiert.
+    Die L"osungen des getriebenen Oszillators sind somit bez"uglich des Skalarproduktes (\ref{skalarprodukt_einzelner}) normiert.
 
     Die L"osung entspricht damit einem ,um die klassiche L"osung $\zeta(t)$ verschobenen, ungetriebenen Oszillator, mit einer zus"atlichen zeit- und ortsabh'angigen komplexen Phase.
     Die treibende Kraft $S(t)$ geht in die klassiche L"osung $\zeta(t)$ und direkt, "uber das Wirkungsintegral, in die komplexe Phase mit ein.
@@ -199,7 +203,7 @@
       \begin{equation}
         \epsilon_n = E_n - \frac{1}{T} \int_0^T L(\dot \zeta, \zeta, t) \: \text d t \; .
       \end{equation}
-      Die Floquet-Moden sind
+      Die Floquet-Moden sind demnach
       \begin{align}
         \begin{split}
           &\Phi_n(x,t) \\
@@ -208,8 +212,8 @@
       \end{align}
 
 
-    \subsection{Quasienergien f'ur eine monochromatische Treibkraft}
-      Hier wird ein Beispiel einer treibenden Kraft diskutiert;
+    \subsection{Quasienergien f'ur eine sinusodiale Treibkraft}
+      Hier wird ein Beispiel einer treibenden Kraft diskutiert \cite{haenggi};
       \begin{equation}
         S(t) = S(t+T) = Asin(\omega t),
       \end{equation}
@@ -222,7 +226,7 @@
       \begin{equation}
         \epsilon_n  = \hbar \omega_0(n+\frac{1}{2}) - \frac{A}{4m(\omega_0^2-\omega^2)} \;.
       \end{equation}
-      Wie zu erkennen streben die Quasienergien, und somit die mittlere Energie des Systems (\ref{mittleres_H}), gegen Unendlich, wenn sich die Treibfrequenz $\omega$ nahe der Eigenfrequentz $\omega_0 $ des Oszillators befindet.
+      Wie zu erkennen streben die Quasienergien, und somit die mittlere Energie des Systems (\ref{mittleres_H}), gegen Unendlich, wenn sich die Treibfrequenz $\omega$ nahe der Eigenfrequentz des Oszillators $\omega_0 $ befindet.
       Da wir einen getriebenen Oszillator ohne D"ampfung betrachten, war dieses Ergebnis zu erwarten \cite{mads}.
 
 

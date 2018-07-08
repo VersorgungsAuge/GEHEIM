@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  6 JUL 2018 15:43
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  8 JUL 2018 02:25
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -441,7 +441,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.566 seconds)
+luaotfload | main : initialization completed in 0.581 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex
 .sty
@@ -2183,36 +2183,21 @@ LaTeX Warning: Citation 'haenggi' on page 2 undefined on input line 33.
 
 ]
 
-LaTeX Warning: Citation 'haenggi' on page 3 undefined on input line 67.
+LaTeX Warning: Citation 'haenggi' on page 3 undefined on input line 70.
 
 
 LaTeX Warning: Citation 'hellmann online quelle' on page 3 undefined on input li
-ne 68.
+ne 71.
 
 
-Overfull \hbox (93.94678pt too wide) in paragraph at lines 66--71
-\EU2/lmr/m/n/10.95 Gleichung vor-liegt, kann das Hellman-Feynman Theo-rem an-ge
--wen-det wer-den [[]].
- []
+LaTeX Warning: Citation 'haenggi' on page 3 undefined on input line 77.
+
+[3] [4]
+
+LaTeX Warning: Citation 'haenggi' on page 5 undefined on input line 94.
 
 
-LaTeX Warning: Citation 'haenggi' on page 3 undefined on input line 74.
-
-[3]
-
-LaTeX Warning: Citation 'haenggi' on page 4 undefined on input line 90.
-
-
-Overfull \hbox (54.86266pt too wide) in paragraph at lines 123--123
-[] 
- []
-
-[4]
-
-LaTeX Warning: Citation 'husimi' on page 5 undefined on input line 146.
-
-
-Overfull \hbox (31.82513pt too wide) in paragraph at lines 177--177
+Overfull \hbox (54.86266pt too wide) in paragraph at lines 127--127
 [] 
  []
 
@@ -2224,29 +2209,41 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                processing, but you should do this yourself,
 (scrlayer-scrpage)                e.g., setting typearea's option
 (scrlayer-scrpage)                `headheight=27.2pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 18
-1.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 14
+2.
 
 
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
  [5]
 
-LaTeX Warning: Citation 'haenggi' on page 6 undefined on input line 195.
+LaTeX Warning: Citation 'husimi' on page 6 undefined on input line 150.
 
 
-Overfull \hbox (41.27605pt too wide) in paragraph at lines 208--208
+Overfull \hbox (31.82513pt too wide) in paragraph at lines 181--181
+[] 
+ []
+
+[6]
+
+LaTeX Warning: Citation 'haenggi' on page 7 undefined on input line 199.
+
+
+Overfull \hbox (41.27605pt too wide) in paragraph at lines 212--212
 [] 
  []
 
 
-LaTeX Warning: Citation 'mads' on page 6 undefined on input line 217.
+LaTeX Warning: Citation 'haenggi' on page 7 undefined on input line 216.
 
-[6]
 
-LaTeX Warning: Citation 'mads' on page 7 undefined on input line 226.
+LaTeX Warning: Citation 'mads' on page 7 undefined on input line 221.
 
-) (./content/03_ergebnisse.tex [7]
+[7]
+
+LaTeX Warning: Citation 'mads' on page 8 undefined on input line 230.
+
+) (./content/03_ergebnisse.tex [8]
 chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2257,26 +2254,30 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 4.
 
 
-Overfull \hbox (4.32019pt too wide) in paragraph at lines 40--44
+Overfull \hbox (4.32019pt too wide) in paragraph at lines 40--46
 []\EU2/lmr/m/n/10.95 Nun iden-ti-fi-zie-ren wir al-le Ter-me der Lagrange-Funkt
 ion, wel-che nach der Ausf”uhrung
  []
 
-[8
+[9
 
-]) (./content/04_zusammenfassung_und_ausblick.tex [9]
+] [10]
+
+LaTeX Warning: Citation 'online quelle' on page 11 undefined on input line 97.
+
+) (./content/04_zusammenfassung_und_ausblick.tex [11]
 chapter 4.
-) (./content/a_anhang.tex [10
+) (./content/a_anhang.tex [12
 
 ]
 chapter A.
-) [11
+) [13
 
 ]
 chapter without number
 (load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
 /otl/lmromancaps10-regular.luc)(load luc: /home/ismael/.local/texlive/2016/texmf
--var/luatex-cache/generic/fonts/otl/lmroman8-italic.luc) [12
+-var/luatex-cache/generic/fonts/otl/lmroman8-italic.luc) [14
 
 
 Missing character: There is no ε (U+03B5) in font file:lmroman10-italic:script=
@@ -2294,7 +2295,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
- [13
+ [15
 
 
 ]
@@ -2305,9 +2306,9 @@ Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: 47045226527DE6612E13286DB579203C;11389.
+(rerunfilecheck)             Checksum: 87905F9769A4D0AEEDD23C3E9378C6AB;12456.
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
-(rerunfilecheck)             Checksum: D10E96BF0B42DB1FFD129C75C440F393;1596.
+(rerunfilecheck)             Checksum: 41491CDE39124C23850FAB4F975CF4A3;1821.
 
 
 LaTeX Warning: There were undefined references.
@@ -2324,14 +2325,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45288 strings out of 495118
+ 45299 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 9217 words of node memory still in use:
-   68 hlist, 13 vlist, 8 rule, 8 math, 934 glue, 21 kern, 2 sub_mlist, 66 glyph,
- 227 attribute, 60 glue_spec, 227 attribute_list, 1 write, 8 pdf_action nodes
-   avail lists: 1:4,2:696,3:233,4:84,5:274,6:1954,7:642,8:127,9:706,10:10,11:213
+ 10528 words of node memory still in use:
+   86 hlist, 11 vlist, 10 rule, 4 math, 1069 glue, 19 kern, 2 sub_mlist, 88 glyp
+h, 255 attribute, 60 glue_spec, 255 attribute_list, 1 write, 8 pdf_action nodes
+   avail lists: 1:4,2:696,3:233,4:86,5:273,6:2118,7:642,8:125,9:682,10:13,11:213
 
- 47531 multiletter control sequences out of 65536+600000
+ 47533 multiletter control sequences out of 65536+600000
  99 fonts using 17841271 bytes
  60i,20n,81p,8817b,2482s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-i
@@ -2352,10 +2353,10 @@ cal/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home
 .otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmrom
 an10-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/pub
 lic/lm/lmsans10-bold.otf>
-Output written on thesis.pdf (18 pages, 122948 bytes).
+Output written on thesis.pdf (20 pages, 129515 bytes).
 
-PDF statistics: 343 PDF objects out of 1000 (max. 8388607)
- 274 compressed objects within 3 object streams
- 84 named destinations out of 1000 (max. 131072)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 364 PDF objects out of 1000 (max. 8388607)
+ 293 compressed objects within 3 object streams
+ 93 named destinations out of 1000 (max. 131072)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2151,8 +2151,10 @@
     <bcf:citekey order="7">haenggi</bcf:citekey>
     <bcf:citekey order="8">husimi</bcf:citekey>
     <bcf:citekey order="9">haenggi</bcf:citekey>
-    <bcf:citekey order="10">mads</bcf:citekey>
+    <bcf:citekey order="10">haenggi</bcf:citekey>
     <bcf:citekey order="11">mads</bcf:citekey>
+    <bcf:citekey order="12">mads</bcf:citekey>
+    <bcf:citekey order="13">online quelle</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

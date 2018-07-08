@@ -2,7 +2,7 @@
 
 
 \section{Quasienergien des einzelnen getriebenen Oszillators f"ur eine beliebige periodische Treibkraft $S(t)$}
-  Um die Quasienergien einer beliebigen periodisch treibenden Kraft auf elegante Weise zu bestimmen, ohne ein Wirkungsintegral berechnen zu m"ussen, setzen wir eine komplexe Furier-Reihe an:
+  Um die Quasienergien einer beliebigen periodisch treibenden Kraft auf elegante Weise zu bestimmen, und ohne ein Wirkungsintegral berechnen zu m"ussen, setzen wir eine komplexe Furier-Reihe an:
   \begin{equation}
     S(t) = \sum_{j=-\infty}^\infty c_j \text e^{\text ij\omega t}, \; c_j = \frac{1}{T} \int_0^T S(t) \text e^{-ij\omega t} \: \text d t \; .
   \end{equation}
@@ -23,7 +23,7 @@
       L &= \frac{1}{2}m\dot \zeta^2 - \frac{1}{2}m\omega_0^2\zeta^2 + S(t)\zeta \\
        &=\sum_j \sum_l \left[ \frac{-\omega^2}{2m} \frac{jc_j}{-j^2\omega^2+\omega_0^2} \frac{lc_l}{-l^2\omega^2+\omega_0^2}
        -\frac{\omega_0^2}{2m} \frac{c_j}{-j^2\omega^2+\omega_0^2} \frac{c_l}{-l^2\omega^2+\omega_0^2} \right. \\
-        &\left. \quad + \frac{1}{m} \frac{c_jc_l}{-j^2\omega^2+\omega_0^2} \text e^{\text i(j+l)\omega t} \right] \; , \; j,l \in \mathbb{Z} \; .
+        &\left. \quad + \frac{1}{m} \frac{c_jc_l}{-j^2\omega^2+\omega_0^2} \right] \text e^{\text i(j+l)\omega t}  \; , \; j,l \in \mathbb{Z} \; .
      \end{split}
    \end{align}
   \iffalse
@@ -40,12 +40,8 @@
    Nun identifizieren wir alle Terme der Lagrange-Funktion, welche nach der Ausf"uhrung des Wirkungsintegrals linear in der Zeit $t$ sind, ohne dieses explizit zu berechnen.
    Denn wir wissen, dass die Exponentialterme, welche sich beim Integrieren nach der Zeit reproduzieren, nicht linear in $t$ sein k"onnen.
    Daher werden nur die konstanten Terme, welche entstehen wenn die Exponentialterme wegfallen, eine lineare Abh"angigkeit aufweisen.
-   Die Exponentialterme werden 1 wenn
-   \begin{equation}
-     j=-l
-   \end{equation}
-   ist.
-   Infolgedessen werden die Doppelsummen, die bei der Quadrierung entstanden, wieder zur Einzelsumme.
+   Die Exponentialterme werden 1 wenn $j=-l$ ist.
+   Infolgedessen wird die Doppelsumme, die bei der Quadrierung entstanden ist, wieder zur Einzelsumme.
    Wir fassen den linearen Teil des Wirkungsintegrals zusammen:
    \begin{align}
      \begin{split}
@@ -59,17 +55,64 @@
      \end{split}
    \end{align}
 
-    und die Quasienergien $\epsilon_n$ sind hiernach:
+   Die Quasienergien $\epsilon_n$ sind hiernach:
    \begin{align}
      \begin{split}
        \epsilon_n &= \hbar \omega_0(n+\frac{1}{2}) - \sum_j \frac{c_jc_{-j}}{2m(-j^2\omega^2+\omega_0^2)}
      \end{split}
    \end{align}
-   Interessanterweise kommt es in obiger Formel nicht nur bei $\omega = \omega_0$ zu einer Singularit"at, sondern bei allen $\omega = \omega_0 / j$.
+   Interessanterweise kommt es in obiger Formel nicht nur bei $\omega = \omega_0$ zu einer Singularit"at, wie bei der Beispielkraft $S(t) = A\sin(\omega t)$, sondern bei allen $\omega = \omega_0 / j$.
 
 
 
    \subsection{Beispiele f"ur S(t) dreieck rechteck delta}
+
+
+
+
+
+\section{Zwei getriebene gekoppelte Oszillatoren}
+  In diesem Teil der Arbeit wird mit Hilfe der aus (\ref{lsg_einzelner}) bekannten L"osung des einzelnen getrieben Oszillators, die Wellenfunktionen f"ur ein System hergeleitet, das aus zwei gekoppelten Oszillatoren $x_1$ und $x_2$ der gleichen Masse $m$ besteht, von denen einer mit einer periodischen Kraft $S(t) = S(t+T)$ angetrieben wird.
+  Die Potentialkonstanten $k$ der beiden Oszillatoren sind ebenfalls identisch, die Koplungskonstante $\kappa$ zwischen den Oszillatoren ist allerdings anders.
+  Der Hamilton-Operator dieses Systems kann direkt aus der klassichen Mechanik "ubernommen werden:
+  \begin{equation}
+    H(t) = H(t+T) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)x_1 \; .
+  \end{equation}
+  Es werden auch die Erwartungswerte f"ur  den Ort $\braket{x_{1,2}}_{n.l}$ und den Impuls $\braket{p_{1,2}}_{n.l}$, genauso wie der Erwartungswert der Energie $\braket{H}_{n,l}$ und dessen zeitliches Mittel $\bar{H}_{n,l}$ berechnet und visualisiert.
+
+  Zur L"osung des Systems wird eine unit"are Koordinatentransformation eingef"uhrt, welche den Hamilton-Operator $H(x_1,x_2,p_1,p_2,t)$ zu zwei in den neuen Koordinaten unabh"h"angigen Hamilton-Operatoren $H_+(x_+,p_+,t)$ und $H_-(x_-,p_-,t)$ mit effektiven Potentialkonstanten $k_+,k_-$ entkoppelt.
+  Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen getriebenen Oszillators.
+
+
+
+  \subsection{Schr"odinger-Gleichung mit unabh"angigen Hamilton-Operatoren}
+    Liegt ein Hamilton-Operator der Form
+    \begin{equation}
+      H = \sum_i H_i(x_i,p_i,t) \;,\; H_i : \cal H_i \rightarrow H_i
+    \end{equation}
+    vor, f"uhrt der Ansatz
+    \begin{equation}
+      \Psi = \prod_i \Psi(x_i,p_i,t) \; , \; \Psi_i \in \cal H_i
+    \end{equation}
+    auf unabh"angige Schr"odinger-Gleichungen f"ur die einzelnen Wellenfunktionen $\Psi_i(x_i,p_i,t)$ \cite{online quelle}.
+    Um dies schnell zu zeigen, schauen wir uns den Fall von zwei unabh"angigen Hamiltonions an:
+    \begin{align}
+      \begin{split}
+        \text i \hbar \frac{\partial}{\partial t} \Psi = H\Psi \iff \Psi_2 H_1 \Psi_1 + \Psi_1 H_2 \Psi_2 = \text i \hbar \left(\frac{\partial}{\partial t} \Psi_1\Psi_2 + \Psi_1\frac{\partial}{\partial t} \Psi_2 \right) \; .
+      \end{split}
+    \end{align}
+    Da die Operatoren nur auf Funktionen wirken, die auf dem selben Raum operieren, kann man sie an der jewails anderen Funktion vorbei ziehen.
+    Wenn wir weiterhin durch den $\Psi_1\Psi_2$ teilen, wird die Gleichung zu:
+    \begin{equation}
+      \frac{1}{\Psi_1}H_1\Psi_2 + \frac{1}{\Psi_2}H_2\Psi_1 = \text i \hbar \left(\frac{\frac{\partial}{\partial t} \Psi_1}{\Psi_1} + \frac{\frac{\partial}{\partial t} \Psi_2}{\Psi_2} \right) \; .
+    \end{equation}
+    Weil die linke und rechte Seite fur alle unabh"angigen $x_1,p_1,x_2,p_2$ gleich sein m"ussen, folgen die einzelnen Schr"odinger-Gleichungen:
+    \begin{equation}
+      \frac{1}{\Psi_1}H_1\Psi_2 = \frac{\frac{\partial}{\partial t} \Psi_1}{\Psi_1} \; , \; \frac{1}{\Psi_2}H_2\Psi_11 = \frac{\frac{\partial}{\partial t} \Psi_2}{\Psi_2} \; .
+    \end{equation}
+
+
+
 
 
 
