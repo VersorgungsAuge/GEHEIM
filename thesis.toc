@@ -5,16 +5,16 @@
 \select@language {german}
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{2}{chapter.2}
-\contentsline {section}{\numberline {2.1}Floquet Theorie und Floquet'sches Theorem}{2}{section.2.1}
+\contentsline {section}{\numberline {2.1}Floquet-Theorie}{2}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Zeitlich gemittelter Erwartungswert der Energie $\bar {H}_n$}{3}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}Allgemeine L"osung der Schr"odinger-Gleichung des getriebenen harmonischen Oszillators in der Quantenmechanik}{5}{section.2.2}
+\contentsline {section}{\numberline {2.2}Allgemeine Lösung der Schrödinger-Gleichung des getriebenen harmonischen Oszillators in der Quantenmechanik}{5}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Identifizierung der Quasienergien $\mitvarepsilon _n$ und Floquet-Moden $\mitPhi _n(x,t)$}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Quasienergien f'ur eine sinusodiale Treibkraft}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Quasienergien für eine sinusoidiale Treibkraft}{8}{subsection.2.2.2}
 \contentsline {chapter}{\numberline {3}Ergebnisse}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Quasienergien des einzelnen getriebenen Oszillators f"ur eine beliebige periodische Treibkraft $S(t)$}{9}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Beispiele f"ur S(t) dreieck rechteck delta}{10}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.1}Quasienergien des einzelnen getriebenen Oszillators für eine beliebige periodische Treibkraft $S(t)$}{9}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Beispiele für S(t) dreieck rechteck delta}{10}{subsection.3.1.1}
 \contentsline {section}{\numberline {3.2}Zwei getriebene gekoppelte Oszillatoren}{10}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Schr"odinger-Gleichung mit unabh"angigen Hamilton-Operatoren}{11}{subsection.3.2.1}
-\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{12}{chapter.4}
-\contentsline {chapter}{\numberline {A}Ein Anhangskapitel}{13}{appendix.A}
-\contentsline {chapter}{\nonumberline Literatur}{14}{chapter*.5}
+\contentsline {subsection}{\numberline {3.2.1}Die Schrödinger-Gleichung mit unabhängigen Hamilton-Operatoren}{11}{subsection.3.2.1}
+\contentsline {chapter}{\numberline {4}Zusammenfassung und Ausblick}{13}{chapter.4}
+\contentsline {chapter}{\numberline {A}Ein Anhangskapitel}{14}{appendix.A}
+\contentsline {chapter}{\nonumberline Literatur}{15}{chapter*.4}

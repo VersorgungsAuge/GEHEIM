@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  8 JUL 2018 02:25
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  20 JUL 2018 19:34
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -441,7 +441,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.581 seconds)
+luaotfload | main : initialization completed in 0.442 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex
 .sty
@@ -2089,36 +2089,19 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-(./content/hints.tex
-Package microtype Info: Loading generic settings for font family
-(microtype)             `lmss' (encoding: EU2).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
-/otl/lmsans10-bold.luc)
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 7.
-
-(/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmtt.fd
-File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/font
-s/otl/lmmono10-regular.luc)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `lmtt' (encoding: EU2).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
-/otl/lmroman8-regular.luc)) [2
-
-
-
-{/home/ismael/.local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<logos/tu-logo.pdf, id=20, 339.2675pt x 55.20625pt>
+<logos/tu-logo.pdf, id=4, 339.2675pt x 55.20625pt>
 File: logos/tu-logo.pdf Graphic file (type pdf)
  <use logos/tu-logo.pdf>
 Package luatex.def Info: logos/tu-logo.pdf used on input line 156.
 (luatex.def)             Requested size: 262.29283pt x 42.67912pt.
 (load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
 /otl/lmroman12-bold.luc)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmss' (encoding: EU2).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
+/otl/lmsans10-bold.luc)
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 20.74031pt on input line 156.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
@@ -2141,12 +2124,15 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 9.99985pt on input line 156.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 6.9999pt on input line 156.
- [1
+
+[1
 
 
-<./logos/tu-logo.pdf>]
-warning  (pdf backend): ignoring duplicate destination with the name 'page.ii'
-[2
+
+
+
+{/home/ismael/.local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<
+./logos/tu-logo.pdf>] [2
 
 ] (./content/00_abstract.tex
 Language ngerman already loaded; id is 8) [3]
@@ -2169,9 +2155,13 @@ chapter 1.
 ]
 chapter 2.
 (load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
-/otl/lmroman6-regular.luc)
+/otl/lmroman8-regular.luc)(load luc: /home/ismael/.local/texlive/2016/texmf-var/
+luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
 
-LaTeX Warning: Citation 'haenlagrangei' on page 2 undefined on input line 22.
+LaTeX Warning: Citation 'haengi' on page 2 undefined on input line 22.
+
+
+LaTeX Warning: Citation 'sherly' on page 2 undefined on input line 23.
 
 
 LaTeX Warning: Citation 'sherly' on page 2 undefined on input line 30.
@@ -2183,21 +2173,21 @@ LaTeX Warning: Citation 'haenggi' on page 2 undefined on input line 33.
 
 ]
 
-LaTeX Warning: Citation 'haenggi' on page 3 undefined on input line 70.
+LaTeX Warning: Citation 'haenggi' on page 3 undefined on input line 71.
 
 
 LaTeX Warning: Citation 'hellmann online quelle' on page 3 undefined on input li
-ne 71.
+ne 72.
 
 
-LaTeX Warning: Citation 'haenggi' on page 3 undefined on input line 77.
+LaTeX Warning: Citation 'haenggi' on page 3 undefined on input line 78.
 
 [3] [4]
 
-LaTeX Warning: Citation 'haenggi' on page 5 undefined on input line 94.
+LaTeX Warning: Citation 'haenggi' on page 5 undefined on input line 95.
 
 
-Overfull \hbox (54.86266pt too wide) in paragraph at lines 127--127
+Overfull \hbox (20.20813pt too wide) in paragraph at lines 129--129
 [] 
  []
 
@@ -2210,38 +2200,28 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting typearea's option
 (scrlayer-scrpage)                `headheight=27.2pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 14
-2.
+4.
 
 
 Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
  [5]
 
-LaTeX Warning: Citation 'husimi' on page 6 undefined on input line 150.
-
-
-Overfull \hbox (31.82513pt too wide) in paragraph at lines 181--181
-[] 
- []
+LaTeX Warning: Citation 'husimi' on page 6 undefined on input line 152.
 
 [6]
 
-LaTeX Warning: Citation 'haenggi' on page 7 undefined on input line 199.
+LaTeX Warning: Citation 'haenggi' on page 7 undefined on input line 202.
 
 
-Overfull \hbox (41.27605pt too wide) in paragraph at lines 212--212
-[] 
- []
+LaTeX Warning: Citation 'haenggi' on page 7 undefined on input line 221.
 
 
-LaTeX Warning: Citation 'haenggi' on page 7 undefined on input line 216.
-
-
-LaTeX Warning: Citation 'mads' on page 7 undefined on input line 221.
+LaTeX Warning: Citation 'mads' on page 7 undefined on input line 226.
 
 [7]
 
-LaTeX Warning: Citation 'mads' on page 8 undefined on input line 230.
+LaTeX Warning: Citation 'mads' on page 8 undefined on input line 235.
 
 ) (./content/03_ergebnisse.tex [8]
 chapter 3.
@@ -2253,35 +2233,44 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 4.
 
-
-Overfull \hbox (4.32019pt too wide) in paragraph at lines 40--46
-[]\EU2/lmr/m/n/10.95 Nun iden-ti-fi-zie-ren wir al-le Ter-me der Lagrange-Funkt
-ion, wel-che nach der Ausf”uhrung
- []
-
 [9
 
 ] [10]
 
 LaTeX Warning: Citation 'online quelle' on page 11 undefined on input line 97.
 
-) (./content/04_zusammenfassung_und_ausblick.tex [11]
+) (./content/04_zusammenfassung_und_ausblick.tex [11] [12]
 chapter 4.
-) (./content/a_anhang.tex [12
+) (./content/a_anhang.tex [13
 
 ]
 chapter A.
-) [13
+) [14
 
 ]
 chapter without number
 (load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
-/otl/lmromancaps10-regular.luc)(load luc: /home/ismael/.local/texlive/2016/texmf
--var/luatex-cache/generic/fonts/otl/lmroman8-italic.luc) [14
+/otl/lmromancaps10-regular.luc)
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 176.
+
+
+(/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmtt.fd
+File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/font
+s/otl/lmmono10-regular.luc)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: EU2).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
+/otl/lmroman8-italic.luc) [15
 
 
 Missing character: There is no ε (U+03B5) in font file:lmroman10-italic:script=
 latn;+trep;+tlig;!
+] [16
+
+
 ]
 (./content/eid_versicherung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
@@ -2295,10 +2284,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
- [15
-
-
-]
+ [17]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (./thesis.aux
 Language ngerman already loaded; id is 8
@@ -2306,9 +2292,9 @@ Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: 87905F9769A4D0AEEDD23C3E9378C6AB;12456.
+(rerunfilecheck)             Checksum: 5F782C980CFAE87A03A8E57B346A4490;12049.
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
-(rerunfilecheck)             Checksum: 41491CDE39124C23850FAB4F975CF4A3;1821.
+(rerunfilecheck)             Checksum: 9344B840A5247D15406599FF7BC907C1;1800.
 
 
 LaTeX Warning: There were undefined references.
@@ -2325,38 +2311,38 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45299 strings out of 495118
+ 45289 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 10528 words of node memory still in use:
-   86 hlist, 11 vlist, 10 rule, 4 math, 1069 glue, 19 kern, 2 sub_mlist, 88 glyp
-h, 255 attribute, 60 glue_spec, 255 attribute_list, 1 write, 8 pdf_action nodes
-   avail lists: 1:4,2:696,3:233,4:86,5:273,6:2118,7:642,8:125,9:682,10:13,11:213
+ 10199 words of node memory still in use:
+   86 hlist, 11 vlist, 10 rule, 4 math, 1026 glue, 19 kern, 2 sub_mlist, 88 glyp
+h, 248 attribute, 60 glue_spec, 248 attribute_list, 1 write, 8 pdf_action nodes
+   avail lists: 1:3,2:704,3:233,4:86,5:286,6:2043,7:642,8:109,9:682,10:14,11:222
 
- 47533 multiletter control sequences out of 65536+600000
+ 47530 multiletter control sequences out of 65536+600000
  99 fonts using 17841271 bytes
  60i,20n,81p,8817b,2482s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-i
 talic.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/
-lmromancaps10-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/ope
-ntype/public/lm/lmroman6-regular.otf></home/ismael/.local/texlive/2016/texmf-dis
-t/fonts/opentype/public/lm/lmromanslant10-regular.otf></home/ismael/.local/texli
-ve/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/ismael/.lo
-cal/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><
-/home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinm
-odern-math.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/publi
-c/lm-math/latinmodern-math.otf></home/ismael/.local/texlive/2016/texmf-dist/font
-s/opentype/public/lm/lmroman12-regular.otf></home/ismael/.local/texlive/2016/tex
-mf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></home/ismael/.local/texlive
-/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/ismael/.lo
-cal/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home
-/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-regular
-.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmrom
-an10-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/pub
-lic/lm/lmsans10-bold.otf>
-Output written on thesis.pdf (20 pages, 129515 bytes).
+lmmono10-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype
+/public/lm/lmromancaps10-regular.otf></home/ismael/.local/texlive/2016/texmf-dis
+t/fonts/opentype/public/lm/lmroman10-italic.otf></home/ismael/.local/texlive/201
+6/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/ismael/.local/
+texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/ism
+ael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmromanslant10-regul
+ar.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmr
+oman10-bold.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/publ
+ic/lm-math/latinmodern-math.otf></home/ismael/.local/texlive/2016/texmf-dist/fon
+ts/opentype/public/lm-math/latinmodern-math.otf></home/ismael/.local/texlive/201
+6/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/ismael/.l
+ocal/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></ho
+me/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regu
+lar.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lm
+sans10-bold.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/publ
+ic/lm/lmroman12-bold.otf>
+Output written on thesis.pdf (21 pages, 125830 bytes).
 
-PDF statistics: 364 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 365 PDF objects out of 1000 (max. 8388607)
  293 compressed objects within 3 object streams
- 93 named destinations out of 1000 (max. 131072)
+ 95 named destinations out of 1000 (max. 131072)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
