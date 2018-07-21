@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  21 JUL 2018 02:16
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  21 JUL 2018 20:18
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -441,7 +441,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.454 seconds)
+luaotfload | main : initialization completed in 0.579 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex
 .sty
@@ -2138,15 +2138,14 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 Language ngerman already loaded; id is 8) [3]
 Package tocbasic Info: character protrusion at toc deactivated on input line 162
 .
- (./thesis.toc
-Language ngerman already loaded; id is 8
-Language ngerman already loaded; id is 8)
+ (./thesis.toc)
 \tf@toc=\write5
 
 \openout5 = thesis.toc
  [4
 
-] (./content/01_einleitung.tex
+]
+(./content/01_einleitung.tex
 chapter 1.
 ) (./content/02_floquet-theorie.tex [1
 
@@ -2228,20 +2227,25 @@ LaTeX Warning: Citation 'mads' on page 8 undefined on input line 161.
 LaTeX Warning: Reference `floquet-moden-einzelner' on page 10 undefined on input
  line 234.
 
-[10]) (./content/04_gekoppelte_oszis.tex [11]
+[10] [11]
+
+LaTeX Warning: Reference `Betrag_einzelner' on page 12 undefined on input line 2
+93.
+
+) (./content/04_gekoppelte_oszis.tex [12]
 chapter 4.
 
-LaTeX Warning: Citation 'online quelle' on page 12 undefined on input line 26.
+LaTeX Warning: Citation 'online quelle' on page 13 undefined on input line 26.
 
-[12
+[13
 
-]) (./content/05_zusammenfassung_und_ausblick.tex [13]
+]) (./content/05_zusammenfassung_und_ausblick.tex [14]
 chapter 5.
-) (./content/a_anhang.tex [14
+) (./content/a_anhang.tex [15
 
 ]
 chapter A.
-) [15
+) [16
 
 ]
 chapter without number
@@ -2259,11 +2263,14 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 (load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
-/otl/lmroman8-italic.luc) [16
+/otl/lmroman8-italic.luc) [17
 
 
 Missing character: There is no ε (U+03B5) in font file:lmroman10-italic:script=
 latn;+trep;+tlig;!
+] [18
+
+
 ]
 (./content/eid_versicherung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
@@ -2277,21 +2284,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
- [17
-
-
-]
+ [19]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
  (./thesis.aux
 Language ngerman already loaded; id is 8
 Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
-Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: CB29815417F3B654A71F253F24BF188B;14207.
-Package rerunfilecheck Info: File `thesis.toc' has not changed.
-(rerunfilecheck)             Checksum: 9DC5824A02FE12F4AA3DB1455933814D;1942.
 
+
+Package rerunfilecheck Warning: File `thesis.aux' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `thesis.aux':
+(rerunfilecheck)             Before: AD3E7C4A2B4A14C3ED247BE8EE44D6CC;9146
+(rerunfilecheck)             After:  C80AD3AA8875CF63A9F437C1CF3B4AA4;14170.
+
+Package rerunfilecheck Warning: File `thesis.toc' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `thesis.toc':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  32E9C1372399A47B33571F7B019F50CA;2043.
 
 LaTeX Warning: There were undefined references.
 
@@ -2307,15 +2319,15 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45313 strings out of 495118
+ 45319 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 10946 words of node memory still in use:
-   86 hlist, 11 vlist, 10 rule, 4 math, 1121 glue, 19 kern, 2 sub_mlist, 88 glyp
-h, 270 attribute, 60 glue_spec, 270 attribute_list, 1 write, 7 pdf_action nodes
-   avail lists: 1:3,2:696,3:233,4:98,5:414,6:1991,7:642,8:113,9:936,10:14,11:219
+ 11839 words of node memory still in use:
+   86 hlist, 11 vlist, 10 rule, 4 math, 1241 glue, 19 kern, 2 sub_mlist, 88 glyp
+h, 286 attribute, 59 glue_spec, 286 attribute_list, 1 write, 6 pdf_action nodes
+   avail lists: 1:3,2:704,3:233,4:78,5:411,6:1985,7:642,8:113,9:928,10:14,11:219
 
- 47540 multiletter control sequences out of 65536+600000
- 99 fonts using 17841167 bytes
+ 47538 multiletter control sequences out of 65536+600000
+ 99 fonts using 17841063 bytes
  60i,22n,85p,8817b,2482s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-i
 talic.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/
@@ -2335,10 +2347,10 @@ me/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regu
 lar.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lm
 sans10-bold.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/publ
 ic/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (21 pages, 132602 bytes).
+Output written on thesis.pdf (23 pages, 136668 bytes).
 
-PDF statistics: 387 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 389 PDF objects out of 1000 (max. 8388607)
  314 compressed objects within 4 object streams
- 100 named destinations out of 1000 (max. 131072)
+ 108 named destinations out of 1000 (max. 131072)
  105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

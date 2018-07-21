@@ -100,8 +100,8 @@
     \begin{split}
     \Psi_n(x,t) &= \Psi_n(y=x-\zeta(t),t) \\
     &= N_nO_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \text e^{\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2} \\
-    &\quad \cdot \text e^{\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))-E_nt+\int_0^tL(\dot \zeta,\zeta,t')\:\text dt'\right)} \; , \\
-    &\quad \quad n \in \mathbb{N}_0 \; .
+    &\quad \cdot \text e^{\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))-E_nt+\int_0^tL(\dot \zeta,\zeta,t')\:\text dt'\right)} \; ,
+    \; n \in \mathbb{N}_0 \; .
     \label{gesamtlsg_einzelner}
   \end{split}
   \end{align}
@@ -182,9 +182,9 @@
   gilt, womit sich die Lagrange-Funktion (\ref{lagrange_zeta}) ergibt zu:
   \begin{align}
     \begin{split}
-      L &= \frac{1}{2}m\dot \zeta^2 - \frac{1}{2}m\omega_0^2\zeta^2 + S(t)\zeta \\
+      L &= \frac{1}{2}m\dot \zeta^2 - \frac{1}{2}m\omega_0^2\zeta^2 + S(t)\zeta \notag\\
        &=\sum_j \sum_l \left[ \frac{-\omega^2}{2m} \frac{jc_j}{-j^2\omega^2+\omega_0^2} \frac{lc_l}{-l^2\omega^2+\omega_0^2}
-       -\frac{\omega_0^2}{2m} \frac{c_j}{-j^2\omega^2+\omega_0^2} \frac{c_l}{-l^2\omega^2+\omega_0^2} \right. \\
+       -\frac{\omega_0^2}{2m} \frac{c_j}{-j^2\omega^2+\omega_0^2} \frac{c_l}{-l^2\omega^2+\omega_0^2} \right. \notag\\
         &\left. \quad + \frac{1}{m} \frac{c_jc_l}{-j^2\omega^2+\omega_0^2} \right] \text e^{\text i(j+l)\omega t}  \; , \; j,l \in \mathbb{Z} \; .
      \end{split}
    \end{align}
@@ -237,7 +237,7 @@
     \Psi_n^*(x,t)\Psi_n(x,t) = |\Psi_n(x,t)|^2 = |\Phi_n(x,t)|^2 = |\Psi_{n,ung}(x-\zeta(t),t)|^2 = |\Psi_{n,ung}(y,t)|^2 \; ,
     \label{betrag_einzelner}
   \end{equation}
-  wobei $\Psi_{n,ung}(x,t)$ die Zust"ande des ungetriebenen Oszillators bezeichnen.
+  wobei $\Psi_{n,ung}(y,t)$ die Zust"ande des ungetriebenen Oszillators bezeichnen.
 
   Bei dem Integral von $-\infty$ bis $\infty$ ist eine konstante Verschiebung der Variable irrelevant.
   Au"serdem sind die $\Psi_{n,ung}(y,t)$ auf dem Raum normiert, daher sind auch die $\Psi_n(x,t)$ auf $x \in (-\infty,\infty)$ normiert, wie bereits am Ende von Kapitel \ref{lsg_einzelner} erw"ahnt.
@@ -251,7 +251,7 @@
       \braket{x}_n = \int_{-\infty}^{\infty} \Psi_n^*(x,t)x\Psi_n(x,t) \: \text dx
       = \int_{-\infty}^{\infty} |\Psi_n(x,t)|^2 x \: \text dx \; .
     \end{equation}
-    Mit der Substitution $y=x-\zeta(t)$ und unter Verwendung von (\ref{betrag_einzelner}) und der Normierung gelangen wir zu
+    Mit der Substitution $y=x-\zeta(t)$ und unter Verwendung von (\ref{betrag_einzelner}) und der Normierung der ungetriebenen Oszillator-Funktionen gelangen wir zu
     \begin{align}
       \begin{split}
         \braket{x}_n &= \int_{-\infty}^{\infty} |\Psi_{n,ung}(x-\zeta(t),t)|^2 x \: \text dx
@@ -259,7 +259,64 @@
         &= \braket{y}_{n,ung} + \zeta(t) = \zeta(t) \; .
       \end{split}
     \end{align}
-    Da die Erwartungswerte $\braket{y}_{n,ung}$ f"ur den Ort des ungetrienenen Oszillators verschwinden, ist der Erwartungswert jedes Zust"andes des getriebenen Oszillators genau $\zeta(t)$.
+    Da die Erwartungswerte $\braket{y}_{n,ung}$ f"ur den Ort des ungetriebenen Oszillators verschwinden, ist der Erwartungswert jedes Zust"andes des getriebenen Oszillators genau $\zeta(t)$.
+
+    Das bedeutet, der Erwartungswert $\braket{x}_n$ f"ur den Ort eines beliebigen Zustandes des quantenmechanischen getriebenen Oszillators entspricht genau der L"osung $\zeta(t)$ der Bewegungsgleichung des klassischen getriebenen Oszillators.
+    Der Erwartungswert des ungetriebenen Oszillators, welcher im Ursprung liegt, ist somit um $\zeta(t)$ verschoben.
+    Dies entspricht dem Ergebnis, wie es auch bei einer konstanten Verschiebung der Ortsvariable/-operator $x$ erhalten wird, z.B. beim Oszillator im zus"atzlichen konstanten elektrischem Feld, nur das die Verschiebung hier die zeitabh"angige klassiche L"osung ist.
+
+    Da $\braket{x}_n=\zeta(t)$ logischerweise die klassiche Bewegungsgleichung
+    \begin{equation}
+      m\ddot{\braket{x}}_n + m\omega_0^2\braket{x}_n - S(t) = 0
+    \end{equation}
+    erf"ullt, ist erg"anzend das Ehrenfest-Theorem best"atigt.
+
+    F"ur den Erwartungswert von $x^2$ ergibt sich komplett analog
+    \begin{align}
+      \braket{x^2}_n &= \int_{-\infty}^{\infty} |\Psi_n(x,t)|^2 x^2 \: \text dx
+      = \int_{-\infty}^{\infty} |\Psi_{n,ung}(y,t)|^2 (y+\zeta(t))^2 \: \text dy \notag \\
+      &= \braket{y^2}_{n,ung} + 2\braket{y}_{n,ung} + \zeta^2(t)
+      = l^2(2n+1) + \zeta^2(t) \; ,
+    \end{align}
+    zusammen mit der charakteristischen L"ange des ungetriebenen Oszillators
+    \begin{equation}
+      l = \sqrt{\frac{\hbar}{2m\omega_0}} \; .
+    \end{equation}
+    Der Erwartungswert ist nun um $\zeta^2(t)$ verschoben.
+
+    Insgesamt k"onnen alle Erwartungswerte $\braket{x^m}_n$ auf diese Art mit den bekannten ungetriebenen Erwartungswerten berechnet werden.
+
+
+
+
+  \subsection{Erwartungswerte f"ur den Impuls}
+    Um den Erwartungswert $\braket{p}_n$ des Impulsoperators f"ur den Zustand $\Psi_n(x,t)$ des angetriebenen Oszillators zu ermitteln, nutzen wir gleicherma"sen die Beziehung (\ref{Betrag_einzelner}) und unterdessen ein geschicktes Anwenden der Produktregel, um das Problem erneut auf den ungetriebenen Oszilaltor zu beschr"anken.
+
+    Wieder w"ahlen wir den Variablenwechsel zur neuen Variable $y=x-\zeta(t)$, weil Impulsoperator $p=p_x$ in der neuen Koordinate identisch ist, wie schon am Anfang von kapitel \ref{lsg_einzelner} angedeutet, was sich leicht mit der Kettenregel zeigen l"asst:
+    \begin{equation}
+      \frac{\partial}{\partial x} = \frac{\partial}{\partial y}\frac{\partial y}{\partial x} = \frac{\partial}{\partial y} \cdot 1 \Rightarrow p_x \equiv p_y \; .
+    \end{equation}
+    Weiterhin k"onnen wir den $y$-unabh"angigen Teil der komplexen Phasen in den Wellenfunktionen (\ref{gesamtlsg_einzelner}) sofort am Operator vorbeiziehen und zu 1 zusmmenfassen, daher schreiben wir $\braket{p}_n$ als
+    \begin{align}
+      \braket{p}_n &= \int_{-\infty}^{\infty} \Psi^*_n(x,t) \frac{p}{2m} \Psi_n(x,t) \; \text dx
+      = \int_{-\infty}^{\infty} \Psi^*_n(y+\zeta(t),t) \frac{p_y}{2m} \Psi_n(y+\zeta(t),t) \: \text dy \notag\\
+      &= \int_{-\infty}^{\infty} N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\text e^{\frac{-\text i}{\hbar}m\zeta(t)y} \frac{p_y}{2m} N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\text e^{\frac{+\text i}{\hbar}m\zeta(t)y} \: \text dy \; .
+    \end{align}
+    Nun spalten wir die Anwendung des impulsoperators auf den rechten Teil mit der Produktregel auf, in die Anwendung auf die ungetriebene Oszillatorfunktion (in $y$) und die Anwendung auf die verbleibende komplexe Phase:
+    \begin{align}
+      \frac{p_y}{2m} N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\text e^{\frac{+\text i}{\hbar}m\zeta(t)y}
+      &= \left(\frac{p_y}{2m} N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\right) \text e^{\frac{+\text i}{\hbar}m\zeta(t)y} \notag\\
+      &\quad + N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} \left(\frac{p_y}{2m} \text e^{\frac{+\text i}{\hbar}m\zeta(t)y}\right) \notag\\
+    \end{align}
+
+
+
+
+
+
+
+
+
 
 %\section{\texorpdfstring{Zeitlich gemittelter Erwartungswert der Energie $\bar{H}_n$}{Zeitlich gemittelter Erwartungswert der Energie bar{H}_n}}
 
