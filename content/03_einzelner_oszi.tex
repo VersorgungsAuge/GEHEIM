@@ -159,6 +159,7 @@
     \end{equation}
     Wie zu erkennen streben die Quasienergien, und somit die mittlere Energie des Systems (\ref{mittleres_H}), gegen Unendlich, wenn sich die Treibfrequenz $\omega$ nahe der Eigenfrequenz des Oszillators $\omega_0 $ befindet.
     Da wir einen getriebenen Oszillator ohne Dämpfung betrachten, war dieses Ergebnis zu erwarten \cite{mads}.
+    HIER KANN MAN NOCH AUSFUEHRLICH INSCHREIBEN MIT MADS
 
 %\chapter{Ergebnisse}
 
@@ -229,7 +230,10 @@
 
    \subsection{Beispiele für S(t) dreieck rechteck delta}
 
-\section{Erwartungswerte}
+\section{Berechnung von Erwartungswerten}
+  In diesem Abschnitt werden die Erwartungswerte des periodisch getriebenen Oszillators f"ur den Impuls, den Ort und die Energie berechnet.
+  Die Treibkraft $S(t)=S(t+T)$ ist nicht weiter festgelegt und geht stets "uber die klassiche L"osung $\zeta(t)$ (\ref{dgl_zeta}) in die Erwartungswerte ein.
+
   Um die Erwartungswerte des getriebenen Oszillators zu erhalten, werden wir dessen Berechnnung auf die Berechnung der bekannten Erwartungswerte des ungetriebenen Oszillators zur"uckf"uhren.
   Daf"ur nutzen wir aus, dass die Wellenfunktionen und die Floquet-Moden nach (\ref{gesamtlsg_einzelner}) und (\ref{floquet-moden-einzelner}) einem um $\zeta(t)$ verschobenen ungetriebnen Oszillator mit einer zus"atzlichen komplexen Phase entsprechen.
   Da eine komplexe Phase beim Bilden des Betrages wegf"allt, gilt
@@ -285,29 +289,91 @@
     Der Erwartungswert ist nun um $\zeta^2(t)$ verschoben.
 
     Insgesamt k"onnen alle Erwartungswerte $\braket{x^m}_n$ auf diese Art mit den bekannten ungetriebenen Erwartungswerten berechnet werden.
+    Ab $\braket{x^3}_n$ kommt es wegen $(y+\zeta(t))^3$ aber im Allgemeinen nicht nur zu Verschiebungen bzw. zus"atlichen $\zeta(t)$-Termen, verglichen zu den ungetriebenen Erwartungswerten, mit dem selben Exponenten, weshalb wir den Ewartungswert $\braket{x^m}_n$ nicht einfacher schreiben k"onnen als den linearen Erwartungswert des Klammerausdruckes mit dem binomischen Lehrsatz \cite{binom} zu vereinfachen:
+    \begin{equation}
+      \braket{x^m}_n = \braket{(y+\zeta(t)^)m}_{n,ung} = \sum_{j=0}^m \begin{pmatrix} m \\ j \\ \end{pmatrix} \zeta^j(t)\braket{y^{m-j}}_{n,ung} \; .
+    \end{equation}
+
 
 
 
 
   \subsection{Erwartungswerte f"ur den Impuls}
-    Um den Erwartungswert $\braket{p}_n$ des Impulsoperators f"ur den Zustand $\Psi_n(x,t)$ des angetriebenen Oszillators zu ermitteln, nutzen wir gleicherma"sen die Beziehung (\ref{Betrag_einzelner}) und unterdessen ein geschicktes Anwenden der Produktregel, um das Problem erneut auf den ungetriebenen Oszilaltor zu beschr"anken.
+    Um den Erwartungswert $\braket{p}_n$ des Impulsoperators f"ur den Zustand $\Psi_n(x,t)$ des angetriebenen Oszillators zu ermitteln, nutzen wir gleicherma"sen die Beziehung (\ref{betrag_einzelner}) und unterdessen ein geschicktes Anwenden der Produktregel, um das Problem erneut auf den ungetriebenen Oszilaltor zu beschr"anken.
 
     Wieder w"ahlen wir den Variablenwechsel zur neuen Variable $y=x-\zeta(t)$, weil Impulsoperator $p=p_x$ in der neuen Koordinate identisch ist, wie schon am Anfang von kapitel \ref{lsg_einzelner} angedeutet, was sich leicht mit der Kettenregel zeigen l"asst:
     \begin{equation}
-      \frac{\partial}{\partial x} = \frac{\partial}{\partial y}\frac{\partial y}{\partial x} = \frac{\partial}{\partial y} \cdot 1 \Rightarrow p_x \equiv p_y \; .
+      -\text i\hbar \frac{\partial}{\partial x} = -\text i\hbar \frac{\partial}{\partial y}\frac{\partial y}{\partial x} = -\text i\hbar \frac{\partial}{\partial y} \cdot 1 \quad \text{d.h.} \quad p_x \equiv p_y \; .
     \end{equation}
     Weiterhin k"onnen wir den $y$-unabh"angigen Teil der komplexen Phasen in den Wellenfunktionen (\ref{gesamtlsg_einzelner}) sofort am Operator vorbeiziehen und zu 1 zusmmenfassen, daher schreiben wir $\braket{p}_n$ als
     \begin{align}
-      \braket{p}_n &= \int_{-\infty}^{\infty} \Psi^*_n(x,t) \frac{p}{2m} \Psi_n(x,t) \; \text dx
-      = \int_{-\infty}^{\infty} \Psi^*_n(y+\zeta(t),t) \frac{p_y}{2m} \Psi_n(y+\zeta(t),t) \: \text dy \notag\\
-      &= \int_{-\infty}^{\infty} N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\text e^{\frac{-\text i}{\hbar}m\zeta(t)y} \frac{p_y}{2m} N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\text e^{\frac{+\text i}{\hbar}m\zeta(t)y} \: \text dy \; .
+      \braket{p}_n &= \int_{-\infty}^{\infty} \Psi^*_n(x,t) p \Psi_n(x,t) \; \text dx
+      = \int_{-\infty}^{\infty} \Psi^*_n(y+\zeta(t),t) p_y \Psi_n(y+\zeta(t),t) \: \text dy \notag\\
+      &= \int_{-\infty}^{\infty} N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\text e^{\frac{-\text i}{\hbar}m\dot{\zeta}(t)y} p_y N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y} \: \text dy \; .
+      \label{spaste}
     \end{align}
-    Nun spalten wir die Anwendung des impulsoperators auf den rechten Teil mit der Produktregel auf, in die Anwendung auf die ungetriebene Oszillatorfunktion (in $y$) und die Anwendung auf die verbleibende komplexe Phase:
+    Nun spalten wir die Anwendung des Impulsoperators auf den rechten Teil durch Anwenden der Produktregel auf in die Anwendung auf die ungetriebene Oszillatorfunktion (in der neuen Koordinate $y$) und die Anwendung auf die verbleibende komplexe Phase:
     \begin{align}
-      \frac{p_y}{2m} N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\text e^{\frac{+\text i}{\hbar}m\zeta(t)y}
-      &= \left(\frac{p_y}{2m} N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\right) \text e^{\frac{+\text i}{\hbar}m\zeta(t)y} \notag\\
-      &\quad + N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} \left(\frac{p_y}{2m} \text e^{\frac{+\text i}{\hbar}m\zeta(t)y}\right) \notag\\
+      &p_y N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y} = \notag\\
+      &\left(p_y N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\right) \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y}
+      + N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} \left(p_y \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y}\right) \notag\\
+      &= \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)} \left[p_yN_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} + N_nO_n(y)\text e^{\frac{m\omega_0}{2\hbar}y^2}m\dot{\zeta}(t) \right] \; .
+      \label{spaste2}
     \end{align}
+    Hiernach haben wir effektiv erreicht, dass wir den Impulsoperator an der $y$-abh"angigen Phase vorbei ziehen konnten.
+    Damit ist es m"oglich die verbliebenen Phasen in (\ref{spaste}) ebenso zu 1 zu vereinfachen.
+    Es verbleiben nun nur noch im ersten Teil der eckigen Klammer die Anwendung des Impulsoperators auf die Wellenfunktionen des ungetriebenen Oszillators und im zweiten Teil die Multiplikation dieser mit einem ortsunabh"angigen Term.
+    Zusammen mit dem "ubrigen linken Teil aus (\ref{spaste2}), welcher nach dem Wegfallen der komplexen Phase jetzt auch der ungetriebenen Wellenfunktion entspricht, ergeben sich dadurch die Erwartungswerte f"ur $p_y$ und den Term $m\dot{\zeta}(t)$, welcher nur zeitabh"angig ist.
+    %Zusammen mit dem, nun identischen, "ubrigen komplex konjugiertem Teil aus (\ref{spaste2}) verbleiben nur noch mit im ersten Teil der der eckigen Klammer die Anwendung des Impulsoperators auf die Wellenfunktion des ungetriebenen Oszillators bzw
+
+    Schlie"slich k"onnen wir den Erwartungswert f"ur den Impuls in Abh"angigkeit der bekannten Erwartungswerte des Standart-Oszillators hinschreiben:
+    \begin{align}
+      \braket{p}_n = \braket{p_y}_{n,ung} + m\dot{\zeta}(t) = m\dot{\zeta}(t)
+    \end{align}
+
+    Wieder erf"ullt der Erwartungswert die Bewegungsgleichung des klassichen Oszillators:
+    \begin{equation}
+      \ddot{\braket{p}}_n + \omega_0^2\braket{p}_n - \dot{S}(t) = 0 \; .
+    \end{equation}
+
+    Wie an (\ref{spaste2}) zu sehen, ist es dar"uber hinaus einfach den Erwartungswert $\braket{p^m}_n$ f"ur einen beliebigen Exponenten $m \in \mathbb{N}$ zu evaluieren.
+    Wir k"onnen auf gleichem Wege die Produktregel anwenden, und erhalten wieder den ungetrieben Erwartungswert $\braket{p^m_y}$ aber diesmal zus"atzlich die $m$-Fache Anwendung des Operators auf die komplexe Phase, was wir sofort verallgemeinert aufschreiben k"onnen, da sich die komplexe Phase beim Ableiten nur reproduziert, weil immer der ortsunabh"angige Term $m\dot{\zeta(t)}$ "uber bleibt.
+    Es folgt:
+    \begin{equation}
+      \braket{p^m}_n = \braket{p^m_y}_{n,ung} + (m\dot{\zeta}(t))^m \; .
+    \end{equation}
+    Speziell f"ur $m=2$ gilt
+    \begin{equation}
+      \braket{p^2}_n = \braket{p^2_y}_{n,ung} + (m\dot{\zeta}(t))^2 = m^2\omega^2_0 l^2(2n+1) + m^2\dot{\zeta^2}(t) \; .
+    \end{equation}
+
+
+  \subsection{Heisenberg'sche Unsch"arferelation}
+    Mit den zuvor errechneten Erwartungswerten $\braket{x}_n,\braket{x^2}_n,\braket{p}_n,\braket{p^2}_n$ wird hier die Unsch"arfe des periodisch getriebenen Oszillators aufgestellt.
+    Diese ist
+    \begin{align}
+      \Delta x_n\Delta p_n &= \sqrt{\braket{x^2}_n-\braket{x}^2_n}\sqrt{\braket{p^2}_n-\braket{p}^2_n} \notag\\
+      &= \sqrt{l^2(2n+1)+\zeta^2(t)-\zeta^2(t)}\sqrt{m^2\omega^2_0l^2(2n+1)+m^2\zeta^2(t)-m^2\zeta^2(t)} \notag\\
+      &= \frac{\hbar}{2}(2n+1) \; .
+    \end{align}
+    Die Unsch"arfe ist also gleich der des ungetriebenen Oszillators, welche nur f"ur den Grundzustand $n=0$ minimal ist.
+    
+    Dieses Ergebnis macht Sinn in Anbetracht der Tasache, dass die (zeitabh"angige) Verschiebung der Wellenfunktionen im Raum $\zeta(t)$ (\ref{gesamtlsg_einzelner}) die Unsch"arfe nicht "andern sollte.
+    Die Wellenfunktionen haben allerdings noch den weiteren Unterschied der orts- und zeitabh"angigen komplexen Phase, verglichen mit den Wellenfunktionen des Standart-Oszillators.
+    Diese spielt zwar keine  Rolle bei den Erwartungswerten f"ur den Ort, bei den Impulserwartungswerten aber schon.
+    Dennoch war zu erwarten, dass sich auch beim Impuls eine Standartebweichung $\Delta p_n$ wie beim ungetriebenen OSzillator ergibt, so wie bei $\Delta x_n$, da $\braket{p}_n$ im Wesentlichen die zeitliche Ableitung von $\braket{x}_n$ ist.
+    Demnach folgte die gleiche Unsch"arfe.
+
+    MEHR SCHREIEN ????????
+
+
+  \subsection{Erwartungswert f"ur die Energie}
+
+
+
+
+
+
 
 
 

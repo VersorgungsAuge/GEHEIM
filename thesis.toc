@@ -12,12 +12,14 @@
 \contentsline {subsection}{\numberline {3.2.1}Quasienergien für eine sinusoidiale Treibkraft}{8}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Quasienergien für eine beliebige periodische Treibkraft $S(t)$}{9}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Beispiele für S(t) dreieck rechteck delta}{10}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Erwartungswerte}{10}{section.3.3}
+\contentsline {section}{\numberline {3.3}Berechnung von Erwartungswerten}{10}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Erwartungswerte f"ur den Ort}{11}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Erwartungswerte f"ur den Impuls}{12}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}Zwei gekoppelte getriebene harmonische Oszillatoren in der Quantenmechanik}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Die Schrödinger-Gleichung mit unabhängigen Hamilton-Operatoren}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Unit"are Koordinatentransformation}{14}{section.4.2}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{15}{chapter.5}
-\contentsline {chapter}{\numberline {A}Ein Anhangskapitel}{16}{appendix.A}
-\contentsline {chapter}{\nonumberline Literatur}{17}{chapter*.4}
+\contentsline {subsection}{\numberline {3.3.3}Heisenberg'sche Unsch"arferelation}{14}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Erwartungswert f"ur die Energie}{14}{subsection.3.3.4}
+\contentsline {chapter}{\numberline {4}Zwei gekoppelte getriebene harmonische Oszillatoren in der Quantenmechanik}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Die Schrödinger-Gleichung mit unabhängigen Hamilton-Operatoren}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Unit"are Koordinatentransformation}{16}{section.4.2}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{17}{chapter.5}
+\contentsline {chapter}{\numberline {A}Ein Anhangskapitel}{18}{appendix.A}
+\contentsline {chapter}{\nonumberline Literatur}{19}{chapter*.4}
