@@ -1,0 +1,68 @@
+\chapter{Zwei gekoppelte getriebene harmonische Oszillatoren in der Quantenmechanik}
+
+
+In diesem Teil der Arbeit wird mit Hilfe der aus (\ref{lsg_einzelner}) bekannten Lösung des einzelnen getrieben Oszillators, die Wellenfunktionen für ein System hergeleitet, dass aus zwei gekoppelten Oszillatoren $x_1$ und $x_2$ der gleichen Masse $m$ besteht, von denen einer mit der periodischen Kraft $S(t) = S(t+T)$ angetrieben wird.
+Die Potentialkonstanten $k$ der beiden Oszillatoren sind ebenfalls identisch, die Kopplungskonstante $\kappa$ zwischen den Oszillatoren ist allerdings anders.
+Der Hamilton-Operator dieses Systems kann direkt aus der klassichen Mechanik übernommen werden:
+\begin{equation}
+  H(t) = H(t+T) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)x_1 \; .
+\end{equation}
+Es werden auch die Erwartungswerte für  den Ort $\braket{x_{1,2}}_{n,l}$ und den Impuls $\braket{p_{1,2}}_{n,l}$, genauso wie der Erwartungswert der Energie $\braket{H}_{n,l}$ und dessen zeitliches Mittel $\bar{H}_{n,l}$ berechnet, indem auf die bekannten Erwartungswerte des einzelnen getriebenen Oszillators zur"uckgef"uhrt wird.
+
+Zur Lösung des Systems wird eine unitäre Koordinatentransformation eingeführt, welche den Hamilton-Operator $H(x_1,x_2,p_1,p_2,t)$ zu zwei in den neuen Koordinaten unabhängigen Hamilton-Operatoren $H_+(x_+,p_+,t)$ und $H_-(x_-,p_-,t)$ mit effektiven Potentialkonstanten $k_+,k_-$ entkoppelt, welche je einen einzelnen (getriebenen) Oszillator beschreiben.
+Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillators.
+
+
+%war vorher subsection
+\section{Die Schrödinger-Gleichung mit unabhängigen Hamilton-Operatoren}
+  Liegt ein Hamilton-Operator der Form
+  \begin{equation}
+    H = \sum_i H_i(x_i,p_i,t) \;,\; H_i : \cal H_i \rightarrow H_i
+  \end{equation}
+  vor, führt der Ansatz
+  \begin{equation}
+    \Psi = \prod_i \Psi(x_i,p_i,t) \; , \; \Psi_i \in \cal H_i
+  \end{equation}
+  auf unabhängige Schrödinger-Gleichungen für die einzelnen Wellenfunktionen \\ $\Psi_i(x_i,p_i,t)$, sodass \cite{online quelle}
+  \begin{equation}
+    \delta_{i,j} \text i \hbar \frac{\partial}{\partial t}\Psi_i = H_j \Psi_i
+  \end{equation}
+  erfüllt ist.
+  Um dies schnell zu zeigen, schauen wir uns den Fall von zwei unabhängigen Operatoren an:
+  \begin{align}
+    \begin{split}
+      \text i \hbar \frac{\partial}{\partial t} \Psi = H\Psi \iff \Psi_2 H_1 \Psi_1 + \Psi_1 H_2 \Psi_2 = \text i \hbar \left(\frac{\partial}{\partial t} \Psi_1\Psi_2 + \Psi_1\frac{\partial}{\partial t} \Psi_2 \right) \; .
+    \end{split}
+  \end{align}
+  Da die Operatoren nur auf Funktionen wirken, die auf dem selben Raum definiert sind, kann man sie an der jeweils anderen Funktion vorbei ziehen.
+  Wenn wir weiterhin durch den Ansatz $\Psi_1\Psi_2$ teilen, wird die Gleichung zu:
+  \begin{equation}
+    \frac{1}{\Psi_1}H_1\Psi_1 + \frac{1}{\Psi_2}H_2\Psi_2 = \text i \hbar \left(\frac{\frac{\partial}{\partial t} \Psi_1}{\Psi_1} + \frac{\frac{\partial}{\partial t} \Psi_2}{\Psi_2} \right) \; .
+  \end{equation}
+  Weil die linke und rechte Seite f"ur alle unabhängigen $x_1,p_1,x_2,p_2$ gleich sein müssen, folgen die einzelnen Schrödinger-Gleichungen für die Wellenfunktionen $\Psi_1$ und $\Psi_2$:
+  \begin{equation}
+    \frac{1}{\Psi_1}H_1\Psi_1 = \frac{\frac{\partial}{\partial t} \Psi_1}{\Psi_1} \; , \; \frac{1}{\Psi_2}H_2\Psi_2 = \frac{\frac{\partial}{\partial t} \Psi_2}{\Psi_2} \; .
+  \end{equation}
+
+
+
+\section{Unit"are Koordinatentransformation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  b

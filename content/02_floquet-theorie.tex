@@ -1,0 +1,115 @@
+\chapter{Floquet-Theorie}
+
+
+%\section{Floquet-Theorie}
+  Die Floquet-Theorie ist ein nützliches Werkzeug zur der Lösung von quantenmechanischen Systemen, welche durch einen zeitlich periodischen Hamilton-Operator
+  \begin{equation}
+    H(t) = H(t+T) \; ,
+  \end{equation}
+  mit der Periode $T$, beschrieben werden.
+
+  Das Floquet-Theorem besagt, dass bei einem solchen System, die Lösungen $\Psi_n(x,t)$ der Schrödinger-Gleichung
+  \begin{equation}
+    \text{i}\hbar\frac{\partial}{\partial t}\Psi_n(x,t) = H(t)\Psi_n(x,t)
+    \label{schroedinger}
+  \end{equation}
+  in Ortsdarstellung die Form
+  \begin{equation}
+    \Psi_n(x,t) = \text{e}^{-\frac{i}{\hbar}\epsilon_nt}\Phi_n(x,t)
+    \label{floquet_theorem}
+  \end{equation}
+  haben.
+  Hierbei sind $\Phi_n(x,t) = \Phi_n(x,t+T)$ $T$-periodische Funktionen, die sogenannten Floquet-Moden, und $\epsilon_n$ die zugehörigen reellen Quasienergien, wobei diese Bezeichnungen gewählt wurden aufgrund der Parallele zu den Bloch-Moden und Quasiimpulsen des Bloch-Theorems \cite{haengi}.
+  Das Floquet-Theorem kann damit als "Bloch-Theorem in der Zeit" aufgefasst werden \cite{sherly}.
+
+  Durch Einsetzen dieses Ansatzes für die Wellenfunktionen (\ref{floquet_theorem}) in die Schrödingergleichung (\ref{schroedinger}) erhalten wir
+  \begin{equation}
+    \epsilon_n \Phi_n(x,t) = \left(H(t)-\text{i}\hbar\frac{\partial}{\partial t}\right)\Phi_n(x,t) = \cal{H}(t) \Phi_n(x,t) \; .
+    \label{eigenwertproblem}
+  \end{equation}
+  Die Lösung der Schrödinger Gleichung konnte somit auf die Lösung eines Eigenwertproblems für den neuen Operator $\cal{H}(t)$ zurückgeführt werden \cite{sherly}.
+
+  Die hermitischen Operatoren $H(t)$ und $\cal H(t)$ operieren auf dem Hilbertraum $\cal{L}^2 \otimes \cal{T}$.
+  Dabei ist $\cal{L}^2$ der Raum der quadratintegrablen Funktionen und $\cal{T}$ der Raum der auf $[0,T]$ integrablen Funktionen, da die Operatoren $T$-periodisch sind \cite{haenggi}.
+  Nach dem Spektralsatz bilden die Eigenfunktionen $\Phi_n(x,t)$ von $\cal{H}(t)$ eine Orthogonalbasis von $\cal{L}^2 \otimes \cal{T}$, welche auf eine Orthonormalbasis normiert werden kann, wodurch wir das Skalarprodukt definieren k"onnen als:
+  %Es ergibt sich
+  \begin{align}
+    \begin{split}
+    \braket{\braket{\Phi_n(x,t)|\Phi_m(x,t)}} &= \frac{1}{T} \int_0^T \braket{\Phi_n(x,t)|\Phi_n(x,t)} \text{d}t \\
+    &= \frac{1}{T} \int_0^T \int_{-\infty}^{\infty} \Phi_n^*(x,t)\Phi_m(x,t) \: \text{d}x\text{d}t = \delta_{n,m} \; .
+    \label{skalarprodukt_einzelner}
+    \end{split}
+  \end{align}
+
+
+%war vorher subsection
+ \section{\texorpdfstring{Zeitlich gemittelter Erwartungswert der Energie $\bar{H}_n$}{Zeitlich gemittelter Erwartungswert der Energie bar{H}_n}}
+
+    Da $H(t)$ nicht zeitlich konstant ist, sind auch dessen Erwartungswerte, die Energien des Systems, zeitabhängig.
+    Ein direkter Vorteil der Floquet-Theorie liegt darin, dass sich die durchschnittliche Energie
+    \begin{equation}
+      \bar{H}_n  = \braket{\braket{\Psi_n(x,t)|H(t)|\Psi_m(x,t)}}
+      %\label{mittleres_H}
+    \end{equation}
+    des $n$-ten Zustandes $\Psi_n(x,t)$ leicht über die Quasienergien $\epsilon_n$ berechnen lässt, ohne explizit Integrale zu lösen.
+
+    Dazu ersetzen wir $H(t)$ mit Hilfe von (\ref{eigenwertproblem}).
+    Außerdem unterscheiden sich die Floquet-Moden $\Phi_n(x,t)$ und die Wellenfunktionen $\Psi_n(x,t)$ nur durch eine komplexe Phase, daher sind deren Skalarprodukte identisch.
+    Weiterhin benutzen wir (\ref{eigenwertproblem}), dass die Floquet-Moden Eigenfunktionen von $\cal{H}(t)$ sind:
+    \begin{align}
+      \begin{split}
+      \bar{H}_n  &= \braket{\braket{\Phi_n(x,t)|\cal{H}(t)+\text{i}\hbar\frac{\partial}{\partial t}|\Phi_n(x,t)}} \\
+      &=\epsilon_n \braket{\braket{\Phi_n(x,t)|\Phi_n(x,t)}} + \braket{\braket{\Phi_n(x,t)|\text{i}\hbar\frac{\partial}{\partial t}|\Phi_n(x,t)}} \\
+      &= \epsilon_n + \braket{\braket{\Phi_n(x,t)|\text{i}\hbar\frac{\partial}{\partial t}|\Phi_n(x,t)}} \; .
+    \end{split}
+    \end{align}
+
+    Nähere Betrachtung zeigt, dass
+    \begin{equation}
+      \text{i}\hbar\frac{\partial}{\partial t} = -\omega \frac{\partial \cal{H}(t)}{\partial \omega}
+    \end{equation}
+    gilt \cite{haenggi}.
+    Da für $\epsilon_n$ und $\cal H(t)$ mit (\ref{eigenwertproblem}) eine Eigenwertgleichung vorliegt, kann das Hellman-Feynman-Theorem angewendet werden \cite{hellmann online quelle}.
+    Dieses gibt eine Verbindung zwischen den Ableitungen der Eigenwerte und der Ableitung des Hamilton-Operators an.
+    In unserem Fall erhalten wir dadurch
+    \begin{equation}
+      \frac{\partial \epsilon_n}{\partial \omega} = \braket{\braket{\Phi_n(x,t)|\frac{\partial \cal H(t)}{\partial \omega}|\Phi_n(x,t)}} \; .
+    \end{equation}
+    Damit folgt \cite{haenggi}:
+    \begin{equation}
+      \bar{H}_n = \epsilon_n - \omega\frac{\partial \epsilon_n}{\partial \omega} \; .
+      \label{mittleres_H}
+    \end{equation}
+
+    %\newpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  b
