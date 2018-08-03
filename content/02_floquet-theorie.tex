@@ -2,7 +2,7 @@
 
 
 %\section{Floquet-Theorie}
-  Die Floquet-Theorie ist ein nützliches Werkzeug zur der Lösung von quantenmechanischen Systemen, welche durch einen zeitlich periodischen Hamilton-Operator
+  Die Floquet-Theorie \cite{haengi} ist ein nützliches Werkzeug zur der Lösung von quantenmechanischen Systemen, welche durch einen zeitlich periodischen Hamilton-Operator
   \begin{equation}
     H(t) = H(t+T) \; ,
   \end{equation}
@@ -27,10 +27,10 @@
     \epsilon_n \Phi_n(x,t) = \left(H(t)-\text{i}\hbar\frac{\partial}{\partial t}\right)\Phi_n(x,t) = \cal{H}(t) \Phi_n(x,t) \; .
     \label{eigenwertproblem}
   \end{equation}
-  Die Lösung der Schrödinger Gleichung konnte somit auf die Lösung eines Eigenwertproblems für den neuen Operator $\cal{H}(t)$ zurückgeführt werden \cite{sherly}.
+  Die Lösung der Schrödinger-Gleichung konnte somit auf die Lösung eines Eigenwertproblems für den neuen Operator $\cal{H}(t)$ zurückgeführt werden \cite{sherly}.
 
   Die hermitischen Operatoren $H(t)$ und $\cal H(t)$ operieren auf dem Hilbertraum $\cal{L}^2 \otimes \cal{T}$.
-  Dabei ist $\cal{L}^2$ der Raum der quadratintegrablen Funktionen und $\cal{T}$ der Raum der auf $[0,T]$ integrablen Funktionen, da die Operatoren $T$-periodisch sind \cite{haenggi}.
+  Dabei ist $\cal{L}^2$ der Raum der quadratintegrablen Funktionen und $\cal{T}$ der Raum der auf $[0,T]$ integrablen Funktionen, da die Operatoren $T$-periodisch sind \cite{haengi}.
   Nach dem Spektralsatz bilden die Eigenfunktionen $\Phi_n(x,t)$ von $\cal{H}(t)$ eine Orthogonalbasis von $\cal{L}^2 \otimes \cal{T}$, welche auf eine Orthonormalbasis normiert werden kann, wodurch wir das Skalarprodukt definieren k"onnen als:
   %Es ergibt sich
   \begin{align}
@@ -67,14 +67,14 @@
     \begin{equation}
       \text{i}\hbar\frac{\partial}{\partial t} = -\omega \frac{\partial \cal{H}(t)}{\partial \omega}
     \end{equation}
-    gilt \cite{haenggi}.
-    Da für $\epsilon_n$ und $\cal H(t)$ mit (\ref{eigenwertproblem}) eine Eigenwertgleichung vorliegt, kann das Hellman-Feynman-Theorem angewendet werden \cite{hellmann online quelle}.
+    gilt \cite{haengi}.
+    Da für $\epsilon_n$ und $\cal H(t)$ mit (\ref{eigenwertproblem}) eine Eigenwertgleichung vorliegt, kann das Hellman-Feynman-Theorem angewendet werden \cite{hellmann}.
     Dieses gibt eine Verbindung zwischen den Ableitungen der Eigenwerte und der Ableitung des Hamilton-Operators an.
     In unserem Fall erhalten wir dadurch
     \begin{equation}
       \frac{\partial \epsilon_n}{\partial \omega} = \braket{\braket{\Phi_n(x,t)|\frac{\partial \cal H(t)}{\partial \omega}|\Phi_n(x,t)}} \; .
     \end{equation}
-    Damit folgt \cite{haenggi}:
+    Damit folgt \cite{haengi}:
     \begin{equation}
       \bar{H}_n = \epsilon_n - \omega\frac{\partial \epsilon_n}{\partial \omega} \; .
       \label{mittleres_H}
@@ -111,4 +111,4 @@
 
 
 
-  b
+  

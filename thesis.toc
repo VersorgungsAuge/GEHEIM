@@ -13,14 +13,14 @@
 \contentsline {subsection}{\numberline {3.2.2}Quasienergien für eine beliebige periodische Treibkraft $S(t)$}{9}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Beispiele für S(t) dreieck rechteck delta}{10}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Berechnung von Erwartungswerten}{10}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Zeitabh"angige Erwartungswerte des Ortes}{11}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Zeitabh"angige Erwartungswerte des Impulses}{12}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Heisenberg'sche Unsch"arferelation}{14}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Zeitabh"angiger Erwartungswert der Energie}{15}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.1}Zeitabhängige Erwartungswerte des Ortes}{11}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Zeitabhängige Erwartungswerte des Impulses}{13}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Heisenberg'sche Unschärferelation}{14}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Zeitabhängiger Erwartungswert der Energie}{15}{subsection.3.3.4}
 \contentsline {subsection}{\numberline {3.3.5}Durchschnittlicher Erwartungswert der Energie}{15}{subsection.3.3.5}
-\contentsline {chapter}{\numberline {4}Zwei gekoppelte getriebene harmonische Oszillatoren in der Quantenmechanik}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}Die Schrödinger-Gleichung mit unabhängigen Hamilton-Operatoren}{16}{section.4.1}
-\contentsline {section}{\numberline {4.2}Unit"are Koordinatentransformation}{17}{section.4.2}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{18}{chapter.5}
-\contentsline {chapter}{\numberline {A}Ein Anhangskapitel}{19}{appendix.A}
-\contentsline {chapter}{\nonumberline Literatur}{20}{chapter*.4}
+\contentsline {chapter}{\numberline {4}Zwei gekoppelte getriebene harmonische Oszillatoren in der Quantenmechanik}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Die Schrödinger-Gleichung mit unabhängigen Hamilton-Operatoren}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Unitäre Variablenformation und allgemeine Lösung der Schrödinger-Gleichung}{18}{section.4.2}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{21}{chapter.5}
+\contentsline {chapter}{\numberline {A}Ein Anhangskapitel}{22}{appendix.A}
+\contentsline {chapter}{\nonumberline Literatur}{23}{chapter*.4}

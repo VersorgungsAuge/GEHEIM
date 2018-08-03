@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  22 JUL 2018 21:57
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  3 AUG 2018 06:54
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -441,7 +441,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.598 seconds)
+luaotfload | main : initialization completed in 0.539 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex
 .sty
@@ -2030,13 +2030,34 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = thesis.bcf
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
- (./thesis.bbl)
+ (./thesis.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                binom
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                husimi
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                online quelle
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 152.
 Package biblatex Info: Reference segment=0 on input line 152.
 \AtBeginShipoutBox=\box59
 Package hyperref Info: Link coloring OFF on input line 152.
-
-(/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestrin
@@ -2156,50 +2177,21 @@ chapter 1.
 chapter 2.
 (load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
 /otl/lmroman8-regular.luc)(load luc: /home/ismael/.local/texlive/2016/texmf-var/
-luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
-
-LaTeX Warning: Citation 'haengi' on page 2 undefined on input line 22.
-
-
-LaTeX Warning: Citation 'sherly' on page 2 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'sherly' on page 2 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'haenggi' on page 2 undefined on input line 33.
-
-[2
+luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [2
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 46.
 
-
-LaTeX Warning: Citation 'haenggi' on page 3 undefined on input line 70.
-
-
-LaTeX Warning: Citation 'hellmann online quelle' on page 3 undefined on input li
-ne 71.
-
-
-LaTeX Warning: Citation 'haenggi' on page 3 undefined on input line 77.
-
 ) (./content/03_einzelner_oszi.tex [3] [4]
 chapter 3.
-
-LaTeX Warning: Citation 'haenggi' on page 5 undefined on input line 17.
-
 [5
 
 ]
 Overfull \hbox (20.20813pt too wide) in paragraph at lines 51--51
 [] 
  []
-
-
-LaTeX Warning: Citation 'husimi' on page 6 undefined on input line 74.
 
 [6]
 
@@ -2210,54 +2202,33 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 121.
 
-
-LaTeX Warning: Citation 'haenggi' on page 7 undefined on input line 127.
-
 [7]
 
-LaTeX Warning: Citation 'haenggi' on page 8 undefined on input line 147.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 167.
 
 
-LaTeX Warning: Citation 'mads' on page 8 undefined on input line 152.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 167.
 
-
-LaTeX Warning: Citation 'mads' on page 8 undefined on input line 161.
-
-[8] [9]
-
-LaTeX Warning: Reference `floquet-moden-einzelner' on page 10 undefined on input
- line 242.
-
-[10] [11]
-
-LaTeX Warning: Citation 'binom' on page 12 undefined on input line 297.
-
-[12]
-Overfull \hbox (6.3444pt too wide) in paragraph at lines 327--333
+[8] [9] [10] [11] [12]
+Overfull \hbox (1.27937pt too wide) in paragraph at lines 337--343
 \EU2/lmr/m/n/10.95 Hier-nach ha-ben wir ef-fek-tiv er-reicht, dass wir den Im-p
 ul-s-ope-ra-tor an der $\EU2/LatinModernMath(0)/m/n/10.95 𝑦$\EU2/lmr/m/n/10.
-95 -abh”angigen
+95 -abhängigen
  []
 
-[13] [14]
-Overfull \hbox (162.92572pt too wide) in paragraph at lines 388--388
-[] 
- []
-
-) (./content/04_gekoppelte_oszis.tex [15]
+[13] [14] [15]) (./content/04_gekoppelte_oszis.tex [16]
 chapter 4.
+[17
 
-LaTeX Warning: Citation 'online quelle' on page 16 undefined on input line 26.
-
-[16
-
-]) (./content/05_zusammenfassung_und_ausblick.tex [17]
+] [18] [19]) (./content/05_zusammenfassung_und_ausblick.tex [20]
 chapter 5.
-) (./content/a_anhang.tex [18
+) (./content/a_anhang.tex [21
 
 ]
 chapter A.
-) [19
+) [22
 
 ]
 chapter without number
@@ -2274,14 +2245,13 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
-/otl/lmroman8-italic.luc) [20
+ [23
 
 
-Missing character: There is no ε (U+03B5) in font file:lmroman10-italic:script=
-latn;+trep;+tlig;!
-]
-(./content/eid_versicherung.tex
+] [24
+
+
+] (./content/eid_versicherung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
@@ -2293,10 +2263,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
- [21
-
-
-]
+ [25]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
  (./thesis.aux
 Language ngerman already loaded; id is 8
@@ -2304,18 +2271,9 @@ Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
 Package rerunfilecheck Info: File `thesis.aux' has not changed.
-(rerunfilecheck)             Checksum: AB1C3CAAC32F1474D9849B62FC4A94C1;15423.
+(rerunfilecheck)             Checksum: B3B25AD80D442750BA74C3F10E85A35F;21166.
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
-(rerunfilecheck)             Checksum: 224955D7A69DC0652CAA90B753D2CD98;2414.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 3BC8E1CF4C0319C33CDC772F2E8C8F22;2457.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 \openout1 = thesis.run.xml
@@ -2323,38 +2281,37 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45339 strings out of 495118
+ 45343 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 14104 words of node memory still in use:
-   86 hlist, 11 vlist, 10 rule, 4 math, 1535 glue, 19 kern, 2 sub_mlist, 88 glyp
-h, 335 attribute, 60 glue_spec, 335 attribute_list, 1 write, 7 pdf_action nodes
-   avail lists: 1:3,2:696,3:233,4:98,5:411,6:2645,7:642,8:113,9:928,10:15,11:284
+ 15048 words of node memory still in use:
+   86 hlist, 11 vlist, 10 rule, 4 math, 1665 glue, 19 kern, 2 sub_mlist, 88 glyp
+h, 351 attribute, 60 glue_spec, 351 attribute_list, 1 write, 2 pdf_action nodes
+   avail lists: 1:3,2:612,3:194,4:114,5:411,6:2371,7:573,8:113,9:928,10:14,11:27
+7
+ 47541 multiletter control sequences out of 65536+600000
+ 98 fonts using 17748983 bytes
+ 60i,21n,81p,8817b,2517s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-r
+egular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm
+/lmromancaps10-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/op
+entype/public/lm/lmroman10-italic.otf></home/ismael/.local/texlive/2016/texmf-di
+st/fonts/opentype/public/lm/lmroman8-regular.otf></home/ismael/.local/texlive/20
+16/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/ismael/.local
+/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/isma
+el/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmromanslant10-regula
+r.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math
+/latinmodern-math.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentyp
+e/public/lm-math/latinmodern-math.otf></home/ismael/.local/texlive/2016/texmf-di
+st/fonts/opentype/public/lm-math/latinmodern-math.otf></home/ismael/.local/texli
+ve/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/ismael/
+.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></
+home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bol
+d.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmro
+man12-bold.otf>
+Output written on thesis.pdf (29 pages, 157889 bytes).
 
- 47544 multiletter control sequences out of 65536+600000
- 99 fonts using 17841271 bytes
- 60i,21n,81p,8817b,2482s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-i
-talic.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/
-lmmono10-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype
-/public/lm/lmromancaps10-regular.otf></home/ismael/.local/texlive/2016/texmf-dis
-t/fonts/opentype/public/lm/lmroman10-italic.otf></home/ismael/.local/texlive/201
-6/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/ismael/.local/
-texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/ism
-ael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmromanslant10-regul
-ar.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmr
-oman10-bold.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/publ
-ic/lm-math/latinmodern-math.otf></home/ismael/.local/texlive/2016/texmf-dist/fon
-ts/opentype/public/lm-math/latinmodern-math.otf></home/ismael/.local/texlive/201
-6/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/ismael/.l
-ocal/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></ho
-me/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regu
-lar.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lm
-sans10-bold.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/publ
-ic/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (25 pages, 153599 bytes).
-
-PDF statistics: 438 PDF objects out of 1000 (max. 8388607)
- 361 compressed objects within 4 object streams
- 122 named destinations out of 1000 (max. 131072)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 497 PDF objects out of 1000 (max. 8388607)
+ 418 compressed objects within 5 object streams
+ 130 named destinations out of 1000 (max. 131072)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

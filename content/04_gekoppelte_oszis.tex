@@ -6,8 +6,10 @@ Die Potentialkonstanten $k$ der beiden Oszillatoren sind ebenfalls identisch, di
 Der Hamilton-Operator dieses Systems kann direkt aus der klassichen Mechanik übernommen werden:
 \begin{equation}
   H(t) = H(t+T) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)x_1 \; .
+  \label{H_gekoppelt}
 \end{equation}
-Es werden auch die Erwartungswerte für  den Ort $\braket{x_{1,2}}_{n,l}$ und den Impuls $\braket{p_{1,2}}_{n,l}$, genauso wie der Erwartungswert der Energie $\braket{H}_{n,l}$ und dessen zeitliches Mittel $\bar{H}_{n,l}$ berechnet, indem auf die bekannten Erwartungswerte des einzelnen getriebenen Oszillators zur"uckgef"uhrt wird.
+Es werden auch die Erwartungswerte für  den Ort $\braket{x_{1,2}}_{n,l}$ und den Impuls $\braket{p_{1,2}}_{n,l}$, genauso wie der Erwartungswert der Energie $\braket{H}_{n,l}$ und dessen zeitliches Mittel $\bar{H}_{n,l}$ berechnet, indem auf die bekannten Erwartungswerte des einzelnen getriebenen Oszillators zurückgeführt wird.
+Die Erwartungswerte werden auch graphisch dargestellt.
 
 Zur Lösung des Systems wird eine unitäre Koordinatentransformation eingeführt, welche den Hamilton-Operator $H(x_1,x_2,p_1,p_2,t)$ zu zwei in den neuen Koordinaten unabhängigen Hamilton-Operatoren $H_+(x_+,p_+,t)$ und $H_-(x_-,p_-,t)$ mit effektiven Potentialkonstanten $k_+,k_-$ entkoppelt, welche je einen einzelnen (getriebenen) Oszillator beschreiben.
 Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillators.
@@ -18,14 +20,17 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
   Liegt ein Hamilton-Operator der Form
   \begin{equation}
     H = \sum_i H_i(x_i,p_i,t) \;,\; H_i : \cal H_i \rightarrow H_i
+    \label{unabh_H}
   \end{equation}
   vor, führt der Ansatz
   \begin{equation}
     \Psi = \prod_i \Psi(x_i,p_i,t) \; , \; \Psi_i \in \cal H_i
+    \label{lsg_unabh_H}
   \end{equation}
   auf unabhängige Schrödinger-Gleichungen für die einzelnen Wellenfunktionen \\ $\Psi_i(x_i,p_i,t)$, sodass \cite{online quelle}
   \begin{equation}
-    \delta_{i,j} \text i \hbar \frac{\partial}{\partial t}\Psi_i = H_j \Psi_i
+    \text i \hbar \frac{\partial}{\partial t}\Psi_i = \delta_{i,j}  H_j \Psi_i
+    \label{schroedglg_unabh_H}
   \end{equation}
   erfüllt ist.
   Um dies schnell zu zeigen, schauen wir uns den Fall von zwei unabhängigen Operatoren an:
@@ -35,34 +40,74 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
     \end{split}
   \end{align}
   Da die Operatoren nur auf Funktionen wirken, die auf dem selben Raum definiert sind, kann man sie an der jeweils anderen Funktion vorbei ziehen.
-  Wenn wir weiterhin durch den Ansatz $\Psi_1\Psi_2$ teilen, wird die Gleichung zu:
+  Wenn wir weiterhin durch unseren Ansatz $\Psi_1\Psi_2$ teilen, wird die Gleichung zu:
   \begin{equation}
     \frac{1}{\Psi_1}H_1\Psi_1 + \frac{1}{\Psi_2}H_2\Psi_2 = \text i \hbar \left(\frac{\frac{\partial}{\partial t} \Psi_1}{\Psi_1} + \frac{\frac{\partial}{\partial t} \Psi_2}{\Psi_2} \right) \; .
   \end{equation}
-  Weil die linke und rechte Seite f"ur alle unabhängigen $x_1,p_1,x_2,p_2$ gleich sein müssen, folgen die einzelnen Schrödinger-Gleichungen für die Wellenfunktionen $\Psi_1$ und $\Psi_2$:
+  Weil die linke und rechte Seite für alle unabhängigen $x_1,p_1,x_2,p_2$ gleich sein müssen, folgen die einzelnen Schrödinger-Gleichungen für die Wellenfunktionen $\Psi_1$ und $\Psi_2$:
   \begin{equation}
     \frac{1}{\Psi_1}H_1\Psi_1 = \frac{\frac{\partial}{\partial t} \Psi_1}{\Psi_1} \; , \; \frac{1}{\Psi_2}H_2\Psi_2 = \frac{\frac{\partial}{\partial t} \Psi_2}{\Psi_2} \; .
   \end{equation}
+  Wie an diesem Beispiel leicht zu sehen, gilt Gleiches auch für beliebig viele unabhängige Hamilton-Operatoren, womit (\ref{schroedglg_unabh_H}) erfüllt ist und wir wissen, dass die Lösung $\Psi$ die Form (\ref{lsg_unabh_H}) hat.
+  %nur EINE moegliche lsg hat die form psi, wenn wir einschraenken, dass psi so aussehen soll, wer weis ob es noch andere lsgen nicht dieser form gibt.
 
 
 
-\section{Unit"are Koordinatentransformation}
+\section{Unitäre Variablenformation und allgemeine Lösung der Schrödinger-Gleichung}
+  Um für unseren Hamilton-Operator $H(x_1,x_2,p_1,p_2,t)$ (\ref{H_gekoppelt}) eine entkoppelte Form $H(x_+,x_-,p_+,p_-,t)=H_+(x_+,p_+,t)+H_-(x_-,p_-,t)$ nach (\ref{unabh_H}) in den neuen Koordinaten/Variablen $x_+,x_-,p_+,p_-$ zu erhalten, wählen wir die unitären Koordinationtransformationen \cite{arxiv}
+  \begin{equation}
+    x_+ = \frac{1}{\sqrt{2}}(x_2+x_1) \;,\; x_-=\frac{1}{\sqrt{2}}(x_2-x_1) \;,
+  \end{equation}
+  welche aus den Normalmoden des klassischen Problems folgen, worauf in Kapitel () genauer eingegangen wird.
+  Durch einfaches Umstellen folgen $x_1$ und $x_2$ in Abhängigkeit der neuen Koordinaten $x_+$ und $x_-$:
+  \begin{equation}
+    x_1=\frac{1}{\sqrt{2}}(x_+-x_-) \;,\; x_2=\frac{1}{\sqrt{2}}(x_++x_-) \; .
+  \end{equation}
+  Indem wir $x_1$ und $x_2$ so im Hamilton-Operator (\ref{H_gekoppelt}) ersetzen, formen wir den ortsabhängigen Teil um zu
+  \begin{align}
+    &\frac{1}{2}kx_1^2+\frac{1}{2}kx_2^2+\frac{1}{2}\kappa(x_2-x_1)^2-S(t)x_1= \notag\\
+    &\frac{1}{2}kx_+^2+\frac{1}{2}(k+2\kappa)x_-^2-S(t)\frac{1}{\sqrt{2}}(x_+-x_-) \; .
+  \end{align}
+  Es tauchen nun keine Kopplungsterme $x_+x_-$ mehr auf, wie es in den alten Koordinaten der Fall war.
 
+  Jetzt betrachten wir die neuen Impulse und überprüfen, dass es durch den Variablenwechsel nicht zu neuen Kopplungstermen in den $p_+$,$p_-$ kommt.
+  Mit der Kettenregel folgt für die Ableitungen der Impulsoperatoren
+  \begin{align}
+    \frac{\partial}{\partial x_{\pm}} = \frac{\partial}{\partial x_1}\frac{\partial x_1}{\partial x_{\pm}} + \frac{\partial}{\partial x_2}\frac{\partial x_2}{\partial x_{\pm}}
+    =\frac{\partial}{\partial x_1}\left(\pm\frac{1}{\sqrt{2}}\right)
+    + \frac{\partial}{\partial x_2}\frac{1}{\sqrt{2}}
+    = \frac{1}{\sqrt{2}}\left(\frac{\partial}{\partial x_2}\pm\frac{\partial}{\partial  x_1}\right) \;,
+  \end{align}
+  weshalb für die Impulsoperatoren identisch zu den Ortsoperatoren gilt
+  \begin{equation}
+    p_+ = \frac{1}{\sqrt{2}}(p_2+p_1) \;,\; p_-=\frac{1}{\sqrt{2}}(p_2-p_1) \; .
+  \end{equation}
+  Wir setzen erneut in unseren Hamilton-Operator (\ref{H_gekoppelt}) ein und erhalten für den impulsabhängigen Teil
+  \begin{equation}
+    \frac{p_1^2}{2m} + \frac{p_2^2}{2m} = \frac{p_+^2}{2m} + \frac{p_-^2}{2m}
+  \end{equation}
 
+  Wie erwartet bleibt die Summe der quadrierten Impulsoperatoren unverändert.
 
+  Der gesamte Hamilton-Operator der zwei gekoppelten getrieben Oszillatoren ist in den neuen Variablen folglich
+  \begin{align}
+    H(t) &= H(t+T) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)x_1 \notag\\
+    &= \frac{p_+^2}{2m}+\frac{1}{2}kx_+^2-\frac{1}{\sqrt{2}}S(t)x_+ \quad + \quad
+    \frac{p_-^2}{2m}+\frac{1}{2}(k+2\kappa)x_-^2+\frac{1}{\sqrt{2}}S(t)x_- \notag\\
+    &= \frac{p_+^2}{2m}+\frac{1}{2}k_+x_+^2-S_+(t)x_+ \quad + \quad
+    \frac{p_-^2}{2m}+\frac{1}{2}k_-x_-^2-S_-(t)x_- \notag\\
+    &= H_+(x_+,p_+,t) + H_-(x_-,p_-,t) \; .
+  \end{align}
+  Der Hamilton-Operator in den neuen Variablen $x_{\pm},p_{\pm}$ beschreibt demnach ein System aus zwei unabhängigen getriebenen harmonischen Oszillatoren mit neuen Potentialkonstanten $k_1=k$ und $k_2=k+2\kappa$ bzw. neuen Eigenfrequenzen
+  \begin{equation}
+    w_+=\sqrt{\frac{k}{m}} \quad\text{und}\quad \omega_-=\sqrt{\frac{k+2\kappa}{m}} \; .
+  \end{equation}
+  Die beiden Oszillatoren werden, wegen dem verschiedenen Vorzeichen von $S_+(t)=S_+(t+T)$ und $S_-(t)=S_-(t+T)$, periodisch aber phasenversetzt um $\pi$ mit der ursprünglichen Treibkraft $S(t)$ angetrieben, wobei diese mit dem Faktor $1/\sqrt{2}$ skaliert wird.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  b
+  Betrachten wir den komplizierter geglaubten Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in den alten Koordinaten getrieben sind, und zwar genau wie durch die neuen Koordinaten $x_+$ und $x_-$ vorgegeben, das heißt
+  \begin{align}
+      &H(t) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)(x_2+x_1) \notag\\
+      \text{oder} \; &H(t) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)(x_2-x_1) \;,
+  \end{align}
+  liegt in den neuen Variablen ein vereinfachtes System vor, bei dem nur ein Oszillator $x_+$ oder $x_-$ getrieben ist.
+  Es muss also in den klassischen Normalmoden getrieben werden, damit nach dem Variablenwechsel ein möglichst einfaches System mit nur noch einem getriebenen Oszillator vorliegt.
