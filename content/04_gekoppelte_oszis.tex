@@ -1,9 +1,9 @@
 \chapter{Zwei gekoppelte getriebene harmonische Oszillatoren in der Quantenmechanik}
 
 
-In diesem Teil der Arbeit wird mit Hilfe der aus (\ref{lsg_einzelner}) bekannten Lösung des einzelnen getrieben Oszillators, die Wellenfunktionen für ein System hergeleitet, dass aus zwei gekoppelten Oszillatoren $x_1$ und $x_2$ der gleichen Masse $m$ besteht, von denen einer mit der periodischen Kraft $S(t) = S(t+T)$ angetrieben wird.
-Die Potentialkonstanten $k$ der beiden Oszillatoren sind ebenfalls identisch, die Kopplungskonstante $\kappa$ zwischen den Oszillatoren ist allerdings anders.
-Der Hamilton-Operator dieses Systems kann direkt aus der klassichen Mechanik übernommen werden:
+In diesem Teil der Arbeit werden mit Hilfe der aus (\ref{lsg_einzelner}) bekannten Lösung des einzelnen getrieben Oszillators die Wellenfunktionen für ein System hergeleitet, das aus zwei gekoppelten Oszillatoren $x_1$ und $x_2$ der gleichen Masse $m$ besteht, von denen einer mit der periodischen Kraft $S(t) = S(t+T)$ angetrieben wird.
+Die Potentialkonstanten $k$ der beiden Oszillatoren sind ebenfalls identisch, aber im Allgemeinen unterschiedlich zur Kopplungskonstante $\kappa$ zwischen den Oszillatoren.
+Der Hamilton-Operator dieses Systems kann direkt aus der Hamilton-Funktion  der klassichen Mechanik übernommen werden:
 \begin{equation}
   H(t) = H(t+T) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)x_1 \; .
   \label{H_gekoppelt}
@@ -27,7 +27,7 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
     \Psi = \prod_i \Psi(x_i,p_i,t) \; , \; \Psi_i \in \cal H_i
     \label{lsg_unabh_H}
   \end{equation}
-  auf unabhängige Schrödinger-Gleichungen für die einzelnen Wellenfunktionen \\ $\Psi_i(x_i,p_i,t)$, sodass \cite{online quelle}
+  auf unabhängige Schrödinger-Gleichungen für die einzelnen Wellenfunktionen \\ $\Psi_i(x_i,p_i,t)$, sodass %\cite{online quelle}
   \begin{equation}
     \text i \hbar \frac{\partial}{\partial t}\Psi_i = \delta_{i,j}  H_j \Psi_i
     \label{schroedglg_unabh_H}
@@ -48,15 +48,16 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
   \begin{equation}
     \frac{1}{\Psi_1}H_1\Psi_1 = \frac{\frac{\partial}{\partial t} \Psi_1}{\Psi_1} \; , \; \frac{1}{\Psi_2}H_2\Psi_2 = \frac{\frac{\partial}{\partial t} \Psi_2}{\Psi_2} \; .
   \end{equation}
-  Wie an diesem Beispiel leicht zu sehen, gilt Gleiches auch für beliebig viele unabhängige Hamilton-Operatoren, womit (\ref{schroedglg_unabh_H}) erfüllt ist und wir wissen, dass die Lösung $\Psi$ die Form (\ref{lsg_unabh_H}) hat.
+  Wie an diesem Beispiel zu sehen, gilt Gleiches auch für beliebig viele unabhängige Hamilton-Operatoren, womit (\ref{schroedglg_unabh_H}) erfüllt ist und wir wissen, dass die Lösung $\Psi$ die Form (\ref{lsg_unabh_H}) hat.
   %nur EINE moegliche lsg hat die form psi, wenn wir einschraenken, dass psi so aussehen soll, wer weis ob es noch andere lsgen nicht dieser form gibt.
 
 
 
-\section{Unitäre Variablenformation und allgemeine Lösung der Schrödinger-Gleichung}
+\section{Unitäre Variablentransformation und allgemeine Lösung der Schrödinger-Gleichung}
   Um für unseren Hamilton-Operator $H(x_1,x_2,p_1,p_2,t)$ (\ref{H_gekoppelt}) eine entkoppelte Form $H(x_+,x_-,p_+,p_-,t)=H_+(x_+,p_+,t)+H_-(x_-,p_-,t)$ nach (\ref{unabh_H}) in den neuen Koordinaten/Variablen $x_+,x_-,p_+,p_-$ zu erhalten, wählen wir die unitären Koordinationtransformationen \cite{arxiv}
   \begin{equation}
     x_+ = \frac{1}{\sqrt{2}}(x_2+x_1) \;,\; x_-=\frac{1}{\sqrt{2}}(x_2-x_1) \;,
+    \label{koord_trafo_x}
   \end{equation}
   welche aus den Normalmoden des klassischen Problems folgen, worauf in Kapitel () genauer eingegangen wird.
   Durch einfaches Umstellen folgen $x_1$ und $x_2$ in Abhängigkeit der neuen Koordinaten $x_+$ und $x_-$:
@@ -84,7 +85,8 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
   \end{equation}
   Wir setzen erneut in unseren Hamilton-Operator (\ref{H_gekoppelt}) ein und erhalten für den impulsabhängigen Teil
   \begin{equation}
-    \frac{p_1^2}{2m} + \frac{p_2^2}{2m} = \frac{p_+^2}{2m} + \frac{p_-^2}{2m}
+    \frac{p_1^2}{2m} + \frac{p_2^2}{2m} = \frac{p_+^2}{2m} + \frac{p_-^2}{2m} \; .
+    \label{koord_trafo_p^2}
   \end{equation}
 
   Wie erwartet bleibt die Summe der quadrierten Impulsoperatoren unverändert.
@@ -94,7 +96,7 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
     H(t) &= H(t+T) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)x_1 \notag\\
     &= \frac{p_+^2}{2m}+\frac{1}{2}kx_+^2-\frac{1}{\sqrt{2}}S(t)x_+ \quad + \quad
     \frac{p_-^2}{2m}+\frac{1}{2}(k+2\kappa)x_-^2+\frac{1}{\sqrt{2}}S(t)x_- \notag\\
-    &= \frac{p_+^2}{2m}+\frac{1}{2}k_+x_+^2-S_+(t)x_+ \quad + \quad
+    &= \frac{p_+^2}{2m}+\frac{1}{2}k_+x_+^2-S_+(t)x_+ \quad \;\: + \quad
     \frac{p_-^2}{2m}+\frac{1}{2}k_-x_-^2-S_-(t)x_- \notag\\
     &= H_+(x_+,p_+,t) + H_-(x_-,p_-,t) \; .
   \end{align}
@@ -104,10 +106,69 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
   \end{equation}
   Die beiden Oszillatoren werden, wegen dem verschiedenen Vorzeichen von $S_+(t)=S_+(t+T)$ und $S_-(t)=S_-(t+T)$, periodisch aber phasenversetzt um $\pi$ mit der ursprünglichen Treibkraft $S(t)$ angetrieben, wobei diese mit dem Faktor $1/\sqrt{2}$ skaliert wird.
 
-  Betrachten wir den komplizierter geglaubten Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in den alten Koordinaten getrieben sind, und zwar genau wie durch die neuen Koordinaten $x_+$ und $x_-$ vorgegeben, das heißt
+Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in den alten Koordinaten getrieben sind, und zwar genau wie durch die neuen Koordinaten $x_+$ und $x_-$ vorgegeben, das heißt
   \begin{align}
       &H(t) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)(x_2+x_1) \notag\\
       \text{oder} \; &H(t) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)(x_2-x_1) \;,
   \end{align}
   liegt in den neuen Variablen ein vereinfachtes System vor, bei dem nur ein Oszillator $x_+$ oder $x_-$ getrieben ist.
-  Es muss also in den klassischen Normalmoden getrieben werden, damit nach dem Variablenwechsel ein möglichst einfaches System mit nur noch einem getriebenen Oszillator vorliegt.
+  Es muss also in den klassischen Normalmoden getrieben werden, damit nach dem Variablenwechsel ein möglichst einfaches System mit nur noch einem getriebenen Oszillator vorliegt.\\
+  \\\textbf{L"osung der Schr"odinger-Gleichung}
+
+  Nach den Ergebnissen dieses und des vorherigen Abschnittes k"onnen wir nun die Wellenfunktion $\Psi_{n,l}(x_1,x_2,p_1,p_2,t)$ des Systems zweier gekoppelter getriebener Oszillatoren (\ref{H_gekoppelt}), f"ur eine allgemeine Treibkraft $S(t)=S(t+T)$, in den neuen entkoppelten Koordinaten $x_+$ und $x_-$, nach Formel (\ref{schroedglg_unabh_H}) hinschreiben.
+  Durch Ersetzen der neuen Variablen nach Formel (\ref{koord_trafo_x}) und (\ref{koord_trafo_p^2}) ist auch die Wellenfunktion in den alten Variablen bekannt:
+  \begin{align}
+     &\Psi_{n,l}(x_+,x_-,t) = \Psi_{+,n}(x_+,t)\Psi_{-,l}(x_-,t) \notag\\
+     &=N_{n,+}O_n\left(\sqrt{\frac{m\omega_+}{\hbar}}(x_+-\zeta_+(t))\right) \exp\left(\frac{-m\omega_+}{2\hbar}(x_+-\zeta_+(t))^2\right)\notag\\
+     &\quad \cdot \exp\left[\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x_+-\zeta_+(t))-E_nt+\int_0^tL_+\:\text dt'\right)\right] \quad\quad\quad\notag\\
+     &\quad \cdot N_{l,-}O_l\left(\sqrt{\frac{m\omega_-}{\hbar}}(x_--\zeta_-(t))\right) \exp\left(\frac{-m\omega_-}{2\hbar}(x_--\zeta_-(t))^2\right)\notag\\
+     &\quad \cdot \exp\left[\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x_--\zeta_-(t))-E_lt+\int_0^tL_-\:\text dt'\right)\right] \notag\\
+    &= N_{+,n}N_{-,l} O_n\left(\sqrt{\frac{m\omega_+}{\hbar}}(x_+-\zeta_+(t))\right)O_l\left(\sqrt{\frac{m\omega_-}{\hbar}}(x_--\zeta_-(t))\right) \notag\\
+    &\quad\cdot \exp\left[\frac{-m}{2\hbar}\left(\omega_+\left(\frac{1}{\sqrt{2}}(x_2+x_1)-\zeta_+(t)\right)^2 + \omega_-\left(\frac{1}{\sqrt{2}}(x_2-x_1)-\zeta_-(t)\right)^2\right)\right] \notag\\
+    &\quad\cdot \exp\left[\frac{\text i}{\hbar} \left(m\zeta_+(t)\left(\frac{1}{\sqrt{2}}(x_2+x_1)-\zeta_+(t)\right) + m\zeta_-(t)\left(\frac{1}{\sqrt{2}}(x_2-x_1)-\zeta_-(t)\right)\right) \right] \notag\\
+    &\quad\cdot \exp \left[\frac{\text i}{\hbar}\left(-(E_{n}+E_l)+\int_0^tL_++L_-\:\text dt'\right)\right] \notag\\
+    &=\Psi_{n,l}(x_1,x_2-,t) \; , \; n,l \in \mathbb N_0 \; .
+  \end{align}
+  HIER GUCKEN, OB SO AUFSCHREIBEN OK (GEHT UEBER RAND) UND EVTL AUCH IN X1 X2 AUSGESCHRIEBEN (WAHRSCHEINLICH SCHON, DANN AUCH MIT (t) UEBERALL)
+  Die klassischen L"osungen $\zeta_\pm$ und die Lagrange-Funktionen $L_\pm$ sind wie bei der L"osung des einzelnen Oszillators bestimmt "uber (\ref{dgl_zeta}) und (\ref{lagrange_zeta}).
+
+  In den urspr"unglichen Koordinaten sind Kopplungsterme $x_1x_2$ in der Wellenfunktion vorhanden, durch die Hermit-Polynome $O_n/O_l$ treten hierbei im Allgemeinen unterschiedliche Potenzen der $x_1$ und $x_2$ auf.
+
+
+\section{Erwartungswerte}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b

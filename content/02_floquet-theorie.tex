@@ -1,7 +1,21 @@
-\chapter{Floquet-Theorie}
+\chapter{Floquet-Theorie des getriebenen harmonischen Oszillators}
+Der Hamilton-Operator eines harmonischen Oszillators der Masse $m$, welcher mit einer beliebigen aber periodischen äußeren Kraft $S(t)=S(t+T)$ getrieben wird, hat die Form
+\begin{equation}
+  H(t) = H(t+T) = \frac{p^2}{2m} + \frac{1}{2}m\omega_0^2x^2-S(t)x \; ,
+  \label{H_einzelner}
+\end{equation}
+mit $\omega_0=\sqrt{k/m}$ und der Potentialkonstante $k$.
 
+Im Folgenden werden vorerst die allgemeinen Grundzüge der Floquet-Theorie erläutert, indem die entprechenden Teile aus \cite{haengi} und \cite{sherly} reproduziert wird.
 
-%\section{Floquet-Theorie}
+Dann wird Schrödinger-Gleichung (\ref{H_einzelner}) für eine beliebige Treibkraft $S(t)$ gelöst, wobei die Ergebnisse aus \cite{haengi},\cite{husimi} und \cite{mads} reproduziert werden.
+Weiterhin werden die Floquet-Moden $\Phi_n(x,t)$ identifiziert, genauso wie die Quasienergien $\epsilon_n$, welche für eine beliebige periodische Treibkraft und explizit für eine sinusförmige Treibkraft bestimmt werden.
+\iffalse
+Danach werden wir die Ewartungswerte $\braket{x}_n,\braket{x^2}_n,\braket{p}_n,\braket{p^2}_n$ und damit die Unschärfe berechnen, indem wir die bekannten Erwartungswerte des ungetriebenen Oszillators benutzen.
+Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie $\braket{H}_n$ und $\bar H_n$ berechnen.
+\fi
+
+\section{Floquet-Theorie}
   Die Floquet-Theorie \cite{haengi} ist ein nützliches Werkzeug zur der Lösung von quantenmechanischen Systemen, welche durch einen zeitlich periodischen Hamilton-Operator
   \begin{equation}
     H(t) = H(t+T) \; ,
@@ -27,11 +41,11 @@
     \epsilon_n \Phi_n(x,t) = \left(H(t)-\text{i}\hbar\frac{\partial}{\partial t}\right)\Phi_n(x,t) = \cal{H}(t) \Phi_n(x,t) \; .
     \label{eigenwertproblem}
   \end{equation}
-  Die Lösung der Schrödinger-Gleichung konnte somit auf die Lösung eines Eigenwertproblems für den neuen Operator $\cal{H}(t)$ zurückgeführt werden \cite{sherly}.
+  Die Lösung der Schrödinger-Gleichung kann somit auf die Lösung eines Eigenwertproblems für den neuen Operator $\cal{H}(t)$ zurückgeführt werden \cite{sherly}.
 
   Die hermitischen Operatoren $H(t)$ und $\cal H(t)$ operieren auf dem Hilbertraum $\cal{L}^2 \otimes \cal{T}$.
   Dabei ist $\cal{L}^2$ der Raum der quadratintegrablen Funktionen und $\cal{T}$ der Raum der auf $[0,T]$ integrablen Funktionen, da die Operatoren $T$-periodisch sind \cite{haengi}.
-  Nach dem Spektralsatz bilden die Eigenfunktionen $\Phi_n(x,t)$ von $\cal{H}(t)$ eine Orthogonalbasis von $\cal{L}^2 \otimes \cal{T}$, welche auf eine Orthonormalbasis normiert werden kann, wodurch wir das Skalarprodukt definieren k"onnen als:
+  Nach dem Spektralsatz bilden die Eigenfunktionen $\Phi_n(x,t)$ von $\cal{H}(t)$ eine Orthogonalbasis von $\cal{L}^2 \otimes \cal{T}$, welche auf eine Orthonormalbasis normiert werden kann, wodurch wir das Skalarprodukt definieren können als:
   %Es ergibt sich
   \begin{align}
     \begin{split}
@@ -43,7 +57,7 @@
 
 
 %war vorher subsection
- \section{\texorpdfstring{Zeitlich gemittelter Erwartungswert der Energie $\bar{H}_n$}{Zeitlich gemittelter Erwartungswert der Energie bar{H}_n}}
+ \subsection{\texorpdfstring{Zeitlich gemittelter Erwartungswert der Energie $\bar{H}_n$}{Zeitlich gemittelter Erwartungswert der Energie bar{H}_n}}
 
     Da $H(t)$ nicht zeitlich konstant ist, sind auch dessen Erwartungswerte, die Energien des Systems, zeitabhängig.
     Ein direkter Vorteil der Floquet-Theorie liegt darin, dass sich die durchschnittliche Energie
@@ -81,34 +95,239 @@
     \end{equation}
 
     %\newpage
+\iffalse
+    \chapter{Getriebener harmonischer Oszillator in der Quantenmechanik}
+      Der Hamilton-Operator eines harmonischen Oszillators der Masse $m$, welcher mit einer beliebigen aber periodischen äußeren Kraft $S(t)=S(t+T)$ getrieben wird, hat die Form
+      \begin{equation}
+        H(t) = H(t+T) = \frac{p^2}{2m} + \frac{1}{2}m\omega_0^2x^2-S(t)x \; ,
+        \label{H_einzelner}
+      \end{equation}
+      mit $\omega_0=\sqrt{k/m}$ und der Potentialkonstante $k$.
+      Im Folgenden wird vorerst die Schrödinger-Gleichung für eine beliebige Treibkraft $S(t)$ gelöst.
+      Weiterhin werden die Floquet-Moden $\Phi_n(x,t)$ identifiziert, genauso wie die Quasienergien $\epsilon_n$, welche für eine beliebige periodische Treibkraft und explizit für eine sinusförmige Treibkraft bestimmt werden.
+
+      Danach werden wir die Ewartungswerte $\braket{x}_n,\braket{x^2}_n,\braket{p}_n,\braket{p^2}_n$ und damit die Unschärfe berechnen, indem wir die bekannten Erwartungswerte des ungetriebenen Oszillators benutzen.
+      Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie $\braket{H}_n$ und $\bar H_n$ berechnen.
+\fi
+
+
+    \section{Allgemeine Lösung der Schrödinger-Gleichung}
+      \label{lsg_einzelner}
+      Das System mit Hamilton-Operator (\ref{H_einzelner}) kann exakt gelöst werden, indem die Schrödinger-Gleichung durch einen Variablenwechsel und zwei unitäre Transformationen auf die bekannte Form des ungetriebenen Oszillators reduziert wird \cite{haengi}.
+
+      \textbf{1) Unitärer Variabletransformation}\\
+      Für den neuen Ortsoperator bzw. die Ortsvariable wird eine zeitabhängige Verschiebung angesetzt:
+      \begin{equation}
+        x \rightarrow y=x-\zeta(t) \; .
+      \end{equation}
+      Wie zu erwarten verändert sich der Impuls(operator) durch die Translation im Ort nicht, da $\zeta(t)$ bei der Ortsableitung wegfällt.
+      %wobei der Impuls(operator) unverändert bleibt.
+      %Der Impulsoperator bleibt dadurch unverändert.
+
+      Mit der neuen Zeitableitung der Wellenfunktion
+      \begin{equation}
+        \text{i}\hbar \frac{\partial}{\partial t} \Psi(y(t),t) = \text{i}\hbar \dot{\Psi} -\dot{\zeta}\frac{\partial}{\partial y}\Psi(y(t),t)
+      \end{equation}
+      wird die Schrödinger-Gleichung zu:
+      \begin{equation}
+        \text i \hbar \dot{\Psi}(y,t) = \left[\text i \hbar \dot{\zeta}\frac{\partial}{\partial y}-\frac{\hbar^2}{2m}\frac{\partial^2}{\partial y^2}+\frac{1}{2}m\omega_0^2(y+\zeta)^2-(y+\zeta)S(t)\right]\Psi(y,t) \; .
+        \label{schroedinger_einzeln_getrieben}
+      \end{equation}
+
+      \textbf{2) Unitäre Tranformation für $\Psi(y,t)$}\\
+      Im Weiteren wählen wir die unitäre Transformation
+      \begin{equation}
+        \Psi(y,t) = \text e^{\frac{\text i}{\hbar}m\dot \zeta y}\Lambda(y,t) \; .
+      \end{equation}
+      Durch Einsetzen in die Schrödinger-Gleichung (\ref{schroedinger_einzeln_getrieben}) und Ausrechnen der Ableitungen erhalten wir
+      \begin{align}
+        \begin{split}
+          &\text e^{\frac{\text i}{\hbar}m\dot \zeta y}(\text i \hbar \dot \Lambda(y,t) - my \ddot{\zeta}\Lambda(y,t)) =\\
+           &\text e^{\frac{\text i}{\hbar}m\dot \zeta y} \left[\left(-m\dot \zeta^2 \Lambda(y,t) + \text i \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda(y,t) \right) \right. \\
+           &\left. + \left(\frac{1}{2}m\dot \zeta^2 \Lambda(y,t) - \text{i} \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda(y,t) - \frac{\hbar}{2m}\frac{\partial^2}{\partial y^2} \Lambda(y,t)  \right)
+          + \frac{1}{2}m\omega_0^2(y+\zeta)^2  + (y+\zeta)S(t)  \right] \; .
+        \end{split}
+      \end{align}
+      \iffalse
+      Durch Einsetzen in die Schrödinger-Gleichung und Ausrechnen der Ableitungen erhalten wir für die linke Seite von (\ref{schroedinger_einzeln_getrieben})
+      \text e^{\frac{\text i}{\hbar}m\dot \zeta y}(\text i \hbar \dot \Lambda(y,t) - my \ddot{\zeta}\Lambda(y,t))
+      \begin{equation}
+      \end{equation}
+      und für die rechte Seite
+      \begin{align}
+        \begin{split}
+        \text e^{\frac{\text i}{\hbar}m\dot \zeta y} \left[\left(-m\dot \zeta^2 \Lambda(y,t) + \text i \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda(y,t) \right) + \left(\frac{1}{2}m\dot \zeta^2 \Lambda(y,t) - \text{i} \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda(y,t) - \frac{\hbar}{2m}\frac{\partial^2}{\partial y^2} \Lambda(y,t)  \right) \right. \\
+        \left. + \left(\frac{1}{2}m\omega_0^2y^2\Lambda(y,t) + m\omega_0^2y\zeta\Lambda(y,t) + \frac{1}{2}m\omega_0^2 \zeta^2\Lambda(y,t)) \right) + \left(-yS(t)\Lambda(y,t) - \zeta S(t)\Lambda(y,t) \right) \right]
+      \end{split}
+      \end{align}
+      \fi
+
+      %\newpage
+
+      Indem auf beiden Seiten durch die Exponentialfunktion geteilt wird, bekommen wir eine Differentialgleichung für $\Lambda(y,t)$.
+      Außerdem können durch geschicktes Umsortieren der Terme die Lagrange-Funktion $L(\zeta,\dot \zeta, t)$
+      \begin{equation}
+        L(\zeta,\dot \zeta, t) = \frac{1}{2}m\dot \zeta^2 - \frac{1}{2}m\omega_0^2\zeta^2 + S(t)\zeta
+        \label{lagrange_zeta}
+      \end{equation}
+        sowie die Bewegungsgleichung des klassischen getriebenen harmonischen  Oszillators \cite{husimi}
+        \begin{equation}
+          m\ddot \zeta + m\omega_0^2\zeta - S(t) = 0
+          \label{dgl_zeta}
+        \end{equation}
+      für die Verschiebung $\zeta(t)$ identifiziert werden.
+      Die Differentialgleichung für $\Lambda(y,t)$ ist folglich
+      \begin{equation}
+        \text i \hbar \dot \Lambda(y,t) = \left[ \frac{-\hbar^2}{2m}\frac{\partial^2}{\partial y^2} + \frac{1}{2}m\omega_0^2y^2 + (m\ddot \zeta + m\omega_0^2y\zeta - S(t))y - L(\zeta,\dot \zeta, t) \right]\Lambda(y,t) \; .
+        \label{dgl_lambda}
+      \end{equation}
+      Um die Gleichung zu vereinfachen, wählen wir $\zeta(t)$ nun so, dass es gerade die klassische Bewegungsgleichung erfüllt, der entsprechende Term in (\ref{dgl_lambda}) also verschwindet.
+      Nur noch die Lagrange-Funktion unterscheidet diese Differential-Gleichung von der des ungetriebenen Oszillators.
+
+      \textbf{3) Unitäre Transformation für $\Lambda(y,t)$}\\
+      Zuletzt wählen wir den Ansatz
+      \begin{equation}
+        \Lambda(y,t) = \text e^{\frac{\text i}{\hbar}\int_0^tL \: \text d t'}\chi(y,t)
+      \end{equation}
+      für $\Lambda(y,t)$, um die Lagrange-Funktion in (\ref{dgl_lambda}) zu eliminieren.
+      Dadurch wird diese Differential-Gleichung für $\Lambda(y,t)$ bzw. die ursprüngliche Schrödinger-Gleichung auf einen ungetriebenen Oszillator für $\chi(y,t)$ zurückgeführt:
+      \begin{equation}
+        \text i \hbar \dot \chi(y,t) = \left[ \frac{-\hbar^2}{2m}\frac{\partial^2}{\partial y^2} + \frac{1}{2}m\omega_0^2y^2 \right]\chi(y,t) \; .
+      \end{equation}
+      Das bedeutet die $\chi_n(y,t)$ sind die Wellenfunktionen des ungetriebenen Oszillators und die Gesamtlösung der Schrödinger-Gleichung des getriebenen Oszillators ist damit gegeben durch
+      \begin{align}
+        \begin{split}
+        \Psi_n(x,t) &= \Psi_n(y=x-\zeta(t),t) \\
+        &= N_nO_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \text e^{\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2} \\
+        &\quad \cdot \text e^{\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))-E_nt+\int_0^tL(\dot \zeta,\zeta,t')\:\text dt'\right)} \; ,
+        \; n \in \mathbb{N}_0 \; .
+        \label{gesamtlsg_einzelner}
+      \end{split}
+      \end{align}
+      Dabei sind $O_n$ die Hermit-Polynome, $E_n = \hbar \omega_0(n+1/2)$ die bekannten Eigenenergien der Zustände des ungetriebenen Oszillators und
+      \begin{equation}
+        N_n = \left(\frac{m\omega_0}{\pi \hbar}\right) \frac{1}{\sqrt{2^nn!}}
+      \end{equation}
+      dessen Normierungsfaktoren.
+      Die Lösungen des getriebenen Oszillators sind auf $x \in (-\infty, \infty)$ normiert und somit ist ebenfalls Gleichung (\ref{skalarprodukt_einzelner}) mit Skalarprodukt erfüllt.
+
+      Die Lösung entspricht damit einem, um die klassische Lösung $\zeta(t)$ verschobenen, ungetriebenen Oszillator, mit einer zusätzlichen zeit- und ortsabhängigen komplexen Phase.
+      Die treibende Kraft $S(t)$ geht in die klassische Lösung $\zeta(t)$ und, über das Wirkungsintegral, in die komplexe Phase ein.
 
 
 
+    %war vorher subsection
+      \section{\texorpdfstring{Identifizierung der Quasienergien $\epsilon_n$ und Floquet-Moden $\Phi_n(x,t)$}{Identifizierung der Quasienergien epsilon_n und Floquet-Moden Phi_n(x,t)}}
+        Nach dem Floquet-Theorem für periodische Hamilton-Operatoren (\ref{floquet_theorem}) kann die Lösung des getriebenen Oszillators geschrieben werden als
+        \begin{equation}
+          \Psi_n(x,t) = \text e^{\frac{-\text i}{\hbar}\epsilon_nt}\Phi_n(x,t) \; ,
+        \end{equation}
+        mit $\Phi_n(x,t)=\Phi_n(x,t+T)$.
+        Nun können wir alle $T$-periodischen Terme als $\Phi_n(x,t)$ identifizieren, und alle Terme im Exponenten, die linear in $t$ sind, als $-\text i\epsilon_n t/\hbar$ \cite{haengi}.
+
+        Alle Funktionen von $(x-\zeta(t))$ haben die Periode $T$, da $\zeta(T)$ als Lösung der klassischen Bewegungsgleichung mit $S(t)=S(t+T)$ die Periode $T$ \,hat. Das
+        Ergebnis des Integrals über die Lagrange-Funktion kann nur $T$-periodisch oder linear in $t$ sein, deshalb sind die Quasienergien gegeben durch die $E_n$ und den linearen Teil des Integrals:
+        \begin{equation}
+          \epsilon_n = E_n - \frac{1}{T} \int_0^T L(\dot \zeta, \zeta, t) \: \text d t \; .
+        \end{equation}
+        Die Floquet-Moden sind demnach
+        \begin{align}
+          \begin{split}
+            \Phi_n(x,t) &=
+             N_nO_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \text e^{\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2} \\
+            &\quad \cdot \text e^{\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))+\int_0^tL(\dot \zeta,\zeta,t')\:\text d t-\frac{t}{T} \int_0^T L(\dot \zeta,\zeta,t)\:\text dt\: \right)} \; , \\
+            &\quad \quad n \in \mathbb{N}_0 \; .
+            \label{floquet_moden_einzelner}
+          \end{split}
+        \end{align}
+
+
+      \subsection{Quasienergien für eine sinusoidiale Treibkraft}
+        Hier wird ein Beispiel einer treibenden Kraft diskutiert: %\cite{haengi}:
+        \begin{equation}
+          S(t) = S(t+T) = A\sin(\omega t),
+        \end{equation}
+        wobei $T=2\pi / \omega$ ist.
+        Setzen wir die allgemeine homogene Lösung gleich null, wird die Lösung $\zeta(t)$ der klassischen Bewegungsgleichung (\ref{dgl_zeta}) zu \cite{mads}
+        \begin{equation}
+          \zeta(t) = \frac{A\sin(\omega t)}{m(\omega_0^2 - \omega^2)} \; .
+        \end{equation}
+        Das Berechnen des Wirkungsintegrals und anschließendes Identifizieren des linearen Anteils liefert die Quasienergien für die gegebene Kraft:
+        \begin{equation}
+          \epsilon_n  = \hbar \omega_0\left(n+\frac{1}{2}\right) - \frac{A}{4m(\omega_0^2-\omega^2)} \;.
+        \end{equation}
+        Wie zu erkennen streben die Quasienergien, und somit die mittlere Energie des Systems (\ref{mittleres_H}), gegen Unendlich, wenn sich die Treibfrequenz $\omega$ nahe der Eigenfrequenz des Oszillators $\omega_0 $ befindet.
+        Da wir einen getriebenen Oszillator ohne Dämpfung betrachten, war dieses Ergebnis zu erwarten \cite{mads}.
+        %HIER KANN MAN NOCH AUSFUEHRLICH INSCHREIBEN MIT MADS
+
+    %\chapter{Ergebnisse}
+
+    %war vorher section
+    \subsection{Quasienergien für eine beliebige periodische Treibkraft $S(t)$}
+      \label{epsilon_bel_kraft}
+      Um die Quasienergien bei einer beliebigen periodisch treibenden Kraft auf elegante Weise zu bestimmen, und ohne ein Wirkungsintegral berechnen zu müssen, setzen wir eine komplexe Fourier-Reihe an:
+      \begin{equation}
+        S(t) = \sum_{j=-\infty}^\infty c_j \text e^{\text ij\omega t}, \; c_j = \frac{1}{T} \int_0^T S(t) \text e^{-ij\omega t} \: \text d t \; .
+      \end{equation}
+      Die $c_j$ haben die Einheit einer Kraft.
+
+      Für $\zeta(t)$ wählen wir jetzt ebenfalls einen Reihenansatz:
+      \begin{equation}
+        \zeta(t) = \sum_{j=-\infty}^\infty d_j \text e^{\text ij\omega t} \; .
+      \end{equation}
+      Wir betrachten wieder nur die inhomogene klassische Bewegungsgleichung und bestimmen die $d_j$, indem wir einsetzen und einen Koeffizientenvergleich der $d_j$ und $c_j$ machen.
+      Es zeigt sich, dass
+      \begin{equation}
+        \zeta(t) = \sum_{j=-\infty}^\infty \frac{c_j}{m(\omega_0^2-j^2\omega^2)} \text e^{ij\omega t}
+        \label{zeta_bel_kraft}
+      \end{equation}
+      gilt, womit sich die Lagrange-Funktion (\ref{lagrange_zeta}) ergibt zu:
+      \begin{align}
+        \begin{split}
+          L &= \frac{1}{2}m\dot \zeta^2 - \frac{1}{2}m\omega_0^2\zeta^2 + S(t)\zeta \notag\\
+           &=\sum_j \sum_l \left[ \frac{-\omega^2}{2m} \frac{jc_j}{\omega_0^2-j^2\omega^2} \frac{lc_l}{\omega_0^2-l^2\omega^2}
+           -\frac{\omega_0^2}{2m} \frac{c_j}{\omega_0^2-j^2\omega^2} \frac{c_l}{\omega_0^2-l^2\omega^2} \right. \notag\\
+            &\left. \quad + \frac{1}{m} \frac{c_jc_l}{\omega_0^2-j^2\omega^2} \right] \text e^{\text i(j+l)\omega t}  \; , \; j,l \in \mathbb{Z} \; .
+         \end{split}
+       \end{align}
+      \iffalse
+      \begin{align}
+        \begin{split}
+          L &= \frac{1}{2}m\dot \zeta^2 - \frac{1}{2}m\omega_0^2\zeta^2 + S(t)\zeta \\
+           &=\frac{-\omega^2}{2m} \sum_j \sum_l \frac{jc_j}{\omega_0^2-j^2\omega^2} \frac{lc_l}{\omega_0^2-l^2\omega^2} \text e^{\text i(j+l)\omega t}\\
+           &\quad-\frac{\omega_0^2}{2m} \sum_j \sum_l \frac{c_j}{\omega_0^2-j^2\omega^2} \frac{c_l}{\omega_0^2-l^2\omega^2} \text e^{\text i(j+l)\omega t}\\
+           &\quad + \frac{1}{m} \sum_j \sum_l \frac{c_jc_l}{\omega_0^2-j^2\omega^2} \text e^{\text i(j+l)\omega t}\; , \; j,l \in \mathbb{Z} \; .
+         \end{split}
+       \end{align}
+       \fi
+
+       Nun identifizieren wir alle Terme der Lagrange-Funktion, welche nach der Ausführung des Wirkungsintegrals linear in der Zeit $t$ sind, ohne dieses explizit zu berechnen.
+       Denn wir wissen, dass die Exponentialterme, welche sich beim Integrieren nach der Zeit reproduzieren, periodisch in der Zeit sind.
+       Daher werden nur die konstanten Terme, welche entstehen, wenn die Exponentialterme wegfallen, eine lineare Abhängigkeit aufweisen.
+       Die Exponentialterme werden 1, wenn $j=-l$ ist.
+       Infolgedessen wird die Doppelsumme, die bei der Quadrierung entstanden ist, wieder zur Einzelsumme.
+       Wir fassen den linearen Teil des Wirkungsintegrals zusammen:
+       \begin{align}
+         \begin{split}
+           \frac{1}{T} \int_0^T L \: \text d t
+           &= \sum_j \left[\frac{\omega^2}{2m} \frac{j^2c_jc_{-j}}{(\omega_0^2-j^2\omega^2)^2}
+           - \frac{\omega_o^2}{2m} \frac{c_jc_{-j}}{(\omega_0^2-j^2\omega^2)^2} \right.
+           \left. +\frac{1}{m} \frac{c_jc_{-j}}{\omega_0^2-j^2\omega^2}
+           \right]\\
+           &= \sum_j \left[\frac{1}{2m} \frac{c_jc_{-j}(j^2\omega^2-\omega_0^2)}{(\omega_0^2-j^2\omega^2)^2} + \frac{1}{m} \frac{c_jc_{-j}}{\omega_0^2-j^2\omega^2} \right] \\
+           &= \sum_j \frac{c_jc_{-j}}{2m(\omega_0^2-j^2\omega^2)} = \frac{c_0^2}{2m\omega_0^2} + \sum_{j=1}^\infty \frac{c_j^2}{m(\omega_0^2-j^2\omega^2)}
+         \end{split}
+       \end{align}
+
+       Die Quasienergien $\epsilon_n$ sind hiernach:
+       \begin{align}
+         \begin{split}
+           \epsilon_n &= \hbar \omega_0\left(n+\frac{1}{2}\right) - \sum_j \frac{c_jc_{-j}}{2m(\omega_0^2-j^2\omega^2)} \; .
+         \end{split}
+       \end{align}
+       Interessanterweise kommt es in obiger Formel nicht nur bei $\omega = \omega_0$ zu einer Singularität, wie bei der Beispielkraft $S(t) = A\sin(\omega t)$, sondern bei allen $\omega = \omega_0 / j$.
+       %WORAN LIEGT DAS, BEI KOEFFIZIENTEENVEGL ZU BESTIMMUNG VON ZETA GUCKEN.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+       \subsection{Beispiele für S(t) dreieck rechteck delta}

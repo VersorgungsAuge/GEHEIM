@@ -21,26 +21,26 @@
   \sortlist[entry]{nty/global/}
     \entry{hellmann}{article}{}
       \name{author}{3}{}{%
-        {{hash=a6429a648d7a58fb7735f92aa25796d2}{%
+        {{hash=a4893d46a61bbb374b60513f1f327465}{%
            family={Fainshtein},
            familyi={F\bibinitperiod},
-           given={A\bibnamedelima G},
+           given={A.\bibnamedelimi G.},
            giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=087df8baf73ffd3042267cdfeaecd742}{%
+        {{hash=411489fa0d8f68462c8451bd0dbace91}{%
            family={Manakov},
            familyi={M\bibinitperiod},
-           given={N\bibnamedelima L},
+           given={N.\bibnamedelimi L.},
            giveni={N\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=fe26ec8be992b91bd73ee6573a81d389}{%
+        {{hash=e773ef218e43ac9501c906ea279e58d9}{%
            family={Rapoport},
            familyi={R\bibinitperiod},
-           given={L\bibnamedelima P},
+           given={L.\bibnamedelimi P.},
            giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
       }
-      \strng{namehash}{07ae272e5feeb6cf54a43fb796dcc45a}
-      \strng{fullhash}{07ae272e5feeb6cf54a43fb796dcc45a}
-      \strng{authornamehash}{07ae272e5feeb6cf54a43fb796dcc45a}
-      \strng{authorfullhash}{07ae272e5feeb6cf54a43fb796dcc45a}
+      \strng{namehash}{75a510f2df0384b2a2241aa2334b8d35}
+      \strng{fullhash}{75a510f2df0384b2a2241aa2334b8d35}
+      \strng{authornamehash}{75a510f2df0384b2a2241aa2334b8d35}
+      \strng{authorfullhash}{75a510f2df0384b2a2241aa2334b8d35}
       \field{sortinit}{F}
       \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
       \field{labelnamesource}{author}
@@ -52,25 +52,22 @@
       \field{year}{1978}
       \field{pages}{2561}
       \range{pages}{1}
-      \verb{url}
-      \verb http://stacks.iop.org/0022-3700/11/i=14/a=020
-      \endverb
     \endentry
     \entry{haengi}{book}{}
       \name{author}{1}{}{%
-        {{hash=375f6fd22e809f2ff2b1617ebd66abc8}{%
+        {{hash=6dde7f7e237332539b3324f7e7699eae}{%
            family={Hänggi},
            familyi={H\bibinitperiod},
-           given={P},
+           given={P.},
            giveni={P\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley-VCH}%
       }
-      \strng{namehash}{375f6fd22e809f2ff2b1617ebd66abc8}
-      \strng{fullhash}{375f6fd22e809f2ff2b1617ebd66abc8}
-      \strng{authornamehash}{375f6fd22e809f2ff2b1617ebd66abc8}
-      \strng{authorfullhash}{375f6fd22e809f2ff2b1617ebd66abc8}
+      \strng{namehash}{6dde7f7e237332539b3324f7e7699eae}
+      \strng{fullhash}{6dde7f7e237332539b3324f7e7699eae}
+      \strng{authornamehash}{6dde7f7e237332539b3324f7e7699eae}
+      \strng{authorfullhash}{6dde7f7e237332539b3324f7e7699eae}
       \field{sortinit}{H}
       \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
       \field{labelnamesource}{author}
@@ -79,21 +76,45 @@
       \field{title}{Quantum Transport and Dissipation}
       \field{year}{1998}
     \endentry
+    \entry{husimi}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e16bba47427ba9288fc43123916c44f1}{%
+           family={Husimi},
+           familyi={H\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{e16bba47427ba9288fc43123916c44f1}
+      \strng{fullhash}{e16bba47427ba9288fc43123916c44f1}
+      \strng{authornamehash}{e16bba47427ba9288fc43123916c44f1}
+      \strng{authorfullhash}{e16bba47427ba9288fc43123916c44f1}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress of Theoretical Physics}
+      \field{number}{4}
+      \field{title}{Miscellanea in Elementary Quantum Mechanics,II}
+      \field{volume}{9}
+      \field{year}{1953}
+      \field{pages}{381\bibrangedash 402}
+      \range{pages}{22}
+    \endentry
     \entry{mads}{thesis}{}
       \name{author}{1}{}{%
-        {{hash=086b1243113323f78b89f09304289282}{%
+        {{hash=92c49b18ff3bd91b197d4c9a22ef7305}{%
            family={Jørgensen},
            familyi={J\bibinitperiod},
-           given={M},
+           given={M.},
            giveni={M\bibinitperiod}}}%
       }
       \list{institution}{1}{%
         {University of Copenhagen}%
       }
-      \strng{namehash}{086b1243113323f78b89f09304289282}
-      \strng{fullhash}{086b1243113323f78b89f09304289282}
-      \strng{authornamehash}{086b1243113323f78b89f09304289282}
-      \strng{authorfullhash}{086b1243113323f78b89f09304289282}
+      \strng{namehash}{92c49b18ff3bd91b197d4c9a22ef7305}
+      \strng{fullhash}{92c49b18ff3bd91b197d4c9a22ef7305}
+      \strng{authornamehash}{92c49b18ff3bd91b197d4c9a22ef7305}
+      \strng{authorfullhash}{92c49b18ff3bd91b197d4c9a22ef7305}
       \field{sortinit}{J}
       \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
       \field{labelnamesource}{author}
@@ -104,21 +125,21 @@
     \endentry
     \entry{arxiv}{article}{}
       \name{author}{2}{}{%
-        {{hash=cbe451c240589bf44b11a324cd7001ee}{%
+        {{hash=00ecfcf73a772d25fdb7705dc0fe24c9}{%
            family={McDermott},
            familyi={M\bibinitperiod},
-           given={R\bibnamedelima M},
+           given={R.\bibnamedelimi M.},
            giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=c7ae4acf5ea5db4c38c5a013b842e379}{%
+        {{hash=b7e82161fa37f52d702737ce3eb34584}{%
            family={Redmount},
            familyi={R\bibinitperiod},
-           given={I\bibnamedelima H},
+           given={I.\bibnamedelimi H.},
            giveni={I\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
       }
-      \strng{namehash}{e9cff475b8585f823396fbec5c5d72cd}
-      \strng{fullhash}{e9cff475b8585f823396fbec5c5d72cd}
-      \strng{authornamehash}{e9cff475b8585f823396fbec5c5d72cd}
-      \strng{authorfullhash}{e9cff475b8585f823396fbec5c5d72cd}
+      \strng{namehash}{831b91d5b99482435cff4a48ae3ba71f}
+      \strng{fullhash}{831b91d5b99482435cff4a48ae3ba71f}
+      \strng{authornamehash}{831b91d5b99482435cff4a48ae3ba71f}
+      \strng{authorfullhash}{831b91d5b99482435cff4a48ae3ba71f}
       \field{sortinit}{M}
       \field{sortinithash}{2684bec41e9697b92699b46491061da2}
       \field{labelnamesource}{author}
@@ -128,9 +149,6 @@
       \field{note}{Zugriff am: 03.08.18}
       \field{title}{Coupled Classical and Quantum Oscillators}
       \field{year}{2004}
-      \verb{eprint}
-      \verb quant-ph/0403184
-      \endverb
       \keyw{Quantum Physics}
     \endentry
     \entry{sherly}{article}{}
@@ -158,9 +176,7 @@
       \range{pages}{9}
     \endentry
   \endsortlist
-  \missing{binom}
-  \missing{husimi}
-  \missing{online quelle}
+  \missing{haenggi}
 \endrefsection
 \endinput
 
