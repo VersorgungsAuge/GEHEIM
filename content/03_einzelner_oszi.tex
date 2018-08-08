@@ -56,6 +56,7 @@
       = \int_{-\infty}^{\infty} |\Psi_{n,\text{ung}}(y,t)|^2 (y+\zeta(t))^2 \: \text dy \notag \\
       &= \braket{y^2}_{n,\text{ung}} + 2\braket{y}_{n,\text{ung}} + \zeta^2(t)
       = s^2(2n+1) + \zeta^2(t) \; ,
+      \label{erwartungswert_x^2_einzelner}
     \end{align}
     zusammen mit der charakteristischen Länge des ungetriebenen Oszillators
     \begin{equation}
@@ -113,7 +114,8 @@
 
     Schließlich können wir den Erwartungswert für den Impuls in Abhängigkeit der bekannten Erwartungswerte des Standard-Oszillators hinschreiben:
     \begin{align}
-      \braket{p}_n = \braket{p_y}_{n,\text{ung}} + m\dot{\zeta}(t) = m\dot{\zeta}(t)
+      \braket{p}_n = \braket{p_y}_{n,\text{ung}} + m\dot{\zeta}(t) = m\dot{\zeta}(t) \; .
+      \label{erwartungswert_p_einzelner}
     \end{align}
 
     Wieder erfüllt der Erwartungswert die Bewegungsgleichung des klassischen Oszillators:
@@ -130,6 +132,7 @@
     Speziell für $m=2$ gilt:
     \begin{equation}
       \braket{p^2}_n = \braket{p^2_y}_{n,\text{ung}} + (m\dot{\zeta}(t))^2 = m^2\omega^2_0 s^2(2n+1) + m^2\dot{\zeta}^2(t) \; .
+      \label{erwartungswert_p^2_einzelner}
     \end{equation}
 
 
@@ -183,6 +186,7 @@
     Für den expliziten Fall der Sinus-Treibkraft $S(t)=A\sin(\omega t)$ folgt:
     \begin{equation}
       \bar H_n = E_n - \frac{A}{4m(\omega_0^2-\omega^2)}\left(1-\frac{2\omega^2}{(\omega_0^2-\omega^2)}\right) \; .
+      \label{mittleres_H_sinus}
     \end{equation}
     Für $\omega_0^2>\omega^2$ erhalten wir in diesem Beispiel demnach einen Anstieg des Energiemittelwertes gegenüber den Quasienergien, andernfalls eine Absenkung.
 

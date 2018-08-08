@@ -2158,9 +2158,10 @@
     <bcf:citekey order="14">haengi</bcf:citekey>
     <bcf:citekey order="15">husimi</bcf:citekey>
     <bcf:citekey order="16">haengi</bcf:citekey>
-    <bcf:citekey order="17">mads</bcf:citekey>
+    <bcf:citekey order="17">haengi</bcf:citekey>
     <bcf:citekey order="18">mads</bcf:citekey>
-    <bcf:citekey order="19">arxiv</bcf:citekey>
+    <bcf:citekey order="19">mads</bcf:citekey>
+    <bcf:citekey order="20">arxiv</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

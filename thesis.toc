@@ -22,7 +22,9 @@
 \contentsline {section}{\numberline {4.1}Die Schrödinger-Gleichung mit unabhängigen Hamilton-Operatoren}{16}{section.4.1}
 \contentsline {section}{\numberline {4.2}Unitäre Variablentransformation und allgemeine Lösung der Schrödinger-Gleichung}{17}{section.4.2}
 \contentsline {section}{\numberline {4.3}Erwartungswerte}{21}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Zeitabh"angige Erwartungswerte des Ortes}{21}{subsection.4.3.1}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{23}{chapter.5}
-\contentsline {chapter}{\numberline {A}Ein Anhangskapitel}{24}{appendix.A}
-\contentsline {chapter}{\nonumberline Literatur}{25}{chapter*.4}
+\contentsline {subsection}{\numberline {4.3.1}Zeitabh"angige Erwartungswerte des Ortes}{22}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Zeitabh"angige Erwartungswerte des Impulses}{23}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Erwartungswerte der Energie}{25}{subsection.4.3.3}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{26}{chapter.5}
+\contentsline {chapter}{\numberline {A}Ein Anhangskapitel}{27}{appendix.A}
+\contentsline {chapter}{\nonumberline Literatur}{28}{chapter*.5}

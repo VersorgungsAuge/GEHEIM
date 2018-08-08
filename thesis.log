@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  8 AUG 2018 04:27
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  8 AUG 2018 18:39
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -441,7 +441,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.575 seconds)
+luaotfload | main : initialization completed in 0.572 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex
 .sty
@@ -2108,25 +2108,16 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 (load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
-/otl/lmsans10-bold.luc)
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 20.74031pt on input line 157.
+/otl/lmsans10-bold.luc)(load luc: /home/ismael/.local/texlive/2016/texmf-var/lua
+tex-cache/generic/fonts/otl/lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 14.4002pt on input line 157.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 12.00018pt on input line 157.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 20.73969pt on input line 157.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 157.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 11.99982pt on input line 157.
-(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
-/otl/lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 10.00015pt on input line 157.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 7.0001pt on input line 157.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 14.39977pt on input line 157.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 9.99985pt on input line 157.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
@@ -2172,6 +2163,11 @@ chapter 2.
 luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [2
 
 ]
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 12.00018pt on input line 60.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 11.99982pt on input line 60.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 60.
@@ -2193,18 +2189,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [6] [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 268.
+(hyperref)                removing `math shift' on input line 269.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 268.
+(hyperref)                removing `math shift' on input line 269.
 
 [8]) (./content/03_einzelner_oszi.tex [9]
 chapter 3.
 [10
 
 ] [11] [12]
-Overfull \hbox (1.27937pt too wide) in paragraph at lines 107--113
+Overfull \hbox (1.27937pt too wide) in paragraph at lines 108--114
 \EU2/lmr/m/n/10.95 Hier-nach ha-ben wir ef-fek-tiv er-reicht, dass wir den Im-p
 ul-s-ope-ra-tor an der $\EU2/LatinModernMath(0)/m/n/10.95 𝑦$\EU2/lmr/m/n/10.
 95 -abhängigen
@@ -2231,38 +2227,88 @@ Overfull \vbox (10.2pt too high) has occurred while \output is active []
 
  [17]
 [18]
+Overfull \hbox (48.21065pt too wide) in paragraph at lines 135--135
+[] 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
 [20]
+! Undefined control sequence.
+l.151 ... Floquet-Moden $\Phi_{n,l}(x_+,x_-,t)=\Pshi
+                                                  _+(x_+,t)\Phi_-(x_-,t)$ si...
+? 
 
 LaTeX Warning: Reference `epsilon_sinus_kraft' on page 21 undefined on input lin
-e 157.
+e 159.
 
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 184.
+(amsmath)                 on input line 186.
 
-[21]
+[21] [22] <plots/<x2>nl0.png, id=373, 578.16pt x 433.62pt>
+File: plots/<x2>nl0.png Graphic file (type png)
 
-LaTeX Warning: Reference `fig:erwartungswerte_x_gekoppelter' on page 22 undefine
-d on input line 200.
+<use plots/<x2>nl0.png>
+Package luatex.def Info: plots/<x2>nl0.png used on input line 224.
+(luatex.def)             Requested size: 197.17763pt x 147.87877pt.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 225.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 225.
+ <plots/<x1>nl0.png, id=374, 578.16pt x 433.62pt>
+File: plots/<x1>nl0.png Graphic file (type png)
 
-) (./content/05_zusammenfassung_und_ausblick.tex [22]
+<use plots/<x1>nl0.png>
+Package luatex.def Info: plots/<x1>nl0.png used on input line 231.
+(luatex.def)             Requested size: 197.17763pt x 147.87877pt.
+
+<plots/<x12>nlschwach.png, id=375, 578.16pt x 433.62pt>
+File: plots/<x12>nlschwach.png Graphic file (type png)
+
+<use plots/<x12>nlschwach.png>
+Package luatex.def Info: plots/<x12>nlschwach.png used on input line 238.
+(luatex.def)             Requested size: 197.17763pt x 147.87877pt.
+
+<plots/<x12>nlstark.png, id=376, 578.16pt x 433.62pt>
+File: plots/<x12>nlstark.png Graphic file (type png)
+
+<use plots/<x12>nlstark.png>
+Package luatex.def Info: plots/<x12>nlstark.png used on input line 245.
+(luatex.def)             Requested size: 197.17763pt x 147.87877pt.
+
+Overfull \hbox (2.43088pt too wide) in paragraph at lines 222--249
+[][] []
+ []
+
+
+Overfull \hbox (2.43088pt too wide) in paragraph at lines 222--249
+[] [] 
+ []
+
+[23] [24<./plots/<x2>nl0.png><./plots/<x1>nl0.png><./plots/<x12>nlschwach.png><.
+/plots/<x12>nlstark.png>]
+
+LaTeX Warning: Reference `mittleres_H_sinus' on page 25 undefined on input line 
+285.
+
+
+LaTeX Warning: Reference `fig:H' on page 25 undefined on input line 290.
+
+) (./content/05_zusammenfassung_und_ausblick.tex [25]
 chapter 5.
-) (./content/a_anhang.tex [23
+) (./content/a_anhang.tex [26
 
 ]
 chapter A.
-) [24
+) [27
 
 ]
 chapter without number
-[25
-
-
-] [26
+[28
 
 
 ] (./content/eid_versicherung.tex
@@ -2277,7 +2323,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
- [27]
+ [29
+
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
  (./thesis.aux
 Language ngerman already loaded; id is 8
@@ -2289,16 +2338,15 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
 Package rerunfilecheck Warning: File `thesis.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `thesis.aux':
-(rerunfilecheck)             Before: 8C15B1DFA6D9AA195781B8E06FE35B31;23477
-(rerunfilecheck)             After:  F9A3B064990503324EFF88108D08572B;23648.
-
-Package rerunfilecheck Warning: File `thesis.toc' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `thesis.toc':
-(rerunfilecheck)             Before: 1301E99132354C8D1800D752D89F1EFB;2561
-(rerunfilecheck)             After:  1BCBB9CCD1297FB2D4A7F2704697AC8E;2576.
+(rerunfilecheck)             Before: 598FEC2E9246DF6F6506844A652B1AC1;26823
+(rerunfilecheck)             After:  A296A87E42C39F1A8E4A2F781D28770B;26930.
+Package rerunfilecheck Info: File `thesis.toc' has not changed.
+(rerunfilecheck)             Checksum: 365002B2D03F56C53ED5E8E1A8E15811;2786.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
@@ -2307,16 +2355,16 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45323 strings out of 495118
+ 45400 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 18268 words of node memory still in use:
-   86 hlist, 11 vlist, 10 rule, 4 math, 2095 glue, 19 kern, 2 sub_mlist, 88 glyp
-h, 405 attribute, 60 glue_spec, 405 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:3,2:674,3:208,4:118,5:423,6:2443,7:593,8:117,9:933,10:15,11:28
+ 20010 words of node memory still in use:
+   86 hlist, 11 vlist, 10 rule, 4 math, 2325 glue, 19 kern, 2 sub_mlist, 88 glyp
+h, 438 attribute, 60 glue_spec, 438 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 1:3,2:710,3:223,4:122,5:423,6:2444,7:672,8:117,9:933,10:15,11:28
 1
- 47522 multiletter control sequences out of 65536+600000
- 96 fonts using 17569215 bytes
- 60i,20n,81p,8817b,2517s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 47575 multiletter control sequences out of 65536+600000
+ 97 fonts using 17661607 bytes
+ 60i,20n,85p,8817b,2517s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-
 italic.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm
 /lmroman8-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentyp
@@ -2331,10 +2379,10 @@ entype/public/lm/lmroman10-regular.otf></home/ismael/.local/texlive/2016/texmf-d
 ist/fonts/opentype/public/lm/lmroman12-regular.otf></home/ismael/.local/texlive/
 2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/ismael/.local/
 texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (31 pages, 168806 bytes).
+Output written on thesis.pdf (33 pages, 408325 bytes).
 
-PDF statistics: 537 PDF objects out of 1000 (max. 8388607)
- 462 compressed objects within 5 object streams
- 142 named destinations out of 1000 (max. 131072)
- 185 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 585 PDF objects out of 1000 (max. 8388607)
+ 500 compressed objects within 5 object streams
+ 153 named destinations out of 1000 (max. 131072)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
