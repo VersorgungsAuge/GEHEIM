@@ -1,5 +1,5 @@
 \chapter{Floquet-Theorie des getriebenen harmonischen Oszillators}
-Der Hamilton-Operator eines harmonischen Oszillators der Masse $m$, welcher mit einer beliebigen aber periodischen äußeren Kraft $S(t)=S(t+T)$ getrieben wird, hat die Form
+Der Hamilton-Operator eines quantenmechanischen harmonischen Oszillators der Masse $m$, welcher mit einer beliebigen aber periodischen äußeren Kraft $S(t)=S(t+T)$ getrieben wird, hat die Form
 \begin{equation}
   H(t) = H(t+T) = \frac{p^2}{2m} + \frac{1}{2}m\omega_0^2x^2-S(t)x \; ,
   \label{H_einzelner}
@@ -209,7 +209,7 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
         N_n = \left(\frac{m\omega_0}{\pi \hbar}\right) \frac{1}{\sqrt{2^nn!}}
       \end{equation}
       dessen Normierungsfaktoren.
-      Die Lösungen des getriebenen Oszillators sind auf $x \in (-\infty, \infty)$ normiert und somit ist ebenfalls Gleichung (\ref{skalarprodukt_einzelner}) mit Skalarprodukt erfüllt.
+      Die Lösungen des getriebenen Oszillators sind auf $x \in (-\infty, \infty)$ normiert und somit ist ebenfalls Gleichung (\ref{skalarprodukt_einzelner}) mit dem Skalarprodukt erfüllt.
 
       Die Lösung entspricht damit einem, um die klassische Lösung $\zeta(t)$ verschobenen, ungetriebenen Oszillator, mit einer zusätzlichen zeit- und ortsabhängigen komplexen Phase.
       Die treibende Kraft $S(t)$ geht in die klassische Lösung $\zeta(t)$ und, über das Wirkungsintegral, in die komplexe Phase ein.
@@ -243,6 +243,7 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
 
 
       \subsection{Quasienergien für eine sinusoidiale Treibkraft}
+      \label{epsilon_sinuskraft}
         Hier wird ein Beispiel einer treibenden Kraft diskutiert: %\cite{haengi}:
         \begin{equation}
           S(t) = S(t+T) = A\sin(\omega t),
@@ -250,7 +251,8 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
         wobei $T=2\pi / \omega$ ist.
         Setzen wir die allgemeine homogene Lösung gleich null, wird die Lösung $\zeta(t)$ der klassischen Bewegungsgleichung (\ref{dgl_zeta}) zu \cite{mads}
         \begin{equation}
-          \zeta(t) = \frac{A\sin(\omega t)}{m(\omega_0^2 - \omega^2)} \; .
+          \zeta(t) = \frac{A\sin(\omega t)}{m(\omega_0^2 - \omega^2)} \;
+          \label{zeta_sinuskraft}.
         \end{equation}
         Das Berechnen des Wirkungsintegrals und anschließendes Identifizieren des linearen Anteils liefert die Quasienergien für die gegebene Kraft:
         \begin{equation}

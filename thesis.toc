@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {2.1}Floquet-Theorie}{2}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Zeitlich gemittelter Erwartungswert der Energie $\bar {H}_n$}{3}{subsection.2.1.1}
 \contentsline {section}{\numberline {2.2}Allgemeine Lösung der Schrödinger-Gleichung}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Identifizierung der Quasienergien $\mitvarepsilon _n$ und Floquet-Moden $\mitPhi _n(x,t)$}{6}{section.2.3}
+\contentsline {section}{\numberline {2.3}Identifizierung der Quasienergien $\mitvarepsilon _n$ und Floquet-Moden $\mitPhi _n(x,t)$}{7}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Quasienergien für eine sinusoidiale Treibkraft}{7}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Quasienergien für eine beliebige periodische Treibkraft $S(t)$}{8}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Beispiele für S(t) dreieck rechteck delta}{9}{subsection.2.3.3}
@@ -18,10 +18,11 @@
 \contentsline {section}{\numberline {3.3}Heisenberg-Unschärferelation}{14}{section.3.3}
 \contentsline {section}{\numberline {3.4}Zeitabhängiger Erwartungswert der Energie}{14}{section.3.4}
 \contentsline {section}{\numberline {3.5}Durchschnittlicher Erwartungswert der Energie}{15}{section.3.5}
-\contentsline {chapter}{\numberline {4}Zwei gekoppelte getriebene harmonische Oszillatoren in der Quantenmechanik}{16}{chapter.4}
+\contentsline {chapter}{\numberline {4}Zwei gekoppelte getriebene harmonische Oszillatoren}{16}{chapter.4}
 \contentsline {section}{\numberline {4.1}Die Schrödinger-Gleichung mit unabhängigen Hamilton-Operatoren}{16}{section.4.1}
 \contentsline {section}{\numberline {4.2}Unitäre Variablentransformation und allgemeine Lösung der Schrödinger-Gleichung}{17}{section.4.2}
-\contentsline {section}{\numberline {4.3}Erwartungswerte}{20}{section.4.3}
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{21}{chapter.5}
-\contentsline {chapter}{\numberline {A}Ein Anhangskapitel}{22}{appendix.A}
-\contentsline {chapter}{\nonumberline Literatur}{23}{chapter*.4}
+\contentsline {section}{\numberline {4.3}Erwartungswerte}{21}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Zeitabh"angige Erwartungswerte des Ortes}{21}{subsection.4.3.1}
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{23}{chapter.5}
+\contentsline {chapter}{\numberline {A}Ein Anhangskapitel}{24}{appendix.A}
+\contentsline {chapter}{\nonumberline Literatur}{25}{chapter*.4}

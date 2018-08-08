@@ -1,6 +1,7 @@
 
 
 \chapter{Berechnung von Erwartungswerten}
+\label{3}
   In diesem Abschnitt werden die zeitabhängigen Erwartungswerte des periodisch getriebenen Oszillators für den Impuls, den Ort und die Energie berechnet, so wie das zeitliche Mittel des Erwartungswertes der Energie.
   Dabei werden die Erwartungswerte für alle Zustände $\Psi_n(x,t)$ auf die bekannten Erwartungswerte des Standard-Oszillators zurückzuführt, womit wir eine Art "2. Quantisierung für die Erwartungswerte" haben.
 
@@ -18,7 +19,7 @@
   Bei dem Integral von $-\infty$ bis $\infty$ ist eine konstante Verschiebung der Variable irrelevant.
   Außerdem sind die $\Psi_{n,\text{ung}}(y,t)$ auf dem Raum normiert, daher sind auch die $\Psi_n(x,t)$ auf $x \in (-\infty,\infty)$ normiert, wie bereits am Ende von Kapitel \ref{lsg_einzelner} erwähnt.
 
-  Eine Visualisierung von Erwartungswerten folgt in Kapitel 4, weil es sich bei den Erwartungswerten der zwei gekoppelten Oszillatoren genau um die Summe aus den Erwartungswerten von zwei gesonderten Oszillatoren handelt, wie sich dort zeigen wird.
+  Eine Visualisierung von Erwartungswerten folgt in Kapitel (\ref{erwartungswerte_gekoppelt}), weil es sich bei den Erwartungswerten der zwei gekoppelten Oszillatoren genau um die Summe aus den Erwartungswerten von zwei gesonderten Oszillatoren handelt, wie sich dort zeigen wird.
 
   \section{Zeitabhängige Erwartungswerte des Ortes}
   %INTERPRETATION ; SCHWINGT KLASSICH USW
@@ -33,6 +34,7 @@
         \braket{x}_n &= \int_{-\infty}^{\infty} |\Psi_{n,\text{ung}}(x-\zeta(t),t)|^2 x \: \text dx
         = \int_{-\infty}^{\infty} |\Psi_{n,\text{ung}}(y,t)|^2 (y+\zeta(t)) \: \text dy \\
         &= \braket{y}_{n,\text{ung}} + \zeta(t) = \zeta(t) \; .
+        \label{erwartungswert_x_einzelner}
       \end{split}
     \end{align}
     Da die Erwartungswerte $\braket{y}_{n,\text{ung}}$ für den Ort des ungetriebenen Oszillators verschwinden, ist der Erwartungswert jedes Zuständes des getriebenen Oszillators genau $\zeta(t)$.
@@ -58,6 +60,7 @@
     zusammen mit der charakteristischen Länge des ungetriebenen Oszillators
     \begin{equation}
       s = \sqrt{\frac{\hbar}{2m\omega_0}} \; .
+      \label{charak_laenge}
     \end{equation}
     Der Erwartungswert ist nun um $\zeta^2(t)$ verschoben.
 
