@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  8 AUG 2018 18:39
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  9 AUG 2018 01:47
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -65,16 +65,16 @@ Package typearea, 2016/06/14 v3.21 KOMA-Script package (type area)
 \ta@temp=\skip45
 \footheight=\skip46
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 10
+(typearea)             DIV  = 13
 (typearea)             BCOR = 34.1433pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 394.35527pt
-(typearea)              DIV departure   = 0%
-(typearea)              \evensidemargin = 40.40292pt
-(typearea)              \oddsidemargin  = 18.20976pt
+(typearea)              \textwidth      = 433.35742pt
+(typearea)              DIV departure   = -10%
+(typearea)              \evensidemargin = 14.40149pt
+(typearea)              \oddsidemargin  = 5.20905pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 555.00024pt
-(typearea)              \topmargin      = 12.2347pt
+(typearea)              \textheight     = 623.00027pt
+(typearea)              \topmargin      = -7.26639pt
 (typearea)              \headheight     = 17.0pt
 (typearea)              \headsep        = 20.40001pt
 (typearea)              \topskip        = 11.0pt
@@ -441,7 +441,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.572 seconds)
+luaotfload | main : initialization completed in 0.565 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex
 .sty
@@ -2138,13 +2138,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 163
 .
  (./thesis.toc
 Language ngerman already loaded; id is 8
-Language ngerman already loaded; id is 8
-Overfull \hbox (13.7073pt too wide) in paragraph at lines 23--23
- [][] [][]\EU2/lmr/m/n/10.95 Unitä-re Va-ria-blen-trans-for-ma-ti-on und all-g
-e-mei-ne Lö-sung der Schrödinger- 
- []
-
-)
+Language ngerman already loaded; id is 8)
 \tf@toc=\write5
 
 \openout5 = thesis.toc
@@ -2172,12 +2166,7 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 60.
 
-[3] [4]
-Overfull \hbox (20.20813pt too wide) in paragraph at lines 150--150
-[] 
- []
-
-[5]
+[3] [4] [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 220.
@@ -2186,7 +2175,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 220.
 
-[6] [7]
+[6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 269.
@@ -2195,53 +2184,29 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 269.
 
-[8]) (./content/03_einzelner_oszi.tex [9]
+[7]) (./content/03_einzelner_oszi.tex [8]
 chapter 3.
-[10
+[9
 
-] [11] [12]
-Overfull \hbox (1.27937pt too wide) in paragraph at lines 108--114
-\EU2/lmr/m/n/10.95 Hier-nach ha-ben wir ef-fek-tiv er-reicht, dass wir den Im-p
-ul-s-ope-ra-tor an der $\EU2/LatinModernMath(0)/m/n/10.95 𝑦$\EU2/lmr/m/n/10.
-95 -abhängigen
- []
-
-[13] [14]) (./content/04_gekoppelte_oszis.tex [15]
+] [10] [11] [12]) (./content/04_gekoppelte_oszis.tex [13]
 chapter 4.
-[16
+[14
 
 ]
-
-Package scrlayer-scrpage Warning: \headheight to low.
-(scrlayer-scrpage)                At least 27.2pt needed,
-(scrlayer-scrpage)                but only 17.0pt found.
-(scrlayer-scrpage)                I'll enlarge \headheight, for further
-(scrlayer-scrpage)                processing, but you should do this yourself,
-(scrlayer-scrpage)                e.g., setting typearea's option
-(scrlayer-scrpage)                `headheight=27.2pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 66
-.
-
-
-Overfull \vbox (10.2pt too high) has occurred while \output is active []
-
- [17]
-[18]
-Overfull \hbox (48.21065pt too wide) in paragraph at lines 135--135
-[] 
+Overfull \hbox (54.79105pt too wide) in paragraph at lines 57--58
+\EU2/lmr/m/n/10.95 Um für un-se-ren Hamilton-Operator $\EU2/LatinModernMath(0)
+/m/n/10.95 𝐻(𝑥[], 𝑥[], 𝑝[], 𝑝[], 𝑡)$ \EU2/lmr/m/n/10.95 ([]4.
+1[]) ei-ne ent-kop-pel-te Form $\EU2/LatinModernMath(0)/m/n/10.95 𝐻(𝑥[], 
+𝑥[], 𝑝[], 𝑝[], 𝑡) =
  []
 
+[15] [16] [17]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `epsilon_einzelner' on page 18 undefined on input line 
+152.
 
- [19]
-[20]
-! Undefined control sequence.
-l.151 ... Floquet-Moden $\Phi_{n,l}(x_+,x_-,t)=\Pshi
-                                                  _+(x_+,t)\Phi_-(x_-,t)$ si...
-? 
 
-LaTeX Warning: Reference `epsilon_sinus_kraft' on page 21 undefined on input lin
+LaTeX Warning: Reference `epsilon_sinus_kraft' on page 18 undefined on input lin
 e 159.
 
 
@@ -2249,66 +2214,88 @@ Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 186.
 
-[21] [22] <plots/<x2>nl0.png, id=373, 578.16pt x 433.62pt>
+[18] [19] [20]
+
+LaTeX Warning: Reference `fig:H' on page 21 undefined on input line 304.
+
+
+LaTeX Warning: Reference `fig_H_kappa15' on page 21 undefined on input line 324.
+
+
+<plots/<x2>nl0.png, id=373, 578.16pt x 433.62pt>
 File: plots/<x2>nl0.png Graphic file (type png)
-
-<use plots/<x2>nl0.png>
-Package luatex.def Info: plots/<x2>nl0.png used on input line 224.
-(luatex.def)             Requested size: 197.17763pt x 147.87877pt.
+ <use plots/<x2>nl0.png>
+Package luatex.def Info: plots/<x2>nl0.png used on input line 328.
+(luatex.def)             Requested size: 216.67871pt x 162.50784pt.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 225.
+(Font)              scaled to size 5.00008pt on input line 329.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 225.
- <plots/<x1>nl0.png, id=374, 578.16pt x 433.62pt>
-File: plots/<x1>nl0.png Graphic file (type png)
+(Font)              scaled to size 4.99992pt on input line 329.
 
-<use plots/<x1>nl0.png>
-Package luatex.def Info: plots/<x1>nl0.png used on input line 231.
-(luatex.def)             Requested size: 197.17763pt x 147.87877pt.
+<plots/<x1>nl0.png, id=374, 578.16pt x 433.62pt>
+File: plots/<x1>nl0.png Graphic file (type png)
+ <use plots/<x1>nl0.png>
+Package luatex.def Info: plots/<x1>nl0.png used on input line 335.
+(luatex.def)             Requested size: 216.67871pt x 162.50784pt.
 
 <plots/<x12>nlschwach.png, id=375, 578.16pt x 433.62pt>
 File: plots/<x12>nlschwach.png Graphic file (type png)
 
 <use plots/<x12>nlschwach.png>
-Package luatex.def Info: plots/<x12>nlschwach.png used on input line 238.
-(luatex.def)             Requested size: 197.17763pt x 147.87877pt.
+Package luatex.def Info: plots/<x12>nlschwach.png used on input line 342.
+(luatex.def)             Requested size: 216.67871pt x 162.50784pt.
 
 <plots/<x12>nlstark.png, id=376, 578.16pt x 433.62pt>
 File: plots/<x12>nlstark.png Graphic file (type png)
 
 <use plots/<x12>nlstark.png>
-Package luatex.def Info: plots/<x12>nlstark.png used on input line 245.
-(luatex.def)             Requested size: 197.17763pt x 147.87877pt.
+Package luatex.def Info: plots/<x12>nlstark.png used on input line 349.
+(luatex.def)             Requested size: 216.67871pt x 162.50784pt.
 
-Overfull \hbox (2.43088pt too wide) in paragraph at lines 222--249
+<plots/<H>00_kappa0.png, id=377, 578.16pt x 433.62pt>
+File: plots/<H>00_kappa0.png Graphic file (type png)
+
+<use plots/<H>00_kappa0.png>
+Package luatex.def Info: plots/<H>00_kappa0.png used on input line 356.
+(luatex.def)             Requested size: 216.67871pt x 162.50784pt.
+
+<plots/<H>00_kappa15.png, id=378, 578.16pt x 433.62pt>
+File: plots/<H>00_kappa15.png Graphic file (type png)
+
+<use plots/<H>00_kappa15.png>
+Package luatex.def Info: plots/<H>00_kappa15.png used on input line 363.
+(luatex.def)             Requested size: 216.67871pt x 162.50784pt.
+
+Overfull \hbox (2.4309pt too wide) in paragraph at lines 326--367
 [][] []
  []
 
 
-Overfull \hbox (2.43088pt too wide) in paragraph at lines 222--249
+Overfull \hbox (2.4309pt too wide) in paragraph at lines 326--367
+[] []
+ []
+
+
+Overfull \hbox (2.4309pt too wide) in paragraph at lines 326--367
 [] [] 
  []
 
-[23] [24<./plots/<x2>nl0.png><./plots/<x1>nl0.png><./plots/<x12>nlschwach.png><.
-/plots/<x12>nlstark.png>]
-
-LaTeX Warning: Reference `mittleres_H_sinus' on page 25 undefined on input line 
-285.
-
-
-LaTeX Warning: Reference `fig:H' on page 25 undefined on input line 290.
-
-) (./content/05_zusammenfassung_und_ausblick.tex [25]
+) (./content/05_zusammenfassung_und_ausblick.tex [21] [22<./plots/<x2>nl0.png><.
+/plots/<x1>nl0.png><./plots/<x12>nlschwach.png><./plots/<x12>nlstark.png><./plot
+s/<H>00_kappa0.png><./plots/<H>00_kappa15.png>]
 chapter 5.
-) (./content/a_anhang.tex [26
+) (./content/a_anhang.tex [23
 
 ]
 chapter A.
-) [27
+) [24
 
 ]
 chapter without number
-[28
+[25
+
+
+] [26
 
 
 ] (./content/eid_versicherung.tex
@@ -2323,10 +2310,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
- [29
-
-
-]
+ [27]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
  (./thesis.aux
 Language ngerman already loaded; id is 8
@@ -2338,10 +2322,14 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
 Package rerunfilecheck Warning: File `thesis.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `thesis.aux':
-(rerunfilecheck)             Before: 598FEC2E9246DF6F6506844A652B1AC1;26823
-(rerunfilecheck)             After:  A296A87E42C39F1A8E4A2F781D28770B;26930.
-Package rerunfilecheck Info: File `thesis.toc' has not changed.
-(rerunfilecheck)             Checksum: 365002B2D03F56C53ED5E8E1A8E15811;2786.
+(rerunfilecheck)             Before: 15E61A40DD393C9AD89152B6784F518F;27531
+(rerunfilecheck)             After:  BAA48CC791A418EA1D2339EB286BED76;27287.
+
+Package rerunfilecheck Warning: File `thesis.toc' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `thesis.toc':
+(rerunfilecheck)             Before: 9E43A6D784E0E951335ACBA6E462B9E3;2786
+(rerunfilecheck)             After:  E0B4EF07BBF4CD5566909471EE11F75B;2784.
 
 LaTeX Warning: There were undefined references.
 
@@ -2355,23 +2343,23 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45400 strings out of 495118
+ 45417 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 20010 words of node memory still in use:
-   86 hlist, 11 vlist, 10 rule, 4 math, 2325 glue, 19 kern, 2 sub_mlist, 88 glyp
-h, 438 attribute, 60 glue_spec, 438 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:3,2:710,3:223,4:122,5:423,6:2444,7:672,8:117,9:933,10:15,11:28
-1
- 47575 multiletter control sequences out of 65536+600000
- 97 fonts using 17661607 bytes
- 60i,20n,85p,8817b,2517s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 20643 words of node memory still in use:
+   86 hlist, 11 vlist, 10 rule, 4 math, 2412 glue, 19 kern, 2 sub_mlist, 88 glyp
+h, 444 attribute, 60 glue_spec, 444 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 1:3,2:622,3:223,4:122,5:438,6:2993,7:566,8:116,9:965,10:20,11:35
+3
+ 47589 multiletter control sequences out of 65536+600000
+ 97 fonts using 17661503 bytes
+ 60i,21n,81p,8817b,2517s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-
 italic.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm
 /lmroman8-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentyp
 e/public/lm/lmroman6-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fo
 nts/opentype/public/lm/lmroman10-bold.otf></home/ismael/.local/texlive/2016/texm
-f-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/ismael/.local/t
-exlive/2016/texmf-dist/fonts/opentype/public/lm/lmromanslant10-regular.otf></hom
+f-dist/fonts/opentype/public/lm/lmromanslant10-regular.otf></home/ismael/.local/
+texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></hom
 e/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmoder
 n-math.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm
 -math/latinmodern-math.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/op
@@ -2379,10 +2367,10 @@ entype/public/lm/lmroman10-regular.otf></home/ismael/.local/texlive/2016/texmf-d
 ist/fonts/opentype/public/lm/lmroman12-regular.otf></home/ismael/.local/texlive/
 2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/ismael/.local/
 texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (33 pages, 408325 bytes).
+Output written on thesis.pdf (31 pages, 534793 bytes).
 
-PDF statistics: 585 PDF objects out of 1000 (max. 8388607)
- 500 compressed objects within 5 object streams
- 153 named destinations out of 1000 (max. 131072)
+PDF statistics: 578 PDF objects out of 1000 (max. 8388607)
+ 491 compressed objects within 5 object streams
+ 150 named destinations out of 1000 (max. 131072)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

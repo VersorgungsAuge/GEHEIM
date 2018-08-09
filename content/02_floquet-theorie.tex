@@ -15,7 +15,7 @@ Danach werden wir die Ewartungswerte $\braket{x}_n,\braket{x^2}_n,\braket{p}_n,\
 Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie $\braket{H}_n$ und $\bar H_n$ berechnen.
 \fi
 
-\section{Floquet-Theorie}
+\section{Grundlagen}
   Die Floquet-Theorie \cite{haengi} ist ein nützliches Werkzeug zur der Lösung von quantenmechanischen Systemen, welche durch einen zeitlich periodischen Hamilton-Operator
   \begin{equation}
     H(t) = H(t+T) \; ,
@@ -142,8 +142,8 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
       Durch Einsetzen in die Schrödinger-Gleichung (\ref{schroedinger_einzeln_getrieben}) und Ausrechnen der Ableitungen erhalten wir
       \begin{align}
         \begin{split}
-          &\text e^{\frac{\text i}{\hbar}m\dot \zeta y}(\text i \hbar \dot \Lambda(y,t) - my \ddot{\zeta}\Lambda(y,t)) =\\
-           &\text e^{\frac{\text i}{\hbar}m\dot \zeta y} \left[\left(-m\dot \zeta^2 \Lambda(y,t) + \text i \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda(y,t) \right) \right. \\
+          &\exp\left(\frac{\text i}{\hbar}m\dot \zeta y\right)(\text i \hbar \dot \Lambda(y,t) - my \ddot{\zeta}\Lambda(y,t)) =\\
+           &\exp\left(\frac{\text i}{\hbar}m\dot \zeta y\right) \left[\left(-m\dot \zeta^2 \Lambda(y,t) + \text i \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda(y,t) \right) \right. \\
            &\left. + \left(\frac{1}{2}m\dot \zeta^2 \Lambda(y,t) - \text{i} \hbar \dot \zeta \frac{\partial}{\partial y} \Lambda(y,t) - \frac{\hbar}{2m}\frac{\partial^2}{\partial y^2} \Lambda(y,t)  \right)
           + \frac{1}{2}m\omega_0^2(y+\zeta)^2  + (y+\zeta)S(t)  \right] \; .
         \end{split}
@@ -187,7 +187,7 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
       \textbf{3) Unitäre Transformation für $\Lambda(y,t)$}\\
       Zuletzt wählen wir den Ansatz
       \begin{equation}
-        \Lambda(y,t) = \text e^{\frac{\text i}{\hbar}\int_0^tL \: \text d t'}\chi(y,t)
+        \Lambda(y,t) = \exp\left(\frac{\text i}{\hbar}\int_0^tL \: \text d t'\right)\chi(y,t)
       \end{equation}
       für $\Lambda(y,t)$, um die Lagrange-Funktion in (\ref{dgl_lambda}) zu eliminieren.
       Dadurch wird diese Differential-Gleichung für $\Lambda(y,t)$ bzw. die ursprüngliche Schrödinger-Gleichung auf einen ungetriebenen Oszillator für $\chi(y,t)$ zurückgeführt:
@@ -198,8 +198,8 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
       \begin{align}
         \begin{split}
         \Psi_n(x,t) &= \Psi_n(y=x-\zeta(t),t) \\
-        &= N_nO_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \text e^{\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2} \\
-        &\quad \cdot \text e^{\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))-E_nt+\int_0^tL(\dot \zeta,\zeta,t')\:\text dt'\right)} \; ,
+        &= N_nO_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \exp\left[\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2\right] \\
+        &\quad \cdot \exp\left[\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))-E_nt+\int_0^tL(\dot \zeta,\zeta,t')\:\text dt'\right)\right] \; ,
         \; n \in \mathbb{N}_0 \; .
         \label{gesamtlsg_einzelner}
       \end{split}
@@ -220,7 +220,7 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
       \section{\texorpdfstring{Identifizierung der Quasienergien $\epsilon_n$ und Floquet-Moden $\Phi_n(x,t)$}{Identifizierung der Quasienergien epsilon_n und Floquet-Moden Phi_n(x,t)}}
         Nach dem Floquet-Theorem für periodische Hamilton-Operatoren (\ref{floquet_theorem}) kann die Lösung des getriebenen Oszillators geschrieben werden als
         \begin{equation}
-          \Psi_n(x,t) = \text e^{\frac{-\text i}{\hbar}\epsilon_nt}\Phi_n(x,t) \; ,
+          \Psi_n(x,t) = \exp\left(\frac{-\text i}{\hbar}\epsilon_nt\right)\Phi_n(x,t) \; ,
         \end{equation}
         mit $\Phi_n(x,t)=\Phi_n(x,t+T)$.
         Nun können wir alle $T$-periodischen Terme als $\Phi_n(x,t)$ identifizieren, und alle Terme im Exponenten, die linear in $t$ sind, als $-\text i\epsilon_n t/\hbar$ \cite{haengi}.
@@ -229,15 +229,15 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
         Ergebnis des Integrals über die Lagrange-Funktion kann nur $T$-periodisch oder linear in $t$ sein, deshalb sind die Quasienergien gegeben durch die $E_n$ und den linearen Teil des Integrals \cite{haengi}:
         \begin{equation}
           \epsilon_n = E_n - \frac{1}{T} \int_0^T L(\dot \zeta, \zeta, t) \: \text d t \; .
-          \label{epsilon_einzelner}
+          \label{ep}
         \end{equation}
         Die Floquet-Moden sind demnach
         \begin{align}
           \begin{split}
             \Phi_n(x,t) &=
-             N_nO_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \text e^{\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2} \\
-            &\quad \cdot \text e^{\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))+\int_0^tL(\dot \zeta,\zeta,t')\:\text d t-\frac{t}{T} \int_0^T L(\dot \zeta,\zeta,t)\:\text dt\: \right)} \; ,
-            \;n \in \mathbb{N}_0 \; .
+             N_nO_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \exp\left[\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2\right] \\
+            &\quad \cdot \exp\left[\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))+\int_0^tL(\dot \zeta,\zeta,t')\:\text d t-\frac{t}{T} \int_0^T L(\dot \zeta,\zeta,t)\:\text dt\: \right)\right] \; , \notag\\
+            &\quad \;n \in \mathbb{N}_0 \; .
             \label{floquet_moden_einzelner}
           \end{split}
         \end{align}

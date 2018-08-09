@@ -59,7 +59,9 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
     x_+ = \frac{1}{\sqrt{2}}(x_2+x_1) \;,\; x_-=\frac{1}{\sqrt{2}}(x_2-x_1) \;,
     \label{koord_trafo_x}
   \end{equation}
-  welche aus den Normalmoden des klassischen Problems folgen, worauf in Kapitel () genauer eingegangen wird.
+  welche aus den Eigenmoden/Eigenvektoren des klassischen Problems folgen.
+  Dessen Normierung stellt sicher, dass die Transformation unit"ar ist. 
+  %worauf in Kapitel () genauer eingegangen wird.
   Durch einfaches Umstellen folgen $x_1$ und $x_2$ in Abhängigkeit der neuen Koordinaten $x_+$ und $x_-$:
   \begin{equation}
     x_1=\frac{1}{\sqrt{2}}(x_+-x_-) \;,\; x_2=\frac{1}{\sqrt{2}}(x_++x_-) \; .
@@ -148,7 +150,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
 
   In den urspr"unglichen Koordinaten sind Kopplungsterme $x_1x_2$ in der Wellenfunktion vorhanden, durch die Hermit-Polynome $O_n/O_l$ treten hierbei im Allgemeinen unterschiedliche Potenzen der $x_1$ und $x_2$ auf.
 
-  Die Floquet-Moden $\Phi_{n,l}(x_+,x_-,t)=\Pshi_+(x_+,t)\Phi_-(x_-,t)$ sind in den neuen Koordinaten das Produkt aus den einzelnen Floquet-Moden (\ref{floquet_moden_einzelner}), so wie die Wellenfunktionen,
+  Die Floquet-Moden $\Phi_{n,l}(x_+,x_-,t)=\Phi_+(x_+,t)\Phi_-(x_-,t)$ sind in den neuen Koordinaten das Produkt aus den einzelnen Floquet-Moden (\ref{floquet_moden_einzelner}), so wie die Wellenfunktionen,
   Die Quasienergien sind dadurch die Summe der einzelnen Quasienergien (\ref{epsilon_einzelner}): $\epsilon_{n,l}=\epsilon_{+,n}+\epsilon_{-,l}$.
 
 
@@ -188,7 +190,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
 
     Der Erwartungswert f"ur $x_{1}^2/x_2^2$ ergibt sich dar"uber hinaus mit Formel (\ref{erwartungswert_gekoppelt_produkt}) und zus"atzlich dem Erwartungswert (\ref{erwartungswert_x^2_einzelner}) zu
     \begin{align}
-      \braket{x_{1\atop 2}^2}_{n,l}&=\frac{1}{2}\left(\braket{x_+}_{n,l}\pm\braket{x_-}_{n,l}\right)^2
+      \braket{x_{1\atop 2}^2}_{n,l}&=\frac{1}{2}\braket{(x_+\mp x_-)^2}_{n,l}
       =\frac{1}{2}\left(\braket{x_+^2}_n^+ \mp 2\braket{x_+}_n^+\braket{x_-}_l^- - \braket{x_-^2}_n^+\right) \notag\\
       &=\frac 1 2 (s_+^2(2n+1)+\zeta_+^2(t) \mp 2\zeta_+(t)\zeta_-(t) + s_-^2(2l+1)\zeta_-^2(t)) \; ,
     \end{align}
@@ -216,8 +218,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
     Die gegenphasige (schwache) Kopplung ist f"ur 4$\kappa=1<3$ in Abb.(\ref{fig:schwach}) dargestellt. Wie klassisch anzunehmen, ist die Amplitude des Erwartungswertes $\braket{x_2}_{n,l}$ des angekoppelten Oszillators in diesem Fall geringer als die des getriebenen Oszillator-Erwartungswertes $\braket{x_1}_{n,l}$.
     Die gleichphasige (starke) Kopplung ist f"ur $\kappa=15>3$ in Abb.(\ref{fig:stark}) dargestellt.
     F"ur eine starke Kopplung werden die Erwartungswerte identisch und die Amplitude geringer, was der klassischen Anschauung zweier starr gekoppelter Oszillatoren entspricht.
-
-
+\iffalse
     \begin{figure}
       \begin{subfigure}[t]{0.5\textwidth}
         \centering
@@ -229,7 +230,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
       \begin{subfigure}[t]{0.5\textwidth}
           \centering
           \includegraphics[width=\textwidth]{plots/<x1>nl0.png}
-          \caption{$\kappa=3$.}
+          \caption{$\kappa=\omega^2m-k=3$.}
           \label{fig:x1_null}
       \end{subfigure}
       %\quad
@@ -246,8 +247,23 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
           \caption{$\kappa=15$.}
           \label{fig:stark}
       \end{subfigure}
-      \caption{Erwartungswerte der gekoppelten Oszillatoren $\braket{x_1}_{n,l}$ und $\braket{x_2}_{n,l}$ mit $\omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1$.}
+      %\quad
+      \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/<H>00_kappa0.png}
+        \caption{$\kappa=0$.}
+        \label{fig:H_kappa0}
+      \end{subfigure}
+      %\quad
+      \begin{subfigure}[t]{0.5\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{plots/<H>00_kappa15.png}
+          \caption{$\kappa=15$.}
+          \label{fig:H_kappa15}
+      \end{subfigure}
+      \caption{Erwartungswerte der gekoppelten Oszillatoren $\braket{x_1}_{n,l}$ und $\braket{x_2}_{n,l}$ f"ur beliebigen Zustand $\Psi_{n,l}$, au"serdem der Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\bar H_{0,0}$ f"ur den Grundzustand $\Psi_{0,0}$. Mit $\omega=2 , A=1 , k=1 , m=1 , \hbar=1$, f"ur verschiedene Kopplungskonstanten $\kappa$.}
     \end{figure}
+\fi
 
   \subsection{Zeitabh"angige Erwartungswerte des Impulses}
     Die Transformation der Impulsoperatoren (\ref{koord_trafo_p}) hat die gleiche Form wie bei den Ortsoperatoren (\ref{koord_trafo_x}), die Berechnung der Erwartungswerte $\braket{p_{1 \atop 2}}_{n,l}$ und $\braket{p_{1\atop 2}^2}_{n,l}$ erfolgt darum analog, mit den Impuls-Erwartungswerten (\ref{erwartungswert_p_einzelner}) und (\ref{erwartungswert_p^2_einzelner}).
@@ -259,7 +275,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
     \end{align}
     und
     \begin{align}
-      \braket{p^2_{1\atop 2}}_{n,l}&=\frac{1}{2}\left(\braket{p_+}_{n,l}\pm\braket{p_-}_{n,l}\right)^2 \notag\\
+      \braket{p^2_{1\atop 2}}_{n,l}&=\frac{1}{2}\frac{1}{2}\braket{(x_+\mp x_-)^2}_{n,l} \notag\\
       %=\frac{1}{2}\left(\braket{p_+^2}_n^+ \mp 2\braket{p_+}_n^+\braket{x_-}_l^- - \braket{x_-^2}_n^+\right) \notag\\
       &=\frac {m^2} 2 (\omega_+^2s_+^2(2n+1)+\ddot\zeta_+^2(t) \mp 2\dot\zeta_+(t)\dot\zeta_-(t) + \omega_-^2s_-^2(2l+1)\ddot\zeta_-^2(t)) \; .
     \end{align}
@@ -269,7 +285,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
     Das Verhalten f"ur die verschiedenen $\kappa$ ist ebenfalls identisch.
 
   \subsection{Erwartungswerte der Energie}
-    Der Erwartungswert $\braket{H(t)}_{n,l}$ des Hamilton-Operators f"ur eine beliebige Treibkraft $S(t)$ ist auch mit dem Erwatungswert des einzelnen Oszillators berechenbar, indem wir wieder in den neuen Koordinaten arbeiten:
+    Der zeitabh"angige Erwartungswert $\braket{H(t)}_{n,l}$ des Hamilton-Operators f"ur eine beliebige Treibkraft $S(t)$ ist auch mit dem Erwatungswert des einzelnen Oszillators berechenbar, indem wir wieder in den neuen Koordinaten arbeiten:
     \begin{align}
       \braket{H(t)}_{n,l} &= \braket{H_+(t)}_n^+ + \braket{H_-(t)}_l^- \notag\\
       &= E_{+,n}+E_{-,l} -L_+-L_- +m\dot\zeta_+^2(t)+m\dot\zeta_-^2(t) \; .
@@ -282,13 +298,76 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
 
     \textbf{Sinusoidiale Treibkraft}
 
-    F"ur das Beispiel der Sinus-Kraft folgt $\braket{H(t)}_{n,l}$ mit den ensprechenden Orts- und Impulserwartungswerten aus vorherigem Abschnitt und  $\bar{H(t)}_{n,l}$ folgt aus Gleichung (\ref{mittleres_H_sinus}).
-    Der Erwartungswert der Energie $\braket{H(t)}_{n,l}$ und dessen zeitliches Mittel $\bar{H(t)}_{n,l}$ sind f"ur die selben Konstanten wie zuvor
+    F"ur das Beispiel der Sinus-Kraft folgt $\braket{H(t)}_{n,l}$ mit den ensprechenden Orts- und Impulserwartungswerten aus vorherigem Abschnitt und  $\bar H(t)_{n,l}$ folgt aus Gleichung (\ref{mittleres_H_sinus}).
+    Der Erwartungswert der Energie $\braket H_{0,0}$ und dessen zeitliches Mittel $\bar H(t)_{0,0}$ sind f"ur die selben Konstanten wie zuvor
     \begin{equation}
       \omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1 \; ,
     \end{equation}
     in Abb.(\ref{fig:H}) aufgetragen.
     Da beide Erwartungswerte wegen den $E_{+,n}/E_{-,l}$ abh"angig von den Quantenzahlen sind, wird hier der einfachste Fall $n=l=0 \rightarrow E_{\pm,0}=\hbar \omega_\pm/2$ betrachtet.
+\iffalse
+    \begin{figure}
+      \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/<H>00_kappa0.png}
+        \caption{$\kappa=0$.}
+        \label{fig:H_kappa0}
+      \end{subfigure}
+      \quad
+      \begin{subfigure}[t]{0.5\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{plots/<H>00_kappa15.png}
+          \caption{$\kappa=15$.}
+          \label{fig:H_kappa15}
+      \end{subfigure}
+      \caption{Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\bar H_{0,0}$ f"ur den Grundzustand $\Psi_{0,0}$ mit $\omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1$, f"ur verschiedene Kopplungskonstanten $\kappa$.}
+    \end{figure}
+\fi
+    Ohne Kopplung (\ref{fig:H_kappa0}) ist die mittlere Energie am geringsten, f"ur eine m"oglichst starke/starre Kopplung (\ref{fig_H_kappa15}) wird die mittlere Energie im System maximal, weil die Treibkraft so m"oglichst viel Energie auf den angekoppelten Oszillator $x_2$ "ubetragen kann.
+    \begin{figure}
+      \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/<x2>nl0.png}
+        \caption{$\kappa=0$.}
+        \label{fig:x2_null}
+      \end{subfigure}
+      %\quad
+      \begin{subfigure}[t]{0.5\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{plots/<x1>nl0.png}
+          \caption{$\kappa=\omega^2m-k=3$.}
+          \label{fig:x1_null}
+      \end{subfigure}
+      %\quad
+      \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/<x12>nlschwach.png}
+        \caption{$\kappa=1$.}
+        \label{fig:schwach}
+      \end{subfigure}
+      %\quad
+      \begin{subfigure}[t]{0.5\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{plots/<x12>nlstark.png}
+          \caption{$\kappa=15$.}
+          \label{fig:stark}
+      \end{subfigure}
+      %\quad
+      \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{plots/<H>00_kappa0.png}
+        \caption{$\kappa=0$.}
+        \label{fig:H_kappa0}
+      \end{subfigure}
+      %\quad
+      \begin{subfigure}[t]{0.5\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{plots/<H>00_kappa15.png}
+          \caption{$\kappa=15$.}
+          \label{fig:H_kappa15}
+      \end{subfigure}
+      \caption{Erwartungswerte der gekoppelten Oszillatoren $\braket{x_1}_{n,l}$ und $\braket{x_2}_{n,l}$ f"ur beliebigen Zustand $\Psi_{n,l}$, au"serdem der Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\bar H_{0,0}$ f"ur den Grundzustand $\Psi_{0,0}$. Mit $\omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1$, f"ur verschiedene Kopplungskonstanten $\kappa$.}
+    \end{figure}
 
 
 
