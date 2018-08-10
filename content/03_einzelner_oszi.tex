@@ -54,7 +54,7 @@
     \begin{align}
       \braket{x^2}_n &= \int_{-\infty}^{\infty} |\Psi_n(x,t)|^2 x^2 \: \text dx
       = \int_{-\infty}^{\infty} |\Psi_{n,\text{ung}}(y,t)|^2 (y+\zeta(t))^2 \: \text dy \notag \\
-      &= \braket{y^2}_{n,\text{ung}} + 2\braket{y}_{n,\text{ung}} + \zeta^2(t)
+      &= \braket{y^2}_{n,\text{ung}} + 2\zeta(t)\braket{y}_{n,\text{ung}} + \zeta^2(t)
       = s^2(2n+1) + \zeta^2(t) \; ,
       \label{erwartungswert_x^2_einzelner}
     \end{align}
@@ -75,6 +75,7 @@
       \begin{pmatrix} m \\ j \\ \end{pmatrix} = \frac{m!}{j!(m-j)!}
     \end{equation}
     der Binomial-Koeffizient.
+
     Hiernach setzt sich der Erwartungswert $\braket{x^m}_n$ aus allen $\zeta(t)...\zeta^m(t)$ zusammen, die mit dem Binomial-Koeffizienten und der jeweiligen Potenz von $\braket{y}_{n,\text{ung}}$ gewichtet werden.
 
 
@@ -93,23 +94,26 @@
     \end{equation}
     Weiterhin können wir den $y$-unabhängigen Teil der komplexen Phasen in den Wellenfunktionen (\ref{gesamtlsg_einzelner}) sofort am Operator vorbeiziehen und zu 1 zusmmenfassen, daher schreiben wir $\braket{p}_n$ als
     \begin{align}
-      \braket{p}_n &= \int_{-\infty}^{\infty} \Psi^*_n(x,t) p \Psi_n(x,t) \; \text dx
-      = \int_{-\infty}^{\infty} \Psi^*_n(y+\zeta(t),t) p_y \Psi_n(y+\zeta(t),t) \: \text dy \notag\\
-      &= \int_{-\infty}^{\infty} N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\text e^{\frac{-\text i}{\hbar}m\dot{\zeta}(t)y} p_y N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y} \: \text dy \; .
+      &\braket{p}_n = \int_{-\infty}^{\infty} \Psi^*_n(x,t) p \Psi_n(x,t) \; \text dx
+      = \int_{-\infty}^{\infty} \Psi^*_n(y+\zeta(t),t) p_y \Psi_n(y+\zeta(t),t) \: \text dy= \notag\\
+      &\int_{-\infty}^{\infty} \!\! N_nO_n(ay)\exp\left(\frac{-m\omega_0}{2\hbar}y^2+\frac{-\text i}{\hbar}m\dot{\zeta}(t)y\right) p_y N_nO_n(ay)\exp\left(\frac{-m\omega_0}{2\hbar}y^2+\frac{+\text i}{\hbar}m\dot{\zeta}(t)y\right) \: \text dy \; ,
       \label{spaste}
     \end{align}
-    Mit der Produktregel spalten wir die Anwendung des Impulsoperators auf den rechten Teil auf in die Anwendung auf die ungetriebene Oszillatorfunktion (in der neuen Koordinate $y$) und die Anwendung auf die verbleibende komplexe Phase:
+    wobei der Faktor im Argument der Hermit-Polynome (\ref{gesamtlsg_einzelner}) als $a$ abgekürtzt wird.
+    Mit der Produktregel spalten wir die Anwendung des Impulsoperators auf in die Anwendung auf die ungetriebene Oszillatorfunktion (in der neuen Koordinate $y$) und die Anwendung auf die verbleibende komplexe Phase:
     \begin{align}
-      &p_y N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y} = \notag\\
-      &\left(p_y N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\right) \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y}
-      + N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} \left(p_y \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y}\right) \notag\\
-      &= \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)} \left[p_yN_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} + N_nO_n(y)\text e^{\frac{m\omega_0}{2\hbar}y^2}m\dot{\zeta}(t) \right] \; .
+      &p_y N_nO_n(y)\exp\left(\frac{-m\omega_0}{2\hbar}y^2+\frac{+\text i}{\hbar}m\dot{\zeta}(t)y\right)  \notag\\
+      %&\left(p_y N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\right) \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y}
+      %+ N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} \left(p_y \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y}\right) \notag\\
+      &= \exp\left(\frac{+\text i}{\hbar}m\dot{\zeta}(t)y\right) (p_y+m\dot \zeta(t))N_nO_n(y)\exp\left(\frac{-m\omega_0}{2\hbar}y^2\right)
+      %\left[p_yN_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} + N_nO_n(y)\text e^{\frac{m\omega_0}{2\hbar}y^2}m\dot{\zeta}(t) \right] \; .
       \label{spaste2}
     \end{align}
-    Hiernach haben wir effektiv erreicht, dass wir den Impulsoperator an der $y$-abhängigen Phase vorbei ziehen konnten.
-    Damit ist es möglich die verbliebenen Phasen in (\ref{spaste}) ebenso zu 1 zu vereinfachen.
-    Es verbleiben noch im ersten Teil der eckigen Klammer die Anwendung des Impulsoperators auf die Wellenfunktionen des ungetriebenen Oszillators und im zweiten Teil die Multiplikation dieser mit einem ortsunabhängigen Term.
-    Zusammen mit dem übrigen linken Teil aus (\ref{spaste2}), welcher nach dem Wegfallen der komplexen Phase jetzt auch der ungetriebenen Wellenfunktion entspricht, ergeben sich dadurch die Erwartungswerte für $p_y$ und den Term $m\dot{\zeta}(t)$, welcher zeitabhängig ist.
+    Hiernach haben wir effektiv den Impulsoperator an der $y$-abhängigen Phase vorbeigezogen.
+    Damit ist es möglich diese verbliebenen Phasen in (\ref{spaste}) ebenso zu 1 zu vereinfachen.
+    Es verbleiben noch die Anwendung des Impulsoperators auf die Wellenfunktionen des ungetriebenen Oszillators und die Multiplikation dieser mit dem ortsunabhängigen Term $\m\dot \zeta(t)$.
+    Zusammen mit dem übrigen linken Teil aus (\ref{spaste2}), welcher nach dem Wegfallen der komplexen Phase jetzt auch der ungetriebenen Wellenfunktion entspricht, ergeben sich dadurch die Erwartungswerte für $p_y$ und den Term $m\dot{\zeta}(t)$.
+    %welcher zeitabhängig ist.
     %Zusammen mit dem, nun identischen, übrigen komplex konjugiertem Teil aus (\ref{spaste2}) verbleiben nur noch mit im ersten Teil der der eckigen Klammer die Anwendung des Impulsoperators auf die Wellenfunktion des ungetriebenen Oszillators bzw
 
     Schließlich können wir den Erwartungswert für den Impuls in Abhängigkeit der bekannten Erwartungswerte des Standard-Oszillators hinschreiben:
@@ -122,7 +126,7 @@
     \begin{equation}
       \ddot{\braket{p}}_n + \omega_0^2\braket{p}_n - \dot{S}(t) = 0 \; .
     \end{equation}
-
+\iffalse
     Wie an (\ref{spaste2}) zu sehen, ist es darüber hinaus einfach den Erwartungswert $\braket{p^m}_n$ für einen beliebigen Exponenten $m \in \mathbb{N}$ zu evaluieren.
     Wir können auf dem gleichen Weg die Produktregel anwenden, und erhalten wieder den ungetrieben Erwartungswert $\braket{p^m_y}_n$ aber diesmal zusätzlich die $m$-fache Anwendung des Operators auf die komplexe Phase, was wir sofort verallgemeinert aufschreiben können, da sich die komplexe Phase beim Ableiten nur reproduziert, weil immer der ortsunabhängige Term $m\dot{\zeta(t)}$ übrig bleibt.
     Es folgt:
@@ -134,6 +138,19 @@
       \braket{p^2}_n = \braket{p^2_y}_{n,\text{ung}} + (m\dot{\zeta}(t))^2 = m^2\omega^2_0 s^2(2n+1) + m^2\dot{\zeta}^2(t) \; .
       \label{erwartungswert_p^2_einzelner}
     \end{equation}
+\fi
+    Um darüber hinaus den Erwartungswert $\braket{p^m}_n$ für einen beliebigen Exponenten $m \in \mathbb{N}$ zu evaluieren, muss in Formel (\ref{spaste2})) $m$-mal die Produktregel angewandt werden.
+    Da sich die komplexe Phase beim Ableiten reproduziert und jedesmal ein ortsunabhängiger Term übrig bleibt, gilt für den Erwartungswert Gleiches wie für den Erwartungswert $\braket{x^m}_n$:
+    \begin{equation}
+        \braket{p^m}_n = \braket{(p_y+\zeta(t))^m}_{n,\text{ung}} = \sum_{j=0}^m\begin{pmatrix} m \\ j \\ \end{pmatrix} \braket{p_y^{m-j}}_{n,\text{ung}}\zeta^j(t) \; .
+    \end{equation}
+
+    Speziell für $m=2$ gilt:
+    \begin{equation}
+      \braket{p^2}_n = \braket{p^2_y}_{n,\text{ung}} +2m\dot\zeta(t)\braket{p_y}_{n,\text{ung}}+(m\dot{\zeta}(t))^2 = m^2\omega^2_0 s^2(2n+1) + m^2\dot{\zeta}^2(t) \; .
+      \label{erwartungswert_p^2_einzelner}
+    \end{equation}
+
 
 
   \section{Heisenberg-Unschärferelation}
@@ -186,7 +203,7 @@
     Für den expliziten Fall der Sinus-Treibkraft $S(t)=A\sin(\omega t)$ folgt:
     \begin{equation}
       \bar H_n = E_n - \frac{A}{4m(\omega_0^2-\omega^2)}\left(1-\frac{2\omega^2}{(\omega_0^2-\omega^2)}\right) \; .
-      \label{mittleres_H_sinus}
+      \label{mittleres_H}
     \end{equation}
     Für $\omega_0^2>\omega^2$ erhalten wir in diesem Beispiel demnach einen Anstieg des Energiemittelwertes gegenüber den Quasienergien, andernfalls eine Absenkung.
 

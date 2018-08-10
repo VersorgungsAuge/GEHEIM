@@ -29,7 +29,7 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
   \end{equation}
   in Ortsdarstellung die Form
   \begin{equation}
-    \Psi_n(x,t) = \text{e}^{-\frac{i}{\hbar}\epsilon_nt}\Phi_n(x,t)
+    \Psi_n(x,t) = \exp\left(-\frac{i}{\hbar}\epsilon_nt\right)\Phi_n(x,t)
     \label{floquet_theorem}
   \end{equation}
   haben.
@@ -45,7 +45,7 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
 
   Die hermitischen Operatoren $H(t)$ und $\cal H(t)$ operieren auf dem Hilbertraum $\cal{L}^2 \otimes \cal{T}$.
   Dabei ist $\cal{L}^2$ der Raum der quadratintegrablen Funktionen und $\cal{T}$ der Raum der auf $[0,T]$ integrablen Funktionen, da die Operatoren $T$-periodisch sind \cite{haengi}.
-  Nach dem Spektralsatz bilden die Eigenfunktionen $\Phi_n(x,t)$ von $\cal{H}(t)$ eine Orthogonalbasis von $\cal{L}^2 \otimes \cal{T}$, welche auf eine Orthonormalbasis normiert werden kann, wodurch wir das Skalarprodukt definieren können als:
+  Nach dem Spektralsatz bilden die Eigenfunktionen $\Phi_n(x,t)$ von $\cal{H}(t)$ eine Orthogonalbasis von $\cal{L}^2 \otimes \cal{T}$, welche auf eine Orthonormalbasis normiert werden kann, wodurch wir das Skalarprodukt definieren können als \cite{haengi}:
   %Es ergibt sich
   \begin{align}
     \begin{split}
@@ -62,7 +62,7 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
     Da $H(t)$ nicht zeitlich konstant ist, sind auch dessen Erwartungswerte, die Energien des Systems, zeitabhängig.
     Ein direkter Vorteil der Floquet-Theorie liegt darin, dass sich die durchschnittliche Energie
     \begin{equation}
-      \bar{H}_n  = \braket{\braket{\Psi_n(x,t)|H(t)|\Psi_m(x,t)}}
+      \bar{H}_n  = \braket{\braket{\Psi_n(x,t)|H(t)|\Psi_n(x,t)}}
       %\label{mittleres_H}
     \end{equation}
     des $n$-ten Zustandes $\Psi_n(x,t)$ leicht über die Quasienergien $\epsilon_n$ berechnen lässt, ohne explizit Integrale zu lösen.
@@ -72,9 +72,9 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
     Weiterhin benutzen wir (\ref{eigenwertproblem}), dass die Floquet-Moden Eigenfunktionen von $\cal{H}(t)$ sind:
     \begin{align}
       \begin{split}
-      \bar{H}_n  &= \braket{\braket{\Phi_n(x,t)|\cal{H}(t)+\text{i}\hbar\frac{\partial}{\partial t}|\Phi_n(x,t)}} \\
-      &=\epsilon_n \braket{\braket{\Phi_n(x,t)|\Phi_n(x,t)}} + \braket{\braket{\Phi_n(x,t)|\text{i}\hbar\frac{\partial}{\partial t}|\Phi_n(x,t)}} \\
-      &= \epsilon_n + \braket{\braket{\Phi_n(x,t)|\text{i}\hbar\frac{\partial}{\partial t}|\Phi_n(x,t)}} \; .
+      \bar{H}_n  = \braket{\braket{\Phi_n(x,t)|\cal{H}(t)+\text{i}\hbar\frac{\partial}{\partial t}|\Phi_n(x,t)}}
+    %  &=\epsilon_n \braket{\braket{\Phi_n(x,t)|\Phi_n(x,t)}} + \braket{\braket{\Phi_n(x,t)|\text{i}\hbar\frac{\partial}{\partial t}|\Phi_n(x,t)}} \\
+      = \epsilon_n + \braket{\braket{\Phi_n(x,t)|\text{i}\hbar\frac{\partial}{\partial t}|\Phi_n(x,t)}} \; .
     \end{split}
     \end{align}
     Nähere Betrachtung zeigt, dass
@@ -137,9 +137,9 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
       \textbf{2) Unitäre Tranformation für $\Psi(y,t)$}\\
       Im Weiteren wählen wir die unitäre Transformation
       \begin{equation}
-        \Psi(y,t) = \text e^{\frac{\text i}{\hbar}m\dot \zeta y}\Lambda(y,t) \; .
+        \Psi(y,t) = \exp\left(\frac{\text i}{\hbar}m\dot \zeta y\right)\Lambda(y,t) \; .
       \end{equation}
-      Durch Einsetzen in die Schrödinger-Gleichung (\ref{schroedinger_einzeln_getrieben}) und Ausrechnen der Ableitungen erhalten wir
+      Durch Einsetzen in beide Seiten der Schrödinger-Gleichung (\ref{schroedinger_einzeln_getrieben}) und Ausrechnen der Ableitungen erhalten wir
       \begin{align}
         \begin{split}
           &\exp\left(\frac{\text i}{\hbar}m\dot \zeta y\right)(\text i \hbar \dot \Lambda(y,t) - my \ddot{\zeta}\Lambda(y,t)) =\\
@@ -165,9 +165,9 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
       %\newpage
 
       Indem auf beiden Seiten durch die Exponentialfunktion geteilt wird, bekommen wir eine Differentialgleichung für $\Lambda(y,t)$.
-      Außerdem können durch geschicktes Umsortieren der Terme die Lagrange-Funktion $L(\zeta,\dot \zeta, t)$
+      Außerdem können durch Umsortieren der Terme die Lagrange-Funktion $L(\zeta,\dot \zeta, t)$
       \begin{equation}
-        L(\zeta,\dot \zeta, t) = \frac{1}{2}m\dot \zeta^2 - \frac{1}{2}m\omega_0^2\zeta^2 + S(t)\zeta
+        L(\zeta,\dot \zeta, t) = \frac{1}{2}m\dot \zeta^2 - \frac{1}{2}m\omega_0^2\zeta^2 + S(t)\zeta \; ,
         \label{lagrange_zeta}
       \end{equation}
         sowie die Bewegungsgleichung des klassischen getriebenen harmonischen  Oszillators \cite{husimi}
@@ -190,7 +190,7 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
         \Lambda(y,t) = \exp\left(\frac{\text i}{\hbar}\int_0^tL \: \text d t'\right)\chi(y,t)
       \end{equation}
       für $\Lambda(y,t)$, um die Lagrange-Funktion in (\ref{dgl_lambda}) zu eliminieren.
-      Dadurch wird diese Differential-Gleichung für $\Lambda(y,t)$ bzw. die ursprüngliche Schrödinger-Gleichung auf einen ungetriebenen Oszillator für $\chi(y,t)$ zurückgeführt:
+      Dadurch wird die Differential-Gleichung für $\Lambda(y,t)$ bzw. die ursprüngliche Schrödinger-Gleichung auf einen ungetriebenen Oszillator für $\chi(y,t)$ zurückgeführt:
       \begin{equation}
         \text i \hbar \dot \chi(y,t) = \left[ \frac{-\hbar^2}{2m}\frac{\partial^2}{\partial y^2} + \frac{1}{2}m\omega_0^2y^2 \right]\chi(y,t) \; .
       \end{equation}
@@ -217,7 +217,7 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
 
 
     %war vorher subsection
-      \section{\texorpdfstring{Identifizierung der Quasienergien $\epsilon_n$ und Floquet-Moden $\Phi_n(x,t)$}{Identifizierung der Quasienergien epsilon_n und Floquet-Moden Phi_n(x,t)}}
+      \section{\texorpdfstring{Identifizierung der Quasienergien $\epsilon_n$ und der Floquet-Moden $\Phi_n(x,t)$}{Identifizierung der Quasienergien epsilon_n und der Floquet-Moden Phi_n(x,t)}}
         Nach dem Floquet-Theorem für periodische Hamilton-Operatoren (\ref{floquet_theorem}) kann die Lösung des getriebenen Oszillators geschrieben werden als
         \begin{equation}
           \Psi_n(x,t) = \exp\left(\frac{-\text i}{\hbar}\epsilon_nt\right)\Phi_n(x,t) \; ,
@@ -236,8 +236,8 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
           \begin{split}
             \Phi_n(x,t) &=
              N_nO_n\left(\sqrt{\frac{m\omega_0}{\hbar}}(x-\zeta(t))\right) \exp\left[\frac{-m\omega_0}{2\hbar}(x-\zeta(t))^2\right] \\
-            &\quad \cdot \exp\left[\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))+\int_0^tL(\dot \zeta,\zeta,t')\:\text d t-\frac{t}{T} \int_0^T L(\dot \zeta,\zeta,t)\:\text dt\: \right)\right] \; , \notag\\
-            &\quad \;n \in \mathbb{N}_0 \; .
+            &\quad \cdot \exp\left[\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x-\zeta(t))+\int_0^tL(\dot \zeta,\zeta,t')\:\text d t-\frac{t}{T} \int_0^T L(\dot \zeta,\zeta,t)\:\text dt\: \right)\right] \; ,
+            \;n \in \mathbb{N}_0 \; .
             \label{floquet_moden_einzelner}
           \end{split}
         \end{align}
@@ -255,12 +255,13 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
           \zeta(t) = \frac{A\sin(\omega t)}{m(\omega_0^2 - \omega^2)} \;
           \label{zeta_sinuskraft}.
         \end{equation}
-        Das Berechnen des Wirkungsintegrals und anschließendes Identifizieren des linearen Anteils liefert die Quasienergien für die gegebene Kraft:
+        Das Berechnen des Wirkungsintegrals und anschließendes Identifizieren des linearen Anteils liefert die Quasienergien für die gegebene Kraft \cite{mads}:
         \begin{equation}
           \epsilon_n  = \hbar \omega_0\left(n+\frac{1}{2}\right) - \frac{A}{4m(\omega_0^2-\omega^2)} \;.
         \end{equation}
         Wie zu erkennen streben die Quasienergien, und somit die mittlere Energie des Systems (\ref{mittleres_H}), gegen Unendlich, wenn sich die Treibfrequenz $\omega$ nahe der Eigenfrequenz des Oszillators $\omega_0 $ befindet.
-        Da wir einen getriebenen Oszillator ohne Dämpfung betrachten, war dieses Ergebnis zu erwarten \cite{mads}.
+        Da wir einen getriebenen Oszillator ohne Dämpfung betrachten, war dieses Ergebnis zu erwarten.
+        %\cite{mads}.
         %HIER KANN MAN NOCH AUSFUEHRLICH INSCHREIBEN MIT MADS
 
     %\chapter{Ergebnisse}
@@ -273,11 +274,13 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
         S(t) = \sum_{j=-\infty}^\infty c_j \text e^{\text ij\omega t}, \; c_j = \frac{1}{T} \int_0^T S(t) \text e^{-ij\omega t} \: \text d t \; .
       \end{equation}
       Die $c_j$ haben die Einheit einer Kraft.
-
+\iffalse
       Für $\zeta(t)$ wählen wir jetzt ebenfalls einen Reihenansatz:
       \begin{equation}
         \zeta(t) = \sum_{j=-\infty}^\infty d_j \text e^{\text ij\omega t} \; .
       \end{equation}
+\fi
+      Für $\zeta(t)$ wählen wir jetzt den gleichen Reihenansatz mit anderen Koeffizienten $d_j$.
       Wir betrachten wieder nur die inhomogene klassische Bewegungsgleichung und bestimmen die $d_j$, indem wir einsetzen und einen Koeffizientenvergleich der $d_j$ und $c_j$ machen.
       Es zeigt sich, dass
       \begin{equation}
@@ -317,8 +320,8 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
            - \frac{\omega_o^2}{2m} \frac{c_jc_{-j}}{(\omega_0^2-j^2\omega^2)^2} \right.
            \left. +\frac{1}{m} \frac{c_jc_{-j}}{\omega_0^2-j^2\omega^2}
            \right]\\
-           &= \sum_j \left[\frac{1}{2m} \frac{c_jc_{-j}(j^2\omega^2-\omega_0^2)}{(\omega_0^2-j^2\omega^2)^2} + \frac{1}{m} \frac{c_jc_{-j}}{\omega_0^2-j^2\omega^2} \right] \\
-           &= \sum_j \frac{c_jc_{-j}}{2m(\omega_0^2-j^2\omega^2)} = \frac{c_0^2}{2m\omega_0^2} + \sum_{j=1}^\infty \frac{c_j^2}{m(\omega_0^2-j^2\omega^2)}
+           %&= \sum_j \left[\frac{1}{2m} \frac{c_jc_{-j}(j^2\omega^2-\omega_0^2)}{(\omega_0^2-j^2\omega^2)^2} + \frac{1}{m} \frac{c_jc_{-j}}{\omega_0^2-j^2\omega^2} \right] \\
+           &= \sum_j \frac{c_jc_{-j}}{2m(\omega_0^2-j^2\omega^2)} = \frac{c_0^2}{2m\omega_0^2} + \sum_{j} \frac{c_j^2}{m(\omega_0^2-j^2\omega^2)}
          \end{split}
        \end{align}
 
@@ -333,4 +336,4 @@ Ebenso werden wir den zeitabhängigen und gemittelten Erwartungswert der Energie
 
 
 
-       \subsection{Beispiele für S(t) dreieck rechteck delta}
+       %\subsection{Beispiele für S(t) dreieck rechteck delta}
