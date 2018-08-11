@@ -2,7 +2,7 @@
 
 \chapter{Berechnung von Erwartungswerten}
 \label{3}
-  In diesem Abschnitt werden die zeitabhängigen Erwartungswerte des periodisch getriebenen Oszillators für den Impuls, den Ort und die Energie berechnet, so wie das zeitliche Mittel des Erwartungswertes der Energie.
+  In diesem Abschnitt werden die zeitabhängigen Erwartungswerte des periodisch getriebenen Oszillators für den Impuls, den Ort und die Energie berechnet, sowie das zeitliche Mittel des Erwartungswertes der Energie.
   Dabei werden die Erwartungswerte für alle Zustände $\Psi_n(x,t)$ auf die bekannten Erwartungswerte des Standard-Oszillators zurückzuführt, womit wir eine Art "2. Quantisierung für die Erwartungswerte" haben.
 
   Die Treibkraft $S(t)=S(t+T)$ ist nicht weiter festgelegt und geht stets über die klassische Lösung $\zeta(t)$ (\ref{dgl_zeta}) in die Erwartungswerte ein.
@@ -86,9 +86,9 @@
 
 
   \section{Zeitabhängige Erwartungswerte des Impulses}
-    Um den Erwartungswert $\braket{p}_n$ des Impulsoperators für den Zustand $\Psi_n(x,t)$ des getriebenen Oszillators zu ermitteln, nutzen wir gleichermaßen die Beziehung (\ref{betrag_einzelner}) und unterdessen ein geschicktes Anwenden der Produktregel, um das Problem erneut auf den ungetriebenen Oszilaltor zu beschränken.
+    Um den Erwartungswert $\braket{p}_n$ des Impulsoperators für den Zustand $\Psi_n(x,t)$ des getriebenen Oszillators zu ermitteln, nutzen wir gleichermaßen die Beziehung (\ref{betrag_einzelner}) und unterdessen ein geschicktes Anwenden der Produktregel, um das Problem erneut auf den ungetriebenen Oszillator zu beschränken.
 
-    Wieder wählen wir den Variablenwechsel zur neuen Variable $y=x-\zeta(t)$, weil der Impulsoperator $p=p_x$ in der neuen Koordinate identisch ist, wie schon am Anfang von Kapitel \ref{lsg_einzelner} angedeutet, was sich leicht mit der Kettenregel zeigen lässt:
+    Wieder wählen wir den Variablenwechsel zur neuen Variable $y=x-\zeta(t)$, weil der Impulsoperator $p=p_x$ in der neuen Koordinate identisch ist, wie schon am Anfang von Kapitel \ref{lsg_einzelner} angedeutet, was sich mit der Kettenregel zeigen lässt:
     \begin{equation}
       -\text i\hbar \frac{\partial}{\partial x} = -\text i\hbar \frac{\partial}{\partial y}\frac{\partial y}{\partial x} = -\text i\hbar \frac{\partial}{\partial y} \cdot 1 \; , \quad \text{d.h.} \quad p_x = p_y \; .
     \end{equation}
@@ -140,7 +140,7 @@
     \end{equation}
 \fi
     Um darüber hinaus den Erwartungswert $\braket{p^m}_n$ für einen beliebigen Exponenten $m \in \mathbb{N}$ zu evaluieren, muss in Formel (\ref{spaste2})) $m$-mal die Produktregel angewandt werden.
-    Da sich die komplexe Phase beim Ableiten reproduziert und jedesmal ein ortsunabhängiger Term übrig bleibt, gilt für den Erwartungswert Gleiches wie für den Erwartungswert $\braket{x^m}_n$:
+    Da sich die komplexe Phase beim Ableiten reproduziert und jedesmal ein ortsunabhängiger Term übrig bleibt, gilt für diesen Erwartungswert Gleiches wie für den Erwartungswert $\braket{x^m}_n$:
     \begin{equation}
         \braket{p^m}_n = \braket{(p_y+\zeta(t))^m}_{n,\text{ung}} = \sum_{j=0}^m\begin{pmatrix} m \\ j \\ \end{pmatrix} \braket{p_y^{m-j}}_{n,\text{ung}}\zeta^j(t) \; .
     \end{equation}

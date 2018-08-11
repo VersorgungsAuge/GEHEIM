@@ -1,1 +1,137 @@
 \chapter{Zweite Quantisierung}
+In diesem Kapitel werden wir die Wellenfunktionen $\Psi_n(x,t)$ der Ortsdarstellung (\ref{gesamtlsg_einzelner}) in die Besezungszahldarstellung "ubersetzen, das hei"st wir werden $\Psi(x,t)$ darstellen in der Orthonormalbasis der Eigenzust"ande $\ket{n}$ des Besetzungszahloperators $N$ des ungetriebenen Oszillators.
+Die $\ket{n}$ sind auch Eigenzust"ande des Hamilton-Operators
+\begin{equation}
+   H_\text{ung}(x,p) = \frac{\hat p^2}{2m} + \frac 1 2 m\omega_0^2 x^2 = H_{\text{ung}}(N)= \hbar\omega_0\left(N+\frac 1 2\right)
+\end{equation}
+des ungetriebenen Systems.
+Hierbei gilt
+\begin{equation}
+   N \ket{n} = n \ket{n} \;,\; n\in \mathbb{N} \;,
+\end{equation}
+\iffalse
+\begin{equation}
+  H=\frac{\hat p^2}{2m} + \frac 1 2 m\omega_0^2\hat x^2 = \hbar\eft(\hat n+\frac 1 2\right)
+\end{equation}
+\fi
+Um das darstellungsunabh"angige Ket $\ket{\Psi(t)}$ in der Besetzungszahldarstellung zu erhalten, wird ein geeigneter Ansatz gew"ahlt und in die Schr"odinger-Gleichung des getriebenen Oszillators eingezetzt, wonach mit Hilfe von Kommutatorrelationen Differentialgleichungen zur Bestimmung der Unbekannten erhalten werden, welche gel"ost werden k"onnen.
+
+Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswerte $\braket{x}_n,\braket{x^2}_n, \\ \braket{p}_n,\braket{p^2}_n,\braket{H(t)}_n$ berechnet.
+
+
+\section{Wellenfunktion}
+  Da die $\ket{n}$ Eingenzust"ande des hermitischen Besetzungszahloperators $N$ sind, kann man jede Wellenfunktion $\ket{\Psi_n(t)}$ bzw. Gesamtwellenfunktion $\ket{\Psi(t)}$ auf dem selben Raum schreiben als
+  \begin{equation}
+    \ket{\Psi(t)}=\sum_{n=0}^{\infty}\ket{\Psi_n(t)}=\sum_{n=0}^{\infty}c_n(t)\ket{n} \;,
+  \end{equation}
+  mit geeigneten Koeffizienten $c_n(t)$.
+
+  F"ur die $\ket{\Psi_n(t)}$ des getriebenen harmonischen Oszillators w"ahlen wir konkret den Ansatz
+  \begin{equation}
+    \ket{\Psi_n(t)}=\exp\left(\frac{-\text i}{\hbar}\theta_n(t)\right)\exp\left(\frac{-\text i}{\hbar}\alpha(t)p\right)\exp\left(\frac{-\text i}{\hbar}\varphi(t)x\right)\ket{n}=O_nU_pU_x\ket{n} \;.
+    \label{ansatz_quant}
+  \end{equation}
+  Dieser Ansatz folgt aus der Betrachtung der L"osung $\Psi_n(x,t)$ in Ortsdarstellung.
+  Die ungetriebenen Eigenzust"ande $\ket{n}$ haben in Ortsdarstellung die Form einer Gauss-Glocke.
+  Da bei den $\Psi_n(x,t)$ zur (verschobenen) Gauss-Glocke eine zeit- und ortsabh"angige Phase hinzu kommt und der Ortsoperator in Ortsdarstellung einfach der Multiplikation enspricht, w"ahlen wir also
+  \begin{equation}
+    \exp\left(\frac{-\text i}{\hbar}\varphi(t)x\right)=U_x \; .
+  \end{equation}
+  im Ansatz.
+  Hier ist $x$ der Ortsoperator.
+  Sowohl die zus"atzliche orts- und zeitabh"angige Phase als auch die Gauss-Glocke in $\Psi_n(x,t)$ sind verschoben (um $\zeta(t)$), daher wenden wir von links den Operator
+  \begin{equation}
+    \exp\left(\frac{-\text i}{\hbar}\alpha(t)p\right)=U_p
+  \end{equation}
+  an.
+  Denn dieser Operator bewirkt bei der Transformation eine Verschiebung des Ortsoperators:
+  \begin{equation}
+    U_pxU_p^{-1}=
+    \exp\left(\frac{-\text i}{\hbar}\alpha(t)p\right) x  \exp\left(\frac{+\text i}{\hbar}\alpha(t)p\right)
+    =x-\alpha(t)
+  \end{equation}
+  %Dies wird noch mit Kommutatorrelationen gezeigt.
+  Zuletzt wird die ausschlie"slich zeitabh"angige Phase der Wellenfunktion $\Psi_n(x,t)$, in welche die einzige quantenzahlabh"angige Gr"o"se $E_n$ eingeht, durch die Exponentialfunktion $O$ ohne Operator ber"ucksichtigt.
+  %durch die Funktion $\theta_n(t)$ in der Exponentialfunktion ganz links in (\ref{ansatz_quant}) ber"ucksichtigt.
+
+  Jetzt setzen wir diesen Ansatz (\ref{ansatz_quant}) in die Schr"odinger-Gleichung (\ref{schroedinger}) ein.
+  Das Ziel ist unseren Hamilton-Operator
+  \begin{equation}
+    H(x,p,t)=\frac{p^2}{2m}+\frac 1 2 m\omega_0 -S(t)x = H_{\text{ung}}(N)-S(t)x
+  \end{equation}
+  an den Operatoren im Ansatz vorbeizukommutieren, sodass $H_{\text{ung}}(N)$ auf die $\ket{n}$ angewendet wird.
+  W"ahrenddessen entstehen Resterme mit $p$ und $x$, die auf $\ket{n}$ wirken.
+  Auf der anderen Seite der Gleichung m"ussen der $p$- und $x$-Operator, welche beim Zeitableiten dazu kommen, ebenfalls bis zum $\ket{n}$ durchkommutiert werden.
+  Dann erhalten wir die Differentialgleichungen zum Bestimmen von $\theta_n(t), \alpha(t)$ und $\varphi(t)$ durch Koeffizientenvergleich beider Seiten.
+
+  F"ur dieses Vorgehen brauchen wir die Kommutatorrelationen von $x/p$ mit $U_x,U_p$.
+  Wenn beide Operatoren nur von $x$ oder $p$ abh"angen, verschwindet der Kommutator, das hei"st
+  \begin{equation}
+    [x^m,U_x]=[p^m,U_p]=0\;,\; m \in \mathbb{N}
+  \end{equation}
+  gilt.
+  Die gemischten Kommutatoren berechnen wir mit den Kommutatorrechenregeln
+  \begin{align}
+    [AB,C]=A[B,C]+[A,C]B\quad,\quad [A,f(B)]=\frac{\partial}{\partial B}f(B)[A,B]\quad (\text{f"ur $[B,[A,B]]=0$})
+  \end{align}
+  und dem bekannten Kommutator $[x,p]=\text i \hbar$.
+  Wir bekommen:
+  \begin{align}
+    [x,U_p]&=\alpha(t)U_p\Rightarrow xU_p=U_p(x+\alpha(t)) \\
+    [x^2,U_p]&=2\alpha(t)x+\alpha^2(t)\Rightarrow x^2U_p=U_p(x^2+2\alpha(t)x+\alpha^2(t))\\
+    [p,U_x]&=-\varphi(t)U_x\Rightarrow pU_x=U_x(p-\varphi(t)) \\
+    [p^2,U_x]&=-2\varphi(t)p+\varphi^2(t)\Rightarrow p^2U_x=U_x(p^2-2\varphi(t)p+\varphi^2(t)) \; .
+  \end{align}
+
+  F"ur die Anwendung des Hamilton-Operators $H(x,p,t)$ auf den Zustand $\ket{\Psi(t)}$ folgt
+  \begin{align}
+    &H\ket{\Psi(t)}=OHU_pU_x\ket{n}
+    =O_nU_p\left(H+\frac{1}{2m}(-2\varphi(t)p+\varphi^2(t))\right)U_x\ket{n} \notag\\
+    &=O_nU_pU_x\left(H+\frac{1}{2m}(-2\varphi(t)p+\varphi^2(t))+\frac{1}{2}m\omega_0^2(2\alpha(t)x+\alpha^2(t))-\alpha(t)S(t)\right)\ket{n} \notag\\
+    &=O_nU_pU_x
+    \left(E_n-S(t)x+\frac{1}{2m}(-2\varphi(t)p+\varphi^2(t))+\frac{1}{2}m\omega_0^2(2\alpha(t)x+\alpha^2(t))-\alpha(t)S(t)\right)\ket{n}
+    \label{super1}
+  \end{align}
+  und die Zeitableitung ist
+  \begin{align}
+    \text i\hbar\frac{\partial}{\partial t} \ket{\Psi(t)}
+    &=O\left(\dot\theta(t)U_pU_x+U_p\dot\alpha(t)pU_x+U_pU_x\dot\varphi(t)x\right)\ket{n} \notag\\
+    &=O_nU_pU_x\left(\dot\theta(t)+\dot\alpha(t)(p-\varphi(t))+\dot\varphi(t)x\right)\ket{n} \; .
+    \label{super2}
+  \end{align}
+  %Indem auf beiden Seiten durch die Exponentialfunktion mit $\theta(t)$ dividiert wird
+  Der Koeffizientenvergleich von (\ref{super1}) und (\ref{super2}) liefert die Differentialgleichungen:
+  \begin{align}
+    1)\; \dot\theta(t)=E_n+\frac 1 2 m\omega_0^2\alpha^2(t)+\frac{1}{2m}\varphi^2-\alpha(t)S(t)+\dot\alpha(t)\varphi(t)
+  \end{align}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b
