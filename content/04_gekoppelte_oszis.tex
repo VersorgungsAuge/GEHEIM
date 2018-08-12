@@ -1,14 +1,14 @@
 \chapter{Zwei gekoppelte getriebene harmonische Oszillatoren}
-
+\label{4}
 
 In diesem Teil der Arbeit werden mit Hilfe der aus (\ref{lsg_einzelner}) bekannten Lösung des einzelnen getrieben Oszillators die Wellenfunktionen für ein System hergeleitet, das aus zwei gekoppelten Oszillatoren $x_1$ und $x_2$ der gleichen Masse $m$ besteht, von denen einer mit der periodischen Kraft $S(t) = S(t+T)$ angetrieben wird.
 Die Potentialkonstanten $k$ der beiden Oszillatoren sind ebenfalls identisch, aber im Allgemeinen unterschiedlich zur Kopplungskonstante $\kappa$ zwischen den Oszillatoren.
-Der Hamilton-Operator dieses Systems kann direkt aus der Hamilton-Funktion  der klassichen Mechanik übernommen werden:
+Der Hamilton-Operator dieses Systems kann direkt aus der Hamilton-Funktion  der klassischen Mechanik übernommen werden:
 \begin{equation}
   H(t) = H(t+T) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)x_1 \; .
   \label{H_gekoppelt}
 \end{equation}
-Es werden auch die Erwartungswerte für  den Ort $\braket{x_{1,2}}_{n,l}$ und den Impuls $\braket{p_{1,2}}_{n,l}$, genauso wie der Erwartungswert der Energie $\braket{H}_{n,l}$ und dessen zeitliches Mittel $\bar{H}_{n,l}$ berechnet, indem auf die bekannten Erwartungswerte des einzelnen getriebenen Oszillators zurückgeführt wird.
+Es werden auch die Erwartungswerte für  den Ort $\braket{x_{1,2}}_{n,l}$ und den Impuls $\braket{p_{1,2}}_{n,l}$, genauso wie der Erwartungswert der Energie $\braket{H}_{n,l}$ und dessen zeitliches Mittel $\overline{H}_{n,l}$ berechnet, indem auf die bekannten Erwartungswerte des einzelnen getriebenen Oszillators zurückgeführt wird.
 Die Erwartungswerte werden auch graphisch dargestellt.
 
 Zur Lösung des Systems wird eine unitäre Koordinatentransformation eingeführt, welche den Hamilton-Operator $H(x_1,x_2,p_1,p_2,t)$ zu zwei in den neuen Koordinaten unabhängigen Hamilton-Operatoren $H_+(x_+,p_+,t)$ und $H_-(x_-,p_-,t)$ mit effektiven Potentialkonstanten $k_+,k_-$ entkoppelt, welche je einen einzelnen (getriebenen) Oszillator beschreiben.
@@ -37,7 +37,7 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
   Um dies schnell zu zeigen, schauen wir uns den Fall von zwei unabhängigen Operatoren an:
   \begin{align}
     \begin{split}
-      \text i \hbar \frac{\partial}{\partial t} \Psi = H\Psi \iff \Psi_2 H_1 \Psi_1 + \Psi_1 H_2 \Psi_2 = \text i \hbar \left(\frac{\partial}{\partial t} \Psi_1\Psi_2 + \Psi_1\frac{\partial}{\partial t} \Psi_2 \right) \; .
+      \text i \hbar \frac{\partial}{\partial t} \Psi = H\Psi \iff \Psi_2 H_1 \Psi_1 + \Psi_1 H_2 \Psi_2 = \text i \hbar \left(\Psi_1\frac{\partial}{\partial t} \Psi_2 + \Psi_1\frac{\partial}{\partial t} \Psi_2 \right) \; .
     \end{split}
   \end{align}
   Da die Operatoren nur auf Funktionen wirken, die auf dem selben Raum definiert sind, kann man sie an der jeweils anderen Funktion vorbei ziehen.
@@ -47,7 +47,7 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
   \end{equation}
   Weil die linke und rechte Seite für alle unabhängigen $x_1,p_1,x_2,p_2$ gleich sein müssen, folgen die einzelnen Schrödinger-Gleichungen für die Wellenfunktionen $\Psi_1$ und $\Psi_2$:
   \begin{equation}
-    \frac{1}{\Psi_1}H_1\Psi_1 = \frac{\frac{\partial}{\partial t} \Psi_1}{\Psi_1} \; , \; \frac{1}{\Psi_2}H_2\Psi_2 = \frac{\frac{\partial}{\partial t} \Psi_2}{\Psi_2} \; .
+    \frac{1}{\Psi_1}H_1\Psi_1 = \text i\hbar\frac{\frac{\partial}{\partial t} \Psi_1}{\Psi_1} \; , \; \frac{1}{\Psi_2}H_2\Psi_2 =\text i\hbar \frac{\frac{\partial}{\partial t} \Psi_2}{\Psi_2} \; .
   \end{equation}
   Wie an diesem Beispiel zu sehen, gilt Gleiches auch für beliebig viele unabhängige Hamilton-Operatoren, womit (\ref{schroedglg_unabh_H}) erfüllt ist und wir wissen, dass die Lösung $\Psi$ die Form (\ref{lsg_unabh_H}) hat.
   %nur EINE moegliche lsg hat die form psi, wenn wir einschraenken, dass psi so aussehen soll, wer weis ob es noch andere lsgen nicht dieser form gibt.
@@ -56,7 +56,7 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
 
 \section{Unitäre Variablentransformation und allgemeine Lösung der Schrödinger-Gleichung}
   Um für unseren Hamilton-Operator $H(x_1,x_2,p_1,p_2,t)$ (\ref{H_gekoppelt}) eine entkoppelte Form \\
-  $H(x_+,x_-,p_+,p_-,t)=H_+(x_+,p_+,t)+H_-(x_-,p_-,t)$ nach (\ref{unabh_H}) in den neuen Koordinaten/Variablen $x_+,x_-,p_+,p_-$ zu erhalten, wählen wir die unitären Koordinationtransformationen \cite{arxiv}
+  $H(x_+,x_-,p_+,p_-,t)=H_+(x_+,p_+,t)+H_-(x_-,p_-,t)$ nach (\ref{unabh_H}) in den neuen Koordinaten/Variablen $x_+,x_-,p_+,p_-$ zu erhalten, wählen wir die unitären Koordinationtransformationen~\cite{arxiv}
   \begin{equation}
     x_+ = \frac{1}{\sqrt{2}}(x_2+x_1) \;,\; x_-=\frac{1}{\sqrt{2}}(x_2-x_1) \;,
     \label{koord_trafo_x}
@@ -243,7 +243,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
         \label{fig:schwach}
       \end{subfigure}
       %\quad
-      \begin{subfigure}[t]{0.5\textwidth}
+      \begin{subfigure}[t]{0.5\textwidth}sinusoidal
           \centering
           \includegraphics[width=\textwidth]{plots/<x12>nlstark.png}
           \caption{$\kappa=15$.}
@@ -263,7 +263,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
           \caption{$\kappa=15$.}
           \label{fig:H_kappa15}
       \end{subfigure}
-      \caption{Erwartungswerte der gekoppelten Oszillatoren $\braket{x_1}_{n,l}$ und $\braket{x_2}_{n,l}$ für beliebigen Zustand $\Psi_{n,l}$, außerdem der Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\bar H_{0,0}$ für den Grundzustand $\Psi_{0,0}$. Mit $\omega=2 , A=1 , k=1 , m=1 , \hbar=1$, für verschiedene Kopplungskonstanten $\kappa$.}
+      \caption{Erwartungswerte der gekoppelten Oszillatoren $\braket{x_1}_{n,l}$ und $\braket{x_2}_{n,l}$ für beliebigen Zustand $\Psi_{n,l}$, außerdem der Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\overline{H}_{0,0}$ für den Grundzustand $\Psi_{0,0}$. Mit $\omega=2 , A=1 , k=1 , m=1 , \hbar=1$, für verschiedene Kopplungskonstanten $\kappa$.}
     \end{figure}
 \fi
 
@@ -294,18 +294,18 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
       \braket{H(t)}_{n,l} &= \braket{H_+(t)}_n^+ + \braket{H_-(t)}_l^- \notag\\
       &= E_{+,n}+E_{-,l} -L_+-L_- +m\dot\zeta_+^2(t)+m\dot\zeta_-^2(t) \; .
     \end{align}
-    Der mittlere Erwartungswert $\bar H_{n,l}$ wird wieder in den neuen Koordinaten, mit Formel (\ref{mittleres_H}), berechnet.
+    Der mittlere Erwartungswert $\overline{H}_{n,l}$ wird wieder in den neuen Koordinaten, mit Formel (\ref{mittleres_H}), berechnet.
     Weil die Quasienergien $\epsilon_{n,l}$ die Summe von $\epsilon_{+,n}$ und $\epsilon_{-,l}$ ist, kriegen wir sofort
     \begin{align}
-      \bar H_{n,l}&=\bar H_{+,n}+\bar H_{-,l}  \notag\\
+      \overline{H}_{n,l}&=\overline{H}_{+,n}+\overline{H}_{-,l}  \notag\\
       &=E_{+,n}+E_{-,l} - \frac{\frac{1}{\sqrt 2} A}{4m(\omega_+^2-\omega^2)}\left(1-\frac{2\omega^2}{(\omega_+^2-\omega^2)}\right)
       - \frac{\frac{-1}{\sqrt 2} A}{4m(\omega_-^2-\omega^2)}\left(1-\frac{2\omega^2}{(\omega_-^2-\omega^2)}\right) \; .
     \end{align}
 
     \textbf{Sinusoidiale Treibkraft}
 
-    Für das Beispiel der Sinus-Kraft folgt $\braket{H(t)}_{n,l}$ mit den ensprechenden Orts- und Impulserwartungswerten aus vorherigem Abschnitt und  $\bar H_{n,l}$ folgt aus Gleichung (\ref{mittleres_H}).
-    Der Erwartungswert der Energie $\braket H_{0,0}$ und dessen zeitliches Mittel $\bar H(t)_{0,0}$ sind für die selben Konstanten wie zuvor
+    Für das Beispiel der Sinus-Kraft folgt $\braket{H(t)}_{n,l}$ mit den ensprechenden Orts- und Impulserwartungswerten aus vorherigem Abschnitt und  $\overline{H}_{n,l}$ folgt aus Gleichung (\ref{mittleres_H}).
+    Der Erwartungswert der Energie $\braket H_{0,0}$ und dessen zeitliches Mittel $\overline{H}(t)_{0,0}$ sind für die selben Konstanten wie zuvor
     \begin{equation}
       \omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1 \; ,
     \end{equation}
@@ -326,7 +326,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
           \caption{$\kappa=15$.}
           \label{fig:H_kappa15}
       \end{subfigure}
-      \caption{Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\bar H_{0,0}$ für den Grundzustand $\Psi_{0,0}$ mit $\omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1$, für verschiedene Kopplungskonstanten $\kappa$.}
+      \caption{Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\overline{H}_{0,0}$ für den Grundzustand $\Psi_{0,0}$ mit $\omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1$, für verschiedene Kopplungskonstanten $\kappa$.}
     \end{figure}
 \fi
     Ohne Kopplung (\ref{fig:H_kappa0}) ist die mittlere Energie am geringsten, für eine möglichst starke/starre Kopplung (\ref{fig:H_kappa15}) wird die mittlere Energie im System maximal, weil die Treibkraft so möglichst viel Energie auf den angekoppelten Oszillator $x_2$ übetragen kann.
@@ -372,6 +372,6 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
           \caption{$\kappa=15$.}
           \label{fig:H_kappa15}
       \end{subfigure}
-      \caption{Erwartungswerte der gekoppelten Oszillatoren $\braket{x_1}_{n,l}$ und $\braket{x_2}_{n,l}$ für beliebigen Zustand $\Psi_{n,l}$, außerdem der Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\bar H_{0,0}$ für den Grundzustand $\Psi_{0,0}$. Mit $\omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1$, für verschiedene Kopplungskonstanten $\kappa$.}
+      \caption{Erwartungswerte der gekoppelten Oszillatoren $\braket{x_1}_{n,l}$ und $\braket{x_2}_{n,l}$ für beliebigen Zustand $\Psi_{n,l}$, außerdem der Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\overline{H}_{0,0}$ für den Grundzustand $\Psi_{0,0}$. Mit $\omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1$, für verschiedene Kopplungskonstanten $\kappa$.}
       \label{ferg}
     \end{figure}

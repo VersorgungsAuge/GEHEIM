@@ -8,7 +8,7 @@
   Die Treibkraft $S(t)=S(t+T)$ ist nicht weiter festgelegt und geht stets über die klassische Lösung $\zeta(t)$ (\ref{dgl_zeta}) in die Erwartungswerte ein.
 
   Um die Erwartungswerte des getriebenen Oszillators zu erhalten, werden wir dessen Berechnnung auf die Berechnung der bekannten Erwartungswerte des ungetriebenen Oszillators zurückführen.
-  Dafür nutzen wir aus, dass die Wellenfunktionen und die Floquet-Moden nach (\ref{gesamtlsg_einzelner}) und (\ref{floquet_moden_einzelner}) einem um $\zeta(t)$ verschobenen ungetriebnen Oszillator mit einer zusätzlichen komplexen Phase entsprechen.
+  Dafür nutzen wir aus, dass die Wellenfunktionen und die Floquet-Moden nach (\ref{gesamtlsg_einzelner}) und (\ref{floquet_moden_einzelner}) einem um $\zeta(t)$ verschobenen ungetriebenen Oszillator mit einer zusätzlichen komplexen Phase entsprechen.
   Da eine komplexe Phase beim Bilden des Betrages wegfällt, gilt
   \begin{equation}
     \Psi_n^*(x,t)\Psi_n(x,t) = |\Psi_n(x,t)|^2 = |\Phi_n(x,t)|^2 = |\Psi_{n,\text{ung}}(x-\zeta(t),t)|^2 = |\Psi_{n,\text{ung}}(y,t)|^2 \; ,
@@ -69,6 +69,7 @@
     Ab $\braket{x^3}_n$ kommt es wegen $(y+\zeta(t))^3$ aber im Allgemeinen nicht nur zu Verschiebungen bzw. zusätzlichen $\zeta(t)$-Termen, mit demselben Exponenten wie die ungetriebenen Erwartungswerte, weshalb wir den Ewartungswert $\braket{x^m}_n$ nicht einfacher schreiben können als den linearen Erwartungswert des Klammerausdruckes mit dem binomischen Lehrsatz zu vereinfachen:
     \begin{equation}
       \braket{x^m}_n = \braket{(y+\zeta(t))^m}_{n,\text{ung}} = \sum_{j=0}^m \begin{pmatrix} m \\ j \\ \end{pmatrix} \braket{y^{m-j}}_{n,\text{ung}}\zeta^j(t) \; .
+      \label{erwartungswert_x^m_einzelner}
     \end{equation}
     In obiger Formel ist
     \begin{equation}
@@ -96,17 +97,17 @@
     \begin{align}
       &\braket{p}_n = \int_{-\infty}^{\infty} \Psi^*_n(x,t) p \Psi_n(x,t) \; \text dx
       = \int_{-\infty}^{\infty} \Psi^*_n(y+\zeta(t),t) p_y \Psi_n(y+\zeta(t),t) \: \text dy= \notag\\
-      &\int_{-\infty}^{\infty} \!\! N_nO_n(ay)\exp\left(\frac{-m\omega_0}{2\hbar}y^2+\frac{-\text i}{\hbar}m\dot{\zeta}(t)y\right) p_y N_nO_n(ay)\exp\left(\frac{-m\omega_0}{2\hbar}y^2+\frac{+\text i}{\hbar}m\dot{\zeta}(t)y\right) \: \text dy \; ,
+      &\int_{-\infty}^{\infty} \!\! N_nH_n(ay)\exp\left(\frac{-m\omega_0}{2\hbar}y^2+\frac{-\text i}{\hbar}m\dot{\zeta}(t)y\right) p_y N_nH_n(ay)\exp\left(\frac{-m\omega_0}{2\hbar}y^2+\frac{+\text i}{\hbar}m\dot{\zeta}(t)y\right) \: \text dy \; ,
       \label{spaste}
     \end{align}
     wobei der Faktor im Argument der Hermit-Polynome (\ref{gesamtlsg_einzelner}) als $a$ abgekürtzt wird.
     Mit der Produktregel spalten wir die Anwendung des Impulsoperators auf in die Anwendung auf die ungetriebene Oszillatorfunktion (in der neuen Koordinate $y$) und die Anwendung auf die verbleibende komplexe Phase:
     \begin{align}
-      &p_y N_nO_n(y)\exp\left(\frac{-m\omega_0}{2\hbar}y^2+\frac{+\text i}{\hbar}m\dot{\zeta}(t)y\right)  \notag\\
-      %&\left(p_y N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\right) \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y}
-      %+ N_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} \left(p_y \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y}\right) \notag\\
-      &= \exp\left(\frac{+\text i}{\hbar}m\dot{\zeta}(t)y\right) (p_y+m\dot \zeta(t))N_nO_n(y)\exp\left(\frac{-m\omega_0}{2\hbar}y^2\right)
-      %\left[p_yN_nO_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} + N_nO_n(y)\text e^{\frac{m\omega_0}{2\hbar}y^2}m\dot{\zeta}(t) \right] \; .
+      &p_y N_nH_n(y)\exp\left(\frac{-m\omega_0}{2\hbar}y^2+\frac{+\text i}{\hbar}m\dot{\zeta}(t)y\right)  \notag\\
+      %&\left(p_y N_nH_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\right) \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y}
+      %+ N_nH_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} \left(p_y \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y}\right) \notag\\
+      &= \exp\left(\frac{+\text i}{\hbar}m\dot{\zeta}(t)y\right) (p_y+m\dot \zeta(t))N_nH_n(y)\exp\left(\frac{-m\omega_0}{2\hbar}y^2\right)
+      %\left[p_yN_nH_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} + N_nH_n(y)\text e^{\frac{m\omega_0}{2\hbar}y^2}m\dot{\zeta}(t) \right] \; .
       \label{spaste2}
     \end{align}
     Hiernach haben wir effektiv den Impulsoperator an der $y$-abhängigen Phase vorbeigezogen.
@@ -142,10 +143,11 @@
     Um darüber hinaus den Erwartungswert $\braket{p^m}_n$ für einen beliebigen Exponenten $m \in \mathbb{N}$ zu evaluieren, muss in Formel (\ref{spaste2})) $m$-mal die Produktregel angewandt werden.
     Da sich die komplexe Phase beim Ableiten reproduziert und jedesmal ein ortsunabhängiger Term übrig bleibt, gilt für diesen Erwartungswert Gleiches wie für den Erwartungswert $\braket{x^m}_n$:
     \begin{equation}
-        \braket{p^m}_n = \braket{(p_y+\zeta(t))^m}_{n,\text{ung}} = \sum_{j=0}^m\begin{pmatrix} m \\ j \\ \end{pmatrix} \braket{p_y^{m-j}}_{n,\text{ung}}\zeta^j(t) \; .
+        \braket{p^m}_n = \braket{(p_y+m\dot\zeta(t))^m}_{n,\text{ung}} = \sum_{j=0}^m\begin{pmatrix} m \\ j \\ \end{pmatrix} \braket{p_y^{m-j}}_{n,\text{ung}}(m\dot\zeta(t))^j \; .
+        \label{erwartungswert_p^m_einzelner}
     \end{equation}
 
-    Speziell für $m=2$ gilt:
+    Speziell für $\braket{p^2}_n$ gilt:
     \begin{equation}
       \braket{p^2}_n = \braket{p^2_y}_{n,\text{ung}} +2m\dot\zeta(t)\braket{p_y}_{n,\text{ung}}+(m\dot{\zeta}(t))^2 = m^2\omega^2_0 s^2(2n+1) + m^2\dot{\zeta}^2(t) \; .
       \label{erwartungswert_p^2_einzelner}
@@ -174,7 +176,7 @@
 \iffalse
   \subsection{Erwartungswerte der Energie}
     Hier werden wir den normalen zeitabhängigen Erwartungswert der Energie $\braket{H(t)}_n$ aufstellen.
-    Weiterhin wird der zeitlich, über eine Periode $T$, gemittelten Erwartungswert $\bar H_n$ mittels Formel (\ref{mittleres_H}) für eine beliebige Treibkraft bestimmt, indem wir die Quasienergien $\epsilon_n$ benutzen, welche wir in Kapitel \ref{espsilon_bel_kraft} für eine allgemeine periodische Treibkraft $S(t)$, in Abhängigkeit deren  Fourier-Koeffizienten, bestimmt haben.
+    Weiterhin wird der zeitlich, über eine Periode $T$, gemittelten Erwartungswert $\overline{H}_n$ mittels Formel (\ref{mittleres_H}) für eine beliebige Treibkraft bestimmt, indem wir die Quasienergien $\epsilon_n$ benutzen, welche wir in Kapitel \ref{espsilon_bel_kraft} für eine allgemeine periodische Treibkraft $S(t)$, in Abhängigkeit deren  Fourier-Koeffizienten, bestimmt haben.
 \fi
 
   \section{Zeitabhängiger Erwartungswert der Energie}
@@ -191,18 +193,18 @@
   %  WELCHE PERIODE, SCHWANKT
 
   \section{Durchschnittlicher Erwartungswert der Energie}
-    Hier wird der zeitlich, über eine Periode $T$, gemittelte Erwartungswert $\bar H_n$ mittels Formel (\ref{mittleres_H}) für eine beliebige Treibkraft bestimmt, indem wir die Quasienergien $\epsilon_n$ benutzen, welche wir in Kapitel \ref{epsilon_bel_kraft} für eine allgemeine periodische Treibkraft $S(t)$, in Abhängigkeit deren Fourier-Koeffizienten, bestimmt haben.
-    %Um den zeitlich gemittelten Erwartungswert der Energie $\bar H_n$ für eine beliebige periodisch Treibende Kraft $S(t)=S(T)$ zu berechnen,
+    Hier wird der zeitlich, über eine Periode $T$, gemittelte Erwartungswert $\overline{H}_n$ mittels Formel (\ref{mittleres_H}) für eine beliebige Treibkraft bestimmt, indem wir die Quasienergien $\epsilon_n$ benutzen, welche wir in Kapitel \ref{epsilon_bel_kraft} für eine allgemeine periodische Treibkraft $S(t)$, in Abhängigkeit deren Fourier-Koeffizienten, bestimmt haben.
+    %Um den zeitlich gemittelten Erwartungswert der Energie $\overline{H}_n$ für eine beliebige periodisch Treibende Kraft $S(t)=S(T)$ zu berechnen,
 
     Unter der Annahme, dass die Summe in $\epsilon_n$ (\ref{epsilon_bel_kraft}) konvergiert, weil es sich im Wesentlichen um die Summe über $1/j^2$ handelt, leiten wir nach $\omega$ ab, indem wir die Ableitung und Summe vertauschen, dann haben wir:
     \begin{align}
-      \bar H_n = \epsilon_n - \omega\frac{\partial}{\partial \omega}\epsilon_n
+      \overline{H}_n = \epsilon_n - \omega\frac{\partial}{\partial \omega}\epsilon_n
       = E_n - \sum_{j=-\infty}^{\infty} \left[ \frac{c_jc_{-j}}{2m(\omega_0^2-j^2\omega^2)}\left( 1-\frac{2j^2\omega^2}{(\omega_0^2-j^2\omega^2)}\right) \right] \; .
     \end{align}
 
     Für den expliziten Fall der Sinus-Treibkraft $S(t)=A\sin(\omega t)$ folgt:
     \begin{equation}
-      \bar H_n = E_n - \frac{A}{4m(\omega_0^2-\omega^2)}\left(1-\frac{2\omega^2}{(\omega_0^2-\omega^2)}\right) \; .
+      \overline{H}_n = E_n - \frac{A}{4m(\omega_0^2-\omega^2)}\left(1-\frac{2\omega^2}{(\omega_0^2-\omega^2)}\right) \; .
       \label{mittleres_H}
     \end{equation}
     Für $\omega_0^2>\omega^2$ erhalten wir in diesem Beispiel demnach einen Anstieg des Energiemittelwertes gegenüber den Quasienergien, andernfalls eine Absenkung.
@@ -225,4 +227,4 @@
 
 
 
-%\section{\texorpdfstring{Zeitlich gemittelter Erwartungswert der Energie $\bar{H}_n$}{Zeitlich gemittelter Erwartungswert der Energie bar{H}_n}}
+%\section{\texorpdfstring{Zeitlich gemittelter Erwartungswert der Energie $\overline{H}_n$}{Zeitlich gemittelter Erwartungswert der Energie bar{H}_n}}
