@@ -9,10 +9,10 @@ Der Hamilton-Operator dieses Systems kann direkt aus der Hamilton-Funktion  der 
   \label{H_gekoppelt}
 \end{equation}
 Es werden auch die Erwartungswerte für  den Ort $\braket{x_{1,2}}_{n,l}$ und den Impuls $\braket{p_{1,2}}_{n,l}$, genauso wie der Erwartungswert der Energie $\braket{H}_{n,l}$ und dessen zeitliches Mittel $\overline{H}_{n,l}$ berechnet, indem auf die bekannten Erwartungswerte des einzelnen getriebenen Oszillators zurückgeführt wird.
-Die Erwartungswerte werden auch graphisch dargestellt.
+Die Erwartungswerte werden zudem graphisch dargestellt.
 
 Zur Lösung des Systems wird eine unitäre Koordinatentransformation eingeführt, welche den Hamilton-Operator $H(x_1,x_2,p_1,p_2,t)$ zu zwei in den neuen Koordinaten unabhängigen Hamilton-Operatoren $H_+(x_+,p_+,t)$ und $H_-(x_-,p_-,t)$ mit effektiven Potentialkonstanten $k_+,k_-$ entkoppelt, welche je einen einzelnen (getriebenen) Oszillator beschreiben.
-Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillators.
+Dann ergeben sich die Wellenfunktionen aus denen des einzelnen Oszillators.
 
 
 %war vorher subsection
@@ -34,18 +34,18 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
     \label{schroedglg_unabh_H}
   \end{equation}
   erfüllt ist.
-  Um dies schnell zu zeigen, schauen wir uns den Fall von zwei unabhängigen Operatoren an:
+  Um dies zu zeigen, schauen wir uns den Fall von zwei unabhängigen Operatoren an:
   \begin{align}
     \begin{split}
       \text i \hbar \frac{\partial}{\partial t} \Psi = H\Psi \iff \Psi_2 H_1 \Psi_1 + \Psi_1 H_2 \Psi_2 = \text i \hbar \left(\Psi_1\frac{\partial}{\partial t} \Psi_2 + \Psi_1\frac{\partial}{\partial t} \Psi_2 \right) \; .
     \end{split}
   \end{align}
-  Da die Operatoren nur auf Funktionen wirken, die auf dem selben Raum definiert sind, kann man sie an der jeweils anderen Funktion vorbei ziehen.
+  Da die Operatoren nur auf Funktionen wirken, die auf dem selben Raum definiert sind, kann man sie an der jeweils anderen Funktion vorbeiziehen.
   Wenn wir weiterhin durch unseren Ansatz $\Psi_1\Psi_2$ teilen, wird die Gleichung zu:
   \begin{equation}
     \frac{1}{\Psi_1}H_1\Psi_1 + \frac{1}{\Psi_2}H_2\Psi_2 = \text i \hbar \left(\frac{\frac{\partial}{\partial t} \Psi_1}{\Psi_1} + \frac{\frac{\partial}{\partial t} \Psi_2}{\Psi_2} \right) \; .
   \end{equation}
-  Weil die linke und rechte Seite für alle unabhängigen $x_1,p_1,x_2,p_2$ gleich sein müssen, folgen die einzelnen Schrödinger-Gleichungen für die Wellenfunktionen $\Psi_1$ und $\Psi_2$:
+  Die linke und rechte Seite müssen für alle unabhängigen $x_1,p_1,x_2,p_2$ gleich sein, dadurch folgen die einzelnen Schrödinger-Gleichungen für die Wellenfunktionen $\Psi_1$ und $\Psi_2$:
   \begin{equation}
     \frac{1}{\Psi_1}H_1\Psi_1 = \text i\hbar\frac{\frac{\partial}{\partial t} \Psi_1}{\Psi_1} \; , \; \frac{1}{\Psi_2}H_2\Psi_2 =\text i\hbar \frac{\frac{\partial}{\partial t} \Psi_2}{\Psi_2} \; .
   \end{equation}
@@ -75,7 +75,7 @@ Dann ergeben sich die Wellenfunktionen leicht aus denen des einzelnen Oszillator
   \end{align}
   Es tauchen nun keine Kopplungsterme $x_+x_-$ mehr auf, wie es in den alten Koordinaten der Fall war.
 
-  Jetzt betrachten wir die neuen Impulse und überprüfen, dass es durch den Variablenwechsel nicht zu neuen Kopplungstermen in den $p_+$,$p_-$ kommt.
+  Jetzt betrachten wir die neuen Impulse und überprüfen, dass es durch den Variablenwechsel nicht zu neuen Kopplungstermen in den $p_+$$p_-$ kommt.
   Mit der Kettenregel folgt für die Ableitungen der Impulsoperatoren
   \begin{align}
     \frac{\partial}{\partial x_{\pm}} = \frac{\partial}{\partial x_1}\frac{\partial x_1}{\partial x_{\pm}} + \frac{\partial}{\partial x_2}\frac{\partial x_2}{\partial x_{\pm}}
@@ -119,11 +119,11 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
       \text{oder} \; &H(t) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)(x_2-x_1) \;,
   \end{align}
   liegt in den neuen Variablen ein vereinfachtes System vor, bei dem nur ein Oszillator $x_+$ oder $x_-$ getrieben ist.
-  Es muss also in den klassischen Normalmoden getrieben werden, damit nach dem Variablenwechsel ein möglichst einfaches System mit nur noch einem getriebenen Oszillator vorliegt.
+  Es muss also in den klassischen Normalmoden getrieben werden, damit nach dem Variablenwechsel ein System mit nur noch einem getriebenen Oszillator vorliegt.
 
   \textbf{Lösung der Schrödinger-Gleichung}
 
-  Nach den Ergebnissen dieses und des vorherigen Abschnittes können wir nun die Wellenfunktion $\Psi_{n,l}$ des Systems zweier gekoppelter getriebener Oszillatoren (\ref{H_gekoppelt}), für eine allgemeine Treibkraft $S(t)=S(t+T)$, in den neuen entkoppelten Koordinaten $x_+$ und $x_-$, nach Formel (\ref{schroedglg_unabh_H}) hinschreiben.
+  Nach den Ergebnissen dieses und des vorherigen Abschnittes können wir nun die Wellenfunktion $\Psi_{n,l}$ des Systems zweier gekoppelter getriebener Oszillatoren (\ref{H_gekoppelt}), für eine allgemeine Treibkraft $S(t)=S(t+T)$, in den neuen, entkoppelten Koordinaten $x_+$ und $x_-$, nach Formel (\ref{schroedglg_unabh_H}) schreiben.
   Durch Ersetzen der neuen Variablen nach Formel (\ref{koord_trafo_x}) und (\ref{koord_trafo_p^2}) ist auch die Wellenfunktion in den ursprünglichen Variablen bekannt:
   \begin{align}
      &\Psi_{n,l}(x_+,x_-,t) = \Psi_{+,n}(x_+,t)\Psi_{-,l}(x_-,t) \notag\\
@@ -152,7 +152,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
 
   In den ursprünglichen Koordinaten sind Kopplungsterme $x_1x_2$ in der Wellenfunktion vorhanden, durch die Hermit-Polynome $O_n/O_l$ treten hierbei im Allgemeinen unterschiedliche Potenzen der $x_1$ und $x_2$ auf.
 
-  Die Floquet-Moden $\Phi_{n,l}(x_+,x_-,t)=\Phi_+(x_+,t)\Phi_-(x_-,t)$ sind in den neuen Koordinaten das Produkt aus den einzelnen Floquet-Moden (\ref{floquet_moden_einzelner}), so wie die Wellenfunktionen.
+  Die Floquet-Moden $\Phi_{n,l}(x_+,x_-,t)=\Phi_+(x_+,t)\Phi_-(x_-,t)$ sind in den neuen Koordinaten das Produkt aus den einzelnen Floquet-Moden (\ref{floquet_moden_einzelner}), ebenso wie bei die Wellenfunktionen.
   Die Quasienergien sind dadurch die Summe der einzelnen Quasienergien (\ref{ep}):\\ $\epsilon_{n,l}=\epsilon_{+,n}+\epsilon_{-,l}$.
 
 
@@ -160,9 +160,9 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
   \label{erwartungswerte_gekoppelt}
   Um die Erwartungswerte für die Observablen $x_1,x_2,p_1,p_2$ zu evaluieren, verwenden wir die benutzten Tranformationen für den Ort (\ref{koord_trafo_x}) und den Impuls (\ref{koord_trafo_p}), mit welchen wir die Berechnung auf die schon bekannten Erwartungswerte des einzelnen getriebenen Oszillators zurückführen können.
   %Denn wir berechnen die Erwartungswerte für die neuen Observablen  $x_1,x_2,p_1,p_2$
-  Es werden alle Erwartungswerte für eine allgemeine $T$-periodische Treibkraft $S(t)=A\sin(\omega t)$ berechnet und einige Erwartungswerte für die konkrete sinusförmige Treibkraft aus Kapitel (\ref{epsilon_sinuskraft}), für einfache Konstanten, visualisiert.
+  Es werden alle Erwartungswerte für eine allgemeine $T$-periodische Treibkraft $S(t)=A\sin(\omega t)$ berechnet und einige Erwartungswerte für die konkrete sinusförmige Treibkraft aus Kapitel (\ref{epsilon_sinuskraft}), für einfache Konstanten, visualisiert (\ref{ferg}).
 
-  Die "+" und "-" Operatoren wirken auf verschiedene Variablen/operieren auf den verschiedenen Räumen $\cal H_+,\cal H_-$.
+  Die "$+$" und "$-$" Operatoren wirken auf verschiedene Variablen, das heißt sie operieren auf den verschiedenen Räumen $\cal H_+,\cal H_-$.
   Aus diesem Grund gilt für den Erwartungswert eines Operators $U_+:\cal H_+ \rightarrow \cal H_+$ bezüglich einer Wellenfunktion der Form $\Psi_{n,l}=\Psi_{+,n}\Psi_{-,l}$ mit $\Psi_\pm \in \cal H_\pm$, wegen der Normierung nach Formel (\ref{norm_gekoppelt}):
   \begin{align}
     \braket{U_+}_{n,l} &= \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} \Psi*U_+\Psi \: \text dx_+ \text dx_-
@@ -170,8 +170,8 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
     &= 1 \cdot \braket{U_+}_n^+ \; .
     \label{erwartungswert_gekoppelt}
   \end{align}
-  Für einen Operator $U_+$ ist Erwartungswert der Gesamtwellenfunktion $\Psi_{n,l}$ der gekoppelten getriebenen Oszillatoren also identisch zum Erwartungswert der Wellenfunktion des einzelnen getriebenen Oszillators, in den "+"-Koordinaten.
-  Für $U_-$ gilt Gleiches.
+  Für einen Operator $U_+$ ist der Erwartungswert der Gesamtwellenfunktion $\Psi_{n,l}$ der gekoppelten getriebenen Oszillatoren also identisch zum Erwartungswert der Wellenfunktion des einzelnen getriebenen Oszillators, in den "+"-Koordinaten.
+  Für $U_-$ ergibt sich dies analog.
 
   Demnach folgt für den Erwartungswert $\braket{U_+U_-}_{n,l}$
   \begin{equation}

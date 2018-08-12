@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  12 AUG 2018 04:50
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  12 AUG 2018 18:54
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -441,7 +441,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.611 seconds)
+luaotfload | main : initialization completed in 0.624 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex
 .sty
@@ -2192,13 +2192,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 chapter 3.
 [8
 
-] [9]
-
-LaTeX Warning: Command \m invalid in math mode on input line 115.
-
-Missing character: There is no ̉ (U+0309) in font cmmi10!
-Missing character: There is no ̉ (U+0309) in font cmmi10!
-[10] [11]) (./content/04_gekoppelte_oszis.tex [12]
+] [9] [10] [11]) (./content/04_gekoppelte_oszis.tex [12]
 chapter 4.
 [13
 
@@ -2217,7 +2211,7 @@ Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 190.
 
-[17] [18] <plots/<x2>nl0.png, id=379, 578.16pt x 433.62pt>
+[17] [18] <plots/<x2>nl0.png, id=380, 578.16pt x 433.62pt>
 File: plots/<x2>nl0.png Graphic file (type png)
 
 <use plots/<x2>nl0.png>
@@ -2227,35 +2221,35 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 5.00008pt on input line 337.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 337.
- <plots/<x1>nl0.png, id=380, 578.16pt x 433.62pt>
+ <plots/<x1>nl0.png, id=381, 578.16pt x 433.62pt>
 File: plots/<x1>nl0.png Graphic file (type png)
 
 <use plots/<x1>nl0.png>
 Package luatex.def Info: plots/<x1>nl0.png used on input line 343.
 (luatex.def)             Requested size: 221.32182pt x 165.98813pt.
 
-<plots/<x12>nlschwach.png, id=381, 578.16pt x 433.62pt>
+<plots/<x12>nlschwach.png, id=382, 578.16pt x 433.62pt>
 File: plots/<x12>nlschwach.png Graphic file (type png)
 
 <use plots/<x12>nlschwach.png>
 Package luatex.def Info: plots/<x12>nlschwach.png used on input line 350.
 (luatex.def)             Requested size: 221.32182pt x 165.98813pt.
 
-<plots/<x12>nlstark.png, id=382, 578.16pt x 433.62pt>
+<plots/<x12>nlstark.png, id=383, 578.16pt x 433.62pt>
 File: plots/<x12>nlstark.png Graphic file (type png)
 
 <use plots/<x12>nlstark.png>
 Package luatex.def Info: plots/<x12>nlstark.png used on input line 357.
 (luatex.def)             Requested size: 221.32182pt x 165.98813pt.
 
-<plots/<H>00_kappa0.png, id=383, 578.16pt x 433.62pt>
+<plots/<H>00_kappa0.png, id=384, 578.16pt x 433.62pt>
 File: plots/<H>00_kappa0.png Graphic file (type png)
 
 <use plots/<H>00_kappa0.png>
 Package luatex.def Info: plots/<H>00_kappa0.png used on input line 364.
 (luatex.def)             Requested size: 221.32182pt x 165.98813pt.
 
-<plots/<H>00_kappa15.png, id=384, 578.16pt x 433.62pt>
+<plots/<H>00_kappa15.png, id=385, 578.16pt x 433.62pt>
 File: plots/<H>00_kappa15.png Graphic file (type png)
 
 <use plots/<H>00_kappa15.png>
@@ -2328,8 +2322,8 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
 Package rerunfilecheck Warning: File `thesis.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `thesis.aux':
-(rerunfilecheck)             Before: 50556C1B93A6B2CDF21F3A414B7A19FB;28818
-(rerunfilecheck)             After:  416E404BEA0AEDCDAADAB465EC9EE97B;29039.
+(rerunfilecheck)             Before: 7B9A02FCB2CC44373BD4041810177149;28818
+(rerunfilecheck)             After:  E5AF6F399AE3789D00D930339F51A6C9;29039.
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
 (rerunfilecheck)             Checksum: 480D0C2D345AFCB535B2CDAC55172447;2787.
 
@@ -2342,15 +2336,15 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45466 strings out of 495118
+ 45465 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 24896 words of node memory still in use:
-   86 hlist, 11 vlist, 10 rule, 4 math, 2979 glue, 19 kern, 88 glyph, 518 attrib
+ 24910 words of node memory still in use:
+   86 hlist, 11 vlist, 10 rule, 4 math, 2981 glue, 19 kern, 88 glyph, 518 attrib
 ute, 60 glue_spec, 518 attribute_list, 1 write nodes
-   avail lists: 1:3,2:707,3:234,4:130,5:408,6:2784,7:749,8:148,9:1079,10:22,11:3
-38
- 47604 multiletter control sequences out of 65536+600000
- 97 fonts using 17661607 bytes
+   avail lists: 1:3,2:707,3:234,4:130,5:406,6:2742,7:749,8:148,9:1078,10:22,11:3
+32
+ 47603 multiletter control sequences out of 65536+600000
+ 97 fonts using 17661503 bytes
  60i,20n,81p,8817b,2517s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-
 italic.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm
@@ -2365,10 +2359,10 @@ ic/lm/lmroman10-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/o
 pentype/public/lm/lmroman12-regular.otf></home/ismael/.local/texlive/2016/texmf-
 dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/ismael/.local/texlive/201
 6/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (33 pages, 549833 bytes).
+Output written on thesis.pdf (33 pages, 549883 bytes).
 
-PDF statistics: 648 PDF objects out of 1000 (max. 8388607)
- 561 compressed objects within 6 object streams
+PDF statistics: 649 PDF objects out of 1000 (max. 8388607)
+ 562 compressed objects within 6 object streams
  175 named destinations out of 1000 (max. 131072)
  209 words of extra memory for PDF output out of 10000 (max. 10000000)
 
