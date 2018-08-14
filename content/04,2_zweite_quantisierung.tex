@@ -1,6 +1,6 @@
 \chapter{Zweite Quantisierung des getriebenen harmonischen Oszillators}
 \label{5}
-In diesem Kapitel werden wir die Wellenfunktionen $\Psi_n(x,t)$ in der Ortsdarstellung (\ref{gesamtlsg_einzelner}) in die Besezungszahldarstellung übersetzen, das heißt wir werden $\Psi(x,t)$ darstellen in der Orthonormalbasis der Eigenzustände $\ket{n}$ des Besetzungszahloperators $N$ des ungetriebenen Oszillators.
+In diesem Kapitel werden wir die Wellenfunktionen $\Psi_n(x,t)$ in der Ortsdarstellung (\ref{gesamtlsg_einzelner}) in die Besetzungszahldarstellung übersetzen, das heißt wir werden $\Psi(x,t)$ darstellen in der Orthonormalbasis der Eigenzustände $\ket{n}$ des Besetzungszahloperators $N$ des ungetriebenen Oszillators.
 Die $\ket{n}$ sind auch Eigenzustände des Hamilton-Operators
 \begin{equation}
    H_\text{ung}(x,p) = \frac{ p^2}{2m} + \frac 1 2 m\omega_0^2 x^2 = H_{\text{ung}}(N)= \hbar\omega_0\left(N+\frac 1 2\right)
@@ -15,10 +15,10 @@ Hierbei gilt
   H=\frac{\hat p^2}{2m} + \frac 1 2 m\omega_0^2\hat x^2 = \hbar\eft(\hat n+\frac 1 2\right)
 \end{equation}
 \fi
-Um das darstellungsunabhängige Ket $\ket{\Psi(t)}$ in der Besetzungszahldarstellung zu erhalten, wird ein geeigneter Ansatz gewählt, welcher mit Hilfe der Lösungen in Ortsdarstellung gefunden wird.
+Um das darstellungsunabhängige Ket $\ket{\Psi(t)}$ in der 2. Quantisierung zu erhalten, wird ein geeigneter Ansatz gewählt, welcher mit Hilfe der Lösungen in Ortsdarstellung gefunden wird.
 Der Ansatz wird in die Schrödinger-Gleichung des getriebenen Oszillators eingesetzt, wonach mit Hilfe von Kommutatorrelationen Differentialgleichungen zur Bestimmung der Unbekannten hergeleitet werden, welche gelöst werden können.
 
-Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswerte $\braket{x^m}_n$ und $\braket{p^m}_n$ des getriebenen Oszillators berechnet.
+Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswerte $\braket{x^m}_n$ und $\braket{p^m}_n$ des einzelnen getriebenen Oszillators berechnet.
 
 
 \section{Wellenfunktion}
@@ -46,7 +46,7 @@ Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswe
     \exp\left(\frac{-\text i}{\hbar}\alpha(t)p\right)=O_p
   \end{equation}
   an.
-  Denn dieser Operator bewirkt bei der Transformation genau die Verschiebung des Ortsoperators (\ref{kommutator_1}), wie auch im Argument der Wellenfunktion $\Psi(x,t)$:
+  Denn dieser Operator bewirkt bei der Transformation genau die Verschiebung des Ortsoperators (\ref{kommutator_1}), wie sie im Argument der Wellenfunktion $\Psi(x,t)$ vorliegt:
   \begin{equation}
     O_pxO_p^{-1}=
     \exp\left(\frac{-\text i}{\hbar}\alpha(t)p\right) x  \exp\left(\frac{+\text i}{\hbar}\alpha(t)p\right)
@@ -72,7 +72,7 @@ Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswe
   \begin{equation}
     [x^m,O_x]=[p^m,O_p]=0\iff x^mO_x=O_xx^m\quad\text{und}\quad p^mO_p=O_pp^m\;,\; m \in \mathbb{N} \; .
   \end{equation}
-  Die gemischten Vertauschungsrelationen berechnen wir mit der Kommutatorrechenregel
+  Zusätzlich berechnen wir die gemischten Vertauschungsrelationen mit der Kommutatorrechenregel
   \begin{align}
     %[AB,C]=A[B,C]+[A,C]B\quad,\quad
     [A,f(B)]=\frac{\partial}{\partial B}f(B)[A,B]\quad (\text{für $[B,[A,B]]=0$})
@@ -89,7 +89,7 @@ Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswe
     %[p^2,O_x]&=-2\varphi(t)p+\varphi^2(t)\iff p^2O_x=O_x(p^2-2\varphi(t)p+\varphi^2(t)) \label{kommutator_2} \; .
   \end{align}
 
-  Für die Anwendung des Hamilton-Operators $H(x,p,t)$ auf den Zustand $\ket{\Psi(t)}$ folgt
+  Für die Anwendung des Hamilton-Operators $H(x,p,t)$ des getriebenen Oszillators auf den Zustand $\ket{\Psi(t)}$ folgt
   \begin{align}
     &H\ket{\Psi(t)}=K_nHO_pO_x\ket{n}
     =K_nO_p\left(H+\frac{1}{2m}(-2\varphi(t)p+\varphi^2(t))\right)O_x\ket{n} \notag\\
@@ -123,18 +123,18 @@ Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswe
   \begin{align}
     &\dot\theta_n(t)=E_n+\frac{1}{2}m\omega_0^2\zeta^2(t)+\frac{1}{2m}\dot\zeta^2(t)-m\dot\zeta^2(t)-S(t)\zeta(t)
     =E_n-L(\dot\zeta,\zeta,t) \notag\\
-    \Rightarrow &\theta_n(t)=E_nt-\int_0^tL(\dot\zeta,\zeta,t)\:\text dt' \;.
+    \Rightarrow &\theta_n(t)=E_nt-\int_0^tL(\dot\zeta,\zeta,t')\:\text dt' \;.
   \end{align}
-  Somit ist $K_n$ genau die rein zeitabhängige Phase von $\Psi_n(x,t)$ (\ref{gesamtlsg_einzelner}) und $\ket{\Psi_n(t)}$ (\ref{ansatz_quant}) ist insgesamt
+  Daher ist $K_n$ genau die rein zeitabhängige Phase von $\Psi_n(x,t)$ (\ref{gesamtlsg_einzelner}) und $\ket{\Psi_n(t)}$ (\ref{ansatz_quant}) ist insgesamt
   \begin{align}
     \ket{\Psi_n(t)}&=K_nO_pO_x\notag\\
-    &=\exp\left(\frac{\text i}{\hbar}\left(-E_nt+\int_0^tL(\dot\zeta,\zeta,t)\:\text dt'\right)\right)\exp\left(\frac{-\text i}{\hbar}\zeta(t)p\right)\exp\left(\frac{\text i}{\hbar}m\dot\zeta(t)x\right)\ket{n} \; .
+    &=\exp\left(\frac{\text i}{\hbar}\left(-E_nt+\int_0^tL(\dot\zeta,\zeta,t')\:\text dt'\right)\right)\exp\left(\frac{-\text i}{\hbar}\zeta(t)p\right)\exp\left(\frac{\text i}{\hbar}m\dot\zeta(t)x\right)\ket{n} \; .
     \label{psi_quant}
   \end{align}
 
 
 
-\section{Erwartungswerte}
+\section{Berechnung von Erwartungswerten}
   Mit dem bekannten Wellenfunktion-Ket $\ket{\Psi(t)}$, sowie den Vertauschungsrelationen in (\ref{kommutator_1}-\ref{kommutator_2}) werden wir in diesem Teil die zeitabhängigen Erwartungswerte des Ortes $\braket{x^m}_n$ und des Impulses $\braket{x^m}_n$ des einzelnen getriebenen Oszillators in der Besetzungszahldarstellung bestimmen.
 
   Es wird verwendet, dass die Erwartungswerte der Zustände $\Psi_{n,\text{ung}}(y,t)$ des ungetriebenen Oszillators, gleich den Erwartungswerten der Besetzungszahlzustände $\ket{n}$ sind, da sich $\ket{n}$ und $\ket{\Psi_{n,\text{ung}}(t)}$ nur um eine komplexe Phase unterscheiden, welche bei den Erwartungswerten wegfällt.
@@ -143,11 +143,11 @@ Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswe
   \begin{equation}
     \braket{U}_n=\braket{\Psi_n(t)|U|\psi_n(t)}=\braket{n|O_x^{-1}O_p^{-1}UO_pO_x|n} \;.
   \end{equation}
-  Es liegt nun eine (Rück-)Transformation von $U$ bezüglich $O_p$ und dann $O_x$ vor.
+  Es liegt nun eine (Rück-)Transformation von $U$ \, bezüglich $O_p$ und dann $O_x$ vor.
   Für $U=x^m/p^m$ können wir das Ergebnis der Transformation direkt den Relationen (\ref{kommutator_1}-\ref{kommutator_2}) entnehmen, indem wir damit $U_{x/p}$ jeweils mit $p^m/x^m$ vertauschen und dann $U_{x/p}^{-1}U_{x/p}$ zu 1 zusammenfassen.
   Weil danach entweder nur $O_p$ und $p^m$ oder $O_x$ und $x^m$ verbleiben, und diese Operatoren kommutieren, kann man diesen letzten Operator ebenso mit seinem Inversen zu 1 zusammenfassen.
 
-  \textbf{Erwartungswerte des Ortes}
+  \textbf{Zeitabhängige Erwartungswerte des Ortes}
 
   Mit den vorangegangenen Überlegungen lassen sich die Erwartungswerte des Ortsoperators $x$ berechnen:
   \begin{align}
@@ -161,13 +161,13 @@ Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswe
   \end{align}
   Dieses Ergebnis ist identisch zum entsprechenden Ergebnis (\ref{erwartungswert_x^m_einzelner}) aus Kapitel \ref{3}.
 
-  \textbf{Erwartungswerte des Impulses}
+  \textbf{Zeitabhängige Erwartungswerte des Impulses}
 
-  Für die Impuls-Erwartungswerte ergibt analog zu den Ort-Erwartungswerten
+  Für die Impuls-Erwartungswerte ergibt sich analog zu den Ort-Erwartungswerten
   \begin{align}
     \braket{p^m}_n&=\braket{\Psi_n(t)|p^m|\Psi_n(t)}=\braket{n|O_x^{-1}O_p^{-1}p^mO_pO_x|n}=\braket{n|(p-\varphi(t))^m|n}\notag\\
     &=\braket{(p_y^m-\varphi(t))^m}_{n,\text{ung}}
-    =\braket{(p_y+m\dot\zeta(t))^m}_{n,\text{ung}}
+    =\braket{(p_y+m\dot\zeta(t))^m}_{n,\text{ung}} \;.
     %\braket{p}_n&=\braket{n|O_x^{-1}O_p^{-1}pO_pO_x|n}=\braket{n|(p-\varphi(t))|n}=\braket{n|p|n}-\varphi(t) =\braket{p_y}_{n,\text{ung}}+m\dot\varphi(t)=\dot\varphi(t)\\
     %\braket{p^2}_n&=\braket{n|O_x^{-1}O_p^{-1}p^2O_pO_x|n}=\braket{n|p^2-2\varphi(t)x+\varphi^2(t)|n}
     %=\braket{n|p^2|n}-2\varphi(t)\braket{n|p|n}+\dot\varphi^2(t)\notag\\
@@ -175,7 +175,7 @@ Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswe
   \end{align}
   Auch für den Impuls bekommen wir die gleichen Erwartungswerte wie bei der ersten Berechnung in Gleichung (\ref{erwartungswert_p^m_einzelner}) aus Kapitel \ref{3}.
 
-  Schließlich erhalten wir für den Ort und den Impuls des einzelnen getriebenen Oszillators und folglich auch für die Energie in der Besetzungszahldarstellung die Erwartungswerte, wie wir sie schon in Kapitel \ref{3} in Ortsdarstellung erhalten haben.
+  Schließlich erhalten wir für den Ort und den Impuls des einzelnen getriebenen Oszillators und folglich auch für die Energie in der Besetzungszahldarstellung die Erwartungswerte, wie wir sie schon in Kapitel \ref{3} in der Ortsdarstellung erhalten haben.
 \iffalse
   Nach diesem Ergebnis kann davon ausgegangen werden, dass die Erwartungswerte für alle $x^m/p^m$ übereinstimmen, weshalb wir die Relationen für die Anwendung der $O_{x/p}$ aud $p,x$ aus (\ref{kommutator_1}-\ref{kommutator_2}) allgemein hinschreiben können, weil die Erwartungswerte in Ortsdarstellung für alle $m\in \mathbb{N}$ in (\ref{erwartungswert_x^m_einzelner}) und (\ref{erwartungswert_x^m_einzelner}) berechnet haben.
   Es folgt

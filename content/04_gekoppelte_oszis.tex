@@ -63,7 +63,7 @@ Dann ergeben sich die Wellenfunktionen aus denen des einzelnen Oszillators.
     x_+ = \frac{1}{\sqrt{2}}(x_2+x_1) \;,\; x_-=\frac{1}{\sqrt{2}}(x_2-x_1) \;,
     \label{koord_trafo_x}
   \end{equation}
-  welche durch Eigenmoden/Eigenvektoren des klassischen Problems motiviert sind.
+  welche durch die Eigenmoden/Eigenvektoren des klassischen Problems motiviert sind.
   Dessen Normierung stellt sicher, dass die Transformation unitär ist.
   %worauf in Kapitel () genauer eingegangen wird.
   Durch einfaches Umstellen folgen $x_1$ und $x_2$ in Abhängigkeit der neuen Koordinaten $x_+$ und $x_-$:
@@ -77,7 +77,7 @@ Dann ergeben sich die Wellenfunktionen aus denen des einzelnen Oszillators.
   \end{align}
   Es tauchen nun keine Kopplungsterme $\propto x_+x_-$ mehr auf, wie es in den alten Koordinaten der Fall war.
 
-  Jetzt betrachten wir die neuen Impulse und überprüfen, dass es durch den Variablenwechsel nicht zu neuen Kopplungstermen in den $\propto p_+$$p_-$ kommt.
+  Jetzt betrachten wir die neuen Impulse und überprüfen, dass es durch den Variablenwechsel nicht zu neuen Kopplungstermen $\propto p_+$$p_-$ kommt.
   Mit der Kettenregel folgt für die Ableitungen der Impulsoperatoren
   \begin{align}
     \frac{\partial}{\partial x_{\pm}} = \frac{\partial}{\partial x_1}\frac{\partial x_1}{\partial x_{\pm}} + \frac{\partial}{\partial x_2}\frac{\partial x_2}{\partial x_{\pm}}
@@ -156,15 +156,15 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
   In den ursprünglichen Koordinaten sind Kopplungsterme $\propto x_1x_2$ in der Wellenfunktion vorhanden.
   Durch die Hermit-Polynome $H_n/H_l$ treten hierbei im Allgemeinen unterschiedliche Potenzen der $x_1$ und $x_2$ auf.
 
-  Die Floquet-Moden $\Phi_{n,l}(x_+,x_-,t)=\Phi_+(x_+,t)\Phi_-(x_-,t)$ sind in den neuen Koordinaten das Produkt aus den einzelnen Floquet-Moden (\ref{floquet_moden_einzelner}).
+  Die Floquet-Moden $\Phi_{n,l}(x_+,x_-,t)=\Phi_{+,n}(x_+,t)\Phi_{-,l}(x_-,t)$ sind in den neuen Koordinaten das Produkt aus den einzelnen Floquet-Moden (\ref{floquet_moden_einzelner}).
   Die Quasienergien sind dadurch die Summe der einzelnen Quasienergien (\ref{ep}):\\ $\epsilon_{n,l}=\epsilon_{+,n}+\epsilon_{-,l}$.
 
 
 \section{Berechnung von Erwartungswerten}
   \label{erwartungswerte_gekoppelt}
-  Um die Erwartungswerte für die Observablen $x_1,x_2,p_1,p_2$ zu evaluieren, verwenden wir die benutzten Tranformationen für den Ort (\ref{koord_trafo_x}) und den Impuls (\ref{koord_trafo_p}), mit welchen wir die Berechnung auf die schon bekannten Erwartungswerte des einzelnen getriebenen Oszillators zurückführen können.
+  Um die Erwartungswerte für die Observablen $x_1,x_2,p_1,p_2$ zu berechnen, verwenden wir die benutzten Tranformationen für den Ort (\ref{koord_trafo_x}) und den Impuls (\ref{koord_trafo_p}), mit welchen wir die Berechnung auf die schon bekannten Erwartungswerte des einzelnen getriebenen Oszillators zurückführen können.
   %Denn wir berechnen die Erwartungswerte für die neuen Observablen  $x_1,x_2,p_1,p_2$
-  Es werden alle Erwartungswerte für eine allgemeine $T$-periodische Treibkraft $S(t)=A\sin(\omega t)$ berechnet und einige Erwartungswerte für die konkrete sinusförmige Treibkraft aus Kapitel (\ref{epsilon_sinuskraft}), für einfache Konstanten, visualisiert (\ref{ferg}).
+  Es werden alle Erwartungswerte für eine allgemeine $T$-periodische Treibkraft $S(t)$ berechnet und einige Erwartungswerte für die sinusförmige Treibkraft aus Kapitel (\ref{epsilon_sinuskraft}), für einfache Konstanten, visualisiert (\ref{ferg}).
 
   Die „$+$" und „$-$" Operatoren wirken auf verschiedene Variablen, das heißt, sie operieren auf den verschiedenen Räumen $\cal H_+,\cal H_-$.
   Aus diesem Grund gilt für den Erwartungswert eines Operators $U_+:\cal H_+ \rightarrow \cal H_+$ bezüglich einer Wellenfunktion der Form $\Psi_{n,l}=\Psi_{+,n}\Psi_{-,l}$ mit $\Psi_\pm \in \cal H_\pm$, wegen der Normierung nach Formel (\ref{norm_gekoppelt}):
@@ -208,7 +208,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
       =\frac{1}{\sqrt{2}}\left(\braket{x_+}_n^+\mp\braket{x_-}_l^-\right)
       =\frac{1}{\sqrt{2}}(\zeta_+(t)\mp\zeta_-(t)) \; .
     \end{align}
-    Der Mittelwert des Ortes für einen der beiden Oszillatoren $x_1$ oder $x_2$ des gekoppelten Systems ist somit die quantenzahlunabhängige Differenz oder die Summe der beiden klassischen Lösungen $\zeta_+(t)$ und $\zeta_-(t)$ der entkoppelten Oszillatoren nach der Variablentransformation, multipliziert mit $\nicefrac{1}{\sqrt 2}$.
+    Der Mittelwert des Ortes für einen der beiden Oszillatoren $x_1$ oder $x_2$ des gekoppelten Systems ist somit die quantenzahlunabhängige Differenz oder die Summe der beiden klassischen Lösungen $\zeta_+(t)$ und $\zeta_-(t)$ der entkoppelten Oszillatoren nach der Variablentransformation, multipliziert mit $1/\sqrt 2$.
 
     Der Erwartungswert für $x_{1}^2/x_2^2$ ergibt sich darüber hinaus mit Formel (\ref{erwartungswert_gekoppelt_produkt}) und zusätzlich dem Erwartungswert (\ref{erwartungswert_x^2_einzelner}) zu
     \begin{align}
@@ -234,7 +234,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
     Wir betrachten somit die Situation einer schwachen (gegenphasigen) und starken (gleichphasigen) Kopplung.
 
     Die Amplitude von $\braket{x_2}_{n,l}$ kann ihr Vorzeichen nicht ändern, da negative physikalisch Kopplungskonstanten nicht sinnvoll sind. Der Erwartungswert verschwindet genau für $\kappa=\SI{0}{\newton \meter^{-1}}$, wie in Abb.(\ref{fig:x2_null}) veranschaulicht.
-    Dies entspricht der Erwartung, da es sich bei $x_2$ ohne Kopplung um einen einzelnen ungetriebenen Oszillator handelt, weil nur $x_1$ getrieben ist.
+    Dies entspricht der Erwartung, da es sich bei $x_2$ ohne Kopplung um einen einzelnen ungetriebenen Oszillator handelt, da nur $x_1$ getrieben ist.
 
     Der Erwartungswert von $x_1$ wechselt sein Vorzeichen für $\kappa=\omega^2m-k=\SI{3}{\newton \meter^{-1}}$, wie in Abb.(\ref{fig:x1_null}) gezeigt.
     Die gegenphasige (schwache) Kopplung ist für $\kappa=\SI{1}{\newton \meter^{-1}}<\SI{3}{\newton \meter^{-1}}$ in Abb.(\ref{fig:schwach}) dargestellt. Wie klassisch anzunehmen, ist die Amplitude des Erwartungswertes $\braket{x_2}_{n,l}$ des angekoppelten Oszillators in diesem Fall geringer als die des getriebenen Oszillator-Erwartungswertes $\braket{x_1}_{n,l}$, da weniger Energie auf $x_2$ übetragen wird.
@@ -305,26 +305,27 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
     %Wie beim einzelnen Oszillator
     Es kommt nur ein Faktor hinzu und die $\zeta_\pm(t)$ werden zu ihren Ableitungen.
 
-    Für eine sinusförmige Treibkraft, sehen die Erwartungswerte fur $p_{1\atop 2}$ demnach so aus wie die $\braket{x_{1\atop 2}}_{n,l}$ nur mit skalierter Amplitude und phasenverschoben um $\pi$.
+    Für eine sinusförmige Treibkraft, sehen die Erwartungswerte fur $p_{1,2}$ demnach so aus wie die $\braket{x_{1,2}}_{n,l}$ nur mit skalierter Amplitude und phasenverschoben um $\pi$.
     Das Verhalten für die verschiedenen Kopplungskonstanten $\kappa$ ist ebenfalls identisch.
 
   \subsection{Erwartungswerte der Energie}
-    Der zeitabhängige Erwartungswert $\braket{H(t)}_{n,l}$ des Hamilton-Operators für eine beliebige Treibkraft $S(t)$ ist auch mit dem Erwatungswert des einzelnen Oszillators berechenbar, indem wir wieder in den neuen Koordinaten arbeiten:
+    Der zeitabhängige Erwartungswert $\braket{H(t)}_{n,l}$ des Hamilton-Operators für eine beliebige Treibkraft $S(t)$ ist auch mit dem Erwartungswert des einzelnen Oszillators berechenbar, indem wir wieder in den neuen Koordinaten arbeiten:
     \begin{align}
       \braket{H(t)}_{n,l} = \braket{H_+(t)}_n^+ + \braket{H_-(t)}_l^- %\notag\\
       = E_{+,n}+E_{-,l} -L_+-L_- +m\dot\zeta_+^2(t)+m\dot\zeta_-^2(t) \; .
     \end{align}
-    Der mittlere Erwartungswert $\overline{H}_{n,l}$ wird wieder in den neuen Koordinaten, mit Formel (\ref{mittleres_H}), berechnet.
-    Weil die Quasienergien $\epsilon_{n,l}$ die Summe von $\epsilon_{+,n}$ und $\epsilon_{-,l}$ ist, erhalten wir sofort
+    Außerden wird der mittlere Erwartungswert $\overline{H}_{n,l}$ wieder, in den neuen Koordinaten, mit Formel (\ref{mittleres_H}), berechnet.
+    Weil die Quasienergien $\epsilon_{n,l}$ die Summe von $\epsilon_{+,n}$ und $\epsilon_{-,l}$ ist, erhalten wir
     \begin{align}
       \overline{H}_{n,l}&=\overline{H}_{+,n}+\overline{H}_{-,l}  \notag\\
       &=E_{+,n}+E_{-,l} - \frac{\frac{1}{\sqrt 2} A}{4m(\omega_+^2-\omega^2)}\left(1-\frac{2\omega^2}{(\omega_+^2-\omega^2)}\right)
       - \frac{\frac{-1}{\sqrt 2} A}{4m(\omega_-^2-\omega^2)}\left(1-\frac{2\omega^2}{(\omega_-^2-\omega^2)}\right) \; .
+      \label{mittleres_H_gekoppelt}
     \end{align}
 
     \textbf{Sinusoidale Treibkraft}
 
-    Für das Beispiel der sinusoidalen Kraft folgt $\braket{H(t)}_{n,l}$ mit den ensprechenden Orts- und Impulserwartungswerten aus dem vorherigen Abschnitt und  $\overline{H}_{n,l}$ folgt aus Gleichung (\ref{mittleres_H}).
+    Für das Beispiel der sinusoidalen Kraft folgt $\braket{H(t)}_{n,l}$ mit den ensprechenden Orts- und Impulserwartungswerten aus dem vorherigen Abschnitt und  $\overline{H}_{n,l}$ folgt aus Gleichung (\ref{mittleres_H_gekoppelt}).
     Der Erwartungswert der Energie $\braket H_{0,0}$ und dessen zeitliches Mittel $\overline{H}_{0,0}$ sind für die gleichen Konstanten wie zuvor
     \begin{equation}
       \omega=\SI{2}{Hz} \;,\; A=\SI{1}{\newton} \;,\; k=\SI{1}{\newton \meter^{-1}} \;,\; m=\SI{1}{\kilo \gram} \;,\; \hbar=\SI{1}{\joule \second}  \; ,
@@ -349,7 +350,9 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
       \caption{Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\overline{H}_{0,0}$ für den Grundzustand $\Psi_{0,0}$ mit $\omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1$, für verschiedene Kopplungskonstanten $\kappa$.}
     \end{figure}
 \fi
-    Ohne Kopplung (\ref{fig:H_kappa0}), das hei"st $\kappa=\SI{0}{\newton \meter^{-1}}$ ist die mittlere Energie am geringsten, für eine möglichst starke/starre Kopplung $\kappa=\SI{15}{\newton \meter^{-1}}$ (\ref{fig:H_kappa15}) wird die mittlere Energie im System maximal, weil die Treibkraft so möglichst viel Energie auf den angekoppelten Oszillator $x_2$ übertragen kann.
+    Ohne Kopplung, das heißt $\kappa=\SI{0}{\newton \meter^{-1}}$ (\ref{fig:H_kappa0}) ist die mittlere Energie am geringsten, weil nur $x_1$ schwingt.
+    Für eine möglichst starke/starre Kopplung $\kappa=\SI{15}{\newton \meter^{-1}}$ wird die mittlere Energie im System maximal, weil die Treibkraft so möglichst viel Energie auf den angekoppelten Oszillator $x_2$ übertragen kann.
+    Diese Situation ist in Abb. (\ref{fig:H_kappa15}) dargestellt.
     \begin{figure}
       \begin{subfigure}[t]{0.5\textwidth}
         \centering
