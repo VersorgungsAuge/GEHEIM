@@ -3,11 +3,11 @@
 \chapter{Berechnung von Erwartungswerten}
 \label{3}
   In diesem Abschnitt werden die zeitabhängigen Erwartungswerte des periodisch getriebenen Oszillators für den Impuls, den Ort und die Energie, sowie das zeitliche Mittel des Erwartungswertes der Energie berechnet.
-  Dabei werden die Erwartungswerte für alle Zustände $\Psi_n(x,t)$ auf die bekannten Erwartungswerte des Standard-Oszillators zurückgeführt, womit wir eine Art "2. Quantisierung für die Erwartungswerte" haben.
+  Dabei werden die Erwartungswerte für alle Zustände $\Psi_n(x,t)$ auf die bekannten Erwartungswerte des Standard-Oszillators zurückgeführt, womit wir eine Art „2. Quantisierung für die Erwartungswerte" haben.
 
   Die Treibkraft $S(t)=S(t+T)$ ist nicht weiter festgelegt und geht stets über die klassische Lösung $\zeta(t)$ (\ref{dgl_zeta}) in die Erwartungswerte ein.
 
-  Um die Erwartungswerte des getriebenen Oszillators zu erhalten, werden wir dessen Berechnnung auf die Berechnung der bekannten Erwartungswerte des ungetriebenen Oszillators zurückführen.
+  Um die Erwartungswerte des getriebenen Oszillators zu erhalten, werden wir dessen Berechnung auf die Berechnung der bekannten Erwartungswerte des ungetriebenen Oszillators zurückführen.
   Dafür nutzen wir aus, dass die Wellenfunktionen und die Floquet-Moden nach (\ref{gesamtlsg_einzelner}) und (\ref{floquet_moden_einzelner}) einem um $\zeta(t)$ verschobenen ungetriebenen Oszillator mit einer zusätzlichen komplexen Phase entsprechen.
   Da eine komplexe Phase beim Bilden des Betrages wegfällt, gilt
   \begin{equation}
@@ -16,7 +16,7 @@
   \end{equation}
   wobei $\Psi_{n,\text{ung}}(y,t)$ die Zustände des ungetriebenen Oszillators bezeichnen.
 
-  Bei dem Integral von $-\infty$ bis $\infty$ ist eine konstante Verschiebung der Variable irrelevant.
+  Bei dem Integral über $\mathbb{R}$ ist eine konstante Verschiebung der Variable irrelevant.
   Außerdem sind die $\Psi_{n,\text{ung}}(y,t)$ auf dem Raum normiert, daher sind auch die $\Psi_n(x,t)$ auf $x \in (-\infty,\infty)$ normiert, wie bereits am Ende von Kapitel \ref{lsg_einzelner} erwähnt.
 
   Eine Visualisierung von Erwartungswerten folgt in Kapitel (\ref{erwartungswerte_gekoppelt}).
@@ -39,7 +39,7 @@
         \label{erwartungswert_x_einzelner}
       \end{split}
     \end{align}
-    Da die Erwartungswerte $\braket{y}_{n,\text{ung}}$ für den Ort des ungetriebenen Oszillators verschwinden, ist der Erwartungswert jedes Zuständes des getriebenen Oszillators genau $\zeta(t)$.
+    Da die Erwartungswerte $\braket{y}_{n,\text{ung}}$ für den Ort des ungetriebenen Oszillators verschwinden, ist der Erwartungswert jedes Zustandes des getriebenen Oszillators genau $\zeta(t)$.
 
     Das bedeutet, der Erwartungswert $\braket{x}_n$ für den Ort eines beliebigen Zustandes des quantenmechanischen getriebenen Oszillators entspricht genau der Lösung $\zeta(t)$ der Bewegungsgleichung des klassischen getriebenen Oszillators.
     Der Erwartungswert hat deshalb sehr große Amplituden, wenn die Treibfrequenz $\omega$ von $S(t)$ in der Nähe der Eigenfrequenz des Systems $\omega_0$ liegt (\ref{zeta_bel_kraft}), was der klassischen Anschauung entspricht, da wir ein ungedämpftes System betrachten.
@@ -60,7 +60,7 @@
       = s^2(2n+1) + \zeta^2(t) \; ,
       \label{erwartungswert_x^2_einzelner}
     \end{align}
-    zusammen mit der charakteristischen Länge des ungetriebenen Oszillators
+    mit der charakteristischen Länge des ungetriebenen Oszillators
     \begin{equation}
       s = \sqrt{\frac{\hbar}{2m\omega_0}} \; .
       \label{charak_laenge}
@@ -78,8 +78,13 @@
       \begin{pmatrix} m \\ j \\ \end{pmatrix} = \frac{m!}{j!(m-j)!}
     \end{equation}
     der Binomial-Koeffizient.
-
-    Hiernach setzt sich der Erwartungswert $\braket{x^m}_n$ aus allen $\zeta(t)...\zeta^m(t)$ zusammen, die mit dem Binomial-Koeffizienten und der jeweiligen Potenz von $\braket{y}_{n,\text{ung}}$ gewichtet werden.
+\iffalse
+\begin{equation}
+  \braket{x^m}_n = \braket{(y+\zeta(t))^m}_{n,\text{ung}} = \sum_{j=0}^m \frac{m!}{j!(m-j)!} \braket{y^{m-j}}_{n,\text{ung}}\zeta^j(t) \; .
+  \label{erwartungswert_x^m_einzelner}
+\end{equation}
+\fi
+    Hiernach setzt sich der Erwartungswert $\braket{x^m}_n$ aus allen $\zeta(t)\,_{...}\,\zeta^m(t)$ zusammen, die mit dem Binomial-Koeffizienten und der jeweiligen Potenz von $\braket{y}_{n,\text{ung}}$ gewichtet werden.
 
 
     %\newpage
@@ -97,7 +102,8 @@
     \begin{equation}
       -\text i\hbar \frac{\partial}{\partial x} = -\text i\hbar \frac{\partial}{\partial y}\frac{\partial y}{\partial x} = -\text i\hbar \frac{\partial}{\partial y} \cdot 1 \; , \; \text{d.\,h.} \; p_x = p_y \; .
     \end{equation}
-    Weiterhin können wir den $y$-unabhängigen Teil der komplexen Phasen in den Wellenfunktionen (\ref{gesamtlsg_einzelner}) sofort am Operator vorbeiziehen und zu 1 zusmmenfassen, daher schreiben wir $\braket{p}_n$ als
+    Weiterhin können wir den $y$-unabhängigen Teil der komplexen Phasen in den Wellenfunktionen (\ref{gesamtlsg_einzelner}) zu 1 zusmmenfassen, weil der Operator nicht darauf wirkt.
+    Daher schreiben wir $\braket{p}_n$ als
     \begin{align}
       &\braket{p}_n = \int_{-\infty}^{\infty} \Psi^*_n(x,t) p \Psi_n(x,t) \; \text dx
       = \int_{-\infty}^{\infty} \Psi^*_n(y+\zeta(t),t) p_y \Psi_n(y+\zeta(t),t) \: \text dy= \notag\\
@@ -105,16 +111,16 @@
       \label{spaste}
     \end{align}
     wobei der Faktor im Argument der Hermit-Polynome (\ref{gesamtlsg_einzelner}) als $a$ abgekürtzt wird.
-    Mit der Produktregel spalten wir die Anwendung des Impulsoperators auf in die Anwendung auf die ungetriebene Oszillatorfunktion (in der neuen Koordinate $y$) und die Anwendung auf die verbleibende komplexe Phase:
+    Mit der Produktregel spalten wir die Anwendung des Impulsoperators in die Anwendung auf die ungetriebene Oszillatorfunktion (in der neuen Koordinate $y$) und die Anwendung auf die verbleibende komplexe Phase auf:
     \begin{align}
-      &p_y N_nH_n(ay)\exp\left(\frac{-m\omega_0}{2\hbar}y^2+\frac{+\text i}{\hbar}m\dot{\zeta}(t)y\right)  \notag\\
+      &p_y N_nH_n(ay)\exp\left(\frac{-m\omega_0}{2\hbar}y^2+\frac{\text i}{\hbar}m\dot{\zeta}(t)y\right) \notag\\
       %&\left(p_y N_nH_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2}\right) \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y}
       %+ N_nH_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} \left(p_y \text e^{\frac{+\text i}{\hbar}m\dot{\zeta}(t)y}\right) \notag\\
-      &= \exp\left(\frac{+\text i}{\hbar}m\dot{\zeta}(t)y\right) (p_y+m\dot \zeta(t))N_nH_n(ay)\exp\left(\frac{-m\omega_0}{2\hbar}y^2\right)
+      &= \exp\left(\frac{\text i}{\hbar}m\dot{\zeta}(t)y\right) (p_y+m\dot \zeta(t))N_nH_n(ay)\exp\left(\frac{-m\omega_0}{2\hbar}y^2\right) \;.
       %\left[p_yN_nH_n(y)\text e^{\frac{-m\omega_0}{2\hbar}y^2} + N_nH_n(y)\text e^{\frac{m\omega_0}{2\hbar}y^2}m\dot{\zeta}(t) \right] \; .
       \label{spaste2}
     \end{align}
-    Hiernach haben wir effektiv den Impulsoperator an der $y$-abhängigen Phase vorbeigezogen.
+    Hiernach haben wir effektiv den Impulsoperator und die $y$-abhängige Phase vertauscht.
     Damit ist es möglich diese verbliebenen Phasen in (\ref{spaste}) ebenso zu 1 zu vereinfachen.
     Es verbleiben noch die Anwendung des Impulsoperators auf die Wellenfunktionen des ungetriebenen Oszillators und die Multiplikation dieser mit dem ortsunabhängigen Term $m\dot \zeta(t)$.
     Zusammen mit dem übrigen linken Teil aus (\ref{spaste2}), welcher nach dem Wegfallen der komplexen Phase jetzt auch der ungetriebenen Wellenfunktion entspricht, ergeben sich dadurch die Erwartungswerte für $p_y$ und den Term $m\dot{\zeta}(t)$.
@@ -144,7 +150,7 @@
       \label{erwartungswert_p^2_einzelner}
     \end{equation}
 \fi
-    Um darüber hinaus den Erwartungswert $\braket{p^m}_n$ für einen beliebigen Exponenten $m \in \mathbb{N}$ zu evaluieren, muss in Formel (\ref{spaste2})) $m$-mal die Produktregel angewandt werden.
+    Um darüber hinaus den Erwartungswert $\braket{p^m}_n$ für einen beliebigen Exponenten $m \in \mathbb{N}$ zu erhalten, muss in Formel (\ref{spaste2}) $m$-mal die Produktregel angewendet werden.
     Da sich die komplexe Phase beim Ableiten reproduziert und jedesmal ein ortsunabhängiger Term übrig bleibt, gilt für diesen Erwartungswert analog zu dem Erwartungswert $\braket{x^m}_n$:
     \begin{equation}
         \braket{p^m}_n = \braket{(p_y+m\dot\zeta(t))^m}_{n,\text{ung}} = \sum_{j=0}^m\begin{pmatrix} m \\ j \\ \end{pmatrix} \braket{p_y^{m-j}}_{n,\text{ung}}(m\dot\zeta(t))^j \; .
@@ -160,8 +166,7 @@
 
 
   \section{Heisenberg-Unschärferelation}
-    Mit den zuvor berechneten Erwartungswerten $\braket{x}_n,\braket{x^2}_n,\braket{p}_n,\braket{p^2}_n$ wird hier die Unschärfe des periodisch getriebenen Oszillators aufgestellt.
-    Diese ist
+    Mit den zuvor berechneten Erwartungswerten $\braket{x}_n,\braket{x^2}_n,\braket{p}_n,\braket{p^2}_n$ wird hier die Unschärfe des periodisch getriebenen Oszillators aufgestellt:
     \begin{align}
       \Delta x_n\Delta p_n &= \sqrt{\braket{x^2}_n-\braket{x}^2_n}\sqrt{\braket{p^2}_n-\braket{p}^2_n} \notag\\
       &= \sqrt{s^2(2n+1)+\zeta^2(t)-\zeta^2(t)}\sqrt{m^2\omega^2_0s^2(2n+1)+m^2\zeta^2(t)-m^2\zeta^2(t)} \notag\\
@@ -171,9 +176,9 @@
 
     Dieses Ergebnis ist sinvoll in Anbetracht der Tatsache, dass die (zeitabhängige) Verschiebung der Wellenfunktionen im Raum $\zeta(t)$ (\ref{gesamtlsg_einzelner}) die Unschärfe nicht ändern sollte.
     Die Wellenfunktionen haben allerdings noch den weiteren Unterschied der orts- und zeitabhängigen komplexen Phase, verglichen mit den Wellenfunktionen des Standard-Oszillators.
-    Diese spielt zwar keine  Rolle bei den Erwartungswerten für den Ort, bei den Impulserwartungswerten aber schon.
+    Diese spielt zwar keine  Rolle bei den Erwartungswerten für den Ort, bei den Impulserwartungswerten allerdings schon.
     Dennoch war zu erwarten, dass sich auch beim Impuls eine Standardabweichung $\Delta p_n$ wie beim ungetriebenen Oszillator ergibt, so wie bei $\Delta x_n$, da $\braket{p}_n$ im Wesentlichen die zeitliche Ableitung von $\braket{x}_n$ ist.
-    Demnach folgte die gleiche Unschärfe.
+    Demnach folgt die gleiche Unschärfe.
 
   %  MEHR SCHREIEN ????????
 
@@ -184,9 +189,10 @@
 \fi
 
   \section{Zeitabhängiger Erwartungswert der Energie}
-    Mit denselben Erwartungswerten für den Ort und den Impuls, wie sie bei der Heisenber-Unschärferelation von Nöten sind, wird im Folgenden der normale Erwartungswert der Energie bzw. des Hamilton-Operators $\braket{H(t)}_n$ aufgestellt, es muss nur die Linearität des Erwartungswertes verwendet werden:
+    Mit den gleichen Erwartungswerten für den Ort und den Impuls, wie sie bei der Heisenber-Unschärferelation von Nöten sind, wird im Folgenden der normale Erwartungswert der Energie bzw. des Hamilton-Operators $\braket{H(t)}_n$ aufgestellt.
+    Es muss nur die Linearität des Erwartungswertes verwendet werden:
     \begin{align}
-      \braket{H(t)}_n &= \braket{\frac{p^2}{2m} + \frac{1}{2}m\omega_0^2x^2 - S(t)x}_n
+      \braket{H(t)}_n &= \Braket{\frac{p^2}{2m} + \frac{1}{2}m\omega_0^2x^2 - S(t)x}_n
       =\frac{1}{2m}\braket{p^2}_n + \frac{1}{2}m\omega_0^2\braket{x^2}_n - S(t)\braket{x}_n \notag\\
       &= \frac{1}{2m}\braket{p^2_y}_{n,\text{ung}} + \frac{1}{2}m\omega_0^2\braket{y}_{n,\text{ung}} + \frac{1}{2}m\dot{\zeta}^2(t) + \frac{1}{2}m\omega_0^2\zeta^2(t) - S(t)\zeta(t) \notag\\
       &= \hbar\omega_0\left(n+\frac{1}{2}\right) - L(\dot{\zeta},\zeta,t) + m\dot{\zeta}^2(t) = E_n - L(\dot{\zeta},\zeta,t) + m\dot{\zeta}^2(t) \; .
@@ -197,7 +203,7 @@
   %  WELCHE PERIODE, SCHWANKT
 
   \section{Durchschnittlicher Erwartungswert der Energie}
-    Im Nachfolgenden wird der zeitlich, über eine Periode $T$, gemittelte Erwartungswert $\overline{H}_n$ mittels Formel (\ref{mittleres_H}) für eine beliebige Treibkraft bestimmt, indem wir die Quasienergien $\epsilon_n$ benutzen, welche wir in Kapitel \ref{epsilon_bel_kraft} für eine allgemeine periodische Treibkraft $S(t)$, in Abhängigkeit deren Fourier-Koeffizienten, bestimmt haben.
+    Im Nachfolgenden wird der zeitlich, über eine Periode $T$, gemittelte Erwartungswert $\overline{H}_n$ mittels Formel (\ref{mittleres_H}) für eine beliebige Treibkraft bestimmt, indem wir die Quasienergien $\epsilon_n$ benutzen, welche wir in Kapitel \ref{epsilon_bel_kraft} für eine allgemeine periodische Treibkraft $S(t)$, in Abhängigkeit derer Fourier-Koeffizienten, bestimmt haben.
     %Um den zeitlich gemittelten Erwartungswert der Energie $\overline{H}_n$ für eine beliebige periodisch Treibende Kraft $S(t)=S(T)$ zu berechnen,
 
     Unter der Annahme, dass die Summe in $\epsilon_n$ (\ref{epsilon_bel_kraft}) konvergiert, weil es sich im Wesentlichen um die Summe über $1/j^2$ handelt, leiten wir nach $\omega$ ab, indem wir die Ableitung und Summe vertauschen, dann haben wir:

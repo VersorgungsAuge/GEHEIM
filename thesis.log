@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  12 AUG 2018 18:54
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.4)  14 AUG 2018 04:57
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -441,7 +441,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.624 seconds)
+luaotfload | main : initialization completed in 0.568 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex
 .sty
@@ -785,6 +785,15 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_below_shortintertext_sep=\dimen164
 )
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/braket/braket.sty)
+(/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/units/nicefrac.sty
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip70
+\L@UnitsRaiseTextstyle=\skip71
+\L@UnitsRaiseScriptstyle=\skip72
+
+(/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+))
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/unicode-math/unicode-mat
 h.sty
 Package: unicode-math 2015/09/24 v0.8c Unicode maths in XeLaTeX and LuaLaTeX
@@ -951,15 +960,15 @@ ernMath:mode=base;script=math;language=DFLT;+tlig;+ssty=1;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `normal' on input line 68.
+(Font)              `operators' in the math version `normal' on input line 72.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> EU2/LatinModernMath(0)/m/n on input line
- 68.
+ 72.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `bold' on input line 68.
+(Font)              `operators' in the math version `bold' on input line 72.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> EU2/LatinModernMath(0)/bx/n on input li
-ne 68.
+ne 72.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1005,15 +1014,15 @@ ig;+ssty=1;"
 . =179404.75sp\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 68.
+(Font)              `symbols' in the math version `normal' on input line 72.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> EU2/LatinModernMath(1)/m/n on input lin
-e 68.
+e 72.
 LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 68.
+(Font)              `symbols' in the math version `bold' on input line 72.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> EU2/LatinModernMath(1)/bx/n on input li
-ne 68.
+ne 72.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1048,16 +1057,16 @@ ig;+ssty=1;"
 . \fontdimen 12\font =430571.4sp\relax \fontdimen 13\font =0pt\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 68
+(Font)              `largesymbols' in the math version `normal' on input line 72
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/m/n on input lin
-e 68.
+e 72.
 LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 68.
+(Font)              `largesymbols' in the math version `bold' on input line 72.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/bx/n on input li
-ne 68.
+ne 72.
 
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/l3packages/xfrac/xfrac.s
 ty (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/base/textcomp.sty
@@ -1149,7 +1158,7 @@ Package: xtemplate 2016/05/18 v6512 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen165
 \l__xtemplate_tmp_int=\count158
 \l__xtemplate_tmp_muskip=\muskip18
-\l__xtemplate_tmp_skip=\skip70
+\l__xtemplate_tmp_skip=\skip73
 )
 Package: xfrac 2016/05/18 v6512 L3 Experimental split-level fractions
 \l__xfrac_slash_box=\box46
@@ -1180,8 +1189,8 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen171
 \extrarowheight=\dimen172
 \NC@list=\toks27
-\extratabsurround=\skip71
-\backup@length=\skip72
+\extratabsurround=\skip74
+\backup@length=\skip75
 )
 \l__siunitx_tmp_box=\box48
 \l__siunitx_tmp_dim=\dimen173
@@ -1206,8 +1215,8 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \l__siunitx_unit_prefix_base_int=\count173
 \l__siunitx_unit_prefix_gram_int=\count174
 \l__siunitx_number_product_int=\count175
-\c__siunitx_one_fill_skip=\skip73
-\l__siunitx_table_unit_align_skip=\skip74
+\c__siunitx_one_fill_skip=\skip76
+\l__siunitx_table_unit_align_skip=\skip77
 \l__siunitx_table_exponent_dim=\dimen176
 \l__siunitx_table_integer_dim=\dimen177
 \l__siunitx_table_mantissa_dim=\dimen178
@@ -1221,8 +1230,8 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \l__siunitx_table_post_box=\box52
 \l__siunitx_table_mantissa_box=\box53
 \l__siunitx_table_result_box=\box54
-\l__siunitx_table_number_align_skip=\skip75
-\l__siunitx_table_text_align_skip=\skip76
+\l__siunitx_table_number_align_skip=\skip78
+\l__siunitx_table_text_align_skip=\skip79
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1568,7 +1577,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks29
 \@floatcapt=\box56
 )
-Package scrhack Info: loading float hack on input line 101.
+Package scrhack Info: loading float hack on input line 105.
 
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/koma-script/float.hak
 File: float.hak 2016/06/14 v3.21 KOMA-Script package (hacking package float)
@@ -1581,7 +1590,7 @@ Package: placeins 2005/04/18  v 2.2
 )
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip77
+\labelindent=\skip80
 \enit@outerparindent=\dimen198
 \enit@toks=\toks30
 \enit@inbox=\box57
@@ -1597,9 +1606,6 @@ Package: logreq 2010/08/04 v1.0 xml request logger
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip21
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -1650,14 +1656,14 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \blx@parenlevel@text=\count286
 \blx@parenlevel@foot=\count287
 \blx@sectionciteorder@0=\count288
-\labelnumberwidth=\skip78
-\labelalphawidth=\skip79
-\biblabelsep=\skip80
-\bibitemsep=\skip81
-\bibnamesep=\skip82
-\bibinitsep=\skip83
-\bibparsep=\skip84
-\bibhang=\skip85
+\labelnumberwidth=\skip81
+\labelalphawidth=\skip82
+\biblabelsep=\skip83
+\bibitemsep=\skip84
+\bibnamesep=\skip85
+\bibinitsep=\skip86
+\bibparsep=\skip87
+\bibhang=\skip88
 \blx@bcfin=\read2
 \blx@bcfout=\write4
 \c@mincomprange=\count289
@@ -1735,12 +1741,12 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedlanguage=\count355
 \c@pageref=\count356
 \c@savedpageref=\count357
-\shorthandwidth=\skip86
-\shortjournalwidth=\skip87
-\shortserieswidth=\skip88
-\shorttitlewidth=\skip89
-\shortauthorwidth=\skip90
-\shorteditorwidth=\skip91
+\shorthandwidth=\skip89
+\shortjournalwidth=\skip90
+\shortserieswidth=\skip91
+\shorttitlewidth=\skip92
+\shortauthorwidth=\skip93
+\shorteditorwidth=\skip94
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1797,7 +1803,7 @@ File: biblatex.cfg
 ))
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 132.
+(scrhack)             need that hack, on input line 136.
  (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
@@ -1888,7 +1894,7 @@ Package hyperref Message: Driver (autodetected): hluatex.
 File: hluatex.def 2016/06/24 v6.83q Hyperref driver for luaTeX
 \Fld@listcount=\count375
 \c@bookmark@seq@number=\count376
-\Hy@SectionHShift=\skip92
+\Hy@SectionHShift=\skip95
 )
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
@@ -1920,39 +1926,38 @@ Package biblatex Info: ... file 'german.lbx' found.
 File: german.lbx 2016/09/17 v3.6 biblatex localization (PK/JW/AB)
 ) (./thesis.aux
 Language ngerman already loaded; id is 8
-Language ngerman already loaded; id is 8
 
 LaTeX Warning: Label `mittleres_H' multiply defined.
 
 )
 \openout1 = thesis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 153.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 153.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 157.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 157.
  (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 153.
-LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
 
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mki
 i
@@ -1993,7 +1998,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 Language ngerman already loaded; id is 8
-LaTeX Info: Redefining \microtypecontext on input line 153.
+LaTeX Info: Redefining \microtypecontext on input line 157.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2033,20 +2038,13 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = thesis.bcf
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
- (./thesis.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                haenggi
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
-Package biblatex Info: Reference section=0 on input line 153.
-Package biblatex Info: Reference segment=0 on input line 153.
+ (./thesis.bbl)
+Package biblatex Info: Reference section=0 on input line 157.
+Package biblatex Info: Reference segment=0 on input line 157.
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 153.
- (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package hyperref Info: Link coloring OFF on input line 157.
+
+(/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestrin
@@ -2055,33 +2053,33 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count384
 )
-LaTeX Info: Redefining \ref on input line 153.
-LaTeX Info: Redefining \pageref on input line 153.
-LaTeX Info: Redefining \nameref on input line 153.
+LaTeX Info: Redefining \ref on input line 157.
+LaTeX Info: Redefining \pageref on input line 157.
+LaTeX Info: Redefining \nameref on input line 157.
 \c__siunitx_mathsf_int=\count385
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LatinModernMath' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 153.
+(Font)              scaled to size 10.95015pt on input line 157.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 8.00012pt on input line 153.
+(Font)              scaled to size 8.00012pt on input line 157.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 153.
+(Font)              scaled to size 6.00009pt on input line 157.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 153.
+(Font)              scaled to size 10.94983pt on input line 157.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.99988pt on input line 153.
+(Font)              scaled to size 7.99988pt on input line 157.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 153.
-LaTeX Font Info:    Try loading font information for U+msa on input line 153.
+(Font)              scaled to size 5.99991pt on input line 157.
+LaTeX Font Info:    Try loading font information for U+msa on input line 157.
  (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 153.
+LaTeX Font Info:    Try loading font information for U+msb on input line 157.
 
 (/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2102,7 +2100,7 @@ Package microtype Info: Loading generic settings for font family
 <logos/tu-logo.pdf, id=4, 339.2675pt x 55.20625pt>
 File: logos/tu-logo.pdf Graphic file (type pdf)
  <use logos/tu-logo.pdf>
-Package luatex.def Info: logos/tu-logo.pdf used on input line 157.
+Package luatex.def Info: logos/tu-logo.pdf used on input line 161.
 (luatex.def)             Requested size: 262.29283pt x 42.67912pt.
 (load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
 /otl/lmroman12-bold.luc)
@@ -2114,17 +2112,17 @@ Package microtype Info: Loading generic settings for font family
 /otl/lmsans10-bold.luc)(load luc: /home/ismael/.local/texlive/2016/texmf-var/lua
 tex-cache/generic/fonts/otl/lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 14.4002pt on input line 157.
+(Font)              scaled to size 14.4002pt on input line 161.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 157.
+(Font)              scaled to size 10.00015pt on input line 161.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 157.
+(Font)              scaled to size 7.0001pt on input line 161.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 157.
+(Font)              scaled to size 14.39977pt on input line 161.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 157.
+(Font)              scaled to size 9.99985pt on input line 161.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 157.
+(Font)              scaled to size 6.9999pt on input line 161.
 
 [1
 
@@ -2135,14 +2133,14 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 {/home/ismael/.local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<
 ./logos/tu-logo.pdf>] [2
 
-] (./content/00_abstract.tex
-Language ngerman already loaded; id is 8) [3]
-Package tocbasic Info: character protrusion at toc deactivated on input line 163
+] (./content/00_abstract.tex) [3]
+Package tocbasic Info: character protrusion at toc deactivated on input line 167
 .
  (./thesis.toc
+luatex-hyphen: loading patterns and exceptions for: german (\language4)
+luatex-hyphen: info: no hyphenation exceptions for this language
 Language ngerman already loaded; id is 8
-Language ngerman already loaded; id is 8
-Overfull \hbox (1.03993pt too wide) in paragraph at lines 21--21
+Overfull \hbox (1.03993pt too wide) in paragraph at lines 19--19
  [][] [][]\EU2/lmr/m/n/10.95 Unitä-re Va-ria-blen-trans-for-ma-ti-on und all-g
 e-mei-ne Lö-sung der Schrödinger-Gleichung[] [][]  
  []
@@ -2155,38 +2153,44 @@ e-mei-ne Lö-sung der Schrödinger-Gleichung[] [][]
 
 ] (./content/01_einleitung.tex
 chapter 1.
-) (./content/02_floquet-theorie.tex [1
+(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
+/otl/lmroman8-regular.luc)(load luc: /home/ismael/.local/texlive/2016/texmf-var/
+luatex-cache/generic/fonts/otl/lmroman6-regular.luc))
+(./content/02_floquet-theorie.tex [1
 
 
 
 ]
 chapter 2.
-(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
-/otl/lmroman8-regular.luc)(load luc: /home/ismael/.local/texlive/2016/texmf-var/
-luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [2
+[2
 
-] [3] [4]
+] [3]
+Overfull \hbox (21.80792pt too wide) in paragraph at lines 152--152
+[] 
+ []
+
+[4]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 220.
+(hyperref)                removing `subscript' on input line 223.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 220.
+(hyperref)                removing `subscript' on input line 223.
 
 [5]
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 12.00018pt on input line 271.
+(Font)              scaled to size 12.00018pt on input line 274.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 11.99982pt on input line 271.
+(Font)              scaled to size 11.99982pt on input line 274.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 271.
+(hyperref)                removing `math shift' on input line 274.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 271.
+(hyperref)                removing `math shift' on input line 274.
 
 [6]) (./content/03_einzelner_oszi.tex [7]
 chapter 3.
@@ -2196,77 +2200,70 @@ chapter 3.
 chapter 4.
 [13
 
-] [14]
-
-LaTeX Warning: Command \. invalid in math mode on input line 108.
-
-Missing character: There is no ̇ (U+0307) in font cmmi10!
-
-LaTeX Warning: Command \. invalid in math mode on input line 108.
-
-Missing character: There is no ̇ (U+0307) in font cmmi10!
-[15] [16]
+] [14] [15] [16]
 
 Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 190.
+(amsmath)                 on input line 210.
 
-[17] [18] <plots/<x2>nl0.png, id=380, 578.16pt x 433.62pt>
+[17](load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/f
+onts/otl/lmroman5-regular.luc)
+Overfull \hbox (26.34607pt too wide) in paragraph at lines 303--303
+[] 
+ []
+
+[18] <plots/<x2>nl0.png, id=382, 578.16pt x 433.62pt>
 File: plots/<x2>nl0.png Graphic file (type png)
-
-<use plots/<x2>nl0.png>
-Package luatex.def Info: plots/<x2>nl0.png used on input line 336.
+ <use plots/<x2>nl0.png>
+Package luatex.def Info: plots/<x2>nl0.png used on input line 356.
 (luatex.def)             Requested size: 221.32182pt x 165.98813pt.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 337.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 337.
- <plots/<x1>nl0.png, id=381, 578.16pt x 433.62pt>
+(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
+/otl/lmroman7-regular.luc) <plots/<x1>nl0.png, id=383, 578.16pt x 433.62pt>
 File: plots/<x1>nl0.png Graphic file (type png)
 
 <use plots/<x1>nl0.png>
-Package luatex.def Info: plots/<x1>nl0.png used on input line 343.
+Package luatex.def Info: plots/<x1>nl0.png used on input line 363.
 (luatex.def)             Requested size: 221.32182pt x 165.98813pt.
 
-<plots/<x12>nlschwach.png, id=382, 578.16pt x 433.62pt>
+<plots/<x12>nlschwach.png, id=384, 578.16pt x 433.62pt>
 File: plots/<x12>nlschwach.png Graphic file (type png)
 
 <use plots/<x12>nlschwach.png>
-Package luatex.def Info: plots/<x12>nlschwach.png used on input line 350.
+Package luatex.def Info: plots/<x12>nlschwach.png used on input line 370.
 (luatex.def)             Requested size: 221.32182pt x 165.98813pt.
 
-<plots/<x12>nlstark.png, id=383, 578.16pt x 433.62pt>
+<plots/<x12>nlstark.png, id=385, 578.16pt x 433.62pt>
 File: plots/<x12>nlstark.png Graphic file (type png)
 
 <use plots/<x12>nlstark.png>
-Package luatex.def Info: plots/<x12>nlstark.png used on input line 357.
+Package luatex.def Info: plots/<x12>nlstark.png used on input line 377.
 (luatex.def)             Requested size: 221.32182pt x 165.98813pt.
 
-<plots/<H>00_kappa0.png, id=384, 578.16pt x 433.62pt>
+<plots/<H>00_kappa0.png, id=386, 578.16pt x 433.62pt>
 File: plots/<H>00_kappa0.png Graphic file (type png)
 
 <use plots/<H>00_kappa0.png>
-Package luatex.def Info: plots/<H>00_kappa0.png used on input line 364.
+Package luatex.def Info: plots/<H>00_kappa0.png used on input line 384.
 (luatex.def)             Requested size: 221.32182pt x 165.98813pt.
 
-<plots/<H>00_kappa15.png, id=385, 578.16pt x 433.62pt>
+<plots/<H>00_kappa15.png, id=387, 578.16pt x 433.62pt>
 File: plots/<H>00_kappa15.png Graphic file (type png)
 
 <use plots/<H>00_kappa15.png>
-Package luatex.def Info: plots/<H>00_kappa15.png used on input line 371.
+Package luatex.def Info: plots/<H>00_kappa15.png used on input line 391.
 (luatex.def)             Requested size: 221.32182pt x 165.98813pt.
 
-Overfull \hbox (2.43088pt too wide) in paragraph at lines 334--375
+Overfull \hbox (2.43088pt too wide) in paragraph at lines 354--395
 [][] []
  []
 
 
-Overfull \hbox (2.43088pt too wide) in paragraph at lines 334--375
+Overfull \hbox (2.43088pt too wide) in paragraph at lines 354--395
 [] []
  []
 
 
-Overfull \hbox (2.43088pt too wide) in paragraph at lines 334--375
+Overfull \hbox (2.43088pt too wide) in paragraph at lines 354--395
 [] [] 
  []
 
@@ -2277,25 +2274,34 @@ chapter 5.
 [21
 
 ] [22]
-Overfull \hbox (0.23521pt too wide) in paragraph at lines 136--137
+Overfull \hbox (0.23521pt too wide) in paragraph at lines 138--139
 \EU2/lmr/m/n/10.95 Mit dem be-kann-ten Wellenfunktion-Ket $[]$, so-wie den Ver-
 tau-schungs-re-la-tio-nen in ([]5.11[]-[]5.12[])
  []
 
 [23]) (./content/05_zusammenfassung_und_ausblick.tex [24]
 chapter 6.
-) (./content/a_anhang.tex [25
-
-]
-chapter A.
-) [26
+) (./content/a_anhang.tex) [25
 
 ]
 chapter without number
-[27
+(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts
+/otl/lmromancaps10-regular.luc)
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 183.
 
 
-] [28
+(/home/ismael/.local/texlive/2016/texmf-dist/tex/latex/euenc/eu2lmtt.fd
+File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)(load luc: /home/ismael/.local/texlive/2016/texmf-var/luatex-cache/generic/font
+s/otl/lmmono10-regular.luc)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: EU2).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [26
+
+
+] [27] [28
 
 
 ] (./content/eid_versicherung.tex
@@ -2309,60 +2315,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
  [29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
  (./thesis.aux
-Language ngerman already loaded; id is 8
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
-
-
-Package rerunfilecheck Warning: File `thesis.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `thesis.aux':
-(rerunfilecheck)             Before: 7B9A02FCB2CC44373BD4041810177149;28818
-(rerunfilecheck)             After:  E5AF6F399AE3789D00D930339F51A6C9;29039.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
+Package rerunfilecheck Info: File `thesis.aux' has not changed.
+(rerunfilecheck)             Checksum: FAB278A2D9FCC9BD474E4C84905CCDD9;29625.
 Package rerunfilecheck Info: File `thesis.toc' has not changed.
-(rerunfilecheck)             Checksum: 480D0C2D345AFCB535B2CDAC55172447;2787.
+(rerunfilecheck)             Checksum: 326223928B4A4E05249F290C371AFB19;2716.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 \openout1 = thesis.run.xml
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45465 strings out of 495118
+ 45576 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 24910 words of node memory still in use:
-   86 hlist, 11 vlist, 10 rule, 4 math, 2981 glue, 19 kern, 88 glyph, 518 attrib
-ute, 60 glue_spec, 518 attribute_list, 1 write nodes
-   avail lists: 1:3,2:707,3:234,4:130,5:406,6:2742,7:749,8:148,9:1078,10:22,11:3
-32
- 47603 multiletter control sequences out of 65536+600000
- 97 fonts using 17661503 bytes
+ 25308 words of node memory still in use:
+   86 hlist, 11 vlist, 10 rule, 4 math, 3031 glue, 19 kern, 88 glyph, 530 attrib
+ute, 60 glue_spec, 530 attribute_list, 1 write nodes
+   avail lists: 1:3,2:1114,3:228,4:122,5:403,6:3406,7:746,8:148,9:1078,10:30,11:
+432
+ 47692 multiletter control sequences out of 65536+600000
+ 101 fonts using 18025535 bytes
  60i,20n,81p,8817b,2517s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-
-italic.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm
+</home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmmono10-r
+egular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm
+/lmromancaps10-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/op
+entype/public/lm/lmroman10-italic.otf></home/ismael/.local/texlive/2016/texmf-di
+st/fonts/opentype/public/lm-math/latinmodern-math.otf></home/ismael/.local/texli
+ve/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/ismael/.
+local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home
+/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmromanslant10-r
+egular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm
 -math/latinmodern-math.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/op
-entype/public/lm/lmroman8-regular.otf></home/ismael/.local/texlive/2016/texmf-di
-st/fonts/opentype/public/lm/lmroman10-bold.otf></home/ismael/.local/texlive/2016
-/texmf-dist/fonts/opentype/public/lm/lmromanslant10-regular.otf></home/ismael/.l
-ocal/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf>
-</home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latin
-modern-math.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/publ
-ic/lm/lmroman10-regular.otf></home/ismael/.local/texlive/2016/texmf-dist/fonts/o
-pentype/public/lm/lmroman12-regular.otf></home/ismael/.local/texlive/2016/texmf-
-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/ismael/.local/texlive/201
-6/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on thesis.pdf (33 pages, 549883 bytes).
+entype/public/lm-math/latinmodern-math.otf></home/ismael/.local/texlive/2016/tex
+mf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/ismael/.local/texl
+ive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/ismael
+/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></hom
+e/ismael/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.
+otf>
+Output written on thesis.pdf (33 pages, 562565 bytes).
 
-PDF statistics: 649 PDF objects out of 1000 (max. 8388607)
- 562 compressed objects within 6 object streams
+PDF statistics: 666 PDF objects out of 1000 (max. 8388607)
+ 573 compressed objects within 6 object streams
  175 named destinations out of 1000 (max. 131072)
- 209 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

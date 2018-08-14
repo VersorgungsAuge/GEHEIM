@@ -15,6 +15,8 @@ Zur Lösung des Systems wird eine unitäre Koordinatentransformation eingeführt
 Dann ergeben sich die Wellenfunktionen aus denen des einzelnen Oszillators.
 
 
+
+
 %war vorher subsection
 \section{Die Schrödinger-Gleichung mit unabhängigen Hamilton-Operatoren}
 \label{kap:schroedglg_unabh_H}
@@ -37,11 +39,11 @@ Dann ergeben sich die Wellenfunktionen aus denen des einzelnen Oszillators.
   Um dies zu zeigen, schauen wir uns den Fall von zwei unabhängigen Operatoren an:
   \begin{align}
     \begin{split}
-      \text i \hbar \frac{\partial}{\partial t} \Psi = H\Psi \iff \Psi_2 H_1 \Psi_1 + \Psi_1 H_2 \Psi_2 = \text i \hbar \left(\Psi_1\frac{\partial}{\partial t} \Psi_2 + \Psi_1\frac{\partial}{\partial t} \Psi_2 \right) \; .
+      \text i \hbar \frac{\partial}{\partial t} \Psi = H\Psi \iff \Psi_2 H_1 \Psi_1 + \Psi_1 H_2 \Psi_2 = \text i \hbar \left(\Psi_2\frac{\partial}{\partial t} \Psi_1 + \Psi_1\frac{\partial}{\partial t} \Psi_2 \right) \; .
     \end{split}
   \end{align}
-  Da die Operatoren nur auf Funktionen wirken, die auf dem selben Raum definiert sind, kann man sie an der jeweils anderen Funktion vorbeiziehen.
-  Wenn wir weiterhin durch unseren Ansatz $\Psi_1\Psi_2$ teilen, wird die Gleichung zu:
+  Da die Operatoren nur auf Funktionen wirken, die auf dem selben Raum definiert sind, können sie mit der jeweils anderen Funktion vertauscht werden.
+  Wenn wir weiterhin durch unseren Ansatz $\Psi_1\Psi_2$ dividieren, wird die Gleichung zu:
   \begin{equation}
     \frac{1}{\Psi_1}H_1\Psi_1 + \frac{1}{\Psi_2}H_2\Psi_2 = \text i \hbar \left(\frac{\frac{\partial}{\partial t} \Psi_1}{\Psi_1} + \frac{\frac{\partial}{\partial t} \Psi_2}{\Psi_2} \right) \; .
   \end{equation}
@@ -56,26 +58,26 @@ Dann ergeben sich die Wellenfunktionen aus denen des einzelnen Oszillators.
 
 \section{Unitäre Variablentransformation und allgemeine Lösung der Schrödinger-Gleichung}
   Um für unseren Hamilton-Operator $H(x_1,x_2,p_1,p_2,t)$ (\ref{H_gekoppelt}) eine entkoppelte Form \\
-  $H(x_+,x_-,p_+,p_-,t)=H_+(x_+,p_+,t)+H_-(x_-,p_-,t)$ nach (\ref{unabh_H}) in den neuen Koordinaten/Variablen $x_+,x_-,p_+,p_-$ zu erhalten, wählen wir die unitären Koordinationtransformationen~\cite{arxiv}
+  $H(x_+,x_-,p_+,p_-,t)=H_+(x_+,p_+,t)+H_-(x_-,p_-,t)$ nach (\ref{unabh_H}) in den neuen Koordinaten/Variablen $x_+,x_-,p_+,p_-$ zu erhalten, wählen wir die unitären Koordinatentransformationen~\cite{arxiv}
   \begin{equation}
     x_+ = \frac{1}{\sqrt{2}}(x_2+x_1) \;,\; x_-=\frac{1}{\sqrt{2}}(x_2-x_1) \;,
     \label{koord_trafo_x}
   \end{equation}
-  welche aus den Eigenmoden/Eigenvektoren des klassischen Problems folgen.
+  welche durch Eigenmoden/Eigenvektoren des klassischen Problems motiviert sind.
   Dessen Normierung stellt sicher, dass die Transformation unitär ist.
   %worauf in Kapitel () genauer eingegangen wird.
   Durch einfaches Umstellen folgen $x_1$ und $x_2$ in Abhängigkeit der neuen Koordinaten $x_+$ und $x_-$:
   \begin{equation}
     x_1=\frac{1}{\sqrt{2}}(x_+-x_-) \;,\; x_2=\frac{1}{\sqrt{2}}(x_++x_-) \; .
   \end{equation}
-  Indem wir $x_1$ und $x_2$ so im Hamilton-Operator (\ref{H_gekoppelt}) ersetzen, formen wir den ortsabhängigen Teil um zu
+  Indem wir $x_1$ und $x_2$ im Hamilton-Operator (\ref{H_gekoppelt}) ersetzen, formen wir den ortsabhängigen Teil um zu
   \begin{align}
-    &\frac{1}{2}kx_1^2+\frac{1}{2}kx_2^2+\frac{1}{2}\kappa(x_2-x_1)^2-S(t)x_1= \notag\\
-    &\frac{1}{2}kx_+^2+\frac{1}{2}(k+2\kappa)x_-^2-S(t)\frac{1}{\sqrt{2}}(x_+-x_-) \; .
+    &\frac{1}{2}kx_1^2+\frac{1}{2}kx_2^2+\frac{1}{2}\kappa(x_2-x_1)^2-S(t)x_1 \notag\\
+    &=\frac{1}{2}kx_+^2+\frac{1}{2}(k+2\kappa)x_-^2-S(t)\frac{1}{\sqrt{2}}(x_+-x_-) \; .
   \end{align}
-  Es tauchen nun keine Kopplungsterme $x_+x_-$ mehr auf, wie es in den alten Koordinaten der Fall war.
+  Es tauchen nun keine Kopplungsterme $\propto x_+x_-$ mehr auf, wie es in den alten Koordinaten der Fall war.
 
-  Jetzt betrachten wir die neuen Impulse und überprüfen, dass es durch den Variablenwechsel nicht zu neuen Kopplungstermen in den $p_+$$p_-$ kommt.
+  Jetzt betrachten wir die neuen Impulse und überprüfen, dass es durch den Variablenwechsel nicht zu neuen Kopplungstermen in den $\propto p_+$$p_-$ kommt.
   Mit der Kettenregel folgt für die Ableitungen der Impulsoperatoren
   \begin{align}
     \frac{\partial}{\partial x_{\pm}} = \frac{\partial}{\partial x_1}\frac{\partial x_1}{\partial x_{\pm}} + \frac{\partial}{\partial x_2}\frac{\partial x_2}{\partial x_{\pm}}
@@ -83,12 +85,12 @@ Dann ergeben sich die Wellenfunktionen aus denen des einzelnen Oszillators.
     + \frac{\partial}{\partial x_2}\frac{1}{\sqrt{2}}
     = \frac{1}{\sqrt{2}}\left(\frac{\partial}{\partial x_2}\pm\frac{\partial}{\partial  x_1}\right) \;,
   \end{align}
-  weshalb für die Impulsoperatoren identisch zu den Ortsoperatoren gilt
+  weshalb für die Impulsoperatoren, analog zu den Ortsoperatoren, gilt
   \begin{equation}
     p_+ = \frac{1}{\sqrt{2}}(p_2+p_1) \;,\; p_-=\frac{1}{\sqrt{2}}(p_2-p_1) \; .
     \label{koord_trafo_p}
   \end{equation}
-  Wir setzen erneut in unseren Hamilton-Operator (\ref{H_gekoppelt}) ein und erhalten für den impulsabhängigen Teil
+  Wir setzen erneut in unseren Hamilton-Operator (\ref{H_gekoppelt}) ein und erhalten für den impulsabhängigen Teil:
   \begin{equation}
     \frac{p_1^2}{2m} + \frac{p_2^2}{2m} = \frac{p_+^2}{2m} + \frac{p_-^2}{2m} \; .
     \label{koord_trafo_p^2}
@@ -99,9 +101,9 @@ Dann ergeben sich die Wellenfunktionen aus denen des einzelnen Oszillators.
   Der gesamte Hamilton-Operator der zwei gekoppelten getrieben Oszillatoren ist in den neuen Variablen folglich
   \begin{align}
     H(t) &= H(t+T) = \frac{p_1^2}{2m} + \frac{p_2^2}{2m} + \frac 1 2 kx_1^2 + \frac 1 2 kx_2^2 + \frac 1 2 \kappa(x_2-x_1)^2 - S(t)x_1 \notag\\
-    &= \frac{p_+^2}{2m}+\frac{1}{2}kx_+^2-\frac{1}{\sqrt{2}}S(t)x_+ \quad + \quad
+    &= \frac{p_+^2}{2m}+\frac{1}{2}kx_+^2-\frac{1}{\sqrt{2}}S(t)x_+  +
     \frac{p_-^2}{2m}+\frac{1}{2}(k+2\kappa)x_-^2+\frac{1}{\sqrt{2}}S(t)x_- \notag\\
-    &= \frac{p_+^2}{2m}+\frac{1}{2}k_+x_+^2-S_+(t)x_+ \quad \;\. + \quad
+    &= \frac{p_+^2}{2m}+\frac{1}{2}k_+x_+^2-S_+(t)x_+  +
     \frac{p_-^2}{2m}+\frac{1}{2}k_-x_-^2-S_-(t)x_- \notag\\
     &= H_+(x_+,p_+,t) + H_-(x_-,p_-,t) \;,\; H_\pm:\cal H_\pm \rightarrow \cal H_\pm \; .
     \label{gekoppelte_H_entkoppelt}
@@ -123,15 +125,15 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
 
   \textbf{Lösung der Schrödinger-Gleichung}
 
-  Nach den Ergebnissen dieses und des vorherigen Abschnittes können wir nun die Wellenfunktion $\Psi_{n,l}$ des Systems zweier gekoppelter getriebener Oszillatoren (\ref{H_gekoppelt}), für eine allgemeine Treibkraft $S(t)=S(t+T)$, in den neuen, entkoppelten Koordinaten $x_+$ und $x_-$, nach Formel (\ref{schroedglg_unabh_H}) schreiben.
+  Mit den Ergebnissen dieses und des vorherigen Abschnittes können wir nun die Wellenfunktion $\Psi_{n,l}$ des Systems zweier gekoppelter getriebener Oszillatoren (\ref{H_gekoppelt}), für eine allgemeine Treibkraft $S(t)=S(t+T)$, in den neuen, entkoppelten Koordinaten $x_+$ und $x_-$, nach Formel (\ref{schroedglg_unabh_H}) schreiben.
   Durch Ersetzen der neuen Variablen nach Formel (\ref{koord_trafo_x}) und (\ref{koord_trafo_p^2}) ist auch die Wellenfunktion in den ursprünglichen Variablen bekannt:
   \begin{align}
      &\Psi_{n,l}(x_+,x_-,t) = \Psi_{+,n}(x_+,t)\Psi_{-,l}(x_-,t) \notag\\
-     &=N_{n,+}O_n\left(\sqrt{\frac{m\omega_+}{\hbar}}(x_+-\zeta_+(t))\right) \exp\left(\frac{-m\omega_+}{2\hbar}(x_+-\zeta_+(t))^2\right)\notag\\
+     &=N_{n,+}H_n\left(\sqrt{\frac{m\omega_+}{\hbar}}(x_+-\zeta_+(t))\right) \exp\left(\frac{-m\omega_+}{2\hbar}(x_+-\zeta_+(t))^2\right)\notag\\
      &\quad \cdot \exp\left[\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x_+-\zeta_+(t))-E_{+,n}t+\int_0^tL_+\:\text dt'\right)\right] \quad\quad\quad\notag\\
-     &\quad \cdot N_{l,-}O_l\left(\sqrt{\frac{m\omega_-}{\hbar}}(x_--\zeta_-(t))\right) \exp\left(\frac{-m\omega_-}{2\hbar}(x_--\zeta_-(t))^2\right)\notag\\
+     &\quad \cdot N_{l,-}H_l\left(\sqrt{\frac{m\omega_-}{\hbar}}(x_--\zeta_-(t))\right) \exp\left(\frac{-m\omega_-}{2\hbar}(x_--\zeta_-(t))^2\right)\notag\\
      &\quad \cdot \exp\left[\frac{\text i}{\hbar}\left(m\dot \zeta(t)(x_--\zeta_-(t))-E_{-,l}t+\int_0^tL_-\:\text dt'\right)\right] \;,\; \Psi_\pm \in \cal H_\pm \notag\\
-    &= N_{+,n}N_{-,l} O_n\left(\sqrt{\frac{m\omega_+}{\hbar}}\left(\frac{1}{\sqrt{2}}(x_2+x_1)-\zeta_+(t)\right)\right)O_l\left(\sqrt{\frac{m\omega_-}{\hbar}}\left(\frac{1}{\sqrt{2}}(x_2-x_1)-\zeta_-(t)\right)\right) \notag\\
+    &= N_{+,n}N_{-,l} H_n\left(\sqrt{\frac{m\omega_+}{\hbar}}\left(\frac{1}{\sqrt{2}}(x_2+x_1)-\zeta_+(t)\right)\right)H_l\left(\sqrt{\frac{m\omega_-}{\hbar}}\left(\frac{1}{\sqrt{2}}(x_2-x_1)-\zeta_-(t)\right)\right) \notag\\
     &\quad\cdot \exp\left[\frac{-m}{2\hbar}\left(\omega_+\left(\frac{1}{\sqrt{2}}(x_2+x_1)-\zeta_+(t)\right)^2 + \omega_-\left(\frac{1}{\sqrt{2}}(x_2-x_1)-\zeta_-(t)\right)^2\right)\right] \notag\\
     &\quad\cdot \exp\left[\frac{\text i}{\hbar} \left(m\zeta_+(t)\left(\frac{1}{\sqrt{2}}(x_2+x_1)-\zeta_+(t)\right) + m\zeta_-(t)\left(\frac{1}{\sqrt{2}}(x_2-x_1)-\zeta_-(t)\right)\right) \right] \notag\\
     &\quad\cdot \exp \left[\frac{\text i}{\hbar}\left(-(E_{+,n}+E_{-,l})+\int_0^tL_++L_-\:\text dt'\right)\right] \notag\\
@@ -139,9 +141,10 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
   \end{align}
   %HIER GUCKEN, OB SO AUFSCHREIBEN OK (GEHT UEBER RAND) UND EVTL AUCH IN X1 X2 AUSGESCHRIEBEN (WAHRSCHEINLICH SCHON, DANN AUCH MIT (t) UEBERALL)
   Die klassischen Lösungen $\zeta_\pm(t)$ und die Lagrange-Funktionen $L_\pm$ sind wie bei der Lösung des einzelnen Oszillators bestimmt über (\ref{dgl_zeta}) und (\ref{lagrange_zeta}).
-  Genauso sind die Normierungskonstanten $N_{+,n}/N_{-,l}$ und ungetriebenen Eigenenergien $E_{+,n}/E_{-,l}$ wie beim einzelnen getriebenen Oszillator definiert, nur die Eigenfrequenz $\omega_0$ wird ersetzt durch die neuen Eigenfrequenzen $\omega_+/\omega_-$ (\ref{neue_eigenfrequenzen}).
+  Genauso sind die Normierungskonstanten $N_{+,n}/N_{-,l}$ und ungetriebenen Eigenenergien $E_{+,n}/E_{-,l}$ wie beim einzelnen getriebenen Oszillator definiert.
+  Nur die Eigenfrequenz $\omega_0$ wird durch die neuen Eigenfrequenzen $\omega_+/\omega_-$ (\ref{neue_eigenfrequenzen}) ersetzt .
 
-  Wie in Abschnitt \ref{kap:schroedglg_unabh_H} beschrieben, ist $\Psi$ in den neuen Variablen das Produkt aus den unabhängigen Wellenfunktionen $\Psi_+$ und $\Psi_-$, welche Lösungen der einzelnen Schrödinger-Gleichungen mit $H_+/H_-$ sind. Dadurch ist $\Psi$ auch auf dem Raum, das heißt auf $x_\pm \in (-\infty,\infty)$, normiert, wie am Anfang von Kapitel (\ref{3}) gezeigt:
+  Wie in Abschnitt \ref{kap:schroedglg_unabh_H} beschrieben, ist $\Psi$ in den neuen Variablen das Produkt aus den unabhängigen Wellenfunktionen $\Psi_+$ und $\Psi_-$, welche Lösungen der einzelnen Schrödinger-Gleichungen mit $H_+(t)/H_-(t)$ sind. Dadurch ist $\Psi$ auch auf dem Raum, das heißt auf $x_\pm \in (-\infty,\infty)$, normiert, wie am Anfang von Kapitel (\ref{3}) gezeigt wurde:
   \begin{align}
     &\int_{-\infty}^{\infty}\int_{-\infty}^{\infty} |\Psi_{n,l}(x_1,x_2,t)|^2 \: \text dx_1\text dx_2
     =\int_{-\infty}^{\infty}\int_{-\infty}^{\infty} |\Psi_{n,l}(x_+,x_-,t)|^2 \: \text dx_+\text dx_- \notag\\
@@ -150,27 +153,28 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
     \label{norm_gekoppelt}
   \end{align}
 
-  In den ursprünglichen Koordinaten sind Kopplungsterme $x_1x_2$ in der Wellenfunktion vorhanden, durch die Hermit-Polynome $O_n/O_l$ treten hierbei im Allgemeinen unterschiedliche Potenzen der $x_1$ und $x_2$ auf.
+  In den ursprünglichen Koordinaten sind Kopplungsterme $\propto x_1x_2$ in der Wellenfunktion vorhanden.
+  Durch die Hermit-Polynome $H_n/H_l$ treten hierbei im Allgemeinen unterschiedliche Potenzen der $x_1$ und $x_2$ auf.
 
-  Die Floquet-Moden $\Phi_{n,l}(x_+,x_-,t)=\Phi_+(x_+,t)\Phi_-(x_-,t)$ sind in den neuen Koordinaten das Produkt aus den einzelnen Floquet-Moden (\ref{floquet_moden_einzelner}), ebenso wie bei die Wellenfunktionen.
+  Die Floquet-Moden $\Phi_{n,l}(x_+,x_-,t)=\Phi_+(x_+,t)\Phi_-(x_-,t)$ sind in den neuen Koordinaten das Produkt aus den einzelnen Floquet-Moden (\ref{floquet_moden_einzelner}).
   Die Quasienergien sind dadurch die Summe der einzelnen Quasienergien (\ref{ep}):\\ $\epsilon_{n,l}=\epsilon_{+,n}+\epsilon_{-,l}$.
 
 
-\section{Erwartungswerte}
+\section{Berechnung von Erwartungswerten}
   \label{erwartungswerte_gekoppelt}
   Um die Erwartungswerte für die Observablen $x_1,x_2,p_1,p_2$ zu evaluieren, verwenden wir die benutzten Tranformationen für den Ort (\ref{koord_trafo_x}) und den Impuls (\ref{koord_trafo_p}), mit welchen wir die Berechnung auf die schon bekannten Erwartungswerte des einzelnen getriebenen Oszillators zurückführen können.
   %Denn wir berechnen die Erwartungswerte für die neuen Observablen  $x_1,x_2,p_1,p_2$
   Es werden alle Erwartungswerte für eine allgemeine $T$-periodische Treibkraft $S(t)=A\sin(\omega t)$ berechnet und einige Erwartungswerte für die konkrete sinusförmige Treibkraft aus Kapitel (\ref{epsilon_sinuskraft}), für einfache Konstanten, visualisiert (\ref{ferg}).
 
-  Die "$+$" und "$-$" Operatoren wirken auf verschiedene Variablen, das heißt sie operieren auf den verschiedenen Räumen $\cal H_+,\cal H_-$.
+  Die „$+$" und „$-$" Operatoren wirken auf verschiedene Variablen, das heißt, sie operieren auf den verschiedenen Räumen $\cal H_+,\cal H_-$.
   Aus diesem Grund gilt für den Erwartungswert eines Operators $U_+:\cal H_+ \rightarrow \cal H_+$ bezüglich einer Wellenfunktion der Form $\Psi_{n,l}=\Psi_{+,n}\Psi_{-,l}$ mit $\Psi_\pm \in \cal H_\pm$, wegen der Normierung nach Formel (\ref{norm_gekoppelt}):
   \begin{align}
-    \braket{U_+}_{n,l} &= \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} \Psi*U_+\Psi \: \text dx_+ \text dx_-
-    = \int_{-\infty}^{\infty} |\Psi_-|^2 \: \text dx_- \int_{-\infty}^{\infty} \Psi_{+,n}^*U_+\Psi_{+,n}^* \: \text dx_+ \notag\\
+    \braket{U_+}_{n,l} &= \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} \Psi^*U_+\Psi \: \text dx_+ \text dx_-
+    = \int_{-\infty}^{\infty} |\Psi_-|^2 \: \text dx_- \int_{-\infty}^{\infty} \Psi_{+,n}^*U_+\Psi_{+,n} \: \text dx_+ \notag\\
     &= 1 \cdot \braket{U_+}_n^+ \; .
     \label{erwartungswert_gekoppelt}
   \end{align}
-  Für einen Operator $U_+$ ist der Erwartungswert der Gesamtwellenfunktion $\Psi_{n,l}$ der gekoppelten getriebenen Oszillatoren also identisch zum Erwartungswert der Wellenfunktion des einzelnen getriebenen Oszillators, in den "+"-Koordinaten.
+  Für einen Operator $U_+$ ist der Erwartungswert der Gesamtwellenfunktion $\Psi_{n,l}$ der gekoppelten getriebenen Oszillatoren also identisch zum Erwartungswert der Wellenfunktion des einzelnen getriebenen Oszillators, in den „+"-Koordinaten.
   Für $U_-$ ergibt sich dies analog.
 
   Demnach folgt für den Erwartungswert $\braket{U_+U_-}_{n,l}$
@@ -178,47 +182,63 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
     \braket{U_+U_-}_{n,l}=\braket{U_-U_+}_{n,l} = \braket{U_+}_n^+\braket{U_-}_l^- \; .
     \label{erwartungswert_gekoppelt_produkt}
   \end{equation}
-
+\iffalse
+  \textbf{Graphische Darstellung}\\
+  F"ur die graphische Darstellung der Erwartungswerte werden dimensionslose Gr"o"sen eingef"uhrt, indem $E_0=\hbar  \omega_0/2$ als charachteristische Energie des Systems betrachtet wird:
+\iffalse
+  \begin{align}
+    \frac{H}{\hbar\omega_0}&=H_S(t)=\frac{2p^2}{2m\hbar\omega_0}+\frac{1}{2}\frac{m}{\hbar\omega_0}\omega_0^2x^2-\frac{S(t)}{\hbar\omega_0}x\notag\\
+    =
+  \end{align}
+\fi
+  \begin{align}
+    &\frac{H(t)}{E_0}\frac{H'(t)}=\frac{p^2}{p_0}+\frac{x^2}{x_0}-\frac{A}{A_0}\sin(\omega t)\frac{x}{x_0}
+    =p'+x'-A'\sin(\omega t)x' \;, %\notag\\
+    \text{mit}\;p_0=m\omega s \;,\;x_0=s\;,\;A_0=\frac{\hbar \omega_0}{s} \notag\\
+    &\text{d.\,h.}\;
+  \end{align}
+  wobei $s$ wieder die charakteristische L"ange nach (\ref{charak_laenge}) ist.
+\fi
 
   \subsection{Zeitabhängige Erwartungswerte des Ortes}
-    Mit der Transformation (\ref{koord_trafo_x}), der Überlegung zum gekoppelten Erwartungswert (\ref{erwartungswert_gekoppelt}) und dem Erwartungswert des einzelnen getriebenen Oszillators (\ref{erwartungswert_x_einzelner}) aus Kapitel (\ref{3}), sind nun die Erwartungswerte
+    Mit der Transformation (\ref{koord_trafo_x}), der Überlegung zum gekoppelten Erwartungswert (\ref{erwartungswert_gekoppelt}) und dem Erwartungswert des einzelnen getriebenen Oszillators (\ref{erwartungswert_x_einzelner}) aus Kapitel \ref{3}, sind nun die Erwartungswerte
     $\braket{x_1}_{n,l}/\braket{x_2}_{n,l}$ bekannt:
     \begin{align}
       \braket{x_{1 \atop 2}}_{n,l}=\frac{1}{\sqrt{2}}\left(\braket{x_+}_{n,l}\mp\braket{x_-}_{n,l}\right)
       =\frac{1}{\sqrt{2}}\left(\braket{x_+}_n^+\mp\braket{x_-}_l^-\right)
       =\frac{1}{\sqrt{2}}(\zeta_+(t)\mp\zeta_-(t)) \; .
     \end{align}
-    Der Mittelwert des Ortes für einen der beiden Oszillatoren $x_1$ oder $x_2$ des gekoppelten Systems ist somit die quantenzahlunabhängige Differenz oder die Summe der beiden klassichen Lösungen $\zeta_+(t)$ und $\zeta_-(t)$ der entkoppelten Oszillatoren nach der Variablentransformation, multipliziert mit $1/\sqrt 2$.
+    Der Mittelwert des Ortes für einen der beiden Oszillatoren $x_1$ oder $x_2$ des gekoppelten Systems ist somit die quantenzahlunabhängige Differenz oder die Summe der beiden klassischen Lösungen $\zeta_+(t)$ und $\zeta_-(t)$ der entkoppelten Oszillatoren nach der Variablentransformation, multipliziert mit $\nicefrac{1}{\sqrt 2}$.
 
     Der Erwartungswert für $x_{1}^2/x_2^2$ ergibt sich darüber hinaus mit Formel (\ref{erwartungswert_gekoppelt_produkt}) und zusätzlich dem Erwartungswert (\ref{erwartungswert_x^2_einzelner}) zu
     \begin{align}
       \braket{x_{1\atop 2}^2}_{n,l}&=\frac{1}{2}\braket{(x_+\mp x_-)^2}_{n,l}
-      =\frac{1}{2}\left(\braket{x_+^2}_n^+ \mp 2\braket{x_+}_n^+\braket{x_-}_l^- + \braket{x_-^2}_n^+\right) \notag\\
-      &=\frac 1 2 (s_+^2(2n+1)+\zeta_+^2(t) \mp 2\zeta_+(t)\zeta_-(t) + s_-^2(2l+1)\zeta_-^2(t)) \; ,
+      =\frac{1}{2}\left(\braket{x_+^2}_n^+ \mp 2\braket{x_+}_n^+\braket{x_-}_l^- + \braket{x_-^2}_l^+\right) \notag\\
+      &=\frac 1 2 (s_+^2(2n+1)+\zeta_+^2(t) \mp 2\zeta_+(t)\zeta_-(t) + s_-^2(2l+1)+\zeta_-^2(t)) \; ,
     \end{align}
-    mit $s_\pm$ als der charakteristischen Länge des ungetriebenen Oszillators nach Formel (\ref{charak_laenge}), mit der jeweiligen Eigenfrequenz $\omega_\pm$.
+    mit $s_\pm$ als charakteristische Länge des ungetriebenen Oszillators nach Formel (\ref{charak_laenge}), mit der jeweiligen Eigenfrequenz $\omega_\pm$.
 
-    \textbf{Sinusoidiale Treibkraft}
+    \textbf{Sinusoidale Treibkraft}
 
-    Für eine sinusoidiale Treibkraft $S(t)=A\sin(\omega t)$ und entsprechenden $S_\pm(t)$ (\ref{gekoppelte_H_entkoppelt}) sind $\zeta_\pm(t)$ gegeben durch (\ref{zeta_sinuskraft})
+    Für eine sinusoidale Treibkraft $S(t)=A\sin(\omega t)$ und entsprechenden $S_\pm(t)$ (\ref{gekoppelte_H_entkoppelt}) sind $\zeta_\pm(t)$ gegeben durch (\ref{zeta_sinuskraft})
     \begin{align}
       \zeta_\pm(t) = \frac{\pm\frac{1}{\sqrt 2} A\sin(\omega t)}{m(\omega_\pm^2 - \omega^2)} \; .
     \end{align}
     %Betrachten wir, wann
-    Hiermit werden die Ewartungswerte $\braket{x_1}_{n,l}$ und $\braket{x_2}_{n,l}$, für die Konstanten
+    Hiermit werden im Folgenden die Erwartungswerte $\braket{x_1}_{n,l}$ und $\braket{x_2}_{n,l}$ für die Konstanten
     \begin{equation}
-      \omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1 \; ,
+      \omega=\SI{2}{Hz} \;,\; A=\SI{1}{\newton} \;,\; k=\SI{1}{\newton \meter^{-1}} \;,\; m=\SI{1}{\kilo \gram} \;,\; \hbar=\SI{1}{\joule \second} \;
     \end{equation}
     dargestellt.
-    Hierbei untersuchen wir, für welche Kopplungskonstanten $\kappa$ die beiden Erwartungswerte gleichphasig oder gegenphasig bzw. mit selbem oder unterschiedlichem Vorzeichen der Amplitude schwingen, also bei welchem $\kappa$ die Amplitude $\braket{x_1}_{n,l}$ ihr Vorzeichen ändert.
-    Wir betrachten somit die Situation einer schwachen (gegenphasig) und starken (gleichphasig) Kopplung.
+    Hierbei untersuchen wir, für welche Kopplungskonstanten $\kappa$ die beiden Erwartungswerte gleichphasig oder gegenphasig bzw. mit gleichem oder unterschiedlichem Vorzeichen der Amplitude schwingen, also bei welchem $\kappa$ die Amplitude $\braket{x_1}_{n,l}$ ihr Vorzeichen ändert.
+    Wir betrachten somit die Situation einer schwachen (gegenphasigen) und starken (gleichphasigen) Kopplung.
 
-    Die Amplitude von $\braket{x_2}_{n,l}$ kann ihr Vorzeichen nicht ändern, da negative Kopplungskonstanten nicht sinnvoll sind. Der Erwartungswert verschwindet genau für $\kappa=0$, wie in Abb.(\ref{fig:x2_null}) veranschaulicht.
+    Die Amplitude von $\braket{x_2}_{n,l}$ kann ihr Vorzeichen nicht ändern, da negative physikalisch Kopplungskonstanten nicht sinnvoll sind. Der Erwartungswert verschwindet genau für $\kappa=\SI{0}{\newton \meter^{-1}}$, wie in Abb.(\ref{fig:x2_null}) veranschaulicht.
     Dies entspricht der Erwartung, da es sich bei $x_2$ ohne Kopplung um einen einzelnen ungetriebenen Oszillator handelt, weil nur $x_1$ getrieben ist.
 
-    Der Erwartungswert von $x_1$ wechselt sein Vorzeichen für/ist genau null für $\kappa=\omega^2m-k=3$, wie in Abb.(\ref{fig:x1_null}) gezeigt.
-    Die gegenphasige (schwache) Kopplung ist für $\kappa=1<3$ in Abb.(\ref{fig:schwach}) dargestellt. Wie klassisch anzunehmen, ist die Amplitude des Erwartungswertes $\braket{x_2}_{n,l}$ des angekoppelten Oszillators in diesem Fall geringer als die des getriebenen Oszillator-Erwartungswertes $\braket{x_1}_{n,l}$, weil weniger Energie auf $x_2$ übetragen wird.
-    Die gleichphasige (starke) Kopplung ist für $\kappa=15>3$ in Abb.(\ref{fig:stark}) dargestellt.
+    Der Erwartungswert von $x_1$ wechselt sein Vorzeichen für $\kappa=\omega^2m-k=\SI{3}{\newton \meter^{-1}}$, wie in Abb.(\ref{fig:x1_null}) gezeigt.
+    Die gegenphasige (schwache) Kopplung ist für $\kappa=\SI{1}{\newton \meter^{-1}}<\SI{3}{\newton \meter^{-1}}$ in Abb.(\ref{fig:schwach}) dargestellt. Wie klassisch anzunehmen, ist die Amplitude des Erwartungswertes $\braket{x_2}_{n,l}$ des angekoppelten Oszillators in diesem Fall geringer als die des getriebenen Oszillator-Erwartungswertes $\braket{x_1}_{n,l}$, da weniger Energie auf $x_2$ übetragen wird.
+    Die gleichphasige (starke) Kopplung ist für $\kappa=\SI{15}{\newton \meter^{-1}}>\SI{3}{\newton \meter^{-1}}$ in Abb.(\ref{fig:stark}) dargestellt.
     Für eine starke Kopplung werden die Erwartungswerte identisch und die Amplitude geringer, was der klassischen Anschauung zweier starr gekoppelter Oszillatoren entspricht.
 \iffalse
     \begin{figure}
@@ -268,7 +288,7 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
 \fi
 
   \subsection{Zeitabhängige Erwartungswerte des Impulses}
-    Die Transformation der Impulsoperatoren (\ref{koord_trafo_p}) hat die gleiche Form wie bei den Ortsoperatoren (\ref{koord_trafo_x}), die Berechnung der Erwartungswerte $\braket{p_{1 \atop 2}}_{n,l}$ und $\braket{p_{1\atop 2}^2}_{n,l}$ erfolgt darum analog, mit den Impuls-Erwartungswerten (\ref{erwartungswert_p_einzelner}) und (\ref{erwartungswert_p^2_einzelner}).
+    Die Transformation der Impulsoperatoren (\ref{koord_trafo_p}) hat die gleiche Form wie bei den Ortsoperatoren (\ref{koord_trafo_x}), die Berechnung der Erwartungswerte $\braket{p_{1,2}}_{n,l}$ und $\braket{p_{1,2}^2}_{n,l}$ erfolgt darum analog, mit den Impuls-Erwartungswerten (\ref{erwartungswert_p_einzelner}) und (\ref{erwartungswert_p^2_einzelner}).
     Es gilt:
     \begin{align}
       \braket{p_{1 \atop 2}}_{n,l}=\frac{1}{\sqrt{2}}\left(\braket{p_+}_{n,l}\mp\braket{p_-}_{n,l}\right)
@@ -277,37 +297,37 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
     \end{align}
     und
     \begin{align}
-      \braket{p^2_{1\atop 2}}_{n,l}&=\frac{1}{2}\braket{(p_+\mp p_-)^2}_{n,l} \notag\\
+      \braket{p^2_{1\atop 2}}_{n,l}&=\frac{1}{2}\braket{(p_+\mp p_-)^2}_{n,l} %\notag\\
       %=\frac{1}{2}\left(\braket{p_+^2}_n^+ \mp 2\braket{p_+}_n^+\braket{x_-}_l^- - \braket{x_-^2}_n^+\right) \notag\\
-      &=\frac {m^2} 2 (\omega_+^2s_+^2(2n+1)+\dot\zeta_+^2(t) \mp 2\dot\zeta_+(t)\dot\zeta_-(t) + \omega_-^2s_-^2(2l+1)\dot\zeta_-^2(t)) \; .
+      =\frac {m^2} 2 (\omega_+^2s_+^2(2n+1)+\dot\zeta_+^2(t) \mp 2\dot\zeta_+(t)\dot\zeta_-(t) + \omega_-^2s_-^2(2l+1)+\dot\zeta_-^2(t)) \; .
     \end{align}
     Die Erwartungswerte sind ähnlich zu denen des Ortes.
     %Wie beim einzelnen Oszillator
     Es kommt nur ein Faktor hinzu und die $\zeta_\pm(t)$ werden zu ihren Ableitungen.
 
-    Für eine Sinus-Treibkraft, sehen die Erwartungswerte fur $p_{1\atop 2}$ demnach so aus wie die $\braket{x_{1\atop 2}}_{n,l}$ nur mit skalierter Amplitude und phasenverschoben um $\pi$.
+    Für eine sinusförmige Treibkraft, sehen die Erwartungswerte fur $p_{1\atop 2}$ demnach so aus wie die $\braket{x_{1\atop 2}}_{n,l}$ nur mit skalierter Amplitude und phasenverschoben um $\pi$.
     Das Verhalten für die verschiedenen Kopplungskonstanten $\kappa$ ist ebenfalls identisch.
 
   \subsection{Erwartungswerte der Energie}
     Der zeitabhängige Erwartungswert $\braket{H(t)}_{n,l}$ des Hamilton-Operators für eine beliebige Treibkraft $S(t)$ ist auch mit dem Erwatungswert des einzelnen Oszillators berechenbar, indem wir wieder in den neuen Koordinaten arbeiten:
     \begin{align}
-      \braket{H(t)}_{n,l} &= \braket{H_+(t)}_n^+ + \braket{H_-(t)}_l^- \notag\\
-      &= E_{+,n}+E_{-,l} -L_+-L_- +m\dot\zeta_+^2(t)+m\dot\zeta_-^2(t) \; .
+      \braket{H(t)}_{n,l} = \braket{H_+(t)}_n^+ + \braket{H_-(t)}_l^- %\notag\\
+      = E_{+,n}+E_{-,l} -L_+-L_- +m\dot\zeta_+^2(t)+m\dot\zeta_-^2(t) \; .
     \end{align}
     Der mittlere Erwartungswert $\overline{H}_{n,l}$ wird wieder in den neuen Koordinaten, mit Formel (\ref{mittleres_H}), berechnet.
-    Weil die Quasienergien $\epsilon_{n,l}$ die Summe von $\epsilon_{+,n}$ und $\epsilon_{-,l}$ ist, kriegen wir sofort
+    Weil die Quasienergien $\epsilon_{n,l}$ die Summe von $\epsilon_{+,n}$ und $\epsilon_{-,l}$ ist, erhalten wir sofort
     \begin{align}
       \overline{H}_{n,l}&=\overline{H}_{+,n}+\overline{H}_{-,l}  \notag\\
       &=E_{+,n}+E_{-,l} - \frac{\frac{1}{\sqrt 2} A}{4m(\omega_+^2-\omega^2)}\left(1-\frac{2\omega^2}{(\omega_+^2-\omega^2)}\right)
       - \frac{\frac{-1}{\sqrt 2} A}{4m(\omega_-^2-\omega^2)}\left(1-\frac{2\omega^2}{(\omega_-^2-\omega^2)}\right) \; .
     \end{align}
 
-    \textbf{Sinusoidiale Treibkraft}
+    \textbf{Sinusoidale Treibkraft}
 
-    Für das Beispiel der Sinus-Kraft folgt $\braket{H(t)}_{n,l}$ mit den ensprechenden Orts- und Impulserwartungswerten aus vorherigem Abschnitt und  $\overline{H}_{n,l}$ folgt aus Gleichung (\ref{mittleres_H}).
-    Der Erwartungswert der Energie $\braket H_{0,0}$ und dessen zeitliches Mittel $\overline{H}(t)_{0,0}$ sind für die selben Konstanten wie zuvor
+    Für das Beispiel der sinusoidalen Kraft folgt $\braket{H(t)}_{n,l}$ mit den ensprechenden Orts- und Impulserwartungswerten aus dem vorherigen Abschnitt und  $\overline{H}_{n,l}$ folgt aus Gleichung (\ref{mittleres_H}).
+    Der Erwartungswert der Energie $\braket H_{0,0}$ und dessen zeitliches Mittel $\overline{H}_{0,0}$ sind für die gleichen Konstanten wie zuvor
     \begin{equation}
-      \omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1 \; ,
+      \omega=\SI{2}{Hz} \;,\; A=\SI{1}{\newton} \;,\; k=\SI{1}{\newton \meter^{-1}} \;,\; m=\SI{1}{\kilo \gram} \;,\; \hbar=\SI{1}{\joule \second}  \; ,
     \end{equation}
     in Abb.(\ref{ferg}) aufgetragen.
     Da beide Erwartungswerte wegen den $E_{+,n}/E_{-,l}$ abhängig von den Quantenzahlen sind, wird hier der einfachste Fall $n=l=0 \Rightarrow E_{\pm,0}=\hbar \omega_\pm/2$ betrachtet.
@@ -329,49 +349,49 @@ Betrachten wir den Fall, dass beide Oszillatoren $x_1$ und $x_2$ des Systems in 
       \caption{Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\overline{H}_{0,0}$ für den Grundzustand $\Psi_{0,0}$ mit $\omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1$, für verschiedene Kopplungskonstanten $\kappa$.}
     \end{figure}
 \fi
-    Ohne Kopplung (\ref{fig:H_kappa0}) ist die mittlere Energie am geringsten, für eine möglichst starke/starre Kopplung (\ref{fig:H_kappa15}) wird die mittlere Energie im System maximal, weil die Treibkraft so möglichst viel Energie auf den angekoppelten Oszillator $x_2$ übetragen kann.
+    Ohne Kopplung (\ref{fig:H_kappa0}), das hei"st $\kappa=\SI{0}{\newton \meter^{-1}}$ ist die mittlere Energie am geringsten, für eine möglichst starke/starre Kopplung $\kappa=\SI{15}{\newton \meter^{-1}}$ (\ref{fig:H_kappa15}) wird die mittlere Energie im System maximal, weil die Treibkraft so möglichst viel Energie auf den angekoppelten Oszillator $x_2$ übertragen kann.
     \begin{figure}
       \begin{subfigure}[t]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{plots/<x2>nl0.png}
-        \caption{$\kappa=0$.}
+        \caption{$\kappa=\SI{0}{\newton \meter^{-1}}$.}
         \label{fig:x2_null}
       \end{subfigure}
       %\quad
       \begin{subfigure}[t]{0.5\textwidth}
           \centering
           \includegraphics[width=\textwidth]{plots/<x1>nl0.png}
-          \caption{$\kappa=\omega^2m-k=3$.}
+          \caption{$\kappa=\omega^2m-k=\SI{3}{\newton \meter^{-1}}$.}
           \label{fig:x1_null}
       \end{subfigure}
       %\quad
       \begin{subfigure}[t]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{plots/<x12>nlschwach.png}
-        \caption{$\kappa=1$.}
+        \caption{$\kappa=\SI{1}{\newton \meter^{-1}}$.}
         \label{fig:schwach}
       \end{subfigure}
       %\quad
       \begin{subfigure}[t]{0.5\textwidth}
           \centering
           \includegraphics[width=\textwidth]{plots/<x12>nlstark.png}
-          \caption{$\kappa=15$.}
+          \caption{$\kappa=\SI{15}{\newton \meter^{-1}}$.}
           \label{fig:stark}
       \end{subfigure}
       %\quad
       \begin{subfigure}[t]{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{plots/<H>00_kappa0.png}
-        \caption{$\kappa=0$.}
+        \caption{$\kappa=\SI{0}{\newton \meter^{-1}}$.}
         \label{fig:H_kappa0}
       \end{subfigure}
       %\quad
       \begin{subfigure}[t]{0.5\textwidth}
           \centering
           \includegraphics[width=\textwidth]{plots/<H>00_kappa15.png}
-          \caption{$\kappa=15$.}
+          \caption{$\kappa=\SI{15}{\newton \meter^{-1}}$.}
           \label{fig:H_kappa15}
       \end{subfigure}
-      \caption{Erwartungswerte der gekoppelten Oszillatoren $\braket{x_1}_{n,l}$ und $\braket{x_2}_{n,l}$ für beliebigen Zustand $\Psi_{n,l}$, außerdem der Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\overline{H}_{0,0}$ für den Grundzustand $\Psi_{0,0}$. Mit $\omega=2 \;,\; A=1 \;,\; k=1 \;,\; m=1 \;,\; \hbar=1$, für verschiedene Kopplungskonstanten $\kappa$.}
+      \caption{Erwartungswerte der gekoppelten Oszillatoren $\braket{x_1}_{n,l}$ und $\braket{x_2}_{n,l}$ für einen beliebigen Zustand $\Psi_{n,l}$, außerdem der Erwartungswert der Gesamtenergie $\braket{H(t)}_{0,0}$ und zeitliches Mittel $\overline{H}_{0,0}$ für den Grundzustand $\Psi_{0,0}$. Mit $\omega=\SI{2}{Hz}\;,\; A=\SI{1}{\newton} \;,\; k=\SI{1}{\newton\meter^{-1}} \;,\; m=\SI{1}{\kilo \gram} \;,\; \hbar=\SI{1}{\joule \second}$, für verschiedene Kopplungskonstanten $\kappa$.}
       \label{ferg}
     \end{figure}

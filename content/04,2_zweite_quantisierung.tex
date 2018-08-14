@@ -1,6 +1,6 @@
-\chapter{Zweite Quantisierung}
+\chapter{Zweite Quantisierung des getriebenen harmonischen Oszillators}
 \label{5}
-In diesem Kapitel werden wir die Wellenfunktionen $\Psi_n(x,t)$ der Ortsdarstellung (\ref{gesamtlsg_einzelner}) in die Besezungszahldarstellung übersetzen, das heißt wir werden $\Psi(x,t)$ darstellen in der Orthonormalbasis der Eigenzustände $\ket{n}$ des Besetzungszahloperators $N$ des ungetriebenen Oszillators.
+In diesem Kapitel werden wir die Wellenfunktionen $\Psi_n(x,t)$ in der Ortsdarstellung (\ref{gesamtlsg_einzelner}) in die Besezungszahldarstellung übersetzen, das heißt wir werden $\Psi(x,t)$ darstellen in der Orthonormalbasis der Eigenzustände $\ket{n}$ des Besetzungszahloperators $N$ des ungetriebenen Oszillators.
 Die $\ket{n}$ sind auch Eigenzustände des Hamilton-Operators
 \begin{equation}
    H_\text{ung}(x,p) = \frac{ p^2}{2m} + \frac 1 2 m\omega_0^2 x^2 = H_{\text{ung}}(N)= \hbar\omega_0\left(N+\frac 1 2\right)
@@ -15,32 +15,33 @@ Hierbei gilt
   H=\frac{\hat p^2}{2m} + \frac 1 2 m\omega_0^2\hat x^2 = \hbar\eft(\hat n+\frac 1 2\right)
 \end{equation}
 \fi
-Um das darstellungsunabhängige Ket $\ket{\Psi(t)}$ in der Besetzungszahldarstellung zu erhalten, wird ein geeigneter Ansatz gewählt und in die Schrödinger-Gleichung des getriebenen Oszillators eingezetzt, wonach mit Hilfe von Kommutatorrelationen Differentialgleichungen zur Bestimmung der Unbekannten erhalten werden, welche gelöst werden können.
+Um das darstellungsunabhängige Ket $\ket{\Psi(t)}$ in der Besetzungszahldarstellung zu erhalten, wird ein geeigneter Ansatz gewählt, welcher mit Hilfe der Lösungen in Ortsdarstellung gefunden wird.
+Der Ansatz wird in die Schrödinger-Gleichung des getriebenen Oszillators eingesetzt, wonach mit Hilfe von Kommutatorrelationen Differentialgleichungen zur Bestimmung der Unbekannten hergeleitet werden, welche gelöst werden können.
 
 Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswerte $\braket{x^m}_n$ und $\braket{p^m}_n$ des getriebenen Oszillators berechnet.
 
 
 \section{Wellenfunktion}
-  Da die $\ket{n}$ Eingenzustände des hermitischen Besetzungszahloperators $N$ sind, kann man jede Wellenfunktion $\ket{\Psi_n(t)}$ bzw. Gesamtwellenfunktion $\ket{\Psi(t)}$ auf dem selben Raum schreiben als
+  Da die $\ket{n}$ Eingenzustände des hermiteschen Besetzungszahloperators $N$ sind, kann jede Wellenfunktion $\ket{\Psi_n(t)}$ bzw. Gesamtwellenfunktion $\ket{\Psi(t)}$ auf dem selben Raum geschrieben werden als
   \begin{equation}
     \ket{\Psi(t)}=\sum_{n=0}^{\infty}\ket{\Psi_n(t)}=\sum_{n=0}^{\infty}c_n(t)\ket{n} \;,
   \end{equation}
   mit geeigneten Koeffizienten $c_n(t)$.
 
-  Für die $\ket{\Psi_n(t)}$ des getriebenen harmonischen Oszillators wählen wir konkret den Ansatz
+  Für die $\ket{\Psi_n(t)}$ des getriebenen harmonischen Oszillators wählen wir den Ansatz
   \begin{equation}
     \ket{\Psi_n(t)}=\exp\left(\frac{-\text i}{\hbar}\theta_n(t)\right)\exp\left(\frac{-\text i}{\hbar}\alpha(t)p\right)\exp\left(\frac{-\text i}{\hbar}\varphi(t)x\right)\ket{n}=K_nO_pO_x\ket{n} \;.
     \label{ansatz_quant}
   \end{equation}
   Dieser Ansatz folgt aus der Betrachtung der Lösung $\Psi_n(x,t)$ in Ortsdarstellung (\ref{gesamtlsg_einzelner}).
-  Die ungetriebenen Eigenzustände $\ket{n}$ haben in Ortsdarstellung die Form einer Gauss-Glocke.
-  Da bei den $\Psi_n(x,t)$ zur (verschobenen) Gauss-Glocke eine zeit- und ortsabhängige Phase hinzu kommt und der Ortsoperator in Ortsdarstellung einfach der Multiplikation enspricht, wählen wir also
+  Die ungetriebenen Eigenzustände $\ket{n}$ haben in der Ortsdarstellung die Form einer Gauß-Glocke.
+  Da bei den $\Psi_n(x,t)$ zur (verschobenen) Gauß-Glocke eine zeit- und ortsabhängige Phase hinzu kommt und der Ortsoperator in Ortsdarstellung einfach der Multiplikation mit der Ortskoordinate enspricht, wählen wir
   \begin{equation}
-    \exp\left(\frac{-\text i}{\hbar}\varphi(t)x\right)=O_x \;
+    \exp\left(\frac{-\text i}{\hbar}\varphi(t)x\right)=O_x
   \end{equation}
-  im Ansatz.
+  als Ansatz.
   Hier ist $x$ der Ortsoperator.
-  Sowohl die zusätzliche orts- und zeitabhängige Phase als auch die Gauss-Glocke in $\Psi_n(x,t)$ sind verschoben (um $\zeta(t)$), daher wenden wir von links den Operator
+  Sowohl die zusätzliche orts- und zeitabhängige Phase als auch die Gauß-Glocke in $\Psi_n(x,t)$ sind verschoben (um $\zeta(t)$), daher wenden wir von links den Operator
   \begin{equation}
     \exp\left(\frac{-\text i}{\hbar}\alpha(t)p\right)=O_p
   \end{equation}
@@ -63,28 +64,28 @@ Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswe
   \end{equation}
   an den Operatoren im Ansatz vorbeizukommutieren, sodass $H_{\text{ung}}(N)$ auf die $\ket{n}$ angewendet wird.
   Währenddessen entstehen Resterme mit $p$ und $x$, die auch auf $\ket{n}$ wirken.
-  Auf der anderen Seite der Gleichung müssen der $p$- und $x$-Operator, welche beim Zeitableiten dazu kommen, ebenfalls bis zum $\ket{n}$ durchkommutiert werden.
+  Auf der anderen Seite der Gleichung müssen der $p$- und $x$-Operator, welche durch die Zeitableitung entstehen, ebenfalls bis zum $\ket{n}$ durchkommutiert werden.
   Dann erhalten wir die Differentialgleichungen zum Bestimmen von $\theta_n(t), \alpha(t)$ und $\varphi(t)$ durch Koeffizientenvergleich beider Seiten.
 
   Für dieses Vorgehen brauchen wir die Vertauschungsrelationen von $x/p$ mit $O_x/O_p$.
-  Wenn beide Operatoren nur von $x$ oder $p$ abhängen, verschwindet der Kommutator, das heißt
+  Wenn beide Operatoren nur von $x$ oder $p$ abhängen, verschwindet der Kommutator, das heißt es gilt
   \begin{equation}
-    [x^m,O_x]=[p^m,O_p]=0\iff x^mO_x=O_xx^m\quad\text{und}\quad p^mO_p=O_pp^m\;,\; m \in \mathbb{N}
+    [x^m,O_x]=[p^m,O_p]=0\iff x^mO_x=O_xx^m\quad\text{und}\quad p^mO_p=O_pp^m\;,\; m \in \mathbb{N} \; .
   \end{equation}
-  gilt.
   Die gemischten Vertauschungsrelationen berechnen wir mit der Kommutatorrechenregel
   \begin{align}
     %[AB,C]=A[B,C]+[A,C]B\quad,\quad
     [A,f(B)]=\frac{\partial}{\partial B}f(B)[A,B]\quad (\text{für $[B,[A,B]]=0$})
   \end{align}
   und dem bekannten Kommutator $[x,p]=\text i \hbar$.
-  Wir bekommen:
+  Es ergibt sich:
   \begin{align}
     [x,O_p]&=\alpha(t)O_p\iff xO_p=O_p(x+\alpha(t))\quad\text{bzw.}\quad
     x^mO_p=O_p(x+\alpha(t))^m \label{kommutator_1}\\
     %[x^2,O_p]&=2\alpha(t)x+\alpha^2(t)\iff x^2O_p=O_p(x^2+2\alpha(t)x+\alpha^2(t))\\
     [p,O_x]&=-\varphi(t)O_x\iff pO_x=O_x(p-\varphi(t))\quad\text{bzw.}\quad
-    p^mO_x=O_x(p-\varphi(t))^m \;,\; m \in \mathbb{N} \;.\label{kommutator_2}
+    p^mO_x=O_x(p-\varphi(t))^m \;, \label{kommutator_2} \\
+    &\quad m \in \mathbb{N} \;. \notag
     %[p^2,O_x]&=-2\varphi(t)p+\varphi^2(t)\iff p^2O_x=O_x(p^2-2\varphi(t)p+\varphi^2(t)) \label{kommutator_2} \; .
   \end{align}
 
@@ -94,10 +95,10 @@ Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswe
     =K_nO_p\left(H+\frac{1}{2m}(-2\varphi(t)p+\varphi^2(t))\right)O_x\ket{n} \notag\\
     &=K_nO_pO_x\left(H+\frac{1}{2m}(-2\varphi(t)p+\varphi^2(t))+\frac{1}{2}m\omega_0^2(2\alpha(t)x+\alpha^2(t))-\alpha(t)S(t)\right)\ket{n} \notag\\
     &=K_nO_pO_x
-    \left(E_n-S(t)x+\frac{1}{2m}(-2\varphi(t)p+\varphi^2(t))+\frac{1}{2}m\omega_0^2(2\alpha(t)x+\alpha^2(t))-\alpha(t)S(t)\right)\ket{n}
+    \left(E_n-S(t)x+\frac{1}{2m}(-2\varphi(t)p+\varphi^2(t))+\frac{1}{2}m\omega_0^2(2\alpha(t)x+\alpha^2(t))-\alpha(t)S(t)\right)\ket{n} \;.
     \label{super1}
   \end{align}
-  und die Zeitableitung ist
+  Weiterhin ist die Zeitableitung
   \begin{align}
     \text i\hbar\frac{\partial}{\partial t} \ket{\Psi(t)}
     &=K_n\left(\dot\theta(t)O_pO_x+O_p\dot\alpha(t)pO_x+O_pO_x\dot\varphi(t)x\right)\ket{n} \notag\\
@@ -106,29 +107,30 @@ Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswe
   \end{align}
   %Indem auf beiden Seiten durch die Exponentialfunktion mit $\theta(t)$ dividiert wird
   %Der Koeffizientenvergleich der Operatoren von (\ref{super1}) und (\ref{super2}) liefert die Differentialgleichungen:
-  Da nun all Restterme auf beiden Seiten der Schrödinger-Gleichung auf die Besetzungsahlzustände $\ket{n}$ angewendet werden, machen wir einen Koeffizientenvergleich von (\ref{super1}) und (\ref{super2}) und setzen jeweils die Terme vor $x$, $p$ und die Terme ohne Operator gleich.
+  Da alle Restterme auf beiden Seiten der Schrödinger-Gleichung auf die Besetzungzahlzustände $\ket{n}$ angewendet werden, wenden wir einen Koeffizientenvergleich von (\ref{super1}) und (\ref{super2}) an und setzen jeweils die Terme vor $x$, $p$ und die Terme ohne Operator gleich.
   Dies liefert die Differentialgleichungen zu Bestimmung der Zeitabhängigkeit der Phasen im Ansatz:
   \begin{align}
     &1)\; \dot\theta_n(t)=E_n+\frac 1 2 m\omega_0^2\alpha^2(t)+\frac{1}{2m}\varphi^2(t)+\dot\alpha(t)\varphi(t)-S(t)\alpha(t) \notag\\
     &2)\; \dot\varphi(t)=m\omega_0^2\alpha(t)-S(t) \quad,\quad 3) \;\dot\alpha(t)=\frac{-1}{m}\varphi(t) \;.
   \end{align}
-  Einsetzen von Gleichung 2) in Gleichung 3) erzeugt die klassische Bewegungsgleichung des getriebenen Oszillators (\ref{dgl_zeta}) für $\alpha(t)$
+  Einsetzen von Gleichung 2) in Gleichung 3) führt auf die klassische Bewegungsgleichung des getriebenen Oszillators (\ref{dgl_zeta}) für $\alpha(t)$
   \begin{equation}
     m\ddot\alpha(t)+m\omega_0\alpha(t)-S(t)=0 \;,
   \end{equation}
-  weshalb $\alpha(t)=\zeta(t)$ ist, wie nach Transformation (\ref{verschiebung_x}) erwartet, weil $x$ in der Lösung $\Psi(x,t)$ genau um $-\zeta(t)$ verschoben ist.
+  weshalb $\alpha(t)=\zeta(t)$ ist, wie nach der Transformation (\ref{verschiebung_x}) erwartet, weil $x$ in der Lösung $\Psi(x,t)$ genau um $-\zeta(t)$ verschoben ist.
   Demnach ist $\varphi(t)=-m\dot\zeta(t)$ durch 3) gegeben.
-  Nun setzten wir die bekannten $\alpha(t)$ und $\varphi(t)$ in 1) ein und identifizieren die Lagrange-Funktion für $\zeta(t)$ (\ref{lagrange_zeta}). Wir erhalten
+  Weiterhin setzen wir das bekannte $\alpha(t)$ und $\varphi(t)$ in 1) ein und identifizieren die Lagrange-Funktion für $\zeta(t)$ (\ref{lagrange_zeta}). Somit erhalten wir
   \begin{align}
     &\dot\theta_n(t)=E_n+\frac{1}{2}m\omega_0^2\zeta^2(t)+\frac{1}{2m}\dot\zeta^2(t)-m\dot\zeta^2(t)-S(t)\zeta(t)
     =E_n-L(\dot\zeta,\zeta,t) \notag\\
-    \Rightarrow &\theta_n(t)=E_nt-\int_0^tL(\dot\zeta,\zeta,t)\:\text dt \;.
+    \Rightarrow &\theta_n(t)=E_nt-\int_0^tL(\dot\zeta,\zeta,t)\:\text dt' \;.
   \end{align}
   Somit ist $K_n$ genau die rein zeitabhängige Phase von $\Psi_n(x,t)$ (\ref{gesamtlsg_einzelner}) und $\ket{\Psi_n(t)}$ (\ref{ansatz_quant}) ist insgesamt
-  \begin{equation}
-    \ket{\Psi_n(t)}=K_nO_pO_x=\exp\left(\frac{\text i}{\hbar}\left(-E_nt+\int_0^tL(\dot\zeta,\zeta,t)\right)\right)\exp\left(\frac{-\text i}{\hbar}\zeta(t)p\right)\exp\left(\frac{\text i}{\hbar}m\dot\zeta(t)x\right)\ket{n} \; .
+  \begin{align}
+    \ket{\Psi_n(t)}&=K_nO_pO_x\notag\\
+    &=\exp\left(\frac{\text i}{\hbar}\left(-E_nt+\int_0^tL(\dot\zeta,\zeta,t)\:\text dt'\right)\right)\exp\left(\frac{-\text i}{\hbar}\zeta(t)p\right)\exp\left(\frac{\text i}{\hbar}m\dot\zeta(t)x\right)\ket{n} \; .
     \label{psi_quant}
-  \end{equation}
+  \end{align}
 
 
 
@@ -136,12 +138,12 @@ Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswe
   Mit dem bekannten Wellenfunktion-Ket $\ket{\Psi(t)}$, sowie den Vertauschungsrelationen in (\ref{kommutator_1}-\ref{kommutator_2}) werden wir in diesem Teil die zeitabhängigen Erwartungswerte des Ortes $\braket{x^m}_n$ und des Impulses $\braket{x^m}_n$ des einzelnen getriebenen Oszillators in der Besetzungszahldarstellung bestimmen.
 
   Es wird verwendet, dass die Erwartungswerte der Zustände $\Psi_{n,\text{ung}}(y,t)$ des ungetriebenen Oszillators, gleich den Erwartungswerten der Besetzungszahlzustände $\ket{n}$ sind, da sich $\ket{n}$ und $\ket{\Psi_{n,\text{ung}}(t)}$ nur um eine komplexe Phase unterscheiden, welche bei den Erwartungswerten wegfällt.
-  Ausserdem kann beim Erwatungswert eines Operators $U$ für die Zustände $\ket{\Psi(t)}$ die komplexe Phase $K_n$ in $\ket{\Psi(t)}$ (\ref{psi_quant}) sofort am Operator vorbeigezogen werden und mit $K_n^{-1}$ zu 1 vereinfacht werden, weil $K_n$, im Gegensatz zu $O_x$ und $O_p$, kein Operator ist:
+  Außerdem kann beim Erwartungswert eines Operators $U$ für die Zustände $\ket{\Psi(t)}$ die komplexe Phase $K_n$ in $\ket{\Psi(t)}$ (\ref{psi_quant}) sofort am Operator vorbeigezogen werden und mit $K_n^{-1}$ zu 1 vereinfacht werden, weil $K_n$, im Gegensatz zu $O_x$ und $O_p$, kein Operator ist:
   %Der Erwartungswert eines Operators $A$ für der Zustände $\ket{\Psi(t)}$ ist gegeben durch:
   \begin{equation}
     \braket{U}_n=\braket{\Psi_n(t)|U|\psi_n(t)}=\braket{n|O_x^{-1}O_p^{-1}UO_pO_x|n} \;.
   \end{equation}
-  Es liegt nun eine (Rück)transformation von $U$ bezüglich $O_p$ und dann $O_x$ vor.
+  Es liegt nun eine (Rück-)Transformation von $U$ bezüglich $O_p$ und dann $O_x$ vor.
   Für $U=x^m/p^m$ können wir das Ergebnis der Transformation direkt den Relationen (\ref{kommutator_1}-\ref{kommutator_2}) entnehmen, indem wir damit $U_{x/p}$ jeweils mit $p^m/x^m$ vertauschen und dann $U_{x/p}^{-1}U_{x/p}$ zu 1 zusammenfassen.
   Weil danach entweder nur $O_p$ und $p^m$ oder $O_x$ und $x^m$ verbleiben, und diese Operatoren kommutieren, kann man diesen letzten Operator ebenso mit seinem Inversen zu 1 zusammenfassen.
 
@@ -161,7 +163,7 @@ Mit dem bekannten $\ket{\Psi(t)}$ werden im zweiten Teil erneut die Erwartungswe
 
   \textbf{Erwartungswerte des Impulses}
 
-  Für die Impuls-Erwartungswerte ergibt komplett analog zu den Ort-Erwartungswerten
+  Für die Impuls-Erwartungswerte ergibt analog zu den Ort-Erwartungswerten
   \begin{align}
     \braket{p^m}_n&=\braket{\Psi_n(t)|p^m|\Psi_n(t)}=\braket{n|O_x^{-1}O_p^{-1}p^mO_pO_x|n}=\braket{n|(p-\varphi(t))^m|n}\notag\\
     &=\braket{(p_y^m-\varphi(t))^m}_{n,\text{ung}}

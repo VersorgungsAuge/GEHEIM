@@ -13,14 +13,33 @@ dem Zeilenabstand oder dem Satzspiegel (bedruckte Fläche der Seite) manipuliert
 nur wenige systeme exakt loesbar in qm harm oszi, wasserstoff. bei zeitabh hamiltonop keine stat schroed glgl  (eigenwertglg), gelingt aber bei periodischen mit floqet thoerie
 \fi
 
-Nur wenige System k"onnen in der Quantenmechanik exakt analytisch gel"ost werden.
-Bei Systemen wie dem harmonischen Oszillator oder dem Wasserstoff-Atom, welche durch einen zeitunabh"angigen Hamilton-Operator beschrieben werden, wird zur die L"osung der Schr"odinger-Gleichung einen Produktansatz gew"ahlt, wonach haupts"achlich eine Eigenwertgleichung f"ur den Hamilton-Operator gel"ost werden muss.
-Wenn der Hamilton-Operator allerdings zeitabh"angig ist, funktioniert dieser Ansatz nicht und es muss im Allgemeinen numerisch im Rahmen der zeitabh"angigen St"orungstheorie gerechnet werden.
-Werden jedoch Probleme betrachtet wie ein einzelnes Atom oder Spin in einem oszillierenden "au"seren Feld (\cite{haengi},\cite{sherly}), bei denen der Hamilton-Operator periodisch in der Zeit ist, kann die L"osung unter Verwendung der Floquet-Theorie mit einem neuen Ansatz wieder auf eine Eigenwertgleichung gebracht werden, f"ur einen neuen zeitabh"angigen Operator.
+Nur wenige System können in der Quantenmechanik exakt analytisch gelöst werden.
+Bei Systemen wie dem harmonischen Oszillator oder dem Wasserstoff-Atom, welche durch einen zeitunabhängigen Hamilton-Operator beschrieben werden, wird zur die Lösung der Schrödinger-Gleichung einen Produktansatz gewählt.
+Danach muss eine Eigenwertgleichung für den Hamilton-Operator gelöst werden.
+Wenn der Hamilton-Operator allerdings zeitabhängig ist, funktioniert dieser Ansatz nicht und es muss im Allgemeinen numerisch im Rahmen der zeitabhängigen Störungstheorie gerechnet werden.
+Werden jedoch Probleme betrachtet wie ein einzelnes Atom oder Spin in einem oszillierenden äußeren Feld (\cite{haengi},\cite{sherly}), bei denen der Hamilton-Operator periodisch in der Zeit ist, kann die Lösung unter Verwendung der Floquet-Theorie mit einem neuen Ansatz wieder auf eine Eigenwertgleichung gebracht werden, für einen neuen zeitabhängigen Operator.
 
-In dieser Bachelorarbeit wird der periodisch getriebene harmonische Oszillator thematisiert.
-In Kap. \ref{2} wird nach einer kurzen Einf"uhrung in die Floquet-Theorie die L"osung der Schr"odinger-Gleichung f"ur den getriebenen Oszillator in Ortsdarstellung dargestellt.
-Anhand der Wellenfunktionen wird das Floquet-Theorem best"atigt und im Weiteren die Quasienergien f"ur eine beliebige Treibkraft und ein Beispiel einer sinusf"ormigen Treibkraft bestimmt.
-Daraufhin werden in Kap. \ref{3} diverse Ewartungswerte des getriebenen Oszillators ermittelt.
-Die Ergebnisse aus Kap. \ref{2} und \ref{3} werden danach genutzt um die L"osung sowie die Erwartungswerte eines Systems aus zwei gekoppelten getriebenen harmonischen Oszillatoren zu bestimmen,
-Im letzten Teil der Arbeit (Kap. \ref{5}) werden die Zust"ande des einzelnen getriebenen Oszillators in der Besetzungszahldarstellung aufgestellt und erneut Erwartungswerte berechnet.
+In der vorliegenden Arbeit werden periodisch getriebene harmonische gekoppelte Oszillatoren in der Quantenmechanik im Rahmen der Floquet-Theorie betrachtet. %thematisiert.
+
+In folgendem Kap. \ref{2} wird nach einer kurzen Einführung in die Floquet-Theorie die Lösung der Schrödinger-Gleichung für den getriebenen Oszillator in Ortsdarstellung dargestellt.
+Die Floquet-Theorie ist eine Theorie der Mathematik über lineare gewöhnliche und zudem periodische Differentialgleichungen der Form
+\begin{equation}
+  \dot f(t)=A(t)f(t)\;\text{mit}\; A(t)=A(t+T) \; ,
+  \label{f}
+\end{equation}
+welche lange vor der Quantenmechanik von Gaston Floquet aufgestellt wurde~(\cite{haengi})
+Dennoch findet die Theorie genau hier einen Nutzen, da für einen periodischen Hamilton-Operator eine Schrödinger-Gleichung der Form (\ref{f}) vorliegt.
+Anhand der Wellenfunktionen des getriebenen Oszillators wird das Floquet-Theorem bestätigt, indem die Quasienergien und Floquet-Moden identifiziert werden.
+Die Quasienergien werden zudem für eine beliebige Treibkraft und ein Beispiel einer sinusförmigen Treibkraft bestimmt.
+Daraufhin werden in Kap. \ref{3} die Ewartungswerte des getriebenen Oszillators für den Ort, den Impuls und damit die Unschärfe und der Erwartungswert der Energie ermittelt, indem die bekannten Erwartungswerte des ungetriebenen Oszillators verwendet werden.
+Bei der Berechnung des gemittelten Erwartungswertes der Energie, werden die Ergebnisse der Floquet-Theorie und die Quasienergien verwendet.
+\iffalse
+Die Ergebnisse aus Kap. \ref{2} und \ref{3} werden danach in Kap. (\ref{4}) genutzt um die Lösung sowie die Erwartungswerte eines Systems aus zwei gekoppelten getriebenen harmonischen Oszillatoren zu bestimmen.
+Die Erwartungswerte für den Ort und die Energie werden graphisch dargestellt und kommentiert.
+Zu diesem Zweck wird dieses System in neuen Koordinaten zu zwei unabhängigen Oszillatoren entkoppelt.
+\fi
+Die Ergebnisse aus Kap. \ref{2} und \ref{3} werden danach in Kap. (\ref{4}) genutzt um die Lösung eines Systems aus zwei gekoppelten getriebenen harmonischen Oszillatoren zu bestimmen.
+Zu diesem Zweck wird dieses System in neuen Koordinaten zu zwei unabhängigen Oszillatoren entkoppelt.
+Es werden die Erwartungswerte für den Ort und die Energie berechnet und zudem graphisch dargestellt.
+Im nachfolgenden Kap. (\ref{5}) werden die Zustände des einzelnen getriebenen Oszillators in der Besetzungszahldarstellung aufgestellt und erneut die Erwartungswerte berechnet.
+Zuletzt werden die Ergebnisse der vorherigen Kapitel in Kap. (\ref{6}) zusammengefasst.

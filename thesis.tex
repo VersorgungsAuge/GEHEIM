@@ -55,7 +55,11 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathtools}
+\DeclarePairedDelimiter\bra{\langle}{\rvert}
+\DeclarePairedDelimiter\ket{\lvert}{\rangle}
+\DeclarePairedDelimiterX\braket[2]{\langle}{\rangle}{#1 \delimsize\vert #2}
 \usepackage{braket}
+\usepackage{nicefrac}
 
 % Enable Unicode-Math and follow the ISO-Standards for typesetting math
 \usepackage[
@@ -145,7 +149,7 @@
 \thesisclass{Bachelor of Science}
 \submissiondate{14.08.2018}
 \firstcorrector{Prof.~Dr.~Frithjof Anders}
-\secondcorrector{}
+\secondcorrector{apl.~Prof.~Dr.~Joachim Stolze}
 
 % tu logo on top of the titlepage
 \titlehead{\includegraphics[height=1.5cm]{logos/tu-logo.pdf}}
@@ -177,6 +181,15 @@
 
 \backmatter
 \printbibliography
+\newpage
+\thispagestyle{plain}
+\section*{Danksagung}
+Bedanken möchte ich mich an dieser Stelle bei allen, die mich bei der Entstehung dieser Arbeit unterstützt haben.
+Mein Dank gebührt zuallererst Herrn Prof. Dr. Anders für die Vergabe der Bachelorarbeit und dafür, dass er sich trotz seines engen Zeitplans mindestens einmal pro Woche Zeit für mich genommen hat.
+Ebenso möchte ich mich bei Herrn apl.~Prof.~Dr.~Joachim Stolze für die Zweitkorrektur dieser Arbeit bedanken.
+Mein Dank gilt weiterhin Frau Iris Kleinjohann die immer Zeit für meine Fragen hatte und mit ihrer tatkräftigen Betreuung zum Gelingen dieser Arbeit beigetragen hat.
+Auch bei allen, die diese Bachelorarbeit Korrektur gelesen haben möchte ich mich bedanken, wobei vorallem Julian Hochhaus und Niko Salewski zu nennen sind.
+Nicht zuletzt gilt mein Dank meiner Familie und meinen Freunden, für die Unterstützung während des Studiums.
 
 \cleardoublepage
 \input{content/eid_versicherung.tex}

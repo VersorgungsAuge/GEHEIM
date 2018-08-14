@@ -45,7 +45,7 @@
       \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Physics B: Atomic and Molecular Physics}
+      \field{journaltitle}{J. Phys. B}
       \field{number}{14}
       \field{title}{Some general properties of quasi-energetic spectra of quantum systems in classical monochromatic fields}
       \field{volume}{11}
@@ -54,25 +54,49 @@
       \range{pages}{1}
     \endentry
     \entry{haengi}{book}{}
-      \name{author}{1}{}{%
+      \name{author}{6}{}{%
         {{hash=6dde7f7e237332539b3324f7e7699eae}{%
            family={Hänggi},
            familyi={H\bibinitperiod},
            given={P.},
            giveni={P\bibinitperiod}}}%
+        {{hash=fd60a630953f83ca09daad8b016aef53}{%
+           family={Dittrich},
+           familyi={D\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=031602f531a6ee59a30e5e19890de533}{%
+           family={Ingold},
+           familyi={I\bibinitperiod},
+           given={G.\bibnamedelimi L.},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=bb9a973b14abc9b405da8280835b3ad2}{%
+           family={Kramer},
+           familyi={K\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=815357028a960f9a9790a4d74673de20}{%
+           family={G.Schön},
+           familyi={G\bibinitperiod}}}%
+        {{hash=a6be8e41cb085046103b8e69cde27633}{%
+           family={Zwerger},
+           familyi={Z\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley-VCH}%
       }
-      \strng{namehash}{6dde7f7e237332539b3324f7e7699eae}
-      \strng{fullhash}{6dde7f7e237332539b3324f7e7699eae}
-      \strng{authornamehash}{6dde7f7e237332539b3324f7e7699eae}
-      \strng{authorfullhash}{6dde7f7e237332539b3324f7e7699eae}
+      \strng{namehash}{991cd15d7d1b042d5c6b4aec75ee3fd3}
+      \strng{fullhash}{e387a40b42b68fa6da6cbf95b1e642c0}
+      \strng{authornamehash}{991cd15d7d1b042d5c6b4aec75ee3fd3}
+      \strng{authorfullhash}{e387a40b42b68fa6da6cbf95b1e642c0}
       \field{sortinit}{H}
       \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{chapter}{5}
+      \field{series}{1. Auflage}
       \field{title}{Quantum Transport and Dissipation}
       \field{year}{1998}
     \endentry
@@ -99,6 +123,9 @@
       \field{year}{1953}
       \field{pages}{381\bibrangedash 402}
       \range{pages}{22}
+      \verb{doi}
+      \verb 10.1143/ptp/9.4.381
+      \endverb
     \endentry
     \entry{mads}{thesis}{}
       \name{author}{1}{}{%
@@ -174,9 +201,11 @@
       \field{year}{1965}
       \field{pages}{979\bibrangedash 987}
       \range{pages}{9}
+      \verb{doi}
+      \verb 10.1103/PhysRev.138.B979
+      \endverb
     \endentry
   \endsortlist
-  \missing{haenggi}
 \endrefsection
 \endinput
 
